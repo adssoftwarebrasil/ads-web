@@ -7,17 +7,17 @@
   "ACS": {
     "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
     "projectId": "prj_7I3bGSjDDdB4guwjwrCvgUPeH7Kf",
-    "projectName": "acs-site"
+    "projectName": "acs"
   },
   "AGRO MT DRONES PRIMAVERA": {
     "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
     "projectId": "prj_OswqVJvsQLJlZgJUHc8y7ZXEgwoY",
-    "projectName": "agro-mt-drones-site"
+    "projectName": "agro-mt-drones-primavera"
   },
   "Agropet Imperatriz - Sao Leopoldo": {
     "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
     "projectId": "prj_56bYxx4kDzMUlx8PFH1GD7lMIlVV",
-    "projectName": "agropetimperatriz"
+    "projectName": "agropet-imperatriz-sao-leopoldo"
   },
   "ALEX FREIOS A AR": {
     "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
@@ -27,12 +27,12 @@
   "B CONVITES EM RELEVO": {
     "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
     "projectId": "prj_ykBAv5fDsGJ1uqFFgaLOhyYCVUUo",
-    "projectName": "grafica-brelevo"
+    "projectName": "b-convites-em-relevo"
   },
   "BATUTA FERRAGENS": {
     "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
     "projectId": "prj_jA0p9LV9ZPzgQHR98j90neeg5MFE",
-    "projectName": "batuta-agroshop"
+    "projectName": "batuta-ferragens"
   },
   "Biolune cosméticos e beleza": {
     "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
@@ -52,7 +52,7 @@
   "CHURRASCARIA E PIZZARIA BEZERRO DE OURO": {
     "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
     "projectId": "prj_Z00xtxtW076BUw7ILcx62NxO6eG7",
-    "projectName": "churrascaria-bezerro-de-ouro-site"
+    "projectName": "churrascaria-e-pizzaria-bezerro-de-ouro"
   },
   "ciafibra/project": {
     "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
@@ -62,12 +62,12 @@
   "CLIMATEC CLIMATIZACAO E REFRIGERACAO": {
     "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
     "projectId": "prj_cib8kAz3tcgR7Z51qGBAVcRBAWPO",
-    "projectName": "climatec-sorriso"
+    "projectName": "climatec-climatizacao-e-refrigeracao"
   },
   "Clube do kite": {
     "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
     "projectId": "prj_yeMqs4dhFR4SN89cKu9C2tRkW6Gw",
-    "projectName": "clube-do-kite-pf"
+    "projectName": "clube-do-kite"
   },
   "CUTELARIA BIELLIZ": {
     "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
@@ -77,7 +77,7 @@
   "DAL PIVA SERVICOS ODONTOLOGICOS": {
     "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
     "projectId": "prj_AfZRHKzPEBA6sdWFNVWJR7uq6Cey",
-    "projectName": "dra-rafaella-dal-piva-site"
+    "projectName": "dal-piva-servicos-odontologicos"
   },
   "Dra Mariana Boccanera": {
     "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
@@ -87,7 +87,7 @@
   "Dra Tatiane Fernandes": {
     "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
     "projectId": "prj_ZTArAVwBkmbkAIcCX5juIhyZ7xhp",
-    "projectName": "tatiane-terapeuta-capilar"
+    "projectName": "dra-tatiane-fernandes"
   },
   "Eldorado Baterias e Lava Jato Chapisco": {
     "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
@@ -97,7 +97,7 @@
   "EMILIA HAIR INSTITUTE": {
     "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
     "projectId": "prj_Rjd9dnB0lnfFmYNr8dXZ4OTOy3oG",
-    "projectName": null
+    "projectName": "emilia-hair-institute"
   },
   "ExclusiveConstrutora": {
     "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
@@ -107,12 +107,12 @@
   "EXP MADEIRAS": {
     "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
     "projectId": "prj_DLRnRKNySYYzgz87QxO75n0HpYCq",
-    "projectName": "expmadeiras"
+    "projectName": "exp-madeiras"
   },
   "Funerária Uberaba- Hoje e Sempre": {
     "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
     "projectId": "prj_ASubRJkZL1tO1Gy2Qrc1d0bvx93D",
-    "projectName": "funeraria-uberaba"
+    "projectName": "funeraria-uberaba-hoje-e-sempre"
   },
   "Guiauto": {
     "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
@@ -127,27 +127,27 @@
   "IN BRASA CHOPP E GRILL": {
     "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
     "projectId": "prj_KFZkY0pThcU9nDI2BP9xgB3StTwO",
-    "projectName": "inbrasachoppegrill"
+    "projectName": "in-brasa-chopp-e-grill"
   },
   "JF Jefão Diesel": {
     "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
     "projectId": "prj_qW1Uz66AVyYPVamNY2yznfanYmvn",
-    "projectName": "jf-jefao-diesel-site"
+    "projectName": "jf-jefao-diesel"
   },
   "JM PRE MOLDADOS": {
     "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
     "projectId": "prj_kWnNZn0D4MC7ZS9UXMplEN5Utmvd",
-    "projectName": "jm-pre-moldados-website-redesign"
+    "projectName": "jm-pre-moldados"
   },
   "JPMAR Ambiental": {
     "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
     "projectId": "prj_klXuexKAzZCiDyPSZPcL4roKsLKT",
-    "projectName": "jpmar-ambiental-site"
+    "projectName": "jpmar-ambiental"
   },
   "LA TOKA ESPETARIA E COZINHA": {
     "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
     "projectId": "prj_ShHByJddtRWmwJNexAdCu3je8zhw",
-    "projectName": "latoka"
+    "projectName": "la-toka-espetaria-e-cozinha"
   },
   "LORDCAR AUTO CENTER": {
     "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
@@ -157,7 +157,7 @@
   "Mega Eventos": {
     "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
     "projectId": "prj_2hoTRitMlSHeSEYkOPo6jLmtjbAk",
-    "projectName": "mega-eventos-site"
+    "projectName": "mega-eventos"
   },
   "NETCOMPANY INFORMATICA": {
     "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
@@ -167,17 +167,17 @@
   "ORION CELULARES E ASSISTENCIA TECNICA": {
     "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
     "projectId": "prj_Mi7lJWlL57hAPfQBEdKJXGqWzBhN",
-    "projectName": "orioncelularesoficial"
+    "projectName": "orion-celulares-e-assistencia-tecnica"
   },
   "PLATO LIDER": {
     "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
     "projectId": "prj_oCw7ouCVdEDK0fdzrzx2jLEpzIaV",
-    "projectName": "platoliderembreagens"
+    "projectName": "plato-lider"
   },
   "PNEU ZERO": {
     "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
     "projectId": "prj_G1uetIGaZWufcaXjg2SXKggbWley",
-    "projectName": "pneuzero"
+    "projectName": "pneu-zero"
   },
   "RB AUTO PECAS": {
     "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
@@ -192,7 +192,7 @@
   "SO AGRICOLA PECAS E IMPLEMENTOS": {
     "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
     "projectId": "prj_HAqGnJES2W8uvpvF985rg10icUoF",
-    "projectName": "so-agricola"
+    "projectName": "so-agricola-pecas-e-implementos"
   },
   "SULLTEC GERADORES": {
     "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
@@ -202,11 +202,11 @@
   "Só Cópias": {
     "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
     "projectId": "prj_XNF2Tn6308AlI9r9Tqpy2OAAXgaA",
-    "projectName": "socopiasportovelho"
+    "projectName": "so-copias"
   },
   "VIDROLATAS": {
     "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
     "projectId": "prj_uh5364O2MgU08NRN2hPCAAJr6uuB",
-    "projectName": "vidrolatas-para-brisas-site"
+    "projectName": "vidrolatas"
   }
 }
