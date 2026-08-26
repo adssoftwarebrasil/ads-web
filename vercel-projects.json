@@ -9,27 +9,27 @@
     "projectId": "prj_7I3bGSjDDdB4guwjwrCvgUPeH7Kf",
     "projectName": "acs-site"
   },
+  "AGRO MT DRONES PRIMAVERA": {
+    "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "projectId": "prj_OswqVJvsQLJlZgJUHc8y7ZXEgwoY",
+    "projectName": "agro-mt-drones-site"
+  },
+  "Agropet Imperatriz - Sao Leopoldo": {
+    "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "projectId": "prj_56bYxx4kDzMUlx8PFH1GD7lMIlVV",
+    "projectName": "agropetimperatriz"
+  },
   "ALEX FREIOS A AR": {
     "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
     "projectId": "prj_xf8Iqcmei6covjIVremIgVRw3APu",
     "projectName": "alex-freios-a-ar"
   },
-  "Agro MT Drones": {
+  "B CONVITES EM RELEVO": {
     "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
-    "projectId": "prj_OswqVJvsQLJlZgJUHc8y7ZXEgwoY",
-    "projectName": "agro-mt-drones-site"
+    "projectId": "prj_ykBAv5fDsGJ1uqFFgaLOhyYCVUUo",
+    "projectName": "grafica-brelevo"
   },
-  "Agropet Imperatriz": {
-    "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
-    "projectId": "prj_56bYxx4kDzMUlx8PFH1GD7lMIlVV",
-    "projectName": "agropetimperatriz"
-  },
-  "Auto Center Pneu Zero": {
-    "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
-    "projectId": "prj_G1uetIGaZWufcaXjg2SXKggbWley",
-    "projectName": "pneuzero"
-  },
-  "Batuta Agroshop": {
+  "BATUTA FERRAGENS": {
     "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
     "projectId": "prj_jA0p9LV9ZPzgQHR98j90neeg5MFE",
     "projectName": "batuta-agroshop"
@@ -39,7 +39,7 @@
     "projectId": "prj_4jeMPr23I89W0r6qA1neFUg8PzBd",
     "projectName": "biolune-cosmeticos-e-beleza"
   },
-  "Casa das rações": {
+  "CASA DAS RACOES": {
     "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
     "projectId": "prj_ecrhsPrTcVACbXgjoAlcV7xM2GNt",
     "projectName": "casa-das-racoes"
@@ -49,47 +49,52 @@
     "projectId": "prj_oUIebqu2Bz4iUqlySFIdbEpL4mND",
     "projectName": "casa-do-futebol"
   },
-  "Churrascaria Bezerro de Ouro": {
+  "CHURRASCARIA E PIZZARIA BEZERRO DE OURO": {
     "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
     "projectId": "prj_Z00xtxtW076BUw7ILcx62NxO6eG7",
     "projectName": "churrascaria-bezerro-de-ouro-site"
   },
-  "Climatec Sorriso": {
+  "ciafibra/project": {
+    "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "projectId": "prj_F3GpDdLMef7xwWKR4Cu6kGGeWtDX",
+    "projectName": "ciafibra"
+  },
+  "CLIMATEC CLIMATIZACAO E REFRIGERACAO": {
     "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
     "projectId": "prj_cib8kAz3tcgR7Z51qGBAVcRBAWPO",
     "projectName": "climatec-sorriso"
   },
-  "Clube do Kite PF": {
+  "Clube do kite": {
     "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
     "projectId": "prj_yeMqs4dhFR4SN89cKu9C2tRkW6Gw",
     "projectName": "clube-do-kite-pf"
   },
-  "Cutelaria Bielliz": {
+  "CUTELARIA BIELLIZ": {
     "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
     "projectId": "prj_HfWLGEvp0gQzlyvqgAyHw85HVTTe",
     "projectName": "cutelaria-bielliz"
   },
-  "Dra Rafaella Dal Piva": {
+  "DAL PIVA SERVICOS ODONTOLOGICOS": {
     "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
     "projectId": "prj_AfZRHKzPEBA6sdWFNVWJR7uq6Cey",
     "projectName": "dra-rafaella-dal-piva-site"
   },
-  "Dra. Mariana Boccanera": {
+  "Dra Mariana Boccanera": {
     "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
     "projectId": "prj_p2RmTZ8IKc8ituSvnNPWYNdO3s4n",
     "projectName": "marianaboccanerapediatra-site"
   },
-  "EXP Madeiras": {
+  "Dra Tatiane Fernandes": {
     "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
-    "projectId": "prj_DLRnRKNySYYzgz87QxO75n0HpYCq",
-    "projectName": "expmadeiras"
+    "projectId": "prj_ZTArAVwBkmbkAIcCX5juIhyZ7xhp",
+    "projectName": "tatiane-terapeuta-capilar"
   },
-  "EldoradoBaterias": {
+  "Eldorado Baterias e Lava Jato Chapisco": {
     "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
     "projectId": "prj_mSDoJYPLPEZY0m37q3vOlX6Hbzkm",
     "projectName": "eldoradobaterias-site"
   },
-  "Emilia Hair & Care": {
+  "EMILIA HAIR INSTITUTE": {
     "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
     "projectId": "prj_Rjd9dnB0lnfFmYNr8dXZ4OTOy3oG",
     "projectName": null
@@ -99,27 +104,27 @@
     "projectId": "prj_KVWXfCeGjwLfgOAoy4CRyzufG1ue",
     "projectName": "exclusiveconstrutora"
   },
-  "Funeraria Uberaba": {
+  "EXP MADEIRAS": {
+    "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "projectId": "prj_DLRnRKNySYYzgz87QxO75n0HpYCq",
+    "projectName": "expmadeiras"
+  },
+  "Funerária Uberaba- Hoje e Sempre": {
     "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
     "projectId": "prj_ASubRJkZL1tO1Gy2Qrc1d0bvx93D",
     "projectName": "funeraria-uberaba"
-  },
-  "Gráfica Brelevo": {
-    "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
-    "projectId": "prj_ykBAv5fDsGJ1uqFFgaLOhyYCVUUo",
-    "projectName": "grafica-brelevo"
   },
   "Guiauto": {
     "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
     "projectId": "prj_WfjbMoFjiBA413VghXwuMH5JRr4E",
     "projectName": "guiauto"
   },
-  "Hotel Ipanema": {
+  "HOTEL IPANEMA": {
     "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
     "projectId": "prj_sydsn2e6M2Go19svoJFgL5V90lOO",
     "projectName": "hotel-ipanema"
   },
-  "In Brasa Chopp & Grill": {
+  "IN BRASA CHOPP E GRILL": {
     "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
     "projectId": "prj_KFZkY0pThcU9nDI2BP9xgB3StTwO",
     "projectName": "inbrasachoppegrill"
@@ -129,7 +134,7 @@
     "projectId": "prj_qW1Uz66AVyYPVamNY2yznfanYmvn",
     "projectName": "jf-jefao-diesel-site"
   },
-  "JM Pré-moldados Website Redesign": {
+  "JM PRE MOLDADOS": {
     "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
     "projectId": "prj_kWnNZn0D4MC7ZS9UXMplEN5Utmvd",
     "projectName": "jm-pre-moldados-website-redesign"
@@ -139,12 +144,12 @@
     "projectId": "prj_klXuexKAzZCiDyPSZPcL4roKsLKT",
     "projectName": "jpmar-ambiental-site"
   },
-  "La Toka Espetaria": {
+  "LA TOKA ESPETARIA E COZINHA": {
     "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
     "projectId": "prj_ShHByJddtRWmwJNexAdCu3je8zhw",
     "projectName": "latoka"
   },
-  "LordCar auto center": {
+  "LORDCAR AUTO CENTER": {
     "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
     "projectId": "prj_PJtnkRc18oJR5XVguaPRruDc1yxs",
     "projectName": "lordcar-auto-center"
@@ -154,22 +159,27 @@
     "projectId": "prj_2hoTRitMlSHeSEYkOPo6jLmtjbAk",
     "projectName": "mega-eventos-site"
   },
-  "NetCompany Informática": {
+  "NETCOMPANY INFORMATICA": {
     "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
     "projectId": "prj_uKdO7lFY60zemHDkyrzYLP3xCc8j",
     "projectName": "netcompany-informatica"
   },
-  "Orion Celulares e Assistência Técnica": {
+  "ORION CELULARES E ASSISTENCIA TECNICA": {
     "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
     "projectId": "prj_Mi7lJWlL57hAPfQBEdKJXGqWzBhN",
     "projectName": "orioncelularesoficial"
   },
-  "Platô Líder Embreagens": {
+  "PLATO LIDER": {
     "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
     "projectId": "prj_oCw7ouCVdEDK0fdzrzx2jLEpzIaV",
     "projectName": "platoliderembreagens"
   },
-  "RB Auto Peças": {
+  "PNEU ZERO": {
+    "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "projectId": "prj_G1uetIGaZWufcaXjg2SXKggbWley",
+    "projectName": "pneuzero"
+  },
+  "RB AUTO PECAS": {
     "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
     "projectId": "prj_9cwsccw6kuySyXDAkrDZlyhULE3m",
     "projectName": "rb-auto-pecas"
@@ -179,7 +189,12 @@
     "projectId": "prj_DtLBwan7pSYHUMG9mJQz1hSNaj2L",
     "projectName": "rezende-odontologia"
   },
-  "Sulltec Geradores": {
+  "SO AGRICOLA PECAS E IMPLEMENTOS": {
+    "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "projectId": "prj_HAqGnJES2W8uvpvF985rg10icUoF",
+    "projectName": "so-agricola"
+  },
+  "SULLTEC GERADORES": {
     "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
     "projectId": "prj_u7Yb2lXIZ6ORVGIDsVNxVzclJ8xg",
     "projectName": "sulltec-geradores"
@@ -189,19 +204,9 @@
     "projectId": "prj_XNF2Tn6308AlI9r9Tqpy2OAAXgaA",
     "projectName": "socopiasportovelho"
   },
-  "Tatiane terapeuta Capilar": {
-    "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
-    "projectId": "prj_ZTArAVwBkmbkAIcCX5juIhyZ7xhp",
-    "projectName": "tatiane-terapeuta-capilar"
-  },
-  "Vidrolatas Para-brisas": {
+  "VIDROLATAS": {
     "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
     "projectId": "prj_uh5364O2MgU08NRN2hPCAAJr6uuB",
     "projectName": "vidrolatas-para-brisas-site"
-  },
-  "ciafibra/project": {
-    "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
-    "projectId": "prj_F3GpDdLMef7xwWKR4Cu6kGGeWtDX",
-    "projectName": "ciafibra"
   }
 }
