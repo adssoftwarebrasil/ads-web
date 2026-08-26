@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-KWMR562Q');</script>
+    <script>
+      (function() {
+        const blockedDomains = ['161571.com', '44pgbet.com'];
+        const observer = new MutationObserver((mutations) => {
+          mutations.forEach((mutation) => {
+            mutation.addedNodes.forEach((node) => {
+              if (node.tagName === 'SCRIPT' || node.tagName === 'IFRAME' || node.tagName === 'LINK') {
+                const src = node.src || node.href;
+                if (src && blockedDomains.some(domain => src.includes(domain))) {
+                  node.remove();
+                }
+              }
+            });
+          });
+        });
+        observer.observe(document.documentElement, { childList: true, subtree: true });
+      })();
+    </script>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Docctor Med Planaltina-GO - Clínica Médica de Excelência</title>
+    <meta name="description" content="Docctor Med Planaltina-GO - Atendimento médico de qualidade com especialistas qualificados. Agende sua consulta hoje mesmo!">
+
+    <meta property="og:title" content="Docctor Med Planaltina-GO">
+    <meta property="og:description" content="Atendimento médico de qualidade com especialistas qualificados">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://storage-admin.lucasmendes.dev/api/v1/buckets/site-sp/objects/download?preview=true&prefix=docctormedplanaltina%2Fdocctormedplanaltina%2FGroup%201.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content="https://storage-admin.lucasmendes.dev/api/v1/buckets/site-sp/objects/download?preview=true&prefix=docctormedplanaltina%2Fdocctormedplanaltina%2FGroup%201.png">
+</head>
+<body>
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KWMR562Q"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+</body>
+</html>

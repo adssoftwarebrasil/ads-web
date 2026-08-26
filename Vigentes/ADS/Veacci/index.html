@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- Anthropic Sans — preload das fontes acima da dobra (título + corpo) -->
+    <link rel="preload" href="/fonts/anthropic/display-medium.woff2" as="font" type="font/woff2" crossorigin="" />
+    <link rel="preload" href="/fonts/anthropic/text-regular.woff2" as="font" type="font/woff2" crossorigin="" />
+    <script>
+      document.documentElement.classList.add("js");
+    </script>
+    <!-- Google Consent Mode v2 — estado "denied" por padrão (LGPD/opt-in) -->
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      window.gtag = gtag;
+      gtag("consent", "default", {
+        ad_storage: "denied",
+        analytics_storage: "denied",
+        ad_user_data: "denied",
+        ad_personalization: "denied",
+        functionality_storage: "denied",
+        security_storage: "granted",
+        wait_for_update: 500,
+      });
+      try {
+        var c = JSON.parse(localStorage.getItem("veacci-consent") || "null");
+        if (c && c.categories) {
+          gtag("consent", "update", {
+            analytics_storage: c.categories.analytics ? "granted" : "denied",
+            ad_storage: c.categories.marketing ? "granted" : "denied",
+            ad_user_data: c.categories.marketing ? "granted" : "denied",
+            ad_personalization: c.categories.marketing ? "granted" : "denied",
+            functionality_storage: c.categories.functionality
+              ? "granted"
+              : "denied",
+          });
+        }
+      } catch (e) {}
+    </script>
+    <link rel="icon" href="/favicon.ico" sizes="32x32" />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <link rel="sitemap" href="/sitemap-index.xml" />
+    <link rel="alternate" type="application/rss+xml" title="Blog Veacci" href="/blog/rss.xml" />
+    <title>Veacci — Performance e Software para grandes empresas em BH</title>
+    <meta name="description" content="Agência de performance e software para grandes empresas em Belo Horizonte. Especialistas Google e Meta, sistemas e plataformas web. Atendimento sob consulta." />
+    <link rel="canonical" href="https://veacci.com.br/" />
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+    <meta name="author" content="VEACCI SERVIÇOS DE TI LTDA" />
+    <meta name="theme-color" content="#f0eee6" />
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Veacci" />
+    <meta property="og:locale" content="pt_BR" />
+    <meta property="og:title" content="Veacci — Performance e Software para grandes empresas em BH" />
+    <meta property="og:description" content="Agência de performance e software para grandes empresas em Belo Horizonte. Especialistas Google e Meta, sistemas e plataformas web. Atendimento sob consulta." />
+    <meta property="og:url" content="https://veacci.com.br/" />
+    <meta property="og:image" content="https://veacci.com.br/og/veacci-og.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="Veacci — Performance e Software para grandes empresas em BH" />
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Veacci — Performance e Software para grandes empresas em BH" />
+    <meta name="twitter:description" content="Agência de performance e software para grandes empresas em Belo Horizonte. Especialistas Google e Meta, sistemas e plataformas web. Atendimento sob consulta." />
+    <meta name="twitter:image" content="https://veacci.com.br/og/veacci-og.png" />
+    <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"ProfessionalService","@id":"https://veacci.com.br/#organization","name":"Veacci","legalName":"VEACCI SERVIÇOS DE TI LTDA","url":"https://veacci.com.br/","logo":"https://veacci.com.br/brand/veacci-logo.png","image":"https://veacci.com.br/og/veacci-og.png","description":"Agência de tecnologia e performance para grandes empresas, a partir de Belo Horizonte. Especialistas Google e Meta, software sob medida e plataformas web.","slogan":"Da desordem à ordem digital.","taxID":"43.563.547/0001-08","email":"contato@veacci.com.br","areaServed":{"@type":"Country","name":"Brasil"},"address":{"@type":"PostalAddress","addressLocality":"Belo Horizonte","addressRegion":"MG","addressCountry":"BR"},"knowsAbout":["Google Ads","Google Meu Negócio","Meta Ads","Tráfego pago","Desenvolvimento de software sob medida","Desenvolvimento de sites","Marketing de performance"],"sameAs":["https://instagram.com/veacci_br"]},{"@type":"WebSite","@id":"https://veacci.com.br/#website","url":"https://veacci.com.br/","name":"Veacci","inLanguage":"pt-BR","publisher":{"@id":"https://veacci.com.br/#organization"}}]}</script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>

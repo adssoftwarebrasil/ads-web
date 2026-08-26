@@ -1,0 +1,48 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    font-family: 'Inter', system-ui, sans-serif;
+    color: #0C1E4A;
+  }
+}
+
+@layer components {
+  .section-subtitle {
+    @apply text-brand-secondary font-semibold text-sm uppercase tracking-widest mb-3;
+  }
+  .section-title {
+    @apply text-3xl md:text-4xl font-bold text-brand-dark leading-tight;
+  }
+  .btn-primary {
+    @apply inline-flex items-center gap-2 bg-brand-dark text-white font-bold px-8 py-4 rounded-full hover:bg-brand-secondary transition-all duration-300 shadow-lg hover:shadow-2xl;
+  }
+}
+
+.section-observe {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.section-observe.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@keyframes fade-up {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-up {
+  animation: fade-up 0.6s ease-out;
+}

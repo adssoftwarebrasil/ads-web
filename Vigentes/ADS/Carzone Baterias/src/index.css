@@ -1,0 +1,118 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+}
+
+/* Hero background */
+.hero-bg {
+  background-attachment: scroll;
+}
+.bg-no-scroll {
+  background-attachment: scroll;
+}
+
+/* Scroll reveal */
+.section-enter {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.7s ease-out, transform 0.7s ease-out;
+}
+.section-enter.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Card hover */
+.card-hover {
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+}
+.card-hover:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 20px 40px -15px rgba(0, 14, 39, 0.15);
+}
+
+/* Battery image zoom */
+.battery-image {
+  transition: transform 0.5s ease;
+}
+.battery-card:hover .battery-image {
+  transform: scale(1.08);
+}
+
+/* Fade in animations */
+.animate-fade-in {
+  animation: fadeIn 0.8s ease-out both;
+}
+.animate-fade-in-up {
+  animation: fadeInUp 0.8s ease-out both;
+}
+.animate-delay-200 {
+  animation-delay: 0.2s;
+}
+.animate-delay-300 {
+  animation-delay: 0.3s;
+}
+.animate-delay-400 {
+  animation-delay: 0.4s;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(24px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Gentle bounce for scroll indicator */
+.animate-bounce-gentle {
+  animation: bounceGentle 2s ease-in-out infinite;
+}
+@keyframes bounceGentle {
+  0%,
+  100% {
+    transform: translate(-50%, 0);
+  }
+  50% {
+    transform: translate(-50%, 10px);
+  }
+}
+
+/* WhatsApp floating button pulse */
+.whatsapp-pulse {
+  background-color: rgba(37, 211, 102, 0.55);
+  animation: whatsappPulse 2s ease-out infinite;
+}
+@keyframes whatsappPulse {
+  0% {
+    transform: scale(1);
+    opacity: 0.7;
+  }
+  70% {
+    transform: scale(1.6);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1.6);
+    opacity: 0;
+  }
+}

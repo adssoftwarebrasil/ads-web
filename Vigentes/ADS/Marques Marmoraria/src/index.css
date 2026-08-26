@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply font-sans bg-white text-stone-900 antialiased;
+  }
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+@layer components {
+  .section-subtitle {
+    @apply text-xs font-semibold tracking-[0.2em] uppercase text-gold-500;
+  }
+
+  .section-title {
+    @apply font-serif text-4xl md:text-5xl font-bold leading-tight;
+  }
+
+  .btn-gold {
+    @apply inline-flex items-center gap-2 bg-gold-300 text-stone-950 font-semibold px-7 py-3.5 transition-all duration-300 hover:bg-gold-400;
+  }
+
+  .btn-outline-gold {
+    @apply inline-flex items-center gap-2 border border-white/30 text-white font-semibold px-7 py-3.5 transition-all duration-300 hover:border-gold-300 hover:text-gold-300;
+  }
+
+  .gallery-item img {
+    @apply transition-transform duration-500;
+  }
+
+  .gallery-item:hover img {
+    @apply scale-105;
+  }
+}

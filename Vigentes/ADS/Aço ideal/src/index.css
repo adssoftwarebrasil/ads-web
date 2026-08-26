@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    @apply antialiased;
+  }
+
+  body {
+    @apply overflow-x-hidden;
+    font-family: 'Inter', sans-serif;
+  }
+
+  html {
+    @apply overflow-x-hidden scroll-smooth;
+  }
+}

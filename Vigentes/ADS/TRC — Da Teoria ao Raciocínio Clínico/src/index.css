@@ -1,0 +1,52 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    font-family: '"DM Sans"', system-ui, sans-serif;
+  }
+}
+
+/* Subtle grain texture overlay used on several sections */
+.grain::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  opacity: 0.5;
+  z-index: 0;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.035'/%3E%3C/svg%3E");
+}
+.grain > * {
+  position: relative;
+  z-index: 1;
+}
+
+/* Gentle pulse on the CTA buttons */
+@keyframes ctaPulse {
+  0%, 100% {
+    box-shadow: 0 10px 15px -3px rgba(46, 125, 50, 0.25), 0 0 0 0 rgba(46, 125, 50, 0.35);
+  }
+  50% {
+    box-shadow: 0 10px 15px -3px rgba(46, 125, 50, 0.25), 0 0 0 10px rgba(46, 125, 50, 0);
+  }
+}
+.cta-pulse {
+  animation: ctaPulse 2.6s ease-in-out infinite;
+}
+
+/* Reveal-on-scroll (replicates the framer-motion fade-up used across sections) */
+.reveal {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.7s ease-out, transform 0.7s ease-out;
+  will-change: opacity, transform;
+}
+.reveal.is-visible {
+  opacity: 1;
+  transform: none;
+}

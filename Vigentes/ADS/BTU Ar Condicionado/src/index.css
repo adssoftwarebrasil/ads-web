@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+  }
+
+  body {
+    font-family: 'Inter', system-ui, sans-serif;
+    color: rgb(17 24 39);
+    overflow-x: hidden;
+  }
+
+  /* Offset anchor targets so the fixed header does not cover them */
+  section[id] {
+    scroll-margin-top: 5rem;
+  }
+}

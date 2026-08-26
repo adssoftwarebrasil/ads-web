@@ -1,0 +1,91 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --header-h: 4rem;
+  --color-lime: #cbe74f;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: theme('fontFamily.sans');
+  background-color: theme('colors.paper');
+  color: theme('colors.ink');
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+@layer components {
+  .container-page {
+    @apply mx-auto w-full max-w-[76rem] px-5 md:px-8;
+  }
+
+  .eyebrow {
+    @apply inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-[0.16em] text-moss;
+  }
+
+  .nav-link {
+    @apply rounded-md px-3 py-2 text-sm font-medium text-ink/80 transition-colors duration-200 hover:text-ink;
+  }
+
+  .mobile-link {
+    @apply border-b border-line py-3.5 text-lg font-medium text-ink;
+  }
+
+  .mobile-sublink {
+    @apply py-2 pl-4 text-[0.95rem] text-stone transition-colors hover:text-ink;
+  }
+
+  .link-accent {
+    @apply font-medium text-moss underline underline-offset-2 transition-colors hover:text-ink;
+  }
+
+  .cw-field {
+    @apply w-full rounded-md border border-line bg-ivory px-3.5 py-2.5 text-[0.95rem] text-ink outline-none transition-colors placeholder:text-mist focus:border-moss focus:bg-paper;
+  }
+
+  .cookie-btn-primary {
+    @apply rounded-sm bg-ink px-4 py-2 text-sm font-medium text-paper transition-colors hover:bg-graphite;
+  }
+
+  .cookie-btn-secondary {
+    @apply rounded-sm border border-line-strong px-4 py-2 text-sm font-medium text-ink transition-colors hover:bg-sand;
+  }
+
+  .cookie-switch {
+    @apply mt-1 size-5 shrink-0 accent-moss;
+  }
+}
+
+@layer utilities {
+  .tnum {
+    font-variant-numeric: tabular-nums;
+  }
+}
+
+/* Header states */
+#site-header {
+  transition: background-color 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+  border-bottom: 1px solid transparent;
+}
+#site-header.is-scrolled {
+  background-color: rgba(250, 249, 245, 0.85);
+  backdrop-filter: saturate(1.2) blur(10px);
+  border-bottom-color: theme('colors.line');
+}
+
+/* Reveal — renderiza já visível (fallback estático) */
+[data-reveal] {
+  opacity: 0;
+  transform: translateY(16px);
+  transition: opacity 0.7s cubic-bezier(0.22, 1, 0.36, 1),
+    transform 0.7s cubic-bezier(0.22, 1, 0.36, 1);
+}
+[data-reveal].is-in {
+  opacity: 1;
+  transform: none;
+}

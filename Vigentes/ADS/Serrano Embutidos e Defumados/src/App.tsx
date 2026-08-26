@@ -1,0 +1,27 @@
+import Header from './components/Header';
+import Hero from './components/Hero';
+import Products from './components/Products';
+import Gallery from './components/Gallery';
+import About from './components/About';
+import Differentials from './components/Differentials';
+import Contact from './components/Contact';
+import Footer from './components/Footer';
+import WhatsAppFloat from './components/WhatsAppFloat';
+
+export default function App() {
+  return (
+    <div className="min-h-screen bg-black overflow-x-hidden">
+      <Header />
+      <main>
+        <Hero />
+        <Products />
+        <Gallery />
+        <About />
+        <Differentials />
+        <Contact />
+      </main>
+      <Footer />
+      <WhatsAppFloat />
+    </div>
+  );
+}

@@ -1,0 +1,5 @@
+﻿{
+  "Description": "Arquivo de verificação de propriedade do domínio para Microsoft 365 local na raiz do site",
+  "Domain": "manutherm.com.br",
+  "Id": "8e11efbd-35d0-4ece-be9d-3c6de3b9b755"
+}

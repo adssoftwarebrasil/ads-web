@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+@layer components {
+  .btn-primary {
+    @apply inline-flex items-center justify-center bg-brand-red text-white font-semibold px-6 py-3 rounded-lg shadow-sm hover:bg-brand-red-dark transition-all duration-300;
+  }
+
+  .btn-outline {
+    @apply inline-flex items-center justify-center border-2 border-brand-blue text-brand-blue font-semibold px-6 py-3 rounded-lg hover:bg-brand-blue hover:text-white transition-all duration-300;
+  }
+
+  .section-title {
+    @apply text-3xl md:text-4xl font-bold text-brand-blue;
+  }
+
+  .section-subtitle {
+    @apply text-gray-600 text-lg mt-4 max-w-2xl mx-auto;
+  }
+}

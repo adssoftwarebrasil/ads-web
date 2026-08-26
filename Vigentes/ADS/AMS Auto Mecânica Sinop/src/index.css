@@ -1,0 +1,53 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    font-family: 'Inter', system-ui, sans-serif;
+    color: #14161f;
+    -webkit-font-smoothing: antialiased;
+  }
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+@layer components {
+  .section-title {
+    @apply text-3xl md:text-4xl font-bold text-brand-dark leading-tight;
+  }
+  .section-subtitle {
+    @apply text-brand-dark-light text-lg leading-relaxed;
+  }
+  .card {
+    @apply bg-white rounded-2xl overflow-hidden shadow-md;
+  }
+  .service-card {
+    @apply transition-all duration-300 hover:shadow-xl hover:-translate-y-1;
+  }
+  .btn-primary {
+    @apply bg-brand-red hover:bg-brand-red-dark text-white font-bold px-8 py-4 rounded-xl transition-all duration-300 hover:shadow-lg hover:scale-105 active:scale-95;
+  }
+}
+
+.whatsapp-pulse::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: 9999px;
+  background-color: rgba(37, 211, 102, 0.6);
+  z-index: -1;
+  animation: whatsappPulse 2s ease-out infinite;
+}
+
+@keyframes whatsappPulse {
+  0% {
+    transform: scale(1);
+    opacity: 0.7;
+  }
+  100% {
+    transform: scale(1.6);
+    opacity: 0;
+  }
+}

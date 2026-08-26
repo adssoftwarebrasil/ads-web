@@ -1,0 +1,50 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+}
+
+@layer components {
+  .section-title {
+    @apply text-3xl md:text-4xl font-extrabold text-brand-dark mb-4;
+  }
+  .section-subtitle {
+    @apply text-brand-gray text-lg max-w-2xl;
+  }
+  .card-hover {
+    @apply transition-all duration-300 hover:shadow-lg hover:-translate-y-1;
+  }
+}
+
+@layer utilities {
+  .gradient-pink-blue {
+    background-image: linear-gradient(135deg, #ee427f 0%, #00b0ef 100%);
+  }
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  .no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+}
+
+/* staggered entrance for hero content */
+.animate-fade-in-up.delay-100 {
+  animation-delay: 0.1s;
+}
+.animate-fade-in-up.delay-200 {
+  animation-delay: 0.2s;
+}
+.animate-fade-in-up.delay-300 {
+  animation-delay: 0.3s;
+}
+.animate-fade-in-up.delay-400 {
+  animation-delay: 0.4s;
+}

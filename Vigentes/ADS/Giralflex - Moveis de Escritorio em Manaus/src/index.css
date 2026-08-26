@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Inter', system-ui, sans-serif;
+  color: #191b4d;
+}
+
+@layer components {
+  .container-max {
+    @apply max-w-7xl mx-auto;
+  }
+  .section-padding {
+    @apply px-4 sm:px-6 lg:px-8;
+  }
+}

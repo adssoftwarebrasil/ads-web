@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-brand-black text-white font-sans overflow-x-hidden;
+  }
+}
+
+@layer utilities {
+  .text-silver {
+    color: #C0C0C0;
+  }
+
+  .bg-silver {
+    background-color: #C0C0C0;
+  }
+
+  .border-silver {
+    border-color: #C0C0C0;
+  }
+
+  .section-padding {
+    @apply px-4 md:px-8 lg:px-16;
+  }
+}

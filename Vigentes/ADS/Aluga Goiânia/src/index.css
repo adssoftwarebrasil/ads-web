@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: 'Inter', system-ui, sans-serif;
+}
+
+/* Entrance animation reconstructed from tailwindcss-animate
+   (animate-in fade-in slide-in-from-bottom-4). Elements carry
+   opacity-0 inline; this animation reveals them, honoring any
+   inline animation-delay used for staggering the cards. */
+@keyframes enter-in {
+  from {
+    opacity: 0;
+    transform: translateY(1rem);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-in {
+  animation: enter-in 0.7s ease-out both;
+}

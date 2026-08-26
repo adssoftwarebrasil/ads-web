@@ -1,0 +1,43 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+  }
+
+  body {
+    font-family: 'Barlow', sans-serif;
+    overflow-x: hidden;
+    color: #1a1a1a;
+    background-color: #ffffff;
+  }
+
+  h1, h2, h3 {
+    font-family: 'Barlow Condensed', sans-serif;
+  }
+}
+
+@layer components {
+  .section-title {
+    @apply font-condensed font-800 uppercase tracking-wide text-4xl md:text-5xl;
+  }
+
+  .btn-yellow {
+    @apply bg-brand-yellow text-brand-blue font-barlow font-800 uppercase tracking-wider px-8 py-4 rounded-full transition-all duration-300 hover:bg-brand-yellow-dark hover:scale-105 shadow-lg inline-flex items-center gap-2;
+  }
+
+  .btn-blue {
+    @apply bg-brand-blue text-white font-barlow font-700 uppercase tracking-wider px-8 py-4 rounded-full transition-all duration-300 hover:bg-brand-blue-dark hover:scale-105 shadow-lg inline-flex items-center gap-2;
+  }
+
+  .btn-outline {
+    @apply border-2 border-white text-white font-barlow font-700 uppercase tracking-wider px-8 py-4 rounded-full transition-all duration-300 hover:bg-white hover:text-brand-blue inline-flex items-center gap-2;
+  }
+
+  .card {
+    @apply bg-white rounded-2xl shadow-lg p-6 transition-all duration-300 hover:shadow-xl hover:-translate-y-1;
+  }
+}

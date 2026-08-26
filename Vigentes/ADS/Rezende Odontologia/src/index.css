@@ -1,0 +1,283 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --navy: #071b32;
+    --navy-deep: #04111f;
+    --blue: #176aab;
+    --cyan: #39c9e8;
+    --cyan-soft: #a9ebf7;
+    --line: rgba(16, 34, 56, 0.12);
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    min-width: 320px;
+    background: #f8f8f5;
+    color: #102238;
+    font-family: 'Lato', Arial, ui-sans-serif, system-ui, -apple-system, 'Segoe UI', sans-serif;
+    font-size: 16px;
+    line-height: 1.55;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    overflow-x: hidden;
+  }
+
+  body.menu-open {
+    overflow: hidden;
+  }
+
+  img,
+  svg,
+  video {
+    display: block;
+    max-width: 100%;
+  }
+
+  img {
+    height: auto;
+  }
+
+  :focus-visible {
+    outline: 3px solid var(--cyan);
+    outline-offset: 4px;
+  }
+
+  section[id] {
+    scroll-margin-top: 104px;
+  }
+
+  @media (max-width: 760px) {
+    section[id] {
+      scroll-margin-top: 88px;
+    }
+  }
+}
+
+@layer components {
+  /* Fundo "planta técnica" reutilizado no hero, na seção de conteúdos e no CTA final. */
+  .blueprint {
+    --grid-major: rgba(62, 208, 235, 0.12);
+    --grid-minor: rgba(99, 194, 235, 0.055);
+    position: relative;
+    isolation: isolate;
+    background-color: var(--navy);
+    background-image:
+      linear-gradient(var(--grid-major) 1px, transparent 1px),
+      linear-gradient(90deg, var(--grid-major) 1px, transparent 1px),
+      linear-gradient(var(--grid-minor) 1px, transparent 1px),
+      linear-gradient(90deg, var(--grid-minor) 1px, transparent 1px),
+      radial-gradient(circle at 50% 45%, rgba(31, 129, 183, 0.26), transparent 37%),
+      linear-gradient(145deg, #0a2746 0%, var(--navy) 61%, var(--navy-deep) 100%);
+    background-size: 88px 88px, 88px 88px, 18px 18px, 18px 18px, auto, auto;
+  }
+
+  .blueprint::before,
+  .blueprint::after {
+    position: absolute;
+    z-index: -1;
+    content: '';
+    pointer-events: none;
+  }
+
+  .blueprint::before {
+    inset: 17px;
+    border: 1px solid rgba(120, 225, 243, 0.11);
+    border-radius: inherit;
+  }
+
+  .blueprint::after {
+    top: -83px;
+    right: 6%;
+    width: 210px;
+    height: 210px;
+    border: 1px solid rgba(87, 211, 235, 0.24);
+    border-radius: 50%;
+    box-shadow: 0 0 0 28px rgba(87, 211, 235, 0.025), 0 0 0 57px rgba(87, 211, 235, 0.015);
+  }
+
+  .blueprint-hero {
+    background-size: 118px 118px, 118px 118px, 24px 24px, 24px 24px, auto, auto;
+  }
+
+  .blueprint-hero::before {
+    background: radial-gradient(circle at 50% 47%, rgba(67, 181, 211, 0.14), transparent 57%);
+  }
+
+  @media (max-width: 760px) {
+    .blueprint-hero {
+      background-size: 74px 74px, 74px 74px, 18px 18px, 18px 18px, auto, auto;
+    }
+
+    .blueprint-hero::before {
+      inset: 10px;
+    }
+
+    .blueprint-hero::after {
+      top: -42px;
+      right: -16px;
+      width: 126px;
+      height: 126px;
+    }
+  }
+
+  /* Container padrão das seções. */
+  .section-shell {
+    width: min(1240px, calc(100% - 48px));
+    margin-inline: auto;
+  }
+
+  @media (max-width: 760px) {
+    .section-shell {
+      width: min(1240px, calc(100% - 32px));
+    }
+  }
+
+  .heading-xl {
+    font-family: 'Montserrat', 'Helvetica Neue', Arial, sans-serif;
+    font-weight: 300;
+    font-size: clamp(2.25rem, 4.15vw, 4.5rem);
+    line-height: 1.02;
+    letter-spacing: -0.045em;
+  }
+
+  .heading-lg {
+    font-family: 'Montserrat', 'Helvetica Neue', Arial, sans-serif;
+    font-weight: 300;
+    font-size: clamp(2rem, 3.2vw, 3.45rem);
+    line-height: 1.05;
+    letter-spacing: -0.045em;
+  }
+
+  .eyebrow {
+    margin: 0;
+    color: var(--blue);
+    font-size: 0.71rem;
+    font-weight: 800;
+    letter-spacing: 0.15em;
+    line-height: 1.3;
+    text-transform: uppercase;
+  }
+
+  .btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.6rem;
+    min-height: 48px;
+    padding: 0.77rem 1.14rem;
+    border: 1px solid var(--navy);
+    border-radius: 999px;
+    background: var(--navy);
+    color: #fff;
+    font-size: 0.82rem;
+    font-weight: 800;
+    letter-spacing: 0.025em;
+    line-height: 1.1;
+    text-align: center;
+    transition: transform 0.25s ease, background-color 0.25s ease, border-color 0.25s ease, color 0.25s ease;
+  }
+
+  .btn:hover {
+    transform: translateY(-2px);
+    background: #0b3158;
+    border-color: #0b3158;
+  }
+
+  .btn-cyan {
+    border-color: var(--cyan);
+    background: var(--cyan);
+    color: var(--navy-deep);
+  }
+
+  .btn-cyan:hover {
+    border-color: #81e2f4;
+    background: #81e2f4;
+  }
+
+  .btn-ghost {
+    border-color: rgba(255, 255, 255, 0.42);
+    background: rgba(255, 255, 255, 0.04);
+    color: #fff;
+  }
+
+  .btn-ghost:hover {
+    border-color: #fff;
+    background: rgba(255, 255, 255, 0.12);
+  }
+}
+
+@layer utilities {
+  .reveal {
+    opacity: 0;
+    transform: translateY(18px);
+    transition: opacity 0.65s ease, transform 0.65s ease;
+  }
+
+  .reveal-visible {
+    opacity: 1;
+    transform: none;
+  }
+
+  @media (max-width: 760px) {
+    .reveal {
+      opacity: 1;
+      transform: none;
+    }
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* Trilha de fotos da seção de história (nós criados por useImageTrail). */
+.trail-image {
+  position: absolute;
+  z-index: 1;
+  width: clamp(142px, 12vw, 190px);
+  aspect-ratio: 4 / 5;
+  margin: 0;
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.78);
+  border-radius: 7px;
+  background: #edf2ee;
+  box-shadow: 0 16px 30px rgba(7, 27, 50, 0.17);
+  opacity: 0;
+  pointer-events: none;
+  transform: translate(-50%, -50%) scale(0.88) rotate(var(--trail-rotation, 0deg));
+  transition: opacity 0.2s ease, transform 0.32s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+.trail-image.is-visible {
+  opacity: 0.76;
+  transform: translate(-50%, -50%) scale(var(--trail-scale, 1)) rotate(var(--trail-rotation, 0deg));
+}
+
+.trail-image.is-leaving {
+  opacity: 0;
+  transform: translate(-50%, -50%) scale(1.03) rotate(var(--trail-rotation, 0deg));
+}
+
+.trail-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  background: #edf2ee;
+}

@@ -1,0 +1,54 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+  }
+
+  body {
+    @apply bg-brand-black text-brand-white font-sans overflow-x-hidden;
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+}
+
+@layer components {
+  .section-label {
+    @apply text-brand-gold font-sans font-semibold text-xs tracking-widest uppercase;
+  }
+
+  .section-title {
+    @apply font-serif font-bold text-brand-white;
+  }
+
+  .btn-primary {
+    @apply bg-brand-gold text-brand-black font-semibold px-8 py-3 rounded-none transition-all duration-300
+      hover:bg-brand-gold-light active:scale-95 tracking-wide uppercase text-sm;
+  }
+
+  .btn-outline {
+    @apply border border-brand-white text-brand-white font-semibold px-8 py-3 rounded-none transition-all duration-300
+      hover:bg-brand-white hover:text-brand-black active:scale-95 tracking-wide uppercase text-sm;
+  }
+
+  .btn-blue {
+    @apply bg-brand-blue text-brand-white font-semibold px-8 py-3 rounded-none transition-all duration-300
+      hover:bg-brand-blue-light active:scale-95 tracking-wide uppercase text-sm;
+  }
+}
+
+@layer utilities {
+  .animate-delay-100 { animation-delay: 100ms; }
+  .animate-delay-200 { animation-delay: 200ms; }
+  .animate-delay-300 { animation-delay: 300ms; }
+  .animate-delay-400 { animation-delay: 400ms; }
+  .animate-delay-500 { animation-delay: 500ms; }
+  .animate-delay-600 { animation-delay: 600ms; }
+
+  .opacity-0-init { opacity: 0; }
+}

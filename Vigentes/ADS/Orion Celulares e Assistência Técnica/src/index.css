@@ -1,0 +1,66 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+  }
+
+  body {
+    font-family: system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    background-color: #000000;
+    color: #fff;
+    overflow-x: hidden;
+  }
+}
+
+@layer utilities {
+  .scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+.fade-in {
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+/* O estado oculto só vale quando o observer de scroll está ativo (a classe
+   .js-reveal é adicionada em runtime). Sem JS, nenhuma seção some. */
+.js-reveal .fade-in {
+  opacity: 0;
+  transform: translateY(30px);
+}
+
+.js-reveal .fade-in-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .fade-in {
+    transition: none;
+  }
+
+  .js-reveal .fade-in {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+/* Compensa o header fixo (h-20 / md:h-24) na navegação por âncora. */
+section[id] {
+  scroll-margin-top: 5rem;
+}
+
+@media (min-width: 768px) {
+  section[id] {
+    scroll-margin-top: 6rem;
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "redirects": [
+    {
+      "source": "/:path*",
+      "has": [{ "type": "host", "value": "www.aprioricafe.com.br" }],
+      "destination": "https://aprioricafe.com.br/:path*",
+      "permanent": true
+    }
+  ]
+}

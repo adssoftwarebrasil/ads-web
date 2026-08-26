@@ -1,0 +1,231 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --color-green-900: #024b2a;
+  --color-green-800: #05633a;
+  --color-green-700: #0a7a43;
+  --color-green-100: #e7f4ec;
+  --color-gold-500: #eab308;
+
+  --color-text-900: #101418;
+  --color-text-600: #5b6570;
+  --color-border: #e3e7ea;
+  --color-bg: #f7f9fa;
+
+  --shadow-card: 0 1px 3px rgba(16, 20, 24, 0.08), 0 1px 2px rgba(16, 20, 24, 0.04);
+  --shadow-elevated: 0 12px 34px rgba(16, 20, 24, 0.14);
+
+  --font-heading: "Sora", "DM Sans", system-ui, sans-serif;
+  --font-body: "DM Sans", system-ui, -apple-system, sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    font-family: var(--font-body);
+    color: var(--color-text-900);
+    background: #ffffff;
+    -webkit-font-smoothing: antialiased;
+  }
+}
+
+@layer components {
+  .container-site {
+    width: 100%;
+    max-width: 80rem;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  @media (min-width: 640px) {
+    .container-site {
+      padding-left: 1.5rem;
+      padding-right: 1.5rem;
+    }
+  }
+  @media (min-width: 1024px) {
+    .container-site {
+      padding-left: 2rem;
+      padding-right: 2rem;
+    }
+  }
+
+  .card {
+    background: #ffffff;
+    border: 1px solid var(--color-border);
+    border-radius: 0.75rem;
+    box-shadow: var(--shadow-card);
+  }
+
+  .section-title {
+    font-family: var(--font-heading);
+    font-size: 1.75rem;
+    line-height: 1.15;
+    font-weight: 700;
+    color: var(--color-text-900);
+  }
+  @media (min-width: 1024px) {
+    .section-title {
+      font-size: 2rem;
+    }
+  }
+
+  .section-subtitle {
+    margin-top: 0.75rem;
+    max-width: 42rem;
+    font-size: 1rem;
+    line-height: 1.6;
+    color: var(--color-text-600);
+  }
+
+  .btn-primary,
+  .btn-secondary,
+  .btn-whatsapp,
+  .btn-ghost-white {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    font-weight: 600;
+    border-radius: 0.5rem;
+    padding: 0.625rem 1.25rem;
+    line-height: 1.2;
+    transition: background-color 0.15s ease, color 0.15s ease, border-color 0.15s ease;
+    cursor: pointer;
+    text-decoration: none;
+  }
+
+  .btn-primary {
+    background: var(--color-green-900);
+    color: #ffffff;
+  }
+  .btn-primary:hover {
+    background: var(--color-green-800);
+  }
+
+  .btn-secondary {
+    background: #ffffff;
+    color: var(--color-green-700);
+    border: 1px solid var(--color-green-700);
+  }
+  .btn-secondary:hover {
+    background: var(--color-green-100);
+  }
+
+  .btn-whatsapp {
+    background: #25d366;
+    color: #ffffff;
+  }
+  .btn-whatsapp:hover {
+    background: #1ebe5a;
+  }
+
+  .btn-ghost-white {
+    background: transparent;
+    color: #ffffff;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+  }
+  .btn-ghost-white:hover {
+    background: rgba(255, 255, 255, 0.12);
+  }
+}
+
+/* Home encomendas gallery crossfade — 3 slides */
+@media (prefers-reduced-motion: no-preference) {
+  @keyframes home-gallery-xfade {
+    0%,
+    29.17% {
+      opacity: 1;
+    }
+    33.33% {
+      opacity: 0;
+    }
+    to {
+      opacity: 0;
+    }
+  }
+  .home-gallery-slide {
+    opacity: 0;
+    animation: home-gallery-xfade 12s infinite;
+  }
+  .home-gallery-slide-1 {
+    animation-delay: 0s;
+  }
+  .home-gallery-slide-2 {
+    animation-delay: -8s;
+  }
+  .home-gallery-slide-3 {
+    animation-delay: -4s;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .home-gallery-slide {
+    opacity: 0;
+  }
+  .home-gallery-slide-1 {
+    opacity: 1;
+  }
+}
+
+/* Frota gallery crossfade — 10 slides */
+.frota-slide {
+  opacity: 0;
+}
+@media (prefers-reduced-motion: no-preference) {
+  @keyframes frota-xfade {
+    0%,
+    8.75% {
+      opacity: 1;
+    }
+    10% {
+      opacity: 0;
+    }
+    99.99% {
+      opacity: 0;
+    }
+  }
+  .frota-slide {
+    animation: frota-xfade 40s infinite;
+  }
+  .frota-slide-1 {
+    opacity: 1;
+    animation-delay: 0s;
+  }
+  .frota-slide-2 {
+    animation-delay: -36s;
+  }
+  .frota-slide-3 {
+    animation-delay: -32s;
+  }
+  .frota-slide-4 {
+    animation-delay: -28s;
+  }
+  .frota-slide-5 {
+    animation-delay: -24s;
+  }
+  .frota-slide-6 {
+    animation-delay: -20s;
+  }
+  .frota-slide-7 {
+    animation-delay: -16s;
+  }
+  .frota-slide-8 {
+    animation-delay: -12s;
+  }
+  .frota-slide-9 {
+    animation-delay: -8s;
+  }
+  .frota-slide-10 {
+    animation-delay: -4s;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .frota-slide-1 {
+    opacity: 1;
+  }
+}

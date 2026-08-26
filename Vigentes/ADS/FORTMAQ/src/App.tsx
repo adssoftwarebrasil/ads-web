@@ -1,0 +1,23 @@
+import Header from './components/Header';
+import Hero from './components/Hero';
+import About from './components/About';
+import Products from './components/Products';
+import Differentials from './components/Differentials';
+import Location from './components/Location';
+import Footer from './components/Footer';
+import WhatsAppFloat from './components/WhatsAppFloat';
+
+export default function App() {
+  return (
+    <div className="min-h-screen">
+      <Header />
+      <Hero />
+      <About />
+      <Products />
+      <Differentials />
+      <Location />
+      <Footer />
+      <WhatsAppFloat />
+    </div>
+  );
+}

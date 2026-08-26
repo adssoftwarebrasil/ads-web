@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  background-color: #000;
+}
+
+.text-shadow-lg {
+  text-shadow: 0 2px 12px rgba(0, 0, 0, 0.55);
+}
+
+/* Scroll reveal states */
+.scrolled-hidden {
+  opacity: 0;
+  transform: translateY(30px);
+}
+
+.scrolled-visible {
+  opacity: 1;
+  transform: translateY(0);
+}

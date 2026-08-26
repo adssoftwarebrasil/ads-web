@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    overflow-x: hidden;
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+}
+
+@layer utilities {
+  .bg-white\/8 {
+    background-color: rgb(255 255 255 / 0.08);
+  }
+  .bg-white\/12 {
+    background-color: rgb(255 255 255 / 0.12);
+  }
+  .bg-white\/6 {
+    background-color: rgb(255 255 255 / 0.06);
+  }
+  .bg-\[#363434\]\/4 {
+    background-color: rgb(54 52 52 / 0.04);
+  }
+}

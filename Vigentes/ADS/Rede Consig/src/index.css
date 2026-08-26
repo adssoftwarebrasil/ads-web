@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    font-family: 'Inter', sans-serif;
+    color: #1a1a1a;
+  }
+}
+
+@layer utilities {
+  .animate-fade-in-up {
+    animation: fadeInUp 0.6s ease-out;
+  }
+
+  .animate-fade-in-up-delay {
+    animation: fadeInUp 0.6s ease-out 0.3s both;
+  }
+
+  .animate-fade-in-up-delay-2 {
+    animation: fadeInUp 0.6s ease-out 0.6s both;
+  }
+
+  .animate-pulse-soft {
+    animation: pulseSoft 2s infinite;
+  }
+
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes pulseSoft {
+    0%, 100% {
+      transform: scale(1);
+      box-shadow: 0 4px 20px rgba(248, 134, 1, 0.4);
+    }
+    50% {
+      transform: scale(1.05);
+      box-shadow: 0 4px 30px rgba(248, 134, 1, 0.6);
+    }
+  }
+
+  .gradient-orange {
+    background: linear-gradient(90deg, #f88601 0%, #eb6601 100%);
+  }
+
+  .gradient-orange-135 {
+    background: linear-gradient(135deg, #eb6601 0%, #f88601 100%);
+  }
+
+  .text-gradient-orange {
+    background: linear-gradient(90deg, #f88601 0%, #eb6601 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+}

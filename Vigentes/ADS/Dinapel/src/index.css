@@ -1,0 +1,88 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+  color: #1f2937;
+}
+
+@layer components {
+  .blue-gradient {
+    background: linear-gradient(135deg, #0131AC 0%, #01165A 100%);
+  }
+
+  .yellow-gradient {
+    background: linear-gradient(135deg, #FCE500 0%, #FFC900 100%);
+  }
+
+  .hero-overlay {
+    background: linear-gradient(135deg, rgba(1, 13, 63, 0.88) 0%, rgba(1, 49, 172, 0.72) 100%);
+  }
+
+  .card-hover {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  .card-hover:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 20px 30px -12px rgba(1, 49, 172, 0.18);
+  }
+
+  .section-line {
+    position: relative;
+    padding-bottom: 0.9rem;
+  }
+  .section-line::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 64px;
+    height: 4px;
+    border-radius: 9999px;
+    background: #FCE500;
+  }
+  .inline-block.section-line::after {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+@layer utilities {
+  .text-shadow {
+    text-shadow: 0 2px 12px rgba(0, 0, 0, 0.45);
+  }
+  .text-shadow-sm {
+    text-shadow: 0 1px 6px rgba(0, 0, 0, 0.4);
+  }
+
+  .animate-delay-200 {
+    animation-delay: 0.2s;
+  }
+  .animate-delay-300 {
+    animation-delay: 0.3s;
+  }
+  .animate-delay-400 {
+    animation-delay: 0.4s;
+  }
+}
+
+.whatsapp-pulse {
+  animation: whatsappPulse 2s infinite;
+}
+
+@keyframes whatsappPulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.6);
+  }
+  70% {
+    box-shadow: 0 0 0 16px rgba(37, 211, 102, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(37, 211, 102, 0);
+  }
+}

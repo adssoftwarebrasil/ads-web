@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Aliança Recuperadora</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet"/>
+<script src="https://unpkg.com/react@18.3.1/umd/react.development.js" integrity="sha384-hD6/rw4ppMLGNu3tX5cjIb+uRZ7UkRJ6BPkLpg4hAu/6onKUg4lLsHAs9EBPT82L" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" integrity="sha384-u6aeetuaXnQ38mYT8rp6sbXaQe3NL9t+IBXmnYxwkUI2Hw4bsp2Wvmx4yRQF1uAm" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" integrity="sha384-m08KidiNqLdpJqLq95G/LEi8Qvjl/xUYll3QILypMoQ65QorJ9Lvtp2RXYGBFj1y" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+<div id="root"></div>
+
+<script type="text/babel">
+const { useState, useEffect } = React;
+
+const TWEAK_DEFAULTS = /*EDITMODE-BEGIN*/{
+  "accentColor": "#00C4B4",
+  "heroStyle": "split",
+  "formBg": "white"
+}/*EDITMODE-END*/;
+
+// Icons as inline SVG components
+const IconPhone = () => (
+  <svg width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2">
+    <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81 19.79 19.79 0 01.1 1.14 2 2 0 012.11 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 14.92v2z"/>
+  </svg>
+);
+
+const IconArrow = () => (
+  <svg width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2.5">
+    <path d="M5 12h14M12 5l7 7-7 7"/>
+  </svg>
+);
+
+const IconPlus = () => (
+  <svg width="12" height="12" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2.5">
+    <path d="M12 5v14M5 12h14"/>
+  </svg>
+);
+
+const IconCar = () => (
+  <svg width="28" height="28" fill="none" viewBox="0 0 24 24" stroke="#00C4B4" strokeWidth="1.8">
+    <path d="M5 17H3a2 2 0 01-2-2v-4a2 2 0 012-2h2l2-4h8l2 4h2a2 2 0 012 2v4a2 2 0 01-2 2h-2"/>
+    <circle cx="7.5" cy="17.5" r="1.5"/><circle cx="16.5" cy="17.5" r="1.5"/>
+  </svg>
+);
+
+const IconDoc = () => (
+  <svg width="28" height="28" fill="none" viewBox="0 0 24 24" stroke="#00C4B4" strokeWidth="1.8">
+    <path d="M9 12h6M9 16h6M9 8h2M13 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V9z"/>
+    <polyline points="13 2 13 9 20 9"/>
+  </svg>
+);
+
+const IconHandshake = () => (
+  <svg width="28" height="28" fill="none" viewBox="0 0 24 24" stroke="#00C4B4" strokeWidth="1.8">
+    <path d="M20.42 4.58a5.4 5.4 0 00-7.65 0l-.77.78-.77-.78a5.4 5.4 0 00-7.65 7.65l1.06 1.06L12 21.23l7.36-7.36 1.06-1.06a5.4 5.4 0 000-7.63z"/>
+  </svg>
+);
+
+const IconClock = () => (
+  <svg width="28" height="28" fill="none" viewBox="0 0 24 24" stroke="#00C4B4" strokeWidth="1.8">
+    <circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/>
+  </svg>
+
+);
+
+const IconShield = () => (
+  <svg width="28" height="28" fill="none" viewBox="0 0 24 24" stroke="#00C4B4" strokeWidth="1.8">
+    <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+  </svg>
+);
+
+const IconBell = () => (
+  <svg width="28" height="28" fill="none" viewBox="0 0 24 24" stroke="#00C4B4" strokeWidth="1.8">
+    <path d="M18 8A6 6 0 006 8c0 7-3 9-3 9h18s-3-2-3-9M13.73 21a2 2 0 01-3.46 0"/>
+  </svg>
+);
+
+const IconMoney = () => (
+  <svg width="28" height="28" fill="none" viewBox="0 0 24 24" stroke="#00C4B4" strokeWidth="1.8">
+    <line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 000 7h5a3.5 3.5 0 010 7H6"/>
+  </svg>
+);
+
+const IconCheck = () => (
+  <svg width="28" height="28" fill="none" viewBox="0 0 24 24" stroke="#00C4B4" strokeWidth="1.8">
+    <polyline points="20 6 9 17 4 12"/>
+  </svg>
+);
+
+// ——— COMPONENTS ———
+
+function Topbar() {
+  return (
+    <div className="topbar">
+      <div className="topbar-inner">
+        <span>🛡️ Reduza a parcela do seu automóvel com segurança jurídica</span>
+        <div className="topbar-right">
+          <div className="topbar-phone">
+            <IconPhone /> 0800 555 2569
+          </div>
+          <div className="topbar-socials">
+            <a href="https://www.facebook.com/parcelaamiga" className="social-btn social-fb" title="Facebook">
+              <svg width="13" height="13" fill="#fff" viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+            </a>
+            <a href="https://www.instagram.com/parcelaamiga/" className="social-btn social-ig" title="Instagram">
+              <svg width="13" height="13" fill="#fff" viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5" ry="5" fill="none" stroke="#fff" strokeWidth="2"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z" fill="none" stroke="#fff" strokeWidth="2"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5" stroke="#fff" strokeWidth="2"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+function Navbar({ onSimulate }) {
+  const [scrolled, setScrolled] = useState(false);
+  useEffect(() => {
+    const fn = () => setScrolled(window.scrollY > 10);
+    window.addEventListener('scroll', fn);
+    return () => window.removeEventListener('scroll', fn);
+  }, []);
+  return (
+    <nav className="navbar" style={scrolled ? {boxShadow:'0 4px 24px rgba(11,40,89,.14)'} : {}}>
+      <div className="navbar-inner">
+        <a className="logo" href="#">
+          <div className="logo-icon">
+            <img src="https://storage.lucasmendes.dev/site-sp/parcela-amiga/img/logo-sem-fundo.webp" alt="Logo Aliança Recuperadora" width="80" height="80" />
+          </div>
+        </a>
+        <div className="nav-links">
+          <a className="nav-link active" href="#">Home</a>
+          <a className="nav-link" href="#simulador">Simulador</a>
+          <a className="nav-link" href="#como-funciona">Como Funciona</a>
+          <a className="nav-link" href="#faq">FAQ</a>
+          <a className="nav-link" href="#contato">Contato</a>
+        </div>
+        <button className="nav-cta" onClick={onSimulate}>
+          Fazer Simulação <IconArrow />
+        </button>
+      </div>
+    </nav>
+  );
+}
+
+function Hero({ onSimulate }) {
+  return (
+    <section className="hero">
+      <div className="hero-bg">
+        <div className="hero-blob" />
+        <div className="hero-blob2" />
+      </div>
+      <div className="hero-inner">
+        <div className="hero-content">
+          <div className="hero-badge">
+            <svg width="12" height="12" viewBox="0 0 12 12" fill="#00C4B4"><circle cx="6" cy="6" r="6"/></svg>
+            Análise Extrajudicial
+          </div>
+          <h1 className="hero-title">
+            Evite a <span>busca e apreensão</span> do seu carro
+          </h1>
+          <p className="hero-desc">
+            Reduzimos as parcelas do seu financiamento identificando taxas abusivas e cláusulas ilegais no seu contrato. Atendimento 100% nacional, baseado na legislação brasileira.
+          </p>
+          <div className="hero-btns">
+            <button className="btn-primary" onClick={onSimulate}>
+              Fazer Simulação Grátis <IconArrow />
+            </button>
+            <button className="btn-secondary" onClick={() => document.getElementById('como-funciona')?.scrollIntoView()}>
+              Como funciona
+            </button>
+          </div>
+          <div className="hero-stats">
+            <div className="stat">
+              <div className="stat-num">12k+</div>
+              <div className="stat-label">Contratos revisados</div>
+            </div>
+            <div className="stat">
+              <div className="stat-num">94%</div>
+              <div className="stat-label">Taxa de sucesso</div>
+            </div>
+            <div className="stat">
+              <div className="stat-num">R$850</div>
+              <div className="stat-label">Redução média/mês</div>
+            </div>
+          </div>
+        </div>
+        <div className="hero-visual">
+          <div className="hero-card">
+            <div className="hero-card-title">Situações que atendemos</div>
+            <div className="hero-tags">
+              {['Busca e apreensão', 'Parcelas em atraso', 'Revisão de contrato', 'Renegociação', 'Quitação antecipada', 'Taxas abusivas'].map(t => (
+                <div key={t} className="hero-tag">
+                  <div className="hero-tag-dot" /> {t}
+                </div>
+              ))}
+            </div>
+          </div>
+          <div className="hero-card2">
+            <div>
+              <div className="hero-card2-text">Redução média nas parcelas</div>
+              <div style={{fontSize:12,color:'rgba(7,26,58,.6)',marginTop:2}}>Após análise extrajudicial</div>
+            </div>
+            <div className="hero-card2-num">–35%</div>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+}
+
+function SimulationForm() {
+  const [form, setForm] = useState({nome:'',email:'',whatsapp:'',estado:'',banco:'',veiculo:'',parcelas:'',valor:'',urgencia:'Contato imediato'});
+
+  const estados = ['AC','AL','AP','AM','BA','CE','DF','ES','GO','MA','MT','MS','MG','PA','PB','PR','PE','PI','RJ','RN','RS','RO','RR','SC','SP','SE','TO'];
+  const bancos = ['Banco do Brasil','Bradesco','Caixa Econômica','Itaú','Santander','Nubank','C6 Bank','BV Financeira','Banco Pan','Outros'];
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    const message = `Olá, gostaria de fazer uma simulação de redução do meu financiamento.\n\nDados informados:\nNome: ${form.nome}\nE-mail: ${form.email}\nWhatsApp: ${form.whatsapp}\nEstado: ${form.estado}\nBanco: ${form.banco}\nTipo de veículo: ${form.veiculo}\nQuantidade de parcelas: ${form.parcelas}\nValor da parcela: ${form.valor}\nNível de urgência: ${form.urgencia}`;
+    const whatsappUrl = `https://wa.me/08005552569?text=${encodeURIComponent(message)}`;
+    window.location.href = whatsappUrl;
+  };
+
+  return (
+    <section className="form-section" id="simulador">
+      <div className="form-container">
+        <div className="section-label">Simulador Gratuito</div>
+        <h2 className="section-title">Simule a redução do seu financiamento</h2>
+        <p className="section-sub">Preencha o formulário e receba em até 24h uma análise completa do seu contrato.</p>
+        <div className="form-card">
+          <form onSubmit={handleSubmit}>
+            <div className="form-grid">
+              <div className="form-group full">
+                <label className="form-label">Nome completo <span>*</span></label>
+                <input className="form-input" placeholder="Seu nome" value={form.nome} onChange={e=>setForm({...form,nome:e.target.value})} required />
+              </div>
+              <div className="form-group">
+                <label className="form-label">E-mail <span>*</span></label>
+                <input className="form-input" type="email" placeholder="seu@email.com" value={form.email} onChange={e=>setForm({...form,email:e.target.value})} required />
+              </div>
+              <div className="form-group">
+                <label className="form-label">WhatsApp <span>*</span></label>
+                <input className="form-input" placeholder="(00) 00000-0000" value={form.whatsapp} onChange={e=>setForm({...form,whatsapp:e.target.value})} required />
+              </div>
+              <div className="form-group">
+                <label className="form-label">Estado <span>*</span></label>
+                <div className="select-wrap">
+                  <select className="form-select" value={form.estado} onChange={e=>setForm({...form,estado:e.target.value})} required>
+                    <option value="">Selecione seu Estado</option>
+                    {estados.map(e=><option key={e}>{e}</option>)}
+                  </select>
+                </div>
+              </div>
+              <div className="form-group">
+                <label className="form-label">Banco <span>*</span></label>
+                <div className="select-wrap">
+                  <select className="form-select" value={form.banco} onChange={e=>setForm({...form,banco:e.target.value})} required>
+                    <option value="">Selecione o banco</option>
+                    {bancos.map(b=><option key={b}>{b}</option>)}
+                  </select>
+                </div>
+              </div>
+              <div className="form-group">
+                <label className="form-label">Tipo de veículo <span>*</span></label>
+                <div className="select-wrap">
+                  <select className="form-select" value={form.veiculo} onChange={e=>setForm({...form,veiculo:e.target.value})} required>
+                    <option value="">Selecione</option>
+                    <option>Carro</option><option>Moto</option><option>Caminhonete</option><option>Caminhão</option>
+                  </select>
+                </div>
+              </div>
+              <div className="form-group">
+                <label className="form-label">Qtd. de parcelas <span>*</span></label>
+                <input className="form-input" type="number" placeholder="Ex: 48" value={form.parcelas} onChange={e=>setForm({...form,parcelas:e.target.value})} required />
+              </div>
+              <div className="form-group">
+                <label className="form-label">Valor da parcela <span>*</span></label>
+                <input className="form-input" placeholder="R$ 0,00" value={form.valor} onChange={e=>setForm({...form,valor:e.target.value})} required />
+              </div>
+              <div className="form-group full">
+                <label className="form-label">Nível de urgência <span>*</span></label>
+                <div className="select-wrap">
+                  <select className="form-select" value={form.urgencia} onChange={e=>setForm({...form,urgencia:e.target.value})}>
+                    <option>Contato imediato</option>
+                    <option>Em até 48h</option>
+                    <option>Esta semana</option>
+                    <option>Apenas consulta</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+            <button type="submit" className="form-submit">SIMULAR GRATUITAMENTE</button>
+            <p className="form-privacy">🔒 Seus dados estão protegidos. Não compartilhamos com terceiros.</p>
+          </form>
+        </div>
+      </div>
+    </section>
+  );
+}
+
+function About() {
+  return (
+    <section className="about">
+      <div className="about-inner">
+        <div className="about-img-wrap">
+          <div className="about-img-placeholder">
+            <svg width="80" height="80" fill="none" viewBox="0 0 24 24" stroke="#fff" strokeWidth="1">
+              <rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/>
+            </svg>
+            <span className="about-img-label">foto — mulher dirigindo</span>
+          </div>
+        </div>
+        <div className="about-content">
+          <div className="section-label">Sobre a Aliança</div>
+          <h2 className="about-title">
+            Trabalhamos para você conseguir <span>pagar seu carro!</span>
+          </h2>
+          <p className="about-desc">
+            A função principal da <strong style={{color:'#fff'}}>Análise Extrajudicial</strong> é readequar ou até mesmo invalidar cláusulas ilegais existentes no contrato de financiamento, onde taxas abusivas são cobradas do consumidor.
+          </p>
+          <p className="about-desc">
+            Depois dessa análise, caso existam taxas excessivas ou ilegais, nossa equipe buscará a redução do valor da parcela do seu financiamento. <strong style={{color:'#fff'}}>Vale ressaltar que a Aliança atua somente no âmbito nacional, tendo como base a legislação brasileira.</strong>
+          </p>
+          <button className="about-cta">
+            Fazer Simulação <IconArrow />
+          </button>
+        </div>
+      </div>
+    </section>
+  );
+}
+
+function Services() {
+  const items = [
+    { icon: <IconCar />, name: 'Busca e Apreensão' },
+    { icon: <IconDoc />, name: 'Revisão de Contrato' },
+    { icon: <IconHandshake />, name: 'Renegociação e Quitação' },
+    { icon: <IconClock />, name: 'Parcelas em Atraso' },
+  ];
+  return (
+    <section className="services">
+      <div className="services-inner">
+        <div className="services-header">
+          <div className="section-label">Nossos Serviços</div>
+          <h2 className="section-title">O que a Aliança resolve para você</h2>
+        </div>
+        <div className="services-grid">
+          {items.map(s => (
+            <div key={s.name} className="service-card">
+              <div className="service-icon">{s.icon}</div>
+              <div className="service-name">{s.name}</div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+}
+
+function CtaBanner({ onSimulate }) {
+  return (
+    <div className="cta-banner">
+      <div className="cta-inner">
+        <div className="cta-text">
+          <h2>Reduza <em>agora mesmo</em> sua dívida e conte com a Aliança para te ajudar!</h2>
+          <p>Análise gratuita, sem compromisso. Resultado em até 24 horas.</p>
+        </div>
+        <button className="cta-btn" onClick={onSimulate}>Fazer Simulação Grátis →</button>
+      </div>
+    </div>
+  );
+}
+
+function Process() {
+  const steps = [
+    { num:'01', icon:<IconDoc />, name:'Análise de Contrato', desc:'Identificamos taxas abusivas, juros irregulares e cobranças indevidas no seu contrato de financiamento.' },
+    { num:'02', icon:<IconBell />, name:'Notificação aos Credores', desc:'Notificamos os credores informando que você é representado pela nossa equipe e questionamos os juros ilegais.' },
+    { num:'03', icon:<IconMoney />, name:'Negociação', desc:'Realizamos a negociação com o credor, buscando a proposta mais justa e vantajosa para o nosso cliente.' },
+    { num:'04', icon:<IconCheck />, name:'Regularização', desc:'Quitamos a sua dívida com o banco no menor tempo possível, livre dos juros abusivos.' },
+  ];
+  return (
+    <section className="process" id="como-funciona">
+      <div className="process-inner">
+        <div className="process-header">
+          <div className="section-label">Como Funciona</div>
+          <h2 className="section-title">4 etapas para reduzir seu financiamento</h2>
+        </div>
+        <div className="process-grid">
+          {steps.map(s => (
+            <div key={s.num} className="process-card">
+              <div className="process-num">{s.num}</div>
+              <div className="process-icon">{s.icon}</div>
+              <div className="process-name">{s.name}</div>
+              <div className="process-desc">{s.desc}</div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+}
+
+function Testimonials() {
+  const items = [
+    { name:'Lucas Felipe', time:'2 semanas atrás', stars:5, text:'"Muito bom atendimento. Souberam resolver rapidamente meu problema. Super indicado!"' },
+    { name:'Rosy Assumpção', time:'Um comentário', stars:4, text:'"Ótimo atendimento da equipe. Me ajudaram a reduzir quase 40% da minha parcela. Recomendo!"' },
+    { name:'Carlos Mendes', time:'1 mês atrás', stars:5, text:'"Estava com o carro prestes a ser apreendido. A Aliança resolveu em menos de 2 semanas. Incrível!"' },
+  ];
+  return (
+    <section className="testimonials">
+      <div className="testi-inner">
+        <div className="testi-header">
+          <div className="section-label">Depoimentos</div>
+          <h2 className="section-title">O que nossos clientes dizem</h2>
+        </div>
+        <div className="testi-grid">
+          {items.map(t => (
+            <div key={t.name} className="testi-card">
+              <div className="testi-stars">{Array(t.stars).fill(0).map((_, i) => <span key={i} className="star">★</span>)}</div>
+              <p className="testi-text">{t.text}</p>
+              <div className="testi-author">
+                <div className="testi-avatar">{t.name[0]}</div>
+                <div>
+                  <div className="testi-name">{t.name}</div>
+                  <div className="testi-time">{t.time}</div>
+                </div>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+}
+
+function FAQ() {
+  const [open, setOpen] = useState(null);
+  const items = [
+    { q:'Como a Aliança trabalha?', a:'Trabalhamos para negociar seu contrato com a instituição financeira, tendo por objetivo conseguir um acordo para quitá-lo integralmente e com desconto. Essa negociação é feita no período de 6 a 24 meses, dependendo do banco.' },
+    { q:'Quem vai realizar a negociação do meu contrato?', a:'Nossa equipe de especialistas jurídicos e financeiros cuida de todo o processo, desde a análise do contrato até a negociação final com o banco.' },
+    { q:'O que é preciso para pagar meu contrato com a Aliança?', a:'É necessário apenas ter o contrato de financiamento em mãos e os documentos básicos do veículo e do titular. Nossa equipe orienta todo o restante do processo.' },
+    { q:'O banco não para de me cobrar. Posso atender e negociar com o banco?', a:'Recomendamos que todas as comunicações com o banco passem pela nossa equipe para garantir que seus direitos sejam respeitados durante a negociação.' },
+    { q:'Vou depositar as parcelas para o banco ou para empresa?', a:'As condições de pagamento são definidas durante a negociação. Nossa equipe irá orientá-lo sobre como e para quem realizar os pagamentos.' },
+    { q:'Em quanto tempo meu contrato será pago?', a:'O prazo médio é de aproximadamente 12 meses, podendo variar entre 6 e 24 meses dependendo do banco e das condições do contrato.' },
+    { q:'E caso meu veículo sofra mandado de busca e apreensão?', a:'Atuamos imediatamente para reverter a situação. Temos experiência em casos urgentes e nossa equipe pode iniciar o processo em menos de 24 horas.' },
+    { q:'Qual a garantia de que meu contrato será pago?', a:'Fornecemos um contrato de prestação de serviços com todas as garantias legais previstas na legislação brasileira. Nossa taxa de sucesso é de 94%.' },
+    { q:'Vou conseguir financiamentos após meu contrato ser pago?', a:'Sim! Após a regularização do contrato, seu nome fica limpo e você volta a ter acesso a crédito normalmente.' },
+  ];
+  return (
+    <section className="faq" id="faq">
+      <div className="faq-inner">
+        <div className="faq-header">
+          <div className="section-label">Dúvidas</div>
+          <h2 className="section-title">Perguntas Frequentes</h2>
+        </div>
+        {items.map((item, i) => (
+          <div key={i} className="faq-item">
+            <button className="faq-q" onClick={() => setOpen(open === i ? null : i)}>
+              {item.q}
+              <span className={`faq-icon ${open === i ? 'open' : ''}`}>
+                <span><IconPlus /></span>
+              </span>
+            </button>
+            <div className={`faq-answer ${open === i ? 'open' : ''}`}>{item.a}</div>
+          </div>
+        ))}
+      </div>
+    </section>
+  );
+}
+
+function Footer() {
+  return (
+    <footer className="footer" id="contato">
+      <div className="footer-inner">
+        <div className="footer-section">
+          <div className="footer-logo">
+            <img src="https://storage.lucasmendes.dev/site-sp/parcela-amiga/img/logo-sem-fundo.webp" alt="Logo Aliança Recuperadora" width="120" height="40" />
+          </div>
+          <p>Reduzimos as parcelas do seu financiamento identificando taxas abusivas e cláusulas ilegais no seu contrato. Atendimento 100% nacional.</p>
+        </div>
+        <div className="footer-section">
+          <h4 className="footer-title">Links Rápidos</h4>
+          <a className="footer-link" href="#">Home</a>
+          <a className="footer-link" href="#simulador">Simulador</a>
+          <a className="footer-link" href="#como-funciona">Como Funciona</a>
+          <a className="footer-link" href="#faq">FAQ</a>
+          <a className="footer-link" href="#contato">Contato</a>
+        </div>
+        <div className="footer-section">
+          <h4 className="footer-title">Contato</h4>
+          <p className="footer-contact">
+            <IconPhone /> 0800 555 2569
+          </p>
+          <p className="footer-hours">Segunda a Sexta: 9h às 18h</p>
+          <div className="footer-socials">
+            <a href="https://www.facebook.com/parcelaamiga" className="social-btn social-fb" title="Facebook">
+              <svg width="13" height="13" fill="#fff" viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+            </a>
+            <a href="https://www.instagram.com/parcelaamiga/" className="social-btn social-ig" title="Instagram">
+              <svg width="13" height="13" fill="#fff" viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5" ry="5" fill="none" stroke="#fff" strokeWidth="2"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z" fill="none" stroke="#fff" strokeWidth="2"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5" stroke="#fff" strokeWidth="2"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div className="footer-bottom">
+        <div className="footer-copy">© 2026 Aliança Recuperadora. Todos os direitos reservados.</div>
+      </div>
+    </footer>
+  );
+}
+
+function WhatsAppFloat() {
+  return (
+    <div className="whatsapp-float" onClick={() => window.open('https://wa.me/08005552569', '_blank')}>
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="white">
+        <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893A11.821 11.821 0 0020.885 3.488"/>
+      </svg>
+    </div>
+  );
+}
+
+function TweaksPanel({ visible, tweaks, setTweaks }) {
+  return (
+    <div className={`tweaks-panel ${visible ? 'visible' : ''}`}>
+      <div className="tweaks-title">⚙ Tweaks</div>
+      <div className="tweak-row">
+        <div className="tweak-label">Cor de destaque</div>
+        <div className="tweak-options">
+          {[['#00C4B4','Teal'],['#4F6AF0','Índigo'],['#E05A2B','Laranja']].map(([c,l]) => (
+            <div key={c} className={`tweak-color ${tweaks.accentColor===c?'active':''}`}
+              style={{background:c}} title={l}
+              onClick={() => setTweaks({...tweaks, accentColor:c})} />
+          ))}
+        </div>
+      </div>
+      <div className="tweak-row">
+        <div className="tweak-label">Estilo do formulário</div>
+        <div className="tweak-options">
+          {['Branco','Gradiente'].map(s => (
+            <button key={s} className={`tweak-opt ${(s==='Branco')===(tweaks.formBg==='white')?'active':''}`}
+              onClick={() => setTweaks({...tweaks, formBg: s==='Branco'?'white':'gradient'})}>
+              {s}
+            </button>
+          ))}
+        </div>
+      </div>
+    </div>
+  );
+}
+
+function App() {
+  const [tweaks, setTweaks] = useState(TWEAK_DEFAULTS);
+  const [tweaksVisible, setTweaksVisible] = useState(false);
+
+  useEffect(() => {
+    // Apply accent color
+    document.documentElement.style.setProperty('--teal', tweaks.accentColor);
+    document.documentElement.style.setProperty('--teal-light', tweaks.accentColor + 'dd');
+    document.documentElement.style.setProperty('--teal-pale', tweaks.accentColor + '18');
+  }, [tweaks.accentColor]);
+
+  useEffect(() => {
+    window.addEventListener('message', (e) => {
+      if (e.data?.type === '__activate_edit_mode') setTweaksVisible(true);
+      if (e.data?.type === '__deactivate_edit_mode') setTweaksVisible(false);
+    });
+    window.parent.postMessage({type: '__edit_mode_available'}, '*');
+  }, []);
+
+  const handleTweaks = (t) => {
+    setTweaks(t);
+    window.parent.postMessage({type:'__edit_mode_set_keys', edits: t}, '*');
+  };
+
+  const scrollToForm = () => {
+    const el = document.getElementById('simulador');
+    if (el) el.scrollTop; // can't use scrollIntoView
+    window.scrollTo({top: el?.offsetTop - 80, behavior:'smooth'});
+  };
+
+  return (
+    <>
+      <Topbar />
+      <Navbar onSimulate={scrollToForm} />
+      <Hero onSimulate={scrollToForm} />
+      <SimulationForm />
+      <About />
+      <Services />
+      <CtaBanner onSimulate={scrollToForm} />
+      <Process />
+      <Testimonials />
+      <FAQ />
+      <Footer />
+      <WhatsAppFloat />
+      <TweaksPanel visible={tweaksVisible} tweaks={tweaks} setTweaks={handleTweaks} />
+    </>
+  );
+}
+
+ReactDOM.createRoot(document.getElementById('root')).render(<App />);
+</script>
+</body>
+</html>

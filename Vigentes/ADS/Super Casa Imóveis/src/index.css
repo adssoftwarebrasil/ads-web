@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: 'Inter', system-ui, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.input-field {
+  width: 100%;
+  background: #0a0a0a;
+  border: 1px solid #262626;
+  border-radius: 12px;
+  padding: 12px 16px;
+  color: #fff;
+  font-size: 15px;
+  transition: all 0.2s;
+  outline: none;
+}
+.input-field::placeholder {
+  color: #525252;
+}
+.input-field:focus {
+  border-color: #d5a222;
+  box-shadow: 0 0 0 3px rgba(213, 162, 34, 0.15);
+}
