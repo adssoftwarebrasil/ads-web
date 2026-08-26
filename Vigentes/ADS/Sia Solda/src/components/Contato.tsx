@@ -102,7 +102,6 @@ export default function Contato() {
                 <span className="text-sm font-semibold text-brand-dark">Online agora</span>
               </div>
               <p className="text-sm text-gray-600">Seg–Sex das 08h às 18h</p>
-              <p className="text-sm text-gray-600">Sáb das 08h às 12h</p>
               <a
                 href="http://wa.me/556198770047"
                 target="_blank"

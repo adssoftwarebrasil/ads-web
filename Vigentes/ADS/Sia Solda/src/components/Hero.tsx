@@ -16,8 +16,7 @@ export default function Hero() {
       <div
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
         style={{
-          backgroundImage:
-            'url("https://storage.lucasmendes.dev/site-sp/cia%20solda%20e%20ferramentas/img/hero-background.webp")',
+          backgroundImage: 'url("/hero-background.webp")',
         }}
       ></div>
       <div className="absolute inset-0 bg-gradient-to-br from-brand-dark/95 via-brand-dark/80 to-brand-dark/60"></div>
@@ -56,7 +55,7 @@ export default function Hero() {
           </a>
           <a
             href="https://storage.lucasmendes.dev/site-sp/cia%20solda%20e%20ferramentas/pdf/PORTFOLIO%20CIA%20DA%20SOLDA%202025.pdf"
-            download="Portfolio_Sia_Solda_2025.pdf"
+            download="Portfolio_Cia_da_Solda_2025.pdf"
             className="w-full sm:w-auto flex items-center justify-center gap-2 border-2 border-white/30 hover:border-white/60 text-white font-semibold px-8 py-4 rounded-xl text-lg transition-all duration-200 hover:bg-white/5"
           >
             Ver Catálogo

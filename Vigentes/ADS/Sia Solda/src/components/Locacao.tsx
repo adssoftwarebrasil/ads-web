@@ -29,7 +29,7 @@ export default function Locacao() {
             <span className="text-brand-orange">Ideal para seu Projeto</span>
           </h2>
           <p className="text-gray-400 leading-relaxed mb-8">
-            Com o serviço de locação da Sia Solda, você tem acesso a equipamentos de alto desempenho
+            Com o serviço de locação da Cia da Solda, você tem acesso a equipamentos de alto desempenho
             sem imobilizar capital. Perfeito para obras e projetos pontuais.
           </p>
           <ul className="grid grid-cols-1 sm:grid-cols-2 gap-3 max-w-xl mx-auto mb-8 text-left">

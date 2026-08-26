@@ -29,9 +29,9 @@ export default function Footer() {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10">
           <div className="sm:col-span-2 lg:col-span-1">
             <img
-              src="https://storage.lucasmendes.dev/site-sp/cia%20solda%20e%20ferramentas/img/logo-sem-fundo.webp"
-              alt="Sia Solda"
-              className="h-14 w-auto object-contain mb-4 brightness-0 invert"
+              src="/logo-branco.webp"
+              alt="Cia da Solda"
+              className="h-14 w-auto object-contain mb-4"
             />
             <p className="text-gray-400 text-sm leading-relaxed">
               Especialistas em equipamentos para soldagem. Vendas, locação e suporte técnico para
@@ -141,7 +141,6 @@ export default function Footer() {
                   height={14}
                 />
                 <span className="text-gray-400 text-sm">Seg–Sex: 08h às 18h</span>
-                <span className="text-gray-400 text-sm">Sáb: 08h às 12h</span>
               </div>
             </div>
           </div>
@@ -149,8 +148,8 @@ export default function Footer() {
       </div>
       <div className="border-t border-white/8 py-5">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 flex flex-col sm:flex-row items-center justify-between gap-2 text-xs text-gray-500">
-          <span>© 2026 Sia Solda — Todos os direitos reservados.</span>
-          <span>SIA Trecho 17, Rua 14 — Brasília-DF | CNPJ: Sia Solda</span>
+          <span>© 2026 Cia da Solda — Todos os direitos reservados.</span>
+          <span>SIA Trecho 17, Rua 14 — Brasília-DF</span>
         </div>
       </div>
     </footer>

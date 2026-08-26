@@ -2,11 +2,6 @@ import { MessageCircle, ShoppingCart, Banknote } from 'lucide-react';
 
 const vendedores = [
   {
-    name: 'Rodrigo',
-    phone: '(66) 9 9687-3847',
-    href: 'https://wa.me/5566996873847?text=Ol%C3%A1%20Rodrigo%2C%20vim%20pelo%20site%20da%20GM%20Motos.%20Gostaria%20de%20mais%20informa%C3%A7%C3%B5es.',
-  },
-  {
     name: 'Erik',
     phone: '(66) 9 9661-9448',
     href: 'https://wa.me/5566996619448?text=Ol%C3%A1%20Erik%2C%20vim%20pelo%20site%20da%20GM%20Motos.%20Gostaria%20de%20mais%20informa%C3%A7%C3%B5es.',
@@ -31,7 +26,11 @@ export default function Vendedores() {
             Atendimento ágil pelo WhatsApp. Clique no vendedor e converse sem compromisso.
           </p>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-16">
+        <div
+          className={`grid grid-cols-1 gap-6 mb-16 ${
+            vendedores.length > 1 ? 'md:grid-cols-2' : 'max-w-xl mx-auto'
+          }`}
+        >
           {vendedores.map((v) => (
             <a
               key={v.name}

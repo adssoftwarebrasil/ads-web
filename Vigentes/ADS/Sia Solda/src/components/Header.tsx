@@ -7,7 +7,7 @@ const navLinks = [
   { href: '#catalogo', label: 'Produtos' },
   { href: '#locacao', label: 'Locação' },
   { href: '#epis', label: 'EPIs' },
-  { href: '#sobre', label: 'Conheça a Sia Solda' },
+  { href: '#sobre', label: 'Conheça a Cia da Solda' },
   { href: '#avaliacoes', label: 'Avaliações' },
   { href: '#contato', label: 'Contato' },
 ];
@@ -21,7 +21,7 @@ export default function Header() {
         <div className="flex items-center gap-6 text-sm text-gray-300">
           <span className="flex items-center gap-1.5">
             <Clock className="lucide lucide-clock text-brand-orange" width={13} height={13} />
-            Seg–Sex: 08h às 18h | Sáb: 08h às 12h
+            Seg–Sex: 08h às 18h
           </span>
           <a
             href="tel:+556198770047"
@@ -42,9 +42,9 @@ export default function Header() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 flex items-center justify-between h-16">
         <a href="#hero" className="flex items-center">
           <img
-            src="https://storage.lucasmendes.dev/site-sp/cia%20solda%20e%20ferramentas/img/logo-sem-fundo.webp"
-            alt="Sia Solda"
-            className="h-14 w-auto object-contain brightness-0 invert"
+            src="/logo-branco.webp"
+            alt="Cia da Solda"
+            className="h-14 w-auto object-contain"
           />
         </a>
         <nav className="hidden lg:flex items-center gap-1">

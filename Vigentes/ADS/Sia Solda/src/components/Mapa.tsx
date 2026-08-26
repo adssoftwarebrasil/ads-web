@@ -44,12 +44,8 @@ export default function Mapa() {
                       <span>Segunda a Sexta</span>
                       <span className="font-semibold text-brand-dark">08h – 18h</span>
                     </div>
-                    <div className="flex justify-between">
-                      <span>Sábado</span>
-                      <span className="font-semibold text-brand-dark">08h – 12h</span>
-                    </div>
                     <div className="flex justify-between mt-1">
-                      <span>Domingo</span>
+                      <span>Sábado e Domingo</span>
                       <span className="text-red-500 font-medium">Fechado</span>
                     </div>
                   </div>
@@ -99,7 +95,7 @@ export default function Mapa() {
               allowFullScreen
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"
-              title="Mapa Sia Solda"
+              title="Mapa Cia da Solda"
               style={{ border: '0px' }}
             ></iframe>
           </div>

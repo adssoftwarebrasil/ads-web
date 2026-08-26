@@ -50,7 +50,7 @@ const items: Diferencial[] = [
     icon: Clock,
     iconClass: 'lucide lucide-clock',
     title: 'Horário Estendido',
-    text: 'Atendemos de segunda a sexta das 08h às 18h e sábado das 08h às 12h.',
+    text: 'Atendemos de segunda a sexta das 08h às 18h, com equipe pronta para atender você.',
   },
 ];
 
@@ -60,7 +60,7 @@ export default function Diferenciais() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6">
         <div className="text-center mb-14">
           <span className="inline-block bg-brand-orange/10 text-brand-orange text-sm font-semibold px-4 py-1.5 rounded-full mb-4">
-            Por que escolher a Sia Solda?
+            Por que escolher a Cia da Solda?
           </span>
           <h2 className="text-3xl sm:text-4xl font-black text-brand-dark">Nossos Diferenciais</h2>
           <p className="mt-3 text-gray-500 max-w-xl mx-auto">

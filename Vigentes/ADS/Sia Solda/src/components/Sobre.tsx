@@ -13,11 +13,11 @@ export default function Sobre() {
             <h2 className="text-3xl sm:text-4xl font-black text-brand-dark leading-tight mb-5">
               Sobre a
               <br />
-              <span className="text-brand-orange">Sia Solda</span>
+              <span className="text-brand-orange">Cia da Solda</span>
             </h2>
             <div className="space-y-4 text-gray-600 leading-relaxed">
               <p>
-                A <strong className="text-brand-dark">Sia Solda</strong> é uma empresa especializada
+                A <strong className="text-brand-dark">Cia da Solda</strong> é uma empresa especializada
                 no segmento de soldagem, localizada em Brasília-DF.
               </p>
               <p>
@@ -64,8 +64,8 @@ export default function Sobre() {
           <div className="relative">
             <div className="relative rounded-2xl overflow-hidden shadow-2xl shadow-brand-dark/20">
               <img
-                src="https://storage.lucasmendes.dev/site-sp/cia%20solda%20e%20ferramentas/img/logo.webp"
-                alt="Sia Solda"
+                src="/logo.webp"
+                alt="Cia da Solda"
                 className="w-full object-contain bg-white p-12"
               />
             </div>
