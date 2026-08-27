@@ -1,6 +1,7 @@
 import { useState, type FormEvent } from 'react';
 import { Phone, Mail, MapPin, Clock } from 'lucide-react';
 import WhatsAppIcon from './WhatsAppIcon';
+import Reveal from './Reveal';
 
 const serviceLabels: Record<string, string> = {
   instalacao: 'Instalação de Sistema de Climatização',
@@ -38,7 +39,7 @@ Mensagem: ${message}`;
       <div className="absolute top-20 left-10 w-64 h-64 bg-[rgba(28,123,179,0.05)] rounded-full blur-3xl"></div>
       <div className="absolute bottom-20 right-10 w-80 h-80 bg-[rgba(9,74,104,0.03)] rounded-full blur-3xl"></div>
       <div className="max-w-[1200px] mx-auto px-5 lg:px-20 relative z-10">
-        <div className="transition-all duration-700 opacity-0 translate-y-10">
+        <Reveal>
           <div className="text-center mb-12 lg:mb-16">
             <h2 className="text-[28px] lg:text-[40px] font-bold text-[rgb(9,74,104)] mb-4">Fale Conosco</h2>
             <p className="text-[18px] text-[rgb(28,123,179)]">Solicite um orçamento ou tire suas dúvidas</p>
@@ -243,7 +244,7 @@ Mensagem: ${message}`;
               </form>
             </div>
           </div>
-        </div>
+        </Reveal>
       </div>
     </section>
   );

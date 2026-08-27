@@ -1,4 +1,5 @@
 import { Thermometer, Activity, Wind, Snowflake, Cpu, type LucideIcon } from 'lucide-react';
+import Reveal from './Reveal';
 
 interface Valor {
   Icon: LucideIcon;
@@ -44,7 +45,7 @@ export default function Valores() {
   return (
     <section id="valores" className="py-16 lg:py-20 bg-white">
       <div className="max-w-[1200px] mx-auto px-5 lg:px-20">
-        <div className="transition-all duration-700 opacity-0 translate-y-10">
+        <Reveal>
           <div className="text-center mb-12">
             <h2 className="text-[28px] lg:text-[40px] font-bold text-[rgb(9,74,104)]">Nossos Valores</h2>
           </div>
@@ -52,7 +53,7 @@ export default function Valores() {
             {valores.map((v, i) => (
               <div
                 key={v.title}
-                className="bg-[rgb(247,247,247)] p-8 rounded-xl text-center hover:-translate-y-2 hover:shadow-lg transition-all duration-300 opacity-0 translate-y-10"
+                className="bg-[rgb(247,247,247)] p-8 rounded-xl text-center hover:-translate-y-2 hover:shadow-lg transition-all duration-300 reveal-item"
                 style={{ transitionDelay: `${i * 100}ms` }}
               >
                 <v.Icon
@@ -66,7 +67,7 @@ export default function Valores() {
               </div>
             ))}
           </div>
-        </div>
+        </Reveal>
       </div>
     </section>
   );

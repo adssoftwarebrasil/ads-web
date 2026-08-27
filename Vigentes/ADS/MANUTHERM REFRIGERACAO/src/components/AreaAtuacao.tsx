@@ -1,4 +1,5 @@
 import { MapPin } from 'lucide-react';
+import Reveal from './Reveal';
 
 const cidades = [
   'Salvador',
@@ -25,7 +26,7 @@ export default function AreaAtuacao() {
   return (
     <section id="area-atuacao" className="py-16 lg:py-20 bg-[rgb(247,247,247)]">
       <div className="max-w-[1200px] mx-auto px-5 lg:px-20">
-        <div className="transition-all duration-700 opacity-100 translate-y-0">
+        <Reveal>
           <div className="text-center mb-12">
             <h2 className="text-[28px] lg:text-[40px] font-bold text-[rgb(9,74,104)] mb-4">Onde Atuamos</h2>
             <p className="text-[18px] text-[rgb(28,123,179)] font-medium">Cobertura completa no estado da Bahia</p>
@@ -34,7 +35,7 @@ export default function AreaAtuacao() {
             {cidades.map((cidade, i) => (
               <div
                 key={cidade}
-                className="bg-white p-4 rounded-lg flex items-center gap-3 hover:scale-105 transition-all duration-300 shadow-sm opacity-100 translate-y-0"
+                className="bg-white p-4 rounded-lg flex items-center gap-3 hover:scale-105 transition-all duration-300 shadow-sm reveal-item"
                 style={{ transitionDelay: `${i * 50}ms` }}
               >
                 <MapPin
@@ -47,7 +48,7 @@ export default function AreaAtuacao() {
               </div>
             ))}
           </div>
-        </div>
+        </Reveal>
       </div>
     </section>
   );

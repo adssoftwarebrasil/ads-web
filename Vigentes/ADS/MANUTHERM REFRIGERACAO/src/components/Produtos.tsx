@@ -1,4 +1,5 @@
 import { Check } from 'lucide-react';
+import Reveal from './Reveal';
 
 interface Produto {
   title: string;
@@ -51,7 +52,7 @@ export default function Produtos() {
   return (
     <section id="produtos" className="py-16 lg:py-24 bg-[rgb(247,247,247)]">
       <div className="max-w-[1200px] mx-auto px-5 lg:px-20">
-        <div className="transition-all duration-700 opacity-0 translate-y-10">
+        <Reveal>
           <div className="text-center mb-12">
             <h2 className="text-[28px] lg:text-[40px] font-bold text-[rgb(9,74,104)] mb-4">Produtos Hitachi</h2>
             <p className="text-[18px] text-[rgb(28,123,179)]">
@@ -62,7 +63,7 @@ export default function Produtos() {
             {produtos.map((p) => (
               <div
                 key={p.title}
-                className="bg-white p-8 lg:p-12 rounded-2xl shadow-[0_4px_20px_rgba(0,0,0,0.08)] opacity-0 translate-y-10"
+                className="bg-white p-8 lg:p-12 rounded-2xl shadow-[0_4px_20px_rgba(0,0,0,0.08)] transition-all duration-700 reveal-item"
                 style={{ transitionDelay: `${p.delay}ms` }}
               >
                 <div
@@ -99,7 +100,7 @@ export default function Produtos() {
               </div>
             ))}
           </div>
-        </div>
+        </Reveal>
       </div>
     </section>
   );

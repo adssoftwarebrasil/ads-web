@@ -1,4 +1,5 @@
 import { Wrench, Calendar, Settings, Wind, Layers, type LucideIcon } from 'lucide-react';
+import Reveal from './Reveal';
 
 interface Servico {
   Icon: LucideIcon;
@@ -45,7 +46,7 @@ export default function Servicos() {
   return (
     <section id="servicos" className="py-16 lg:py-24 bg-white">
       <div className="max-w-[1200px] mx-auto px-5 lg:px-20">
-        <div className="transition-all duration-700 opacity-0 translate-y-10">
+        <Reveal>
           <div className="text-center mb-12 lg:mb-16">
             <h2 className="text-[28px] lg:text-[40px] font-bold text-[rgb(9,74,104)] mb-4">Nossos Serviços</h2>
             <p className="text-[18px] text-[rgb(28,123,179)]">Soluções completas em climatização para seu negócio</p>
@@ -54,7 +55,7 @@ export default function Servicos() {
             {servicos.map((s, i) => (
               <div
                 key={s.title}
-                className="bg-white border border-[rgb(247,247,247)] p-8 lg:p-10 rounded-2xl shadow-[0_4px_20px_rgba(0,0,0,0.08)] hover:shadow-[0_8px_30px_rgba(0,0,0,0.12)] hover:border-[rgb(28,123,179)] transition-all duration-300 hover:-translate-y-1 flex flex-col h-full opacity-0 translate-y-10"
+                className="bg-white border border-[rgb(247,247,247)] p-8 lg:p-10 rounded-2xl shadow-[0_4px_20px_rgba(0,0,0,0.08)] hover:shadow-[0_8px_30px_rgba(0,0,0,0.12)] hover:border-[rgb(28,123,179)] transition-all duration-300 hover:-translate-y-1 flex flex-col h-full reveal-item"
                 style={{ transitionDelay: `${i * 100}ms` }}
               >
                 <div className="w-14 h-14 bg-[rgba(28,123,179,0.1)] rounded-xl flex items-center justify-center mb-5">
@@ -72,7 +73,7 @@ export default function Servicos() {
           </div>
           <div className="flex justify-center mt-6 lg:mt-8">
             <div
-              className="bg-white border border-[rgb(247,247,247)] p-8 lg:p-10 rounded-2xl shadow-[0_4px_20px_rgba(0,0,0,0.08)] hover:shadow-[0_8px_30px_rgba(0,0,0,0.12)] hover:border-[rgb(28,123,179)] transition-all duration-300 hover:-translate-y-1 w-full md:max-w-[calc(50%-1rem)] flex flex-col opacity-0 translate-y-10"
+              className="bg-white border border-[rgb(247,247,247)] p-8 lg:p-10 rounded-2xl shadow-[0_4px_20px_rgba(0,0,0,0.08)] hover:shadow-[0_8px_30px_rgba(0,0,0,0.12)] hover:border-[rgb(28,123,179)] transition-all duration-300 hover:-translate-y-1 w-full md:max-w-[calc(50%-1rem)] flex flex-col reveal-item"
               style={{ transitionDelay: '400ms' }}
             >
               <div className="w-14 h-14 bg-[rgba(28,123,179,0.1)] rounded-xl flex items-center justify-center mb-5">
@@ -89,7 +90,7 @@ export default function Servicos() {
               <p className="text-[16px] text-gray-600 leading-relaxed flex-grow">{servicoDestaque.desc}</p>
             </div>
           </div>
-        </div>
+        </Reveal>
       </div>
     </section>
   );

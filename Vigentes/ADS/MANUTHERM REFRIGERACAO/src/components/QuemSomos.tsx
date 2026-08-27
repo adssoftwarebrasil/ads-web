@@ -1,4 +1,5 @@
 import { Award, Zap, Shield, TrendingUp, type LucideIcon } from 'lucide-react';
+import Reveal from './Reveal';
 
 interface Feature {
   Icon: LucideIcon;
@@ -38,7 +39,7 @@ export default function QuemSomos() {
   return (
     <section id="quem-somos" className="py-16 lg:py-24 bg-white">
       <div className="max-w-[1200px] mx-auto px-5 lg:px-20">
-        <div className="transition-all duration-700 opacity-100 translate-y-0">
+        <Reveal>
           <div className="text-center mb-12">
             <span className="inline-block bg-[rgba(28,123,179,0.1)] text-[rgb(28,123,179)] px-4 py-2 rounded-full text-sm font-semibold mb-4">
               17 anos de experiência
@@ -58,7 +59,7 @@ export default function QuemSomos() {
             {features.map((f, i) => (
               <div
                 key={f.title}
-                className="bg-[rgb(247,247,247)] p-8 rounded-xl hover:border-2 hover:border-[rgb(28,123,179)] transition-all duration-300 hover:-translate-y-1 hover:shadow-lg opacity-100 translate-y-0"
+                className="bg-[rgb(247,247,247)] p-8 rounded-xl hover:border-2 hover:border-[rgb(28,123,179)] transition-all duration-300 hover:-translate-y-1 hover:shadow-lg reveal-item"
                 style={{ transitionDelay: `${i * 100}ms` }}
               >
                 <f.Icon
@@ -72,7 +73,7 @@ export default function QuemSomos() {
               </div>
             ))}
           </div>
-        </div>
+        </Reveal>
       </div>
     </section>
   );

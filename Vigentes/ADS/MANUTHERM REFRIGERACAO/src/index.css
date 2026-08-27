@@ -33,3 +33,15 @@ body {
 .animate-pulse-subtle {
   animation: pulseSubtle 2s ease-in-out infinite;
 }
+
+/* Reveal on scroll: os itens só ficam ocultos enquanto a seção não entrou na
+   viewport. Usa a propriedade `translate` (e não `transform`) para não conflitar
+   com os utilitários de hover do Tailwind. Quem prefere menos movimento vê tudo
+   visível desde o início. */
+@media (prefers-reduced-motion: no-preference) {
+  .reveal:not(.is-visible),
+  .reveal:not(.is-visible) .reveal-item {
+    opacity: 0;
+    translate: 0 2.5rem;
+  }
+}
