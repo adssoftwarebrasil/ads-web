@@ -1,0 +1,15 @@
+import { FaWhatsapp } from "react-icons/fa";
+
+const WhatsAppFab = () => (
+  <a
+    href="https://wa.me/5562982972917"
+    target="_blank"
+    rel="noopener noreferrer"
+    aria-label="Fale conosco pelo WhatsApp"
+    className="fixed bottom-6 right-6 z-50 w-14 h-14 md:w-16 md:h-16 rounded-full bg-whatsapp text-white flex items-center justify-center shadow-xl hover:scale-110 transition-transform whatsapp-pulse"
+  >
+    <FaWhatsapp size={30} />
+  </a>
+);
+
+export default WhatsAppFab;
