@@ -5,60 +5,60 @@ export default function Sobre() {
     {
       icone: Target,
       titulo: 'Metodologia Própria e Personalizada',
-      gradient: 'from-blue-500 to-cyan-500',
+      gradient: 'from-[#E8CE8A] to-[#C9A44C]',
     },
     {
       icone: Zap,
       titulo: 'Agilidade na Resolução de Demandas',
-      gradient: 'from-purple-500 to-indigo-500',
+      gradient: 'from-[#8E6F2C] to-[#A8853A]',
     },
     {
       icone: Award,
       titulo: 'Equipe Altamente Capacitada',
-      gradient: 'from-orange-500 to-pink-500',
+      gradient: 'from-[#E8CE8A] to-[#B08D3C]',
     },
     {
       icone: LineChart,
       titulo: 'Foco em Redução de Custos',
-      gradient: 'from-green-500 to-emerald-500',
+      gradient: 'from-[#C9A44C] to-[#8E6F2C]',
     },
     {
       icone: Handshake,
       titulo: 'Parcerias Duradouras',
-      gradient: 'from-indigo-500 to-purple-500',
+      gradient: 'from-[#A8853A] to-[#8E6F2C]',
     },
     {
       icone: Clock,
       titulo: 'Cumprimento Rigoroso de Prazos',
-      gradient: 'from-cyan-500 to-blue-500',
+      gradient: 'from-[#E8CE8A] to-[#C9A44C]',
     },
   ];
 
   const stats = [
-    { value: '7+', label: 'Anos de Mercado', gradient: 'from-blue-500 to-cyan-500' },
-    { value: '500+', label: 'Clientes Satisfeitos', gradient: 'from-purple-500 to-indigo-500' },
-    { value: '98%', label: 'Taxa de Satisfação', gradient: 'from-green-500 to-emerald-500' },
+    { value: '7+', label: 'Anos de Mercado', gradient: 'from-[#E8CE8A] to-[#C9A44C]' },
+    { value: '500+', label: 'Clientes Satisfeitos', gradient: 'from-[#8E6F2C] to-[#A8853A]' },
+    { value: '98%', label: 'Taxa de Satisfação', gradient: 'from-[#C9A44C] to-[#8E6F2C]' },
   ];
 
   return (
-    <section id="sobre" className="relative py-16 md:py-24 bg-gradient-to-br from-white via-gray-50 to-blue-50 overflow-hidden">
+    <section id="sobre" className="relative py-16 md:py-24 bg-gradient-to-br from-white via-[#F7F5F0] to-[#FAF6EC] overflow-hidden">
       {/* Background decorative elements */}
-      <div className="absolute top-0 left-0 w-96 h-96 bg-blue-100/30 rounded-full blur-3xl -translate-x-1/2 -translate-y-1/2"></div>
-      <div className="absolute bottom-0 right-0 w-96 h-96 bg-purple-100/30 rounded-full blur-3xl translate-x-1/2 translate-y-1/2"></div>
+      <div className="absolute top-0 left-0 w-96 h-96 bg-[#EBDCB8]/30 rounded-full blur-3xl -translate-x-1/2 -translate-y-1/2"></div>
+      <div className="absolute bottom-0 right-0 w-96 h-96 bg-[#EBDCB8]/30 rounded-full blur-3xl translate-x-1/2 translate-y-1/2"></div>
 
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 md:px-8 lg:px-12">
         <div className="grid lg:grid-cols-2 gap-8 md:gap-12 lg:gap-16 items-center">
           {/* Content Section */}
           <div className="space-y-6 md:space-y-8">
             {/* Badge */}
-            <div className="inline-flex items-center gap-2 bg-gradient-to-r from-[#164972]/10 to-cyan-500/10 backdrop-blur-sm border border-[#164972]/20 text-[#164972] px-4 py-2 rounded-full text-xs md:text-sm font-semibold animate-fade-in">
+            <div className="inline-flex items-center gap-2 bg-gradient-to-r from-[#111111]/[0.06] to-[#C9A44C]/20 backdrop-blur-sm border border-[#C9A44C]/50 text-[#8E6F2C] px-4 py-2 rounded-full text-xs md:text-sm font-semibold animate-fade-in">
               <Sparkles className="w-4 h-4" />
               NOSSA HISTÓRIA
             </div>
 
             {/* Title */}
-            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-[#164972] animate-fade-in-up">
-              <span className="bg-gradient-to-r from-[#164972] to-cyan-600 bg-clip-text text-transparent">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-[#111111] animate-fade-in-up">
+              <span className="bg-gradient-to-r from-[#111111] to-[#8E6F2C] bg-clip-text text-transparent">
                 7 Anos
               </span>{' '}
               de Excelência em Contabilidade
@@ -66,12 +66,12 @@ export default function Sobre() {
 
             {/* Description */}
             <div className="space-y-4 animate-fade-in-up" style={{ animationDelay: '100ms' }}>
-              <p className="text-sm md:text-base lg:text-lg text-gray-600 leading-relaxed">
+              <p className="text-sm md:text-base lg:text-lg text-[#5A5A5A] leading-relaxed">
                 Fundada em junho de 2017, a Fonseca Contabilidade nasceu com o propósito de revolucionar o atendimento
                 contábil em Goiás. Oferecemos muito mais que serviços tradicionais: somos{' '}
-                <span className="font-semibold text-[#164972]">parceiros estratégicos</span> no crescimento do seu negócio.
+                <span className="font-semibold text-[#111111]">parceiros estratégicos</span> no crescimento do seu negócio.
               </p>
-              <p className="text-sm md:text-base lg:text-lg text-gray-600 leading-relaxed">
+              <p className="text-sm md:text-base lg:text-lg text-[#5A5A5A] leading-relaxed">
                 Independente do porte da sua empresa, nossa metodologia personalizada garante praticidade, segurança e
                 resultados mensuráveis na gestão administrativa e financeira.
               </p>
@@ -82,14 +82,14 @@ export default function Sobre() {
               {stats.map((stat, index) => (
                 <div
                   key={stat.label}
-                  className="group relative bg-white p-4 md:p-5 rounded-xl md:rounded-2xl shadow-md hover:shadow-xl border border-gray-100 hover:border-gray-200 transition-all duration-300 hover:-translate-y-1"
+                  className="group relative bg-white p-4 md:p-5 rounded-xl md:rounded-2xl shadow-md hover:shadow-xl border border-[#ECE8DE] hover:border-[#DFD9C9] transition-all duration-300 hover:-translate-y-1"
                 >
                   <div className={`absolute top-0 left-0 right-0 h-1 rounded-t-xl md:rounded-t-2xl bg-gradient-to-r ${stat.gradient}`}></div>
                   <div className="text-center">
                     <div className={`text-2xl md:text-3xl lg:text-4xl font-bold bg-gradient-to-r ${stat.gradient} bg-clip-text text-transparent mb-1 md:mb-2`}>
                       {stat.value}
                     </div>
-                    <div className="text-[10px] md:text-xs text-gray-600 font-medium leading-tight">
+                    <div className="text-[10px] md:text-xs text-[#5A5A5A] font-medium leading-tight">
                       {stat.label}
                     </div>
                   </div>
@@ -103,7 +103,7 @@ export default function Sobre() {
                 href="https://wa.me/5562999732807?text=Olá! Gostaria de conhecer mais sobre a Fonseca Contabilidade."
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 bg-gradient-to-r from-[#164972] to-[#1a5280] text-white px-6 md:px-8 py-3 md:py-4 rounded-xl font-semibold hover:shadow-2xl hover:shadow-[#164972]/30 hover:scale-105 transition-all duration-300"
+                className="inline-flex items-center gap-2 bg-gradient-to-r from-[#111111] to-[#2B2B2B] text-white px-6 md:px-8 py-3 md:py-4 rounded-xl font-semibold hover:shadow-2xl hover:shadow-[#111111]/30 hover:scale-105 transition-all duration-300"
               >
                 Falar com Especialista
                 <ArrowRight className="w-5 h-5" />
@@ -115,15 +115,15 @@ export default function Sobre() {
           <div className="space-y-6 md:space-y-8">
             {/* Hero Image */}
             <div className="relative group animate-fade-in-up" style={{ animationDelay: '400ms' }}>
-              <div className="absolute inset-0 bg-gradient-to-r from-blue-500 to-purple-500 rounded-2xl md:rounded-3xl blur-2xl opacity-20 group-hover:opacity-30 transition-opacity duration-300"></div>
-              <div className="relative bg-white/50 backdrop-blur-sm border border-gray-200 rounded-2xl md:rounded-3xl p-2 md:p-3 overflow-hidden shadow-xl">
+              <div className="absolute inset-0 bg-gradient-to-r from-[#C9A44C] to-[#8E6F2C] rounded-2xl md:rounded-3xl blur-2xl opacity-20 group-hover:opacity-30 transition-opacity duration-300"></div>
+              <div className="relative bg-white/50 backdrop-blur-sm border border-[#DFD9C9] rounded-2xl md:rounded-3xl p-2 md:p-3 overflow-hidden shadow-xl">
                 <img
                   src="https://storage.lucasmendes.dev/site-sp/wpfcontabilidade%2Fhomem-analisando-graficos_4_11zon.webp"
                   alt="Profissional analisando gráficos e dados contábeis"
                   className="w-full h-auto rounded-xl md:rounded-2xl shadow-2xl transform group-hover:scale-105 transition-transform duration-500"
                   loading="lazy"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-[#164972]/10 to-transparent rounded-xl md:rounded-2xl pointer-events-none"></div>
+                <div className="absolute inset-0 bg-gradient-to-t from-[#111111]/10 to-transparent rounded-xl md:rounded-2xl pointer-events-none"></div>
               </div>
             </div>
 
@@ -134,7 +134,7 @@ export default function Sobre() {
                 return (
                   <div
                     key={diferencial.titulo}
-                    className="group relative bg-white p-4 md:p-5 rounded-xl md:rounded-2xl shadow-md hover:shadow-xl border border-gray-100 hover:border-gray-200 transition-all duration-300 hover:-translate-y-1 animate-fade-in-up"
+                    className="group relative bg-white p-4 md:p-5 rounded-xl md:rounded-2xl shadow-md hover:shadow-xl border border-[#ECE8DE] hover:border-[#DFD9C9] transition-all duration-300 hover:-translate-y-1 animate-fade-in-up"
                     style={{ animationDelay: `${500 + index * 50}ms` }}
                   >
                     {/* Gradient accent */}
@@ -147,7 +147,7 @@ export default function Sobre() {
                       </div>
                       
                       {/* Title */}
-                      <h3 className="text-xs md:text-sm font-semibold text-gray-700 group-hover:text-[#164972] transition-colors duration-300 leading-tight">
+                      <h3 className="text-xs md:text-sm font-semibold text-[#333333] group-hover:text-[#111111] transition-colors duration-300 leading-tight">
                         {diferencial.titulo}
                       </h3>
                     </div>

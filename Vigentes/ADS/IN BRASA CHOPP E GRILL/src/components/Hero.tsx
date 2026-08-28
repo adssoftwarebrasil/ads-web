@@ -1,6 +1,5 @@
 import { Flame, Star, ChevronDown } from 'lucide-react';
-
-const WHATSAPP = 'http://wa.me/556696123349';
+import { WHATSAPP } from '../config';
 
 const stats = [
   { value: '10+', label: 'Anos de Gastronomia' },
@@ -18,7 +17,7 @@ export default function Hero() {
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
         style={{
           backgroundImage:
-            'url("https://storage.lucasmendes.dev/site-sp/in%20brasa%20chopp%20e%20grill/img/hero-background.webp")',
+            'url("/img/hero-background.webp")',
         }}
       ></div>
       <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/50 to-black"></div>

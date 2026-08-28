@@ -1,7 +1,9 @@
+import { whatsappLink } from '../config';
+
 export default function WhatsAppFloat() {
   return (
     <a
-      href="http://wa.me/556696123349?text=Olá! Vim pelo site e gostaria de saber mais sobre o In Brasa."
+      href={whatsappLink('Olá! Vim pelo site e gostaria de saber mais sobre o In Brasa.')}
       target="_blank"
       rel="noopener noreferrer"
       aria-label="Falar no WhatsApp"

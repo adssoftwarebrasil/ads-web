@@ -85,10 +85,10 @@ export default function Contact() {
                   E-mail Comercial
                 </p>
                 <a
-                  href="mailto:sulltec@sulltec.com.br"
+                  href="mailto:comercial@sulltec.com.br"
                   className="text-gray-700 font-medium hover:text-brand-red transition-colors text-sm"
                 >
-                  sulltec@sulltec.com.br
+                  comercial@sulltec.com.br
                 </a>
               </div>
             </div>

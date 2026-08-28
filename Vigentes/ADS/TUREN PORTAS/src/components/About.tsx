@@ -62,7 +62,7 @@ export default function About() {
               ))}
             </ul>
             <a
-              href="https://wa.me/556699118484?text=Olá!%20Gostaria%20de%20saber%20mais%20sobre%20a%20Turen%20Portas."
+              href="https://wa.me/5566999118484?text=Olá!%20Gostaria%20de%20saber%20mais%20sobre%20a%20Turen%20Portas."
               target="_blank"
               rel="noopener noreferrer"
               className="inline-block bg-[#DE8F52] hover:bg-[#c47a40] text-white px-8 py-4 rounded-full font-bold text-base transition-all duration-300 hover:shadow-xl hover:-translate-y-0.5"

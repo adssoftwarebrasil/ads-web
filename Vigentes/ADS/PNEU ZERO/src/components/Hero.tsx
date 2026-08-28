@@ -8,10 +8,17 @@ export default function Hero() {
       className="relative h-screen flex items-center justify-center overflow-hidden"
     >
       <div
-        className="absolute inset-0 bg-cover bg-top bg-fixed"
+        className="absolute inset-0 bg-cover bg-top bg-fixed md:hidden"
         style={{
           backgroundImage:
             'url("/hero.webp")',
+        }}
+      ></div>
+      <div
+        className="absolute inset-0 hidden md:block bg-cover bg-center bg-fixed"
+        style={{
+          backgroundImage:
+            'url("/hero-wide.webp")',
         }}
       ></div>
       <div className="absolute inset-0 bg-black/30"></div>

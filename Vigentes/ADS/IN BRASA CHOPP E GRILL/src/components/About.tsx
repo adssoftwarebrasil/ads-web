@@ -41,7 +41,7 @@ export default function About() {
           <div className="relative animate-reveal">
             <div className="relative rounded-3xl overflow-hidden aspect-[4/5] shadow-2xl">
               <img
-                src="https://storage.lucasmendes.dev/site-sp/in%20brasa%20chopp%20e%20grill/img/costelas-vermelhas-grelhadas-em-grelha-multipla_1440x1800.webp"
+                src="/img/costelas-vermelhas-grelhadas-em-grelha-multipla_1440x1800.webp"
                 alt="Costelinha grelhada na brasa"
                 className="w-full h-full object-cover"
               />

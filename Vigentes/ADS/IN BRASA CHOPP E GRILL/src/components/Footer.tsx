@@ -1,6 +1,5 @@
 import { Instagram, Facebook, Phone, MapPin, Clock } from 'lucide-react';
-
-const WHATSAPP = 'http://wa.me/556696123349';
+import { WHATSAPP, WHATSAPP_DISPLAY } from '../config';
 
 const navLinks = [
   { label: 'Início', href: '#inicio' },
@@ -18,7 +17,7 @@ export default function Footer() {
         <div className="py-16 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
           <div className="lg:col-span-2">
             <img
-              src="https://storage.lucasmendes.dev/site-sp/in%20brasa%20chopp%20e%20grill/img/logo-sem-fundo.webp"
+              src="/img/logo-sem-fundo.webp"
               alt="In Brasa Chopp &amp; Grill"
               className="h-14 w-auto object-contain mb-5"
             />
@@ -103,7 +102,7 @@ export default function Footer() {
                   rel="noopener noreferrer"
                   className="text-white/70 hover:text-brand text-sm transition-colors"
                 >
-                  (66) 9 9612-3349
+                  {WHATSAPP_DISPLAY}
                 </a>
               </li>
             </ul>

@@ -5,7 +5,7 @@ type Feature = { text: string; Icon: LucideIcon; iconClass: string };
 
 const features: Feature[] = [
   {
-    text: 'Assistência técnica autorizada MWM',
+    text: 'Venda e assistência técnica autorizada MWM',
     Icon: Award,
     iconClass: 'lucide lucide-award text-brand-red',
   },
@@ -44,9 +44,9 @@ export default function About() {
           <div className="relative order-2 lg:order-1">
             <div className="relative rounded-2xl overflow-hidden shadow-2xl">
               <img
-                src="https://storage.lucasmendes.dev/site-sp/SULLTEC-GERADORES/gerador-azul-sule-geradores-externo-predio_1195x899.webp"
-                alt="Sulltec Geradores — instalação externa"
-                className="w-full h-80 md:h-[480px] object-cover"
+                src="/sobre-equipe-sulltec.webp"
+                alt="Equipe Sulltec Geradores com frota de geradores"
+                className="w-full h-80 md:h-[480px] object-cover object-top"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-brand-blue/50 to-transparent"></div>
             </div>

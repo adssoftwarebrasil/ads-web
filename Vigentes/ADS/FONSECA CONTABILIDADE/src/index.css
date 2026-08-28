@@ -2,13 +2,31 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Identidade visual Fonseca Contabilidade: Preto, Dourado e Branco */
+:root {
+  --preto: #0A0A0A;
+  --preto-900: #111111;
+  --preto-800: #1C1C1C;
+  --preto-700: #2B2B2B;
+  --dourado: #C9A44C;
+  --dourado-claro: #E8CE8A;
+  --dourado-escuro: #8E6F2C;
+  --branco: #FFFFFF;
+  --off-white: #F7F5F0;
+}
+
 @layer base {
   html {
     scroll-behavior: smooth;
   }
 
   body {
-    @apply text-gray-900 antialiased;
+    @apply text-[#111111] antialiased;
+  }
+
+  ::selection {
+    background-color: #C9A44C;
+    color: #0A0A0A;
   }
 }
 

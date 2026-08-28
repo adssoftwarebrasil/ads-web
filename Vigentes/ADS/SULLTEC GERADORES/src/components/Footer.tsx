@@ -107,10 +107,10 @@ export default function Footer() {
                   className="lucide lucide-mail text-brand-red mt-0.5 shrink-0"
                 />
                 <a
-                  href="mailto:sulltec@sulltec.com.br"
+                  href="mailto:comercial@sulltec.com.br"
                   className="text-white/60 hover:text-white text-sm transition-colors break-all"
                 >
-                  sulltec@sulltec.com.br
+                  comercial@sulltec.com.br
                 </a>
               </li>
               <li className="flex items-start gap-3">

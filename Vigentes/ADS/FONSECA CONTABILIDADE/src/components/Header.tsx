@@ -39,8 +39,8 @@ export default function Header() {
     <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
         isScrolled 
-          ? 'bg-white/95 backdrop-blur-sm shadow-lg' 
-          : 'bg-white'
+          ? 'bg-[#0A0A0A]/95 backdrop-blur-md shadow-lg shadow-black/40 border-b border-[#C9A44C]/25'
+          : 'bg-[#0A0A0A] border-b border-white/5'
       }`}
     >
       <div className="max-w-[1280px] mx-auto px-4 sm:px-6 md:px-12 lg:px-16">
@@ -51,7 +51,7 @@ export default function Header() {
             onClick={() => scrollToSection('inicio')}
           >
             <img 
-              src="https://storage.lucasmendes.dev/site-sp/wpfcontabilidade%2Ffa-contabilidade-logo-sem-fundo_3_11zon.webp"
+              src="/logo-fonseca.png"
               alt="Fonseca Contabilidade Logo"
               className={`transition-all duration-300 ${
                 isScrolled ? 'h-10 md:h-12' : 'h-12 md:h-14'
@@ -65,17 +65,17 @@ export default function Header() {
               <button
                 key={item.id}
                 onClick={() => scrollToSection(item.id)}
-                className="text-[#164972] font-medium hover:text-[#0d2d47] relative group transition-colors duration-300"
+                className="text-white/80 font-medium hover:text-[#E8CE8A] relative group transition-colors duration-300"
               >
                 {item.label}
-                <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-[#164972] transition-all duration-300 group-hover:w-full"></span>
+                <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-[#C9A44C] transition-all duration-300 group-hover:w-full"></span>
               </button>
             ))}
             <a
               href="https://wa.me/5562999732807?text=Olá! Gostaria de falar com um especialista da Fonseca Contabilidade."
               target="_blank"
               rel="noopener noreferrer"
-              className="bg-[#164972] text-white px-6 py-2.5 rounded-lg font-medium hover:bg-[#0d2d47] hover:shadow-lg transform hover:scale-105 transition-all duration-300"
+              className="bg-[#C9A44C] text-[#0A0A0A] px-6 py-2.5 rounded-lg font-semibold hover:bg-[#E8CE8A] hover:shadow-lg hover:shadow-[#C9A44C]/30 transform hover:scale-105 transition-all duration-300"
             >
               Falar com Especialista
             </a>
@@ -83,7 +83,7 @@ export default function Header() {
 
           {/* Mobile Menu Button */}
           <button
-            className="lg:hidden text-[#164972] p-2 hover:bg-gray-100 rounded-lg transition-colors duration-300"
+            className="lg:hidden text-white p-2 hover:bg-white/10 rounded-lg transition-colors duration-300"
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
             aria-label="Toggle menu"
           >
@@ -101,13 +101,13 @@ export default function Header() {
             isMobileMenuOpen ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'
           }`}
         >
-          <nav className="py-4 border-t border-gray-200">
+          <nav className="py-4 border-t border-white/10">
             <div className="flex flex-col gap-1">
               {navItems.map((item) => (
                 <button
                   key={item.id}
                   onClick={() => scrollToSection(item.id)}
-                  className="text-[#164972] font-medium text-left px-4 py-3 hover:bg-gray-50 rounded-lg transition-all duration-300"
+                  className="text-white/80 font-medium text-left px-4 py-3 hover:bg-white/10 hover:text-[#E8CE8A] rounded-lg transition-all duration-300"
                 >
                   {item.label}
                 </button>
@@ -116,7 +116,7 @@ export default function Header() {
                 href="https://wa.me/5562999732807?text=Olá! Gostaria de falar com um especialista da Fonseca Contabilidade."
                 target="_blank"
                 rel="noopener noreferrer"
-                className="bg-[#164972] text-white px-6 py-3 rounded-lg font-medium text-center hover:bg-[#0d2d47] transition-all duration-300 mt-2"
+                className="bg-[#C9A44C] text-[#0A0A0A] px-6 py-3 rounded-lg font-semibold text-center hover:bg-[#E8CE8A] transition-all duration-300 mt-2"
               >
                 Falar com Especialista
               </a>

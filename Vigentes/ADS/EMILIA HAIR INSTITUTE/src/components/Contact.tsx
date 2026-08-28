@@ -131,7 +131,7 @@ export default function Contact() {
                 Informações de <span className="italic text-gold">Contato</span>
               </h3>
               <div className="space-y-6">
-                <div className="flex items-center gap-4">
+                <div className="flex items-start gap-4">
                   <div className="flex-shrink-0 w-10 h-10 bg-gold/20 rounded-xl flex items-center justify-center">
                     <Phone className="lucide lucide-phone text-gold" width={18} height={18} />
                   </div>
@@ -144,6 +144,18 @@ export default function Contact() {
                       className="font-sans text-sm text-white/95 hover:text-gold transition-colors font-medium"
                     >
                       (65) 9 9981-1065
+                    </a>
+                    <a
+                      href="tel:+556536221065"
+                      className="font-sans text-sm text-white/95 hover:text-gold transition-colors font-medium"
+                    >
+                      (65) 3622-1065
+                    </a>
+                    <a
+                      href="tel:+556533210975"
+                      className="font-sans text-sm text-white/95 hover:text-gold transition-colors font-medium"
+                    >
+                      (65) 3321-0975
                     </a>
                   </div>
                 </div>

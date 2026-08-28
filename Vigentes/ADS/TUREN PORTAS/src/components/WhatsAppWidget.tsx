@@ -20,7 +20,7 @@ export default function WhatsAppWidget() {
         </div>
       )}
       <a
-        href="https://wa.me/556699118484?text=Olá!%20Vim%20pelo%20site%20e%20gostaria%20de%20um%20orçamento."
+        href="https://wa.me/5566999118484?text=Olá!%20Vim%20pelo%20site%20e%20gostaria%20de%20um%20orçamento."
         target="_blank"
         rel="noopener noreferrer"
         className="w-14 h-14 bg-[#25D366] hover:bg-[#1ebe5d] rounded-full shadow-2xl flex items-center justify-center transition-all duration-300 hover:scale-110 hover:shadow-green-400/40"

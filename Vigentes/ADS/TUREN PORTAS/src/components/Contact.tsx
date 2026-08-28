@@ -20,7 +20,7 @@ export default function Contact() {
     if (form.product) lines.push(`Produto de interesse: ${form.product}`);
     if (form.message) lines.push(`Mensagem: ${form.message}`);
     const text = encodeURIComponent(lines.join('\n'));
-    window.open(`https://wa.me/556699118484?text=${text}`, '_blank', 'noopener,noreferrer');
+    window.open(`https://wa.me/5566999118484?text=${text}`, '_blank', 'noopener,noreferrer');
   };
 
   return (
@@ -61,7 +61,7 @@ export default function Contact() {
                   <div>
                     <p className="font-semibold text-[#005143] text-sm">Telefone / WhatsApp</p>
                     <a
-                      href="tel:+556699118484"
+                      href="tel:+5566999118484"
                       className="text-[#DE8F52] hover:text-[#c47a40] text-sm font-medium transition-colors"
                     >
                       (66) 9 9911-8484
@@ -153,8 +153,6 @@ export default function Contact() {
                 >
                   <option value="">Selecione um produto</option>
                   <option value="Portas WPC Premium">Portas WPC Premium</option>
-                  <option value="Portas PVC Premium">Portas PVC Premium</option>
-                  <option value="Linha Moderna Interior">Linha Moderna Interior</option>
                   <option value="Outro / Não sei ainda">Outro / Não sei ainda</option>
                 </select>
               </div>

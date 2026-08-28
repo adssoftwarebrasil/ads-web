@@ -1,7 +1,6 @@
 import { useEffect, useState } from 'react';
 import { Phone, Menu as MenuIcon, X } from 'lucide-react';
-
-const WHATSAPP = 'http://wa.me/556696123349';
+import { WHATSAPP } from '../config';
 
 const navLinks = [
   { label: 'Início', href: '#inicio' },
@@ -35,7 +34,7 @@ export default function Header() {
         <div className="flex items-center justify-between h-20">
           <a href="#inicio" className="flex items-center gap-3 flex-shrink-0">
             <img
-              src="https://storage.lucasmendes.dev/site-sp/in%20brasa%20chopp%20e%20grill/img/logo-sem-fundo.webp"
+              src="/img/logo-sem-fundo.webp"
               alt="In Brasa Chopp &amp; Grill"
               className="h-14 w-auto object-contain"
             />

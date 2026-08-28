@@ -10,7 +10,7 @@ const navItems = [
 ];
 
 const WHATSAPP_URL =
-  'https://wa.me/556699118484?text=Olá!%20Gostaria%20de%20conhecer%20mais%20sobre%20as%20portas%20da%20Turen%20Portas.';
+  'https://wa.me/5566999118484?text=Olá!%20Gostaria%20de%20conhecer%20mais%20sobre%20as%20portas%20da%20Turen%20Portas.';
 
 export default function Header() {
   const [scrolled, setScrolled] = useState(false);
@@ -57,7 +57,7 @@ export default function Header() {
           </nav>
           <div className="hidden md:flex items-center gap-4">
             <a
-              href="tel:+556699118484"
+              href="tel:+5566999118484"
               className="flex items-center gap-2 text-[#ECC4A4] hover:text-white text-sm font-medium transition-colors"
             >
               <Phone width={16} height={16} />

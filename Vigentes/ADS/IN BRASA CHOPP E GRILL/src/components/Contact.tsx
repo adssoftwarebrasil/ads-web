@@ -1,6 +1,14 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import type { FormEvent } from 'react';
 import { MapPin, Clock, Phone, User, Users, MessageSquare, Send } from 'lucide-react';
+import { WHATSAPP, WHATSAPP_DISPLAY, whatsappLink } from '../config';
+
+/** Aberto de segunda a sabado, das 17h as 23h. Domingo fechado. */
+function isOpenNow(now: Date = new Date()): boolean {
+  if (now.getDay() === 0) return false;
+  const minutes = now.getHours() * 60 + now.getMinutes();
+  return minutes >= 17 * 60 && minutes < 23 * 60;
+}
 
 const schedule = [
   { day: 'Segunda-feira', hours: '17:00 – 23:00', closed: false },
@@ -26,6 +34,13 @@ const guestOptions = [
 ];
 
 export default function Contact() {
+  const [open, setOpen] = useState(() => isOpenNow());
+
+  useEffect(() => {
+    const id = window.setInterval(() => setOpen(isOpenNow()), 60000);
+    return () => window.clearInterval(id);
+  }, []);
+
   const [form, setForm] = useState({
     name: '',
     phone: '',
@@ -46,8 +61,7 @@ export default function Contact() {
       `Pessoas: ${form.guests}`,
     ];
     if (form.message) lines.push(`Observação: ${form.message}`);
-    const text = encodeURIComponent(lines.join('\n'));
-    window.open(`https://wa.me/556696123349?text=${text}`, '_blank', 'noopener,noreferrer');
+    window.open(whatsappLink(lines.join('\n')), '_blank', 'noopener,noreferrer');
   };
 
   return (
@@ -94,8 +108,12 @@ export default function Contact() {
                 <div className="w-full">
                   <div className="flex items-center justify-between mb-3">
                     <h3 className="text-white font-semibold">Horários</h3>
-                    <span className="text-xs font-bold px-3 py-1 rounded-full bg-red-500/20 text-red-400">
-                      ● Fechado
+                    <span
+                      className={`text-xs font-bold px-3 py-1 rounded-full ${
+                        open ? 'bg-green-500/20 text-green-400' : 'bg-red-500/20 text-red-400'
+                      }`}
+                    >
+                      ● {open ? 'Aberto agora' : 'Fechado'}
                     </span>
                   </div>
                   <div className="space-y-1.5">
@@ -119,12 +137,12 @@ export default function Contact() {
                 <div>
                   <h3 className="text-white font-semibold mb-1">WhatsApp</h3>
                   <a
-                    href="https://wa.me/556696123349"
+                    href={WHATSAPP}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="text-white/70 hover:text-brand transition-colors text-sm"
                   >
-                    (66) 9 9612-3349
+                    {WHATSAPP_DISPLAY}
                   </a>
                 </div>
               </div>

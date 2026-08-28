@@ -1,8 +1,7 @@
 import { useState } from 'react';
 import { Flame, UtensilsCrossed, CupSoda, Beer, Cake } from 'lucide-react';
 import type { LucideIcon } from 'lucide-react';
-
-const WHATSAPP = 'http://wa.me/556696123349';
+import { whatsappLink } from '../config';
 
 interface Category {
   id: string;
@@ -15,8 +14,6 @@ interface Product {
   description: string;
   image: string;
   badge?: string;
-  href: string;
-  delay: number;
 }
 
 const categories: Category[] = [
@@ -31,47 +28,178 @@ const productsByCategory: Record<string, Product[]> = {
   espetos: [
     {
       name: 'Espeto de Picanha',
-      description: 'Picanha premium grelhada na brasa, temperada na medida certa',
-      image:
-        'https://storage.lucasmendes.dev/site-sp/in%20brasa%20chopp%20e%20grill/img/espetinho-de-carne-grelhado-em-madeira_1440x1911.webp',
+      description: 'Picanha com a capa de gordura na medida certa, assada na brasa',
+      image: '/img/espeto-de-picanha.jpeg',
       badge: 'Mais Pedido',
-      href: 'http://wa.me/556696123349?text=Olá! Quero pedir: Espeto%20de%20Picanha',
-      delay: 0,
     },
     {
-      name: 'Espeto de Frango c/ Bacon',
-      description: 'Frango suculento envolto em bacon crocante, marinado na casa',
-      image:
-        'https://storage.lucasmendes.dev/site-sp/in%20brasa%20chopp%20e%20grill/img/espetinhos-de-carne-e-gordura-em-espeto_1440x1440.webp',
-      href: 'http://wa.me/556696123349?text=Olá! Quero pedir: Espeto%20de%20Frango%20c%2F%20Bacon',
-      delay: 60,
+      name: 'Espeto de Carne na Brasa',
+      description: 'Corte nobre inteiro no espeto, selado por fora e suculento por dentro',
+      image: '/img/espeto-de-carne-na-brasa.jpeg',
     },
     {
-      name: 'Espeto de Coração',
-      description: 'Coração de frango grelhado, temperado com alho e limão',
-      image:
-        'https://storage.lucasmendes.dev/site-sp/in%20brasa%20chopp%20e%20grill/img/espetinho-de-carne-grelhado-em-madeira_1440x1911.webp',
-      href: 'http://wa.me/556696123349?text=Olá! Quero pedir: Espeto%20de%20Cora%C3%A7%C3%A3o',
-      delay: 120,
+      name: 'Medalhão de Frango',
+      description: 'Frango envolto em bacon, grelhado lentamente até ficar macio',
+      image: '/img/medalhao-de-frango.jpeg',
     },
     {
-      name: 'Espeto de Cupim',
-      description: 'Cupim bovino com gordura marmoreada, defumado lentamente',
-      image:
-        'https://storage.lucasmendes.dev/site-sp/in%20brasa%20chopp%20e%20grill/img/espetinhos-de-carne-e-gordura-em-espeto_1440x1440.webp',
+      name: 'Espeto de Frango com Bacon',
+      description: 'Cubos de frango temperados e enrolados no bacon crocante',
+      image: '/img/espeto-de-frango-com-bacon.jpeg',
+    },
+    {
+      name: 'Trio de Espetos',
+      description: 'Três espetos da casa no suporte para dividir na mesa',
+      image: '/img/trio-de-espetos.jpeg',
       badge: 'Especial',
-      href: 'http://wa.me/556696123349?text=Olá! Quero pedir: Espeto%20de%20Cupim',
-      delay: 180,
     },
   ],
-  porcoes: [],
-  drinks: [],
-  cervejas: [],
-  sobremesas: [],
+  porcoes: [
+    {
+      name: 'Combo Família In Brasa',
+      description: 'Espetos, arroz, farofa, vinagrete e acompanhamentos para a mesa toda',
+      image: '/img/combo-familia-inbrasa.jpeg',
+      badge: 'Mais Pedido',
+    },
+    {
+      name: 'Combo de Acompanhamentos',
+      description: 'Arroz, farofa, vinagrete, maionese e saladas para completar seu espeto',
+      image: '/img/combo-de-acompanhamentos.jpeg',
+    },
+    {
+      name: 'Costelinha ao Barbecue',
+      description: 'Costelinha glaceada no molho barbecue da casa com batata rústica',
+      image: '/img/costelinha-bbq-batata-rustica.jpeg',
+    },
+    {
+      name: 'Torresmo Crocante',
+      description: 'Torresmo pururucado com cebola roxa e limão',
+      image: '/img/torresmo-crocante-cebola-roxa.jpeg',
+    },
+    {
+      name: 'Bolinho de Carne Seca com Queijo Coalho',
+      description: 'Crocante por fora, carne seca e queijo coalho por dentro',
+      image: '/img/bolinho-carne-seca-queijo-coalho.jpeg',
+    },
+    {
+      name: 'Bolinho de Costela',
+      description: 'Bolinho crocante recheado com costela desfiada',
+      image: '/img/bolinho-de-costela.jpeg',
+    },
+    {
+      name: 'Pastelzinho de Brisket',
+      description: 'Pastel crocante recheado com brisket defumado na casa',
+      image: '/img/pastelzinho-de-brisket.jpeg',
+    },
+    {
+      name: 'Medalhão de Queijo Coalho com Goiabada',
+      description: 'Queijo coalho grelhado com goiabada — o doce e salgado da casa',
+      image: '/img/medalhao-queijo-coalho-goiabada.jpeg',
+      badge: 'Especial',
+    },
+    {
+      name: 'Batata Frita com Brisket',
+      description: 'Batata frita coberta com brisket desfiado, queijo e cebolinha',
+      image: '/img/batata-frita-com-brisket.jpeg',
+    },
+    {
+      name: 'Batata Frita',
+      description: 'Porção generosa de batata frita sequinha e bem dourada',
+      image: '/img/batata-frita.jpeg',
+    },
+    {
+      name: 'Panela de Carne com Pão de Alho',
+      description: 'Carne na panela com pimentão, cebola roxa e pimenta biquinho',
+      image: '/img/panela-de-carne-pao-de-alho.jpeg',
+    },
+    {
+      name: 'Carne com Jiló',
+      description: 'Carne salteada com jiló, cebola roxa e pimenta biquinho',
+      image: '/img/carne-com-jilo.jpeg',
+    },
+  ],
+  drinks: [
+    {
+      name: 'Caipirinha de Limão',
+      description: 'A clássica da casa, preparada na hora com limão fresco',
+      image: '/img/caipirinha-de-limao.jpeg',
+      badge: 'Mais Pedido',
+    },
+    {
+      name: 'Caipirinha de Maracujá',
+      description: 'Maracujá natural, doce na medida e bem gelada',
+      image: '/img/caipirinha-de-maracuja.jpeg',
+    },
+    {
+      name: 'Caipirosca de Kiwi',
+      description: 'Kiwi fresco macerado com vodka e muito gelo',
+      image: '/img/caipirosca-de-kiwi.jpeg',
+    },
+    {
+      name: 'Gin Tropical',
+      description: 'Gin com maracujá, flor comestível e especiarias da casa',
+      image: '/img/gin-tropical.jpeg',
+      badge: 'Especial',
+    },
+    {
+      name: 'Coquetel Tropical',
+      description: 'Frutas tropicais batidas com maracujá, hortelã e laranja',
+      image: '/img/coquetel-tropical.jpeg',
+    },
+    {
+      name: 'Negroni',
+      description: 'Gin, vermute e bitter na medida certa',
+      image: '/img/negroni.jpeg',
+    },
+    {
+      name: 'Aperol Spritz',
+      description: 'Aperol, espumante e água com gás, servido bem gelado',
+      image: '/img/aperol-spritz.jpeg',
+    },
+    {
+      name: 'Drink com Torresmo',
+      description: 'Coquetel cítrico finalizado com torresmo crocante e hortelã',
+      image: '/img/drink-com-torresmo.jpeg',
+    },
+  ],
+  cervejas: [
+    {
+      name: 'Chopp Gelado',
+      description: 'Chopp tirado na hora, com colarinho na medida e caneca congelada',
+      image: '/img/chopp-gelado.jpeg',
+      badge: 'Mais Pedido',
+    },
+    {
+      name: 'Cervejas Geladas',
+      description: 'Heineken, Brahma, Corona e mais rótulos sempre no gelo',
+      image: '/img/cervejas-geladas.jpeg',
+    },
+    {
+      name: 'Stella Artois Pure Gold',
+      description: 'Stella Artois Pure Gold, puro malte, menos calorias e sem glúten',
+      image: '/img/stella-artois-pure-gold.jpeg',
+    },
+    {
+      name: 'Corona Extra',
+      description: 'Corona Extra long neck, leve e refrescante',
+      image: '/img/corona-extra.jpeg',
+    },
+    {
+      name: 'Brahma Chopp',
+      description: 'Brahma Chopp garrafa, servida estupidamente gelada',
+      image: '/img/brahma-chopp.jpeg',
+    },
+  ],
+  sobremesas: [
+  ],
 };
 
+const availableCategories = categories.filter(
+  (cat) => (productsByCategory[cat.id] ?? []).length > 0
+);
+
 export default function Menu() {
-  const [active, setActive] = useState('espetos');
+  const [active, setActive] = useState(availableCategories[0].id);
   const products = productsByCategory[active] ?? [];
 
   return (
@@ -90,7 +218,7 @@ export default function Menu() {
           </p>
         </div>
         <div className="flex items-center gap-2 overflow-x-auto pb-4 mb-10 scrollbar-none justify-start lg:justify-center animate-reveal">
-          {categories.map((cat) => {
+          {availableCategories.map((cat) => {
             const Icon = cat.icon;
             const isActive = active === cat.id;
             return (
@@ -110,11 +238,11 @@ export default function Menu() {
           })}
         </div>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
-          {products.map((product) => (
+          {products.map((product, index) => (
             <div
               key={product.name}
               className="animate-reveal card-dark group hover:border-brand/30 transition-all duration-300 hover:-translate-y-1"
-              style={{ transitionDelay: `${product.delay}ms` }}
+              style={{ transitionDelay: `${index * 60}ms` }}
             >
               <div className="relative overflow-hidden aspect-[4/3]">
                 <img
@@ -133,17 +261,14 @@ export default function Menu() {
               <div className="p-5">
                 <h3 className="font-semibold text-white text-base mb-1.5">{product.name}</h3>
                 <p className="text-white/50 text-xs leading-relaxed mb-4">{product.description}</p>
-                <div className="flex items-center justify-between">
-                  <span className="text-brand font-bold text-lg"></span>
-                  <a
-                    href={product.href}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-xs font-semibold text-white/50 hover:text-brand transition-colors"
-                  >
-                    Pedir →
-                  </a>
-                </div>
+                <a
+                  href={whatsappLink(`Olá! Quero pedir: ${product.name}`)}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-xs font-semibold text-white/50 hover:text-brand transition-colors"
+                >
+                  Pedir →
+                </a>
               </div>
             </div>
           ))}
@@ -153,7 +278,7 @@ export default function Menu() {
             Cardápio completo disponível no estabelecimento
           </p>
           <a
-            href="http://wa.me/556696123349?text=Olá! Gostaria de ver o cardápio completo do In Brasa."
+            href={whatsappLink('Olá! Gostaria de ver o cardápio completo do In Brasa.')}
             target="_blank"
             rel="noopener noreferrer"
             className="btn-outline text-sm"
@@ -165,5 +290,3 @@ export default function Menu() {
     </section>
   );
 }
-
-export { WHATSAPP };

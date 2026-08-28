@@ -1,5 +1,5 @@
 import type { LucideIcon } from 'lucide-react';
-import { ShieldCheck, Eye, Target } from 'lucide-react';
+import { Target, Eye, ShieldCheck } from 'lucide-react';
 import { useInView } from '../hooks/useInView';
 
 interface Bloco {
@@ -10,6 +10,20 @@ interface Bloco {
 }
 
 const blocos: Bloco[] = [
+  {
+    icon: Target,
+    iconClass: 'lucide lucide-target text-white',
+    title: 'Missão',
+    items: ['Cuidar do veículo de nossos clientes.'],
+  },
+  {
+    icon: Eye,
+    iconClass: 'lucide lucide-eye text-white',
+    title: 'Visão',
+    items: [
+      'Ser reconhecida como a principal escolha em pneus e serviços automotivos no mercado, contribuindo para uma maior segurança no setor de mobilidade, através da inovação e excelência no atendimento.',
+    ],
+  },
   {
     icon: ShieldCheck,
     iconClass: 'lucide lucide-shield-check text-white',
@@ -22,20 +36,6 @@ const blocos: Bloco[] = [
       'Crescimento pelo aprendizado.',
       'Aperfeiçoamento contínuo.',
     ],
-  },
-  {
-    icon: Eye,
-    iconClass: 'lucide lucide-eye text-white',
-    title: 'Visão',
-    items: [
-      'Ser reconhecida como a principal escolha em pneus e serviços automotivos no mercado, contribuindo para uma maior segurança no setor de mobilidade, através da inovação e excelência no atendimento.',
-    ],
-  },
-  {
-    icon: Target,
-    iconClass: 'lucide lucide-target text-white',
-    title: 'Missão',
-    items: ['Cuidar do veículo de nossos clientes.'],
   },
 ];
 
@@ -82,7 +82,7 @@ export default function ValoresVisaoMissao() {
             Nossa essência
           </p>
           <h2 className="text-4xl md:text-5xl font-bold text-[rgb(3,3,4)] mb-4">
-            Valores, Visão e Missão
+            Missão, Visão e Valores
           </h2>
           <p className="text-gray-700 text-lg max-w-2xl mx-auto">
             Os princípios que guiam o nosso trabalho todos os dias.

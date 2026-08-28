@@ -3,11 +3,11 @@ import { Instagram, Facebook, MapPin, Phone, Mail, Clock } from 'lucide-react';
 const navLinks = ['Início', 'Produtos', 'Sobre Nós', 'Galeria', 'Contato'];
 const navTargets = ['hero', 'produtos', 'sobre', 'galeria', 'contato'];
 const productLinks = [
-  'Portas WPC Premium',
-  'Portas PVC Premium',
-  'Linha Moderna Interior',
-  'Portas Impermeáveis',
-  'Portas para Banheiro',
+  'Branca Frisada',
+  'Capuccino',
+  'Cinza Claro',
+  'Cinza Escuro',
+  'Fendi',
 ];
 
 const scrollTo = (id: string) => {
@@ -67,7 +67,9 @@ export default function Footer() {
             </ul>
           </div>
           <div>
-            <h4 className="text-white font-bold text-sm uppercase tracking-widest mb-5">Produtos</h4>
+            <h4 className="text-white font-bold text-sm uppercase tracking-widest mb-5">
+              Portas WPC Premium
+            </h4>
             <ul className="space-y-3">
               {productLinks.map((label) => (
                 <li key={label}>
@@ -93,7 +95,7 @@ export default function Footer() {
               <li className="flex items-center gap-3">
                 <Phone width={15} height={15} className="text-[#DE8F52] shrink-0" />
                 <a
-                  href="tel:+556699118484"
+                  href="tel:+5566999118484"
                   className="text-[#ECC4A4]/70 hover:text-[#ECC4A4] text-sm transition-colors"
                 >
                   (66) 9 9911-8484
@@ -123,7 +125,7 @@ export default function Footer() {
             © 2026 Turen Portas – Todos os direitos reservados.
           </p>
           <p className="text-[#ECC4A4]/40 text-xs">
-            Sinop – MT | Portas de Alto Padrão WPC e PVC
+            Sinop – MT | Portas de Alto Padrão 100% WPC
           </p>
         </div>
       </div>

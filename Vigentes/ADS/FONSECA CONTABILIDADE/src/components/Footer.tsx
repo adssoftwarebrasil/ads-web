@@ -42,7 +42,7 @@ export default function Footer() {
   ];
 
   return (
-    <footer className="relative bg-gradient-to-br from-[#1a5280] via-[#164972] to-[#0d2d47] overflow-hidden">
+    <footer className="relative bg-gradient-to-br from-[#2B2B2B] via-[#111111] to-[#0A0A0A] overflow-hidden">
       {/* Background decoration */}
       <div className="absolute inset-0 opacity-5">
         <div className="absolute inset-0" style={{
@@ -57,9 +57,9 @@ export default function Footer() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 md:gap-12">
             {/* Logo & Description */}
             <div className="lg:col-span-1">
-              <div className="mb-6 bg-white/95 backdrop-blur-sm rounded-2xl p-4 inline-block">
+              <div className="mb-6 inline-block">
                 <img 
-                  src="https://storage.lucasmendes.dev/site-sp/wpfcontabilidade%2Ffa-contabilidade-logo-sem-fundo_3_11zon.webp"
+                  src="/logo-fonseca.png"
                   alt="Fonseca Contabilidade Logo"
                   className="h-12 md:h-16 w-auto object-contain"
                 />
@@ -81,7 +81,7 @@ export default function Footer() {
                       className="w-10 h-10 rounded-lg bg-white/10 hover:bg-white/20 flex items-center justify-center transition-all duration-300 hover:scale-110"
                       aria-label={rede.nome}
                     >
-                      <IconComponent className="w-5 h-5 text-white" />
+                      <IconComponent className="w-5 h-5 text-[#E8CE8A]" />
                     </a>
                   );
                 })}
@@ -90,13 +90,13 @@ export default function Footer() {
 
             {/* Serviços */}
             <div>
-              <h3 className="text-white font-bold text-lg mb-4">Serviços</h3>
+              <h3 className="text-[#E8CE8A] font-bold text-lg mb-4">Serviços</h3>
               <ul className="space-y-3">
                 {links.servicos.map((link) => (
                   <li key={link.nome}>
                     <a
                       href={link.href}
-                      className="text-white/70 hover:text-white text-sm transition-colors duration-300 hover:translate-x-1 inline-block"
+                      className="text-white/70 hover:text-[#E8CE8A] text-sm transition-colors duration-300 hover:translate-x-1 inline-block"
                     >
                       {link.nome}
                     </a>
@@ -107,13 +107,13 @@ export default function Footer() {
 
             {/* Empresa */}
             <div>
-              <h3 className="text-white font-bold text-lg mb-4">Empresa</h3>
+              <h3 className="text-[#E8CE8A] font-bold text-lg mb-4">Empresa</h3>
               <ul className="space-y-3">
                 {links.empresa.map((link) => (
                   <li key={link.nome}>
                     <a
                       href={link.href}
-                      className="text-white/70 hover:text-white text-sm transition-colors duration-300 hover:translate-x-1 inline-block"
+                      className="text-white/70 hover:text-[#E8CE8A] text-sm transition-colors duration-300 hover:translate-x-1 inline-block"
                     >
                       {link.nome}
                     </a>
@@ -124,7 +124,7 @@ export default function Footer() {
 
             {/* Contato */}
             <div>
-              <h3 className="text-white font-bold text-lg mb-4">Contato</h3>
+              <h3 className="text-[#E8CE8A] font-bold text-lg mb-4">Contato</h3>
               <ul className="space-y-4">
                 {contatos.map((contato) => {
                   const IconComponent = contato.icone;
@@ -132,7 +132,7 @@ export default function Footer() {
                     <li key={contato.texto}>
                       <a
                         href={contato.href}
-                        className="flex items-start gap-3 text-white/70 hover:text-white text-sm transition-colors duration-300 group"
+                        className="flex items-start gap-3 text-white/70 hover:text-[#E8CE8A] text-sm transition-colors duration-300 group"
                       >
                         <IconComponent className="w-5 h-5 flex-shrink-0 mt-0.5 group-hover:scale-110 transition-transform duration-300" />
                         <span>{contato.texto}</span>
@@ -148,7 +148,7 @@ export default function Footer() {
                   href="https://wa.me/5562999732807?text=Olá! Gostaria de falar com a Fonseca Contabilidade."
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center justify-center w-full px-4 py-3 bg-white text-[#164972] rounded-lg font-semibold text-sm hover:bg-white/90 hover:scale-105 transition-all duration-300 shadow-lg"
+                  className="inline-flex items-center justify-center w-full px-4 py-3 bg-[#C9A44C] text-[#0A0A0A] rounded-lg font-semibold text-sm hover:bg-[#E8CE8A] hover:scale-105 transition-all duration-300 shadow-lg"
                 >
                   Falar no WhatsApp
                 </a>

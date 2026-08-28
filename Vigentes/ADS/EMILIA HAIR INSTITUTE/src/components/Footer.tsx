@@ -110,14 +110,32 @@ export default function Footer() {
                   Cuiabá - MT, 78008-030
                 </span>
               </li>
-              <li className="flex items-center gap-3">
-                <Phone className="lucide lucide-phone text-gold flex-shrink-0" width={15} height={15} />
-                <a
-                  href="tel:+556599811065"
-                  className="font-sans text-sm text-white/70 hover:text-gold transition-colors"
-                >
-                  (65) 9 9981-1065
-                </a>
+              <li className="flex items-start gap-3">
+                <Phone
+                  className="lucide lucide-phone text-gold mt-0.5 flex-shrink-0"
+                  width={15}
+                  height={15}
+                />
+                <span className="flex flex-col gap-1">
+                  <a
+                    href="tel:+556599811065"
+                    className="font-sans text-sm text-white/70 hover:text-gold transition-colors"
+                  >
+                    (65) 9 9981-1065
+                  </a>
+                  <a
+                    href="tel:+556536221065"
+                    className="font-sans text-sm text-white/70 hover:text-gold transition-colors"
+                  >
+                    (65) 3622-1065
+                  </a>
+                  <a
+                    href="tel:+556533210975"
+                    className="font-sans text-sm text-white/70 hover:text-gold transition-colors"
+                  >
+                    (65) 3321-0975
+                  </a>
+                </span>
               </li>
             </ul>
             <a

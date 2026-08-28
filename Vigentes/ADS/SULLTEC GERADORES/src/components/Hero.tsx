@@ -25,7 +25,7 @@ export default function Hero() {
           <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-extrabold text-white leading-tight mb-6 text-shadow-lg">
             Energia Quando
             <br />
-            <span className="text-brand-red">Você Precisa</span>
+            <span className="text-brand-red">Você Precisar</span>
           </h1>
           <p className="text-lg md:text-xl text-white/80 font-light leading-relaxed mb-8 max-w-xl">
             Venda, locação e manutenção de geradores em Santa Catarina.
