@@ -3,6 +3,12 @@
 Acervo dos sites desenvolvidos pela **ADS**. Cada pasta de site e um projeto
 independente (React + Vite + TypeScript).
 
+## Para agentes de IA
+
+As regras de quem mexe neste repositorio estao em [AGENTS.md](AGENTS.md), que
+o `CLAUDE.md` tambem aponta. A principal: manter o `vercel-projects.json`
+atualizado a cada mudanca de pasta ou de projeto na Vercel.
+
 ## Estrutura
 
 ```
