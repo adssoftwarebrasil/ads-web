@@ -1559,6 +1559,12 @@
     "projectId": "prj_klXuexKAzZCiDyPSZPcL4roKsLKT",
     "projectName": "jp-mar-engenharia"
   },
+  "JR BATERIAS": {
+    "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "path": "Vigentes/ADS/JR BATERIAS",
+    "projectId": "prj_dofrLVQKwqpLo8x5TvfRWlXcDfhN",
+    "projectName": "jr-baterias"
+  },
   "JR VEICULOS RONDONOPOLIS": {
     "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
     "path": "Vigentes/ADS/JR VEICULOS RONDONOPOLIS",
@@ -2368,6 +2374,12 @@
     "path": "Vigentes/ADS/RN informática e tecnologia",
     "projectId": "prj_RErU7LoYRSEj6yWz4XtMD6dcyDHA",
     "projectName": "rninformatica"
+  },
+  "ROBOESCAP": {
+    "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "path": "Vigentes/ADS/ROBOESCAP",
+    "projectId": "prj_QD18v9ane0mSVNblESZxo3Trtiod",
+    "projectName": "roboescap"
   },
   "ROLIM CONFECCOES E BORDADOS": {
     "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",

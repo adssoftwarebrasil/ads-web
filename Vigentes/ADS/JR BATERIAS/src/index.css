@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700;9..144,800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --topbar-h: 32px;
+    --header-h: 80px;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-white text-primary antialiased;
+    font-feature-settings: 'ss01', 'cv11';
+    font-family: 'Plus Jakarta Sans', system-ui, sans-serif;
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+}
+
+@layer utilities {
+  .font-display {
+    font-optical-sizing: auto;
+    letter-spacing: -0.02em;
+  }
+
+  .bg-grain {
+    background-image: radial-gradient(rgba(15, 23, 42, 0.08) 1px, transparent 1px);
+    background-size: 4px 4px;
+  }
+
+  section[id] {
+    scroll-margin-top: calc(var(--header-h) + var(--topbar-h) + 8px);
+  }
+}
