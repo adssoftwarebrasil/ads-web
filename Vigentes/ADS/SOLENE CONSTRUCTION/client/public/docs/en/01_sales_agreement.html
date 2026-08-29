@@ -1,0 +1,768 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sales Agreement — Solene Cabinets & Countertops</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400&display=swap');
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    font-family: 'Open Sans', Arial, sans-serif;
+    font-size: 10pt;
+    color: #111111;
+    background: #fff;
+  }
+
+  .page {
+    width: 8.5in;
+    min-height: 11in;
+    margin: 0 auto;
+    padding: 0.5in 0.65in 0.6in 0.65in;
+    position: relative;
+    page-break-after: always;
+  }
+
+  /* HEADER */
+  .doc-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 2px solid #E8A020;
+    padding-bottom: 10px;
+    margin-bottom: 14px;
+  }
+
+  .doc-header img {
+    height: 52px;
+    width: auto;
+  }
+
+  .header-contact {
+    text-align: right;
+    font-size: 8.5pt;
+    color: #444;
+    line-height: 1.5;
+  }
+
+  .header-contact strong {
+    color: #111;
+    font-size: 9pt;
+  }
+
+  /* FOOTER */
+  .doc-footer {
+    position: fixed;
+    bottom: 0.3in;
+    left: 0.65in;
+    right: 0.65in;
+    border-top: 1px solid #E8A020;
+    padding-top: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 7.5pt;
+    color: #888;
+  }
+
+  /* TITLES */
+  .doc-title {
+    text-align: center;
+    font-size: 14pt;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 4px;
+    color: #111;
+  }
+
+  .doc-subtitle {
+    text-align: center;
+    font-size: 9pt;
+    color: #555;
+    margin-bottom: 16px;
+  }
+
+  /* SECTION */
+  .section-title {
+    font-size: 9pt;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    color: #111;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 3px;
+    margin: 14px 0 8px 0;
+  }
+
+  /* FORM FIELDS */
+  .form-row {
+    display: flex;
+    gap: 16px;
+    margin-bottom: 8px;
+    align-items: flex-end;
+  }
+
+  .form-field {
+    flex: 1;
+  }
+
+  .form-field.w-half { flex: 0 0 48%; }
+  .form-field.w-third { flex: 0 0 31%; }
+  .form-field.w-two-thirds { flex: 0 0 65%; }
+  .form-field.w-quarter { flex: 0 0 23%; }
+  .form-field.w-full { flex: 1; }
+
+  .field-label {
+    font-size: 7.5pt;
+    font-weight: 600;
+    color: #555;
+    text-transform: uppercase;
+    letter-spacing: 0.3px;
+    margin-bottom: 2px;
+  }
+
+  .field-line {
+    border-bottom: 1px solid #333;
+    min-height: 18px;
+    width: 100%;
+  }
+
+  /* CHECKBOX */
+  .checkbox-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 6px 0;
+  }
+
+  .checkbox-item {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 9pt;
+  }
+
+  .checkbox-box {
+    width: 12px;
+    height: 12px;
+    border: 1.5px solid #333;
+    display: inline-block;
+    flex-shrink: 0;
+  }
+
+  /* PAYMENT OPTIONS */
+  .payment-option {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 8px 12px;
+    margin-bottom: 8px;
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .payment-option .checkbox-box {
+    margin-top: 2px;
+  }
+
+  .payment-option-content {
+    flex: 1;
+  }
+
+  .payment-option-title {
+    font-weight: 700;
+    font-size: 9pt;
+    color: #111;
+    margin-bottom: 3px;
+  }
+
+  .payment-steps {
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+  }
+
+  .payment-step {
+    font-size: 8.5pt;
+    color: #333;
+  }
+
+  .payment-step span {
+    font-weight: 700;
+    color: #E8A020;
+  }
+
+  /* TERMS */
+  .terms-text {
+    font-size: 8.5pt;
+    line-height: 1.55;
+    color: #222;
+    text-align: justify;
+    margin-bottom: 8px;
+  }
+
+  .terms-text strong {
+    font-weight: 700;
+  }
+
+  /* SIGNATURE AREA */
+  .signature-section {
+    margin-top: 20px;
+    border-top: 1px solid #ddd;
+    padding-top: 14px;
+  }
+
+  .sig-row {
+    display: flex;
+    gap: 24px;
+    margin-bottom: 18px;
+  }
+
+  .sig-field {
+    flex: 1;
+  }
+
+  .sig-label {
+    font-size: 8pt;
+    font-weight: 600;
+    color: #555;
+    text-transform: uppercase;
+    letter-spacing: 0.3px;
+    margin-bottom: 2px;
+  }
+
+  .sig-line {
+    border-bottom: 1.5px solid #111;
+    min-height: 28px;
+    width: 100%;
+  }
+
+  .sig-note {
+    font-size: 7.5pt;
+    color: #888;
+    margin-top: 3px;
+    font-style: italic;
+  }
+
+  /* INITIALS */
+  .initials-bar {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 8px;
+    margin-top: 8px;
+    font-size: 8pt;
+    color: #555;
+  }
+
+  .initials-box {
+    border-bottom: 1px solid #333;
+    width: 50px;
+    min-height: 16px;
+  }
+
+  /* HIGHLIGHT BOX */
+  .highlight-box {
+    background: #FFF8EC;
+    border-left: 3px solid #E8A020;
+    padding: 8px 12px;
+    margin: 10px 0;
+    font-size: 8.5pt;
+    line-height: 1.5;
+  }
+
+  /* TABLE */
+  .doc-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 8px 0;
+    font-size: 8.5pt;
+  }
+
+  .doc-table th {
+    background: #111;
+    color: #fff;
+    padding: 5px 8px;
+    text-align: left;
+    font-size: 8pt;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.3px;
+  }
+
+  .doc-table td {
+    padding: 5px 8px;
+    border-bottom: 1px solid #eee;
+    vertical-align: top;
+  }
+
+  .doc-table tr:nth-child(even) td {
+    background: #fafafa;
+  }
+
+  /* AMOUNT BOX */
+  .amount-box {
+    display: flex;
+    justify-content: flex-end;
+    margin: 10px 0;
+  }
+
+  .amount-table {
+    border: 1px solid #ddd;
+    min-width: 260px;
+  }
+
+  .amount-row {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 10px;
+    font-size: 9pt;
+    border-bottom: 1px solid #eee;
+  }
+
+  .amount-row:last-child {
+    border-bottom: none;
+    font-weight: 700;
+    background: #111;
+    color: #fff;
+  }
+
+  .amount-row .field-line {
+    width: 100px;
+    border-bottom-color: #888;
+  }
+
+  @media print {
+    body { background: white; }
+    .page { margin: 0; padding: 0.5in 0.65in 0.8in 0.65in; }
+    .doc-footer { position: fixed; }
+  }
+</style>
+</head>
+<body>
+
+<!-- PAGE 1: SALES AGREEMENT / ORDER FORM -->
+<div class="page">
+  <div class="doc-header">
+    <img src="https://d2xsxph8kpxj0f.cloudfront.net/310519663336301441/P4acX9mSJjztQWaDTfoHnf/logo_solene_9b2c8b0f.png" alt="Solene Cabinets & Countertops">
+    <div class="header-contact">
+      <strong>Solene Cabinets &amp; Countertops</strong><br>
+      Orlando, FL<br>
+      Phone: (689) 331-4029
+    </div>
+  </div>
+
+  <div class="doc-title">Cabinet Installation — Order Form &amp; Sales Agreement</div>
+  <div class="doc-subtitle">Please read all terms carefully before signing. All fields must be completed.</div>
+
+  <div class="section-title">Customer Information</div>
+  <div class="form-row">
+    <div class="form-field w-half">
+      <div class="field-label">Customer Name</div>
+      <div class="field-line"></div>
+    </div>
+    <div class="form-field w-half">
+      <div class="field-label">Email Address</div>
+      <div class="field-line"></div>
+    </div>
+  </div>
+  <div class="form-row">
+    <div class="form-field w-two-thirds">
+      <div class="field-label">Service Address</div>
+      <div class="field-line"></div>
+    </div>
+    <div class="form-field w-third">
+      <div class="field-label">City / State / ZIP</div>
+      <div class="field-line"></div>
+    </div>
+  </div>
+  <div class="form-row">
+    <div class="form-field w-third">
+      <div class="field-label">Home Phone</div>
+      <div class="field-line"></div>
+    </div>
+    <div class="form-field w-third">
+      <div class="field-label">Cell Phone</div>
+      <div class="field-line"></div>
+    </div>
+    <div class="form-field w-third">
+      <div class="field-label">Date</div>
+      <div class="field-line"></div>
+    </div>
+  </div>
+
+  <div class="section-title">Project Details</div>
+  <div class="form-row">
+    <div class="form-field w-half">
+      <div class="field-label">Project Type</div>
+      <div class="checkbox-group">
+        <div class="checkbox-item"><div class="checkbox-box"></div> Kitchen</div>
+        <div class="checkbox-item"><div class="checkbox-box"></div> Bathroom</div>
+        <div class="checkbox-item"><div class="checkbox-box"></div> Laundry</div>
+        <div class="checkbox-item"><div class="checkbox-box"></div> Other</div>
+      </div>
+    </div>
+    <div class="form-field w-half">
+      <div class="field-label">Cabinet Type</div>
+      <div class="checkbox-group">
+        <div class="checkbox-item"><div class="checkbox-box"></div> New Installation</div>
+        <div class="checkbox-item"><div class="checkbox-box"></div> Refacing</div>
+        <div class="checkbox-item"><div class="checkbox-box"></div> Replacement</div>
+      </div>
+    </div>
+  </div>
+  <div class="form-row">
+    <div class="form-field w-third">
+      <div class="field-label">Door Name / Style</div>
+      <div class="field-line"></div>
+    </div>
+    <div class="form-field w-third">
+      <div class="field-label">Color</div>
+      <div class="field-line"></div>
+    </div>
+    <div class="form-field w-third">
+      <div class="field-label">Number of Doors &amp; Drawers</div>
+      <div class="field-line"></div>
+    </div>
+  </div>
+  <div class="form-row">
+    <div class="form-field w-third">
+      <div class="field-label">Upper Cabinet Height</div>
+      <div class="checkbox-group">
+        <div class="checkbox-item"><div class="checkbox-box"></div> 30"</div>
+        <div class="checkbox-item"><div class="checkbox-box"></div> 36"</div>
+        <div class="checkbox-item"><div class="checkbox-box"></div> 42"</div>
+      </div>
+    </div>
+    <div class="form-field w-third">
+      <div class="field-label">Wall Height Old</div>
+      <div class="field-line"></div>
+    </div>
+    <div class="form-field w-third">
+      <div class="field-label">Wall Height New</div>
+      <div class="field-line"></div>
+    </div>
+  </div>
+
+  <div class="section-title">Countertop Details</div>
+  <div class="form-row">
+    <div class="form-field">
+      <div class="field-label">Countertop Material</div>
+      <div class="checkbox-group">
+        <div class="checkbox-item"><div class="checkbox-box"></div> Quartz</div>
+        <div class="checkbox-item"><div class="checkbox-box"></div> Granite</div>
+        <div class="checkbox-item"><div class="checkbox-box"></div> Marble</div>
+        <div class="checkbox-item"><div class="checkbox-box"></div> Porcelain</div>
+        <div class="checkbox-item"><div class="checkbox-box"></div> Other</div>
+      </div>
+    </div>
+  </div>
+  <div class="form-row">
+    <div class="form-field w-third">
+      <div class="field-label">Countertop Name / Color</div>
+      <div class="field-line"></div>
+    </div>
+    <div class="form-field w-quarter">
+      <div class="field-label">Linear Feet</div>
+      <div class="field-line"></div>
+    </div>
+    <div class="form-field w-quarter">
+      <div class="field-label">Edge Profile</div>
+      <div class="field-line"></div>
+    </div>
+  </div>
+  <div class="form-row">
+    <div class="form-field w-third">
+      <div class="field-label">Backsplash Height</div>
+      <div class="field-line"></div>
+    </div>
+    <div class="form-field w-third">
+      <div class="field-label">Bar/Island Overhang</div>
+      <div class="checkbox-group">
+        <div class="checkbox-item"><div class="checkbox-box"></div> 10"</div>
+        <div class="checkbox-item"><div class="checkbox-box"></div> 12"</div>
+        <div class="checkbox-item"><div class="checkbox-box"></div> Other</div>
+      </div>
+    </div>
+    <div class="form-field w-third">
+      <div class="field-label">Under-Mount Lighting</div>
+      <div class="checkbox-group">
+        <div class="checkbox-item"><div class="checkbox-box"></div> Yes</div>
+        <div class="checkbox-item"><div class="checkbox-box"></div> No</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="section-title">Additional Description of Work</div>
+  <div style="border: 1px solid #ddd; min-height: 45px; padding: 5px; margin-bottom: 8px; font-size: 8.5pt; color: #aaa;">
+    &nbsp;
+  </div>
+
+  <div class="section-title">Financial Summary</div>
+  <div class="amount-box">
+    <div class="amount-table">
+      <div class="amount-row"><span>Administration Fee</span><span>$ <div class="field-line" style="display:inline-block; width:80px;"></div></span></div>
+      <div class="amount-row"><span><strong>Total Project Price</strong></span><span>$ <div class="field-line" style="display:inline-block; width:80px;"></div></span></div>
+      <div class="amount-row" style="background:#111; color:#fff;"><span><strong>Balance Due Upon Completion</strong></span><span>$ <div class="field-line" style="display:inline-block; width:80px; border-bottom-color:#fff;"></div></span></div>
+    </div>
+  </div>
+
+  <div class="section-title">Payment Structure</div>
+  <div class="payment-option">
+    <div class="checkbox-box"></div>
+    <div class="payment-option-content">
+      <div class="payment-option-title">Option A</div>
+      <div class="payment-steps">
+        <div class="payment-step"><span>50%</span> Deposit</div>
+        <div class="payment-step"><span>40%</span> Before Installation</div>
+        <div class="payment-step"><span>10%</span> Upon Completion</div>
+      </div>
+    </div>
+  </div>
+  <div class="payment-option">
+    <div class="checkbox-box"></div>
+    <div class="payment-option-content">
+      <div class="payment-option-title">Option B</div>
+      <div class="payment-steps">
+        <div class="payment-step"><span>50%</span> Deposit</div>
+        <div class="payment-step"><span>50%</span> Upon Completion</div>
+      </div>
+    </div>
+  </div>
+  <div class="payment-option">
+    <div class="checkbox-box"></div>
+    <div class="payment-option-content">
+      <div class="payment-option-title">Other</div>
+      <div class="field-line" style="margin-top: 4px;"></div>
+    </div>
+  </div>
+
+  <div class="initials-bar">
+    Customer Initials: <div class="initials-box"></div> &nbsp;&nbsp; Sales Rep Initials: <div class="initials-box"></div>
+  </div>
+
+  <div class="doc-footer">
+    <span>Solene Cabinets &amp; Countertops &nbsp;|&nbsp; (689) 331-4029 &nbsp;|&nbsp; Orlando, FL</span>
+    <span>Page 1 of 3 &nbsp;|&nbsp; Sales Agreement</span>
+  </div>
+</div>
+
+<!-- PAGE 2: TERMS & CONDITIONS -->
+<div class="page">
+  <div class="doc-header">
+    <img src="https://d2xsxph8kpxj0f.cloudfront.net/310519663336301441/P4acX9mSJjztQWaDTfoHnf/logo_solene_9b2c8b0f.png" alt="Solene Cabinets & Countertops">
+    <div class="header-contact">
+      <strong>Solene Cabinets &amp; Countertops</strong><br>
+      Orlando, FL<br>
+      Phone: (689) 331-4029
+    </div>
+  </div>
+
+  <div class="doc-title">Terms &amp; Conditions</div>
+  <div class="doc-subtitle">Sales Agreement — Page 2 of 3</div>
+
+  <div class="section-title">1. Agreement and Authorization</div>
+  <p class="terms-text">By signing this Sales Agreement, the Customer authorizes Solene Cabinets &amp; Countertops ("Company") to proceed with the fabrication, delivery, and installation of the products described herein. <strong>No verbal agreements are recognized. Everything must be in writing on this contract.</strong> Any modifications to this agreement must be made in writing and signed by both parties to be valid and enforceable.</p>
+
+  <div class="section-title">2. Measurements and Specifications</div>
+  <p class="terms-text">The salesperson's measurements and specifications are approximate and are not to be relied upon as exact. The Company will send a professional installer to confirm all measurements prior to fabrication. The Customer is responsible for verifying all specifications at the time of signing. <strong>The Company is not responsible for errors resulting from Customer-provided measurements or specifications.</strong></p>
+
+  <div class="section-title">3. Manufacturing and Lead Times</div>
+  <p class="terms-text">Cabinet orders from time to time come in damaged, manufactured wrong, or ordered incorrectly. All re-orders can take up to 2 to 3 weeks to be manufactured and shipped. Our goal is to complete your project in less than 7 to 10 working days. In the event of re-orders, this time can be extended. The Company will make every effort to complete your kitchen as quickly as possible to minimize inconvenience.</p>
+
+  <div class="section-title">4. Installation Schedule</div>
+  <p class="terms-text">Installation start time is approximately 8 to 14 weeks after approval of measure. Scheduling and/or HOA approval delays are not allowed to change these times. The Company will call as soon as possible to schedule your job. <strong>If you are using our financing, the clock doesn't start ticking until your loan is approved.</strong> If the start of your installation exceeds past the estimated time above, the Company will credit your account $50.00 per week for every week that we fall behind. This contract cannot be altered after the date of the measure.</p>
+
+  <div class="section-title">5. Cancellation Policy</div>
+  <p class="terms-text"><strong>Buyer's Right to Cancel:</strong> This is a home solicitation sale, and if you do not want the goods or services, you may cancel this agreement by providing written notice to the Company in person, by telegram, or by mail. This notice must indicate that you do not want the goods or services and must be delivered or postmarked before midnight of the third business day after you sign this agreement. <strong>If you cancel, the Company will return all deposits and any cash down payment within 10 business days.</strong></p>
+
+  <div class="section-title">6. Customer Responsibilities</div>
+  <p class="terms-text">The Customer is responsible for ensuring that the job site is accessible and ready for installation on the scheduled date. The Customer must ensure that all appliances (sinks, faucets, stove, cooktop, dishwasher) are at the job site on the day of the template and installation. <strong>A trip charge will apply for additional visits caused by Customer's failure to have the site ready.</strong> The Customer must ensure that all plumbing and gas lines are disconnected prior to installation. Final wall preparation (painting, wallpaper, tile, etc.) should not be completed prior to the installation of new countertops, as incidental damage such as scrapes, dents, or punctures may occur and are the Customer's responsibility to repair.</p>
+
+  <div class="section-title">7. Lead Paint Practices</div>
+  <p class="terms-text">The Customer hereby acknowledges receipt of a copy of the pamphlet "Renovate Right: Important Lead Hazard Information for Families, Child Care Providers and Schools" informing the Customer of the potential risk of lead hazard exposure from renovation activity to be performed in the Customer's home. The Customer has received this pamphlet before the work began.</p>
+
+  <div class="section-title">8. Warranty</div>
+  <p class="terms-text">Solene Cabinets &amp; Countertops provides a <strong>one (1) year limited warranty</strong> on all installation services performed by the Company. This warranty covers defects in workmanship and installation only. It does not cover damage caused by misuse, abuse, neglect, accidents, or normal wear and tear. The warranty is valid only for the original Customer and is non-transferable. See the separate Warranty document for full terms and conditions.</p>
+
+  <div class="section-title">9. Dispute Resolution</div>
+  <p class="terms-text">Any dispute arising out of or related to this Agreement shall first be submitted to mediation before resorting to litigation. The parties agree to attempt to resolve disputes in good faith. If mediation fails, disputes shall be resolved in the courts of Orange County, Florida. The prevailing party shall be entitled to recover reasonable attorney's fees and costs.</p>
+
+  <div class="section-title">10. Limitation of Liability</div>
+  <p class="terms-text">The Company's total liability under this Agreement shall not exceed the total contract price paid by the Customer. The Company shall not be liable for any indirect, incidental, special, or consequential damages. The Company is not responsible for pre-existing structural deficiencies, hidden plumbing or electrical issues discovered during installation, or damage caused by third-party contractors.</p>
+
+  <div class="section-title">11. Governing Law</div>
+  <p class="terms-text">This Agreement shall be governed by and construed in accordance with the laws of the State of Florida. If any provision of this Agreement is found to be unenforceable, the remaining provisions shall remain in full force and effect.</p>
+
+  <div class="highlight-box">
+    <strong>Important Notices:</strong><br>
+    A. Do not sign this home improvement contract in blank.<br>
+    B. You are entitled to a copy of the contract at the time you sign. Keep it to protect your legal rights.<br>
+    C. You acknowledge having read the Additional Terms and Conditions on the reverse of this page.
+  </div>
+
+  <div class="initials-bar">
+    Customer Initials: <div class="initials-box"></div> &nbsp;&nbsp; Sales Rep Initials: <div class="initials-box"></div>
+  </div>
+
+  <div class="doc-footer">
+    <span>Solene Cabinets &amp; Countertops &nbsp;|&nbsp; (689) 331-4029 &nbsp;|&nbsp; Orlando, FL</span>
+    <span>Page 2 of 3 &nbsp;|&nbsp; Sales Agreement</span>
+  </div>
+</div>
+
+<!-- PAGE 3: SIGNATURES -->
+<div class="page">
+  <div class="doc-header">
+    <img src="https://d2xsxph8kpxj0f.cloudfront.net/310519663336301441/P4acX9mSJjztQWaDTfoHnf/logo_solene_9b2c8b0f.png" alt="Solene Cabinets & Countertops">
+    <div class="header-contact">
+      <strong>Solene Cabinets &amp; Countertops</strong><br>
+      Orlando, FL<br>
+      Phone: (689) 331-4029
+    </div>
+  </div>
+
+  <div class="doc-title">Authorization &amp; Signatures</div>
+  <div class="doc-subtitle">Sales Agreement — Page 3 of 3</div>
+
+  <div class="section-title">Project Summary</div>
+  <div class="form-row">
+    <div class="form-field w-half">
+      <div class="field-label">Customer Name</div>
+      <div class="field-line"></div>
+    </div>
+    <div class="form-field w-quarter">
+      <div class="field-label">P.O. / Order Number</div>
+      <div class="field-line"></div>
+    </div>
+    <div class="form-field w-quarter">
+      <div class="field-label">Date</div>
+      <div class="field-line"></div>
+    </div>
+  </div>
+  <div class="form-row">
+    <div class="form-field w-two-thirds">
+      <div class="field-label">Service Address</div>
+      <div class="field-line"></div>
+    </div>
+    <div class="form-field w-third">
+      <div class="field-label">Total Contract Amount</div>
+      <div class="field-line"></div>
+    </div>
+  </div>
+
+  <div class="section-title">Payment Summary</div>
+  <div class="form-row">
+    <div class="form-field w-third">
+      <div class="field-label">Deposit Amount Paid</div>
+      <div class="field-line"></div>
+    </div>
+    <div class="form-field w-third">
+      <div class="field-label">Payment Method</div>
+      <div class="checkbox-group">
+        <div class="checkbox-item"><div class="checkbox-box"></div> Cash</div>
+        <div class="checkbox-item"><div class="checkbox-box"></div> Check</div>
+        <div class="checkbox-item"><div class="checkbox-box"></div> Card</div>
+        <div class="checkbox-item"><div class="checkbox-box"></div> Finance</div>
+      </div>
+    </div>
+    <div class="form-field w-third">
+      <div class="field-label">Amount Financed</div>
+      <div class="field-line"></div>
+    </div>
+  </div>
+  <div class="form-row">
+    <div class="form-field w-half">
+      <div class="field-label">Credit/Debit Card Type</div>
+      <div class="field-line"></div>
+    </div>
+    <div class="form-field w-quarter">
+      <div class="field-label">Card Number (last 4)</div>
+      <div class="field-line"></div>
+    </div>
+    <div class="form-field w-quarter">
+      <div class="field-label">Exp. Date</div>
+      <div class="field-line"></div>
+    </div>
+  </div>
+
+  <div class="section-title">Customer Acknowledgment</div>
+  <p class="terms-text">The undersigned Customer acknowledges that they have read, understood, and agree to all terms and conditions set forth in this Sales Agreement, including all pages herein. The Customer confirms that all information provided is accurate and that they have received a complete copy of this Agreement. The Customer authorizes Solene Cabinets &amp; Countertops to proceed with the project as described.</p>
+  <p class="terms-text" style="margin-top: 6px;"><strong>Executed in Orlando, Florida, one copy of which was delivered to and receipt is hereby acknowledged by Buyer, this _____ day of _________________, 20_____.</strong></p>
+
+  <div class="signature-section">
+    <div class="sig-row">
+      <div class="sig-field">
+        <div class="sig-label">Customer Signature</div>
+        <div class="sig-line"></div>
+        <div class="sig-note">Full signature required</div>
+      </div>
+      <div class="sig-field">
+        <div class="sig-label">Printed Name</div>
+        <div class="sig-line"></div>
+      </div>
+      <div class="sig-field" style="flex: 0 0 120px;">
+        <div class="sig-label">Date</div>
+        <div class="sig-line"></div>
+      </div>
+    </div>
+
+    <div class="sig-row">
+      <div class="sig-field">
+        <div class="sig-label">Co-Customer Signature (if applicable)</div>
+        <div class="sig-line"></div>
+        <div class="sig-note">Full signature required</div>
+      </div>
+      <div class="sig-field">
+        <div class="sig-label">Printed Name</div>
+        <div class="sig-line"></div>
+      </div>
+      <div class="sig-field" style="flex: 0 0 120px;">
+        <div class="sig-label">Date</div>
+        <div class="sig-line"></div>
+      </div>
+    </div>
+
+    <div style="border-top: 1px solid #ddd; padding-top: 12px; margin-top: 4px;">
+      <div class="sig-row">
+        <div class="sig-field">
+          <div class="sig-label">Sales Representative Signature</div>
+          <div class="sig-line"></div>
+        </div>
+        <div class="sig-field">
+          <div class="sig-label">Printed Name</div>
+          <div class="sig-line"></div>
+        </div>
+        <div class="sig-field" style="flex: 0 0 120px;">
+          <div class="sig-label">Date</div>
+          <div class="sig-line"></div>
+        </div>
+      </div>
+      <div class="sig-row">
+        <div class="sig-field">
+          <div class="sig-label">Authorized Company Representative</div>
+          <div class="sig-line"></div>
+        </div>
+        <div class="sig-field">
+          <div class="sig-label">Title</div>
+          <div class="sig-line"></div>
+        </div>
+        <div class="sig-field" style="flex: 0 0 120px;">
+          <div class="sig-label">Date</div>
+          <div class="sig-line"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="doc-footer">
+    <span>Solene Cabinets &amp; Countertops &nbsp;|&nbsp; (689) 331-4029 &nbsp;|&nbsp; Orlando, FL</span>
+    <span>Page 3 of 3 &nbsp;|&nbsp; Sales Agreement</span>
+  </div>
+</div>
+
+</body>
+</html>
