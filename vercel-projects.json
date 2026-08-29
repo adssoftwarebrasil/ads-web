@@ -161,6 +161,12 @@
     "projectId": "prj_D6GDxLQqdEOwQ7wC7rwRxxQ3XYst",
     "projectName": "aline-rodrigues-servicos-de-psicologia"
   },
+  "ALINE RODRIGUES - SERVICOS DE PSICOLOGIA (TRC)": {
+    "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "path": "Vigentes/ADS/ALINE RODRIGUES - SERVICOS DE PSICOLOGIA (TRC)",
+    "projectId": "prj_KSuh5uJtNjVVHmO9bpUCjRGDBHBn",
+    "projectName": "trc-da-teoria-ao-raciocinio-clinico"
+  },
   "ALO CACAMBAS": {
     "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
     "path": "Vigentes/ADS/ALO CACAMBAS",
@@ -1439,6 +1445,12 @@
     "projectId": "prj_BpYPSQDXO6dzmKvTcwHugNFbne0g",
     "projectName": "impacto-baterias"
   },
+  "Imperatriz comércio de colchão": {
+    "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "path": "Vigentes/ADS/Imperatriz comércio de colchão",
+    "projectId": "prj_fihegmAZpeKoeaS7QApu7a2lbf82",
+    "projectName": "ortobom-afonso-pena"
+  },
   "IMPERIO DAS BOMBAS BOMBASEFERRAMENTAS": {
     "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
     "path": "Vigentes/ADS/IMPERIO DAS BOMBAS BOMBASEFERRAMENTAS",
@@ -2020,12 +2032,6 @@
     "path": "Vigentes/ADS/Orquidário Orquídea & Cia - Valinhos",
     "projectId": "prj_fvdjPc7CFlHnXmcajb13QDQOeDXL",
     "projectName": "orquidario-orquidea-e-cia-valinhos"
-  },
-  "Ortobom Afonso Pena": {
-    "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
-    "path": "Vigentes/ADS/Ortobom Afonso Pena",
-    "projectId": "prj_fihegmAZpeKoeaS7QApu7a2lbf82",
-    "projectName": "ortobom-afonso-pena"
   },
   "OTICA BRILHAR": {
     "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
@@ -2674,12 +2680,6 @@
     "path": "Vigentes/ADS/TRANSPORTES S.S MOURA",
     "projectId": "prj_vzqnN06kpk1nel3I5RWiHjGda1ub",
     "projectName": "transportes-s-s-moura"
-  },
-  "TRC — Da Teoria ao Raciocínio Clínico": {
-    "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
-    "path": "Vigentes/ADS/TRC — Da Teoria ao Raciocínio Clínico",
-    "projectId": "prj_KSuh5uJtNjVVHmO9bpUCjRGDBHBn",
-    "projectName": "trc-da-teoria-ao-raciocinio-clinico"
   },
   "TREVISO APART HOTEL": {
     "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
