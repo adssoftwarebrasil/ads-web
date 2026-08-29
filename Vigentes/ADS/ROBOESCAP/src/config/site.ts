@@ -294,6 +294,10 @@ export const site: SiteConfig = {
       alt: 'Traseira de Audi A3 com escape duplo',
     },
     {
+      src: '/images/bmw-serie-3-azul-rampa-escapamento-duplo-720x1280.webp',
+      alt: 'BMW Série 3 azul na rampa com escape duplo',
+    },
+    {
       src: '/images/caminhonete-vermelha-escapamento-cromado-elevador-oficina-900x1600.webp',
       alt: 'Caminhonete vermelha com escape cromado',
     },
@@ -322,12 +326,28 @@ export const site: SiteConfig = {
       alt: 'Carro preto com escape cromado',
     },
     {
+      src: '/images/chevrolet-camaro-preto-elevador-escapamento-duplo-720x1280.webp',
+      alt: 'Chevrolet Camaro preto no elevador',
+    },
+    {
+      src: '/images/chevrolet-cruze-prata-rampa-ponteira-cromada-720x1280.webp',
+      alt: 'Chevrolet Cruze prata com ponteira cromada',
+    },
+    {
+      src: '/images/chevrolet-monza-bordo-ponteira-cromada-720x1280.webp',
+      alt: 'Chevrolet Monza bordô com ponteira cromada',
+    },
+    {
       src: '/images/chevrolet-s10-prata-elevada-rampa-oficina-900x1600.webp',
       alt: 'Chevrolet S10 prata na rampa',
     },
     {
       src: '/images/civic-branco-elevador-oficina-escapamento-novo-900x1600.webp',
       alt: 'Honda Civic branco com escapamento novo',
+    },
+    {
+      src: '/images/detalhe-catalisador-sonda-lambda-sob-veiculo-720x1280.webp',
+      alt: 'Catalisador e sonda lambda sob o veículo',
     },
     {
       src: '/images/duster-branco-elevado-em-oficina-mecanica-900x1600.webp',
@@ -338,8 +358,32 @@ export const site: SiteConfig = {
       alt: 'Escape duplo cromado em destaque',
     },
     {
+      src: '/images/ford-fusion-sel-prata-ponteira-dupla-cromada-720x1280.webp',
+      alt: 'Ford Fusion prata com ponteira dupla cromada',
+    },
+    {
       src: '/images/ford-vermelho-elevador-oficina-escapamentos-traseira-900x1600.webp',
       alt: 'Ford vermelho na oficina',
+    },
+    {
+      src: '/images/honda-civic-branco-elevado-ponteiras-duplas-detalhe-720x1280.webp',
+      alt: 'Detalhe das ponteiras de Honda Civic branco',
+    },
+    {
+      src: '/images/honda-civic-branco-elevador-escape-quatro-ponteiras-720x1280.webp',
+      alt: 'Honda Civic branco com escape de quatro ponteiras',
+    },
+    {
+      src: '/images/hot-rod-azul-antigo-roda-raiada-oficina-960x1280.webp',
+      alt: 'Hot rod azul em preparação na oficina',
+    },
+    {
+      src: '/images/hot-rod-azul-escapamento-lateral-inox-detalhe-720x1280.webp',
+      alt: 'Escapamento lateral em inox de hot rod azul',
+    },
+    {
+      src: '/images/jipe-bege-pneu-offroad-ponteira-cromada-lateral-720x1280.webp',
+      alt: 'Jipe bege com saída de escape lateral cromada',
     },
     {
       src: '/images/mitsubishi-l200-triton-no-elevador-detalhe-900x1600.webp',
@@ -356,6 +400,22 @@ export const site: SiteConfig = {
     {
       src: '/images/traseira-fiat-147-prata-escapamento-customizado-900x1600.webp',
       alt: 'Fiat 147 prata com escape sob medida',
+    },
+    {
+      src: '/images/utilitario-bege-elevado-ponteira-inox-lateral-720x1280.webp',
+      alt: 'Utilitário bege elevado com ponteira em inox',
+    },
+    {
+      src: '/images/vw-golf-gti-azul-elevado-ponteira-cromada-720x1280.webp',
+      alt: 'VW Golf GTI azul com ponteira cromada',
+    },
+    {
+      src: '/images/vw-golf-tsi-branco-escape-duplo-peca-nova-720x1280.webp',
+      alt: 'VW Golf TSI branco e escapamento novo',
+    },
+    {
+      src: '/images/vw-polo-azul-escuro-ponteira-dupla-cromada-720x1280.webp',
+      alt: 'VW Polo azul com ponteira dupla cromada',
     },
   ],
   depoimentos: [],
