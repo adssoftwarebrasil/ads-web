@@ -1265,6 +1265,12 @@
     "projectId": "prj_nJc0xTtyR08QtGPrHYW8yktE5UCD",
     "projectName": "giralflex"
   },
+  "GLOBO TRANSPORTES": {
+    "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "path": "Vigentes/ADS/GLOBO TRANSPORTES",
+    "projectId": "prj_WuzJ26R56KHquyq5gybqA4uHOIKf",
+    "projectName": "globotransportes"
+  },
   "GM MOTOS COMPRA, VENDA, TROCA E FINANCIAMENTO DE MOTOS": {
     "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
     "path": "Vigentes/ADS/GM MOTOS COMPRA, VENDA, TROCA E FINANCIAMENTO DE MOTOS",
@@ -2596,6 +2602,12 @@
     "path": "Não vigentes/TAMBORES UNIVERSO",
     "projectId": "prj_5tDxMBp2DFWShqjvlpLUeEGNb3BP",
     "projectName": "tambores-universo"
+  },
+  "TANCERVA CONVENIENCIA": {
+    "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "path": "Vigentes/ADS/TANCERVA CONVENIENCIA",
+    "projectId": "prj_pstmBG4gLIc8OOrt5vg9CDyEz1TN",
+    "projectName": "tancervaconveniencia"
   },
   "TAP METAL": {
     "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
