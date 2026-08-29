@@ -1,232 +1,2834 @@
 {
-  "A Priori Cafe": {
+  "137 SALON BY GABRIEL": {
     "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "path": "Não vigentes/137 SALON BY GABRIEL",
+    "projectId": "prj_LdN0mXXpWtgeTWFNhMjInCDxIsgt",
+    "projectName": "137-salon-by-gabriel"
+  },
+  "2TJ Telas e Telhas": {
+    "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "path": "Vigentes/ADS/2TJ Telas e Telhas",
+    "projectId": "prj_E1kTAchDnEJbxvwbJTVFNh0WrJ7x",
+    "projectName": "2tj-telas-e-telhas"
+  },
+  "3G CELULARES": {
+    "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "path": "Vigentes/ADS/3G CELULARES",
+    "projectId": "prj_JYJ2UJOXMBjZv0djOz3B5XsTPZRf",
+    "projectName": "3gcelulareschapeco"
+  },
+  "3MD SOLUCOES": {
+    "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "path": "Vigentes/ADS/3MD SOLUCOES",
+    "projectId": "prj_lUTiHdna1NHoHgCVqTyWATWqLNeC",
+    "projectName": "3md-solucoes"
+  },
+  "4K ILUMINACAO": {
+    "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "path": "Vigentes/ADS/4K ILUMINACAO",
+    "projectId": "prj_M9F0Z8c6DAl3Bav78kK9RBtVjIQC",
+    "projectName": "4k-iluminacao"
+  },
+  "A & A FREIOS": {
+    "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "path": "Vigentes/ADS/A & A FREIOS",
+    "projectId": "prj_xf8Iqcmei6covjIVremIgVRw3APu",
+    "projectName": "a-e-a-freios"
+  },
+  "A PRIORI, CAFE!": {
+    "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "path": "Vigentes/ADS/A PRIORI, CAFE!",
     "projectId": "prj_7wwlf3npaPOGnZEWJsxDdCs8QT0q",
     "projectName": "a-priori-cafe"
   },
-  "ACS": {
+  "ACAI & GRANOLA": {
     "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "path": "Não vigentes/ACAI & GRANOLA",
+    "projectId": "prj_pADjJH6QhHh4olPk55QI5OA2Fkyv",
+    "projectName": "acai-e-granola"
+  },
+  "ACG ADVOGADOS": {
+    "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "path": "Não vigentes/ACG ADVOGADOS",
+    "projectId": "prj_YBPGZAtnFfIAtzDnG8iNq3WhG1WV",
+    "projectName": "acg-advogados"
+  },
+  "ACOS IDEAL": {
+    "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "path": "Não vigentes/ACOS IDEAL",
+    "projectId": "prj_16wHUAqVQg0cwkkvco8jW71O8xY2",
+    "projectName": "acos-ideal"
+  },
+  "ADEMICON ACS BRASIL": {
+    "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "path": "Vigentes/ADS/ADEMICON ACS BRASIL",
     "projectId": "prj_7I3bGSjDDdB4guwjwrCvgUPeH7Kf",
-    "projectName": "acs"
+    "projectName": "ademicon-acs-brasil"
+  },
+  "ADS Software": {
+    "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "path": "Vigentes/ADS/ADS Software",
+    "projectId": "prj_nNgffrMFLzTI4TPQfUPPbfmjRkkP",
+    "projectName": "ads-software"
+  },
+  "ADS Software (parceirogoogle)": {
+    "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "path": "Vigentes/ADS/ADS Software (parceirogoogle)",
+    "projectId": "prj_penPBOM79cenJtJ8TBb0vi76m8C4",
+    "projectName": "ads-software-parceirogoogle"
+  },
+  "ADV ELEVADORES": {
+    "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "path": "Vigentes/ADS/ADV ELEVADORES",
+    "projectId": "prj_tUCIPJ57IHN21Rxz0OZlXg2qaWFR",
+    "projectName": "adv-elevadores"
+  },
+  "Advice medicina do trabalho": {
+    "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "path": "Não vigentes/Advice medicina do trabalho",
+    "projectId": "prj_zBwCAUIkdmXxMbI1AzSm68GlLIL8",
+    "projectName": "clinicaadvicearaxa"
+  },
+  "Advocacia Militar e Previdenciária em Belém PA": {
+    "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "path": "Vigentes/ADS/Advocacia Militar e Previdenciária em Belém PA",
+    "projectId": "prj_LXNEe5MpwUVWV7RUEEMbQ09oVU6J",
+    "projectName": "advocacia-militar-e-previdenciaria-em-belem-pa"
+  },
+  "Agência Parceiro Google SEO, Google Ads e Mapas": {
+    "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "path": "Vigentes/ADS/Agência Parceiro Google SEO, Google Ads e Mapas",
+    "projectId": "prj_BECnvQExKxxh8rno33o5V4xiJKMg",
+    "projectName": "agencia-parceiro-google-seo-google-ads-e-mapas"
   },
   "AGRO MT DRONES PRIMAVERA": {
     "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "path": "Vigentes/ADS/AGRO MT DRONES PRIMAVERA",
     "projectId": "prj_OswqVJvsQLJlZgJUHc8y7ZXEgwoY",
     "projectName": "agro-mt-drones-primavera"
   },
+  "AGRO RUSTICANO": {
+    "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "path": "Vigentes/ADS/AGRO RUSTICANO",
+    "projectId": "prj_sPTYDaOReGSGUJKjT0yoWzq23Zpn",
+    "projectName": "agro-rusticano"
+  },
+  "AGROCOLMEIA PRODUTOS AGROPECUARIOS": {
+    "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "path": "Vigentes/ADS/AGROCOLMEIA PRODUTOS AGROPECUARIOS",
+    "projectId": "prj_nrcJBAZjk9ocsl1YwGqCZmLIjDBa",
+    "projectName": "agrocolmeia-produtos-agropecuarios"
+  },
   "Agropet Imperatriz - Sao Leopoldo": {
     "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "path": "Vigentes/ADS/Agropet Imperatriz - Sao Leopoldo",
     "projectId": "prj_56bYxx4kDzMUlx8PFH1GD7lMIlVV",
     "projectName": "agropet-imperatriz-sao-leopoldo"
   },
-  "ALEX FREIOS A AR": {
+  "AGROPG DISTRIBUIDORA DE PECAS AGRICOLAS": {
     "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
-    "projectId": "prj_xf8Iqcmei6covjIVremIgVRw3APu",
-    "projectName": "alex-freios-a-ar"
+    "path": "Vigentes/ADS/AGROPG DISTRIBUIDORA DE PECAS AGRICOLAS",
+    "projectId": "prj_IR4i5hjlzwNiPGCwfjG44duLfV66",
+    "projectName": "agropgdistribuidora"
+  },
+  "AGROPLANTEC": {
+    "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "path": "Não vigentes/AGROPLANTEC",
+    "projectId": "prj_TLmd6Whmmx2JYH5VvxgjCcPT1NCs",
+    "projectName": "agroplantec"
+  },
+  "AGUAS CLARA": {
+    "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "path": "Não vigentes/AGUAS CLARA",
+    "projectId": "prj_7VJSHXkj1vSxy983vM3Eu0Zn6c3I",
+    "projectName": "aguas-clara"
+  },
+  "AL Personaliza Comunicação Visual": {
+    "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "path": "Vigentes/ADS/AL Personaliza Comunicação Visual",
+    "projectId": "prj_LBBIDR64300gxkNGKFxZY29MMPqk",
+    "projectName": "al-personaliza-comunicacao-visual"
+  },
+  "Aliança Assessoria": {
+    "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "path": "Vigentes/ADS/Aliança Assessoria",
+    "projectId": "prj_KR9tvDINCKaO3EKCcegdxgPLniiw",
+    "projectName": "alianca-assessoria"
+  },
+  "ALINE RODRIGUES - SERVICOS DE PSICOLOGIA": {
+    "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "path": "Vigentes/ADS/ALINE RODRIGUES - SERVICOS DE PSICOLOGIA",
+    "projectId": "prj_D6GDxLQqdEOwQ7wC7rwRxxQ3XYst",
+    "projectName": "aline-rodrigues-servicos-de-psicologia"
+  },
+  "ALO CACAMBAS": {
+    "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "path": "Vigentes/ADS/ALO CACAMBAS",
+    "projectId": "prj_D84B18YyQJDe2zWOoprxUrKIbBiW",
+    "projectName": "alo-cacambas"
+  },
+  "ALTHUS SERVICE CAR": {
+    "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "path": "Não vigentes/ALTHUS SERVICE CAR",
+    "projectId": "prj_j0ME3IBZMaszl3g9477x8SaVJHzC",
+    "projectName": "althus-service-car"
+  },
+  "Aluga Goiânia": {
+    "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "path": "Vigentes/ADS/Aluga Goiânia",
+    "projectId": "prj_2Z3D76gwyfsut2GgLzVlodXf6F01",
+    "projectName": "aluga-goiania"
   },
   "AM CLINICA DE MEDICINA DO TRABALHO": {
     "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "path": "Vigentes/ADS/AM CLINICA DE MEDICINA DO TRABALHO",
     "projectId": "prj_jI8Q2SRzLMukZ35CcuNRsxJFeUJq",
     "projectName": "am-clinica-de-medicina-do-trabalho"
   },
+  "AMAZON LOC": {
+    "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "path": "Vigentes/ADS/AMAZON LOC",
+    "projectId": "prj_q1aJF7QaSVjgMJvQy8hxT0Tk5m7O",
+    "projectName": "amazon-loc"
+  },
+  "AMPLIASOM APARELHOS AUDITIVOS": {
+    "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "path": "Não vigentes/AMPLIASOM APARELHOS AUDITIVOS",
+    "projectId": "prj_ucufbzLuUf8WmxAuvQ1nRmuxuAHl",
+    "projectName": "ampliasom-aparelhos-auditivos"
+  },
+  "ANIMALY PET SHOP": {
+    "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "path": "Vigentes/ADS/ANIMALY PET SHOP",
+    "projectId": "prj_W6uQSpm9zHJjpBw1EYOgBv2gQuTw",
+    "projectName": "animaly-pet-shop"
+  },
+  "ANJOS COLCHOES E SOFAS": {
+    "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "path": "Vigentes/ADS/ANJOS COLCHOES E SOFAS",
+    "projectId": "prj_O4qiyLFpFPdDBvppTER2QlF4qCKa",
+    "projectName": "anjos-colchoes-e-sofas"
+  },
+  "ANJOS POCOS": {
+    "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "path": "Vigentes/ADS/ANJOS POCOS",
+    "projectId": "prj_ZlqbkKSYTuq1t5mtEumaAPh5XZH5",
+    "projectName": "anjos-pocos"
+  },
+  "ANNB Baterias": {
+    "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "path": "Vigentes/ADS/ANNB Baterias",
+    "projectId": "prj_6XbN98KYs9Xr1c9daik71ZQ6bksp",
+    "projectName": "annb-baterias"
+  },
+  "APUS SAÚDE E SEGURANÇA DO TRABALHO": {
+    "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "path": "Vigentes/ADS/APUS SAÚDE E SEGURANÇA DO TRABALHO",
+    "projectId": "prj_jtBLVBgcUlz4sCNrJJNiUPDsMf0h",
+    "projectName": "apus-sst"
+  },
+  "ARARIPE SOCIEDADE INDIVIDUAL DE ADVOCACIA": {
+    "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "path": "Não vigentes/ARARIPE SOCIEDADE INDIVIDUAL DE ADVOCACIA",
+    "projectId": "prj_NA4EgZbknMnsYeS7LJWOp7T9sxNG",
+    "projectName": "araripe-sociedade-individual-de-advocacia"
+  },
+  "ARCA COMUNICACAO": {
+    "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "path": "Vigentes/ADS/ARCA COMUNICACAO",
+    "projectId": "prj_iJaJYOqgUoxoJA8fapv6RWWIC8TX",
+    "projectName": "arca-comunicacao"
+  },
+  "ARGELIS CONSULTORIA E TREINAMENTO": {
+    "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "path": "Não vigentes/ARGELIS CONSULTORIA E TREINAMENTO",
+    "projectId": "prj_Sp6qhvI2R3fdJaqRTLJGW47C5je4",
+    "projectName": "argelis-consultoria-e-treinamento"
+  },
+  "Armazém da Informática comércio e serviços de informática": {
+    "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "path": "Não vigentes/Armazém da Informática comércio e serviços de informática",
+    "projectId": "prj_PdOt5GdeP7TKeoteaCYkWx320vjS",
+    "projectName": "armazem-da-informatica-comercio-e-servicos-de-informatica"
+  },
+  "art e madeiras": {
+    "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "path": "Vigentes/ADS/art e madeiras",
+    "projectId": "prj_N6vxdwrx6nwK2sjYgrpORiazo5q0",
+    "projectName": "art-e-madeiras"
+  },
+  "Arthur cortinas": {
+    "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "path": "Vigentes/ADS/Arthur cortinas",
+    "projectId": "prj_UgkPTAD8g6PE6xpnz5EM7yjy49lq",
+    "projectName": "arthur-cortinas"
+  },
+  "ASMYSEG CORRETORA DE SEGUROS": {
+    "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "path": "Vigentes/ADS/ASMYSEG CORRETORA DE SEGUROS",
+    "projectId": "prj_hW4FX5MbGgeV22aVfMzxHqYCDSBv",
+    "projectName": "asmyseg-corretora-de-seguros"
+  },
+  "ASSISTEC CONTABILIDADE": {
+    "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "path": "Vigentes/ADS/ASSISTEC CONTABILIDADE",
+    "projectId": "prj_Q68UcMCnGXQASaYQjm81ZAc5dfjY",
+    "projectName": "assistec-contabilidade"
+  },
+  "ATACADAÕ DAS BATERIAS": {
+    "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "path": "Não vigentes/ATACADAÕ DAS BATERIAS",
+    "projectId": "prj_ctUHAi9eJIxbavYRHOeY1KmWPV6E",
+    "projectName": "atacadao-das-baterias"
+  },
+  "ATELIE NOIVA E CIA": {
+    "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "path": "Vigentes/ADS/ATELIE NOIVA E CIA",
+    "projectId": "prj_jjmVueCjIyKxzY0jW9GLYQInEBab",
+    "projectName": "atelie-noiva-e-cia"
+  },
+  "ATTIVA PROJETOS E CONSTRUCOES": {
+    "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "path": "Vigentes/ADS/ATTIVA PROJETOS E CONSTRUCOES",
+    "projectId": "prj_784qfrGpwbEsf7dw6SuhCq6pimDC",
+    "projectName": "attiva-projetos-e-construcoes"
+  },
+  "ATUAL TINTAS": {
+    "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "path": "Vigentes/ADS/ATUAL TINTAS",
+    "projectId": "prj_X5Kp5pCRAUPDUAPfWcT17WYcF7vF",
+    "projectName": "atual-tintas"
+  },
+  "AUTO MECANICA SINOP": {
+    "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "path": "Vigentes/ADS/AUTO MECANICA SINOP",
+    "projectId": "prj_xm6EshlU5XAqcIyqhb9cCg86d6x7",
+    "projectName": "auto-mecanica-sinop"
+  },
+  "Auto peças Diniz Eireli Peças para caminhões": {
+    "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "path": "Vigentes/ADS/Auto peças Diniz Eireli Peças para caminhões",
+    "projectId": "prj_5ZXp2JQVMOQuulfM3BNysQHFSEGE",
+    "projectName": "auto-pecas-diniz-eireli-pecas-para-caminhoes"
+  },
+  "AVENIDA GAS": {
+    "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "path": "Vigentes/ADS/AVENIDA GAS",
+    "projectId": "prj_yIeA2Y2uoXL7FcxEmDfKnZtLZs6w",
+    "projectName": "avenidagassinop"
+  },
+  "AZARIAS GAS": {
+    "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "path": "Não vigentes/AZARIAS GAS",
+    "projectId": "prj_2DO4WcljTUOZyW2ADc9E5v9tOEad",
+    "projectName": "azarias-gas"
+  },
   "B CONVITES EM RELEVO": {
     "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "path": "Vigentes/ADS/B CONVITES EM RELEVO",
     "projectId": "prj_ykBAv5fDsGJ1uqFFgaLOhyYCVUUo",
     "projectName": "b-convites-em-relevo"
   },
+  "Balanças Nova Era": {
+    "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "path": "Não vigentes/Balanças Nova Era",
+    "projectId": "prj_O88xcrLMm11W6yCB4HvpSQvoehxv",
+    "projectName": "balancas-nova-era"
+  },
+  "Barbearia zero 19": {
+    "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "path": "Não vigentes/Barbearia zero 19",
+    "projectId": "prj_j1uFehxCToTi2vDoKrQekjI0tPPb",
+    "projectName": "barbearia-zero-19"
+  },
+  "BARREIRAS INFORMATICA": {
+    "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "path": "Vigentes/ADS/BARREIRAS INFORMATICA",
+    "projectId": "prj_WW205IJivck72mvwY3nMMoUMHZce",
+    "projectName": "barreiras-informatica"
+  },
+  "BATERSOUZA": {
+    "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "path": "Não vigentes/BATERSOUZA",
+    "projectId": "prj_TXTVHCDPCRSryHcOZCIUgvnT6FdI",
+    "projectName": "batersouza"
+  },
   "BATUTA FERRAGENS": {
     "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "path": "Vigentes/ADS/BATUTA FERRAGENS",
     "projectId": "prj_jA0p9LV9ZPzgQHR98j90neeg5MFE",
     "projectName": "batuta-ferragens"
   },
-  "Biolune cosméticos e beleza": {
+  "BAZAR E PAPELARIA DO DARIO": {
     "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
-    "projectId": "prj_4jeMPr23I89W0r6qA1neFUg8PzBd",
-    "projectName": "biolune-cosmeticos-e-beleza"
+    "path": "Não vigentes/BAZAR E PAPELARIA DO DARIO",
+    "projectId": "prj_kDL3iZdZla9FKJYczzsFtoAbg1L8",
+    "projectName": "bazar-papelaria"
+  },
+  "BEEVOX SOLUCOES AUDITIVASBEE": {
+    "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "path": "Vigentes/ADS/BEEVOX SOLUCOES AUDITIVASBEE",
+    "projectId": "prj_uxEwDIpEFN9sawyfcW8vJXJlT8C7",
+    "projectName": "beevox-solucoes-auditivasbee"
+  },
+  "BELEZA POR FERNANDA DE JESUS": {
+    "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "path": "Não vigentes/BELEZA POR FERNANDA DE JESUS",
+    "projectId": "prj_gwbHh5HSUebShyHgjhBEIA3ZyI33",
+    "projectName": "beleza-por-fernanda-de-jesus"
+  },
+  "Berçário e escola infantil Raio de Sol Encantado": {
+    "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "path": "Vigentes/ADS/Berçário e escola infantil Raio de Sol Encantado",
+    "projectId": "prj_0agHGBiSO38AnCngzLRx8DBzlj31",
+    "projectName": "bercario-e-escola-infantil-raio-de-sol-encantado"
+  },
+  "BM Boutique Gourmet": {
+    "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "path": "Vigentes/ADS/BM Boutique Gourmet",
+    "projectId": "prj_fBkqNwC19zH6tvPNXZpfeuUOkBjp",
+    "projectName": "bm-boutique-gourmet"
+  },
+  "Boa Massa": {
+    "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "path": "Não vigentes/Boa Massa",
+    "projectId": "prj_582En8WlUunHI3k8TZNA87GP72zf",
+    "projectName": "boa-massa"
+  },
+  "Botequim do Comandante": {
+    "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "path": "Não vigentes/Botequim do Comandante",
+    "projectId": "prj_pxn26yPcdHTAiLIpxp2n6oYjMfMM",
+    "projectName": "botequim-do-comandante"
+  },
+  "BRASIL BANDEIRAS": {
+    "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "path": "Vigentes/ADS/BRASIL BANDEIRAS",
+    "projectId": "prj_utu0rmUE6iCq125PtwEd6l3Mpzls",
+    "projectName": "brasil-bandeiras"
+  },
+  "BRAZITEC EMPILHADEIRAS E BATERIAS TRACI": {
+    "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "path": "Vigentes/ADS/BRAZITEC EMPILHADEIRAS E BATERIAS TRACI",
+    "projectId": "prj_ymLVBTi7ABaiJaV4iGRUBF3CNsHd",
+    "projectName": "brazitec-empilhadeiras-e-baterias-traci"
+  },
+  "BS COPOS PERSONALIZADOS": {
+    "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "path": "Vigentes/ADS/BS COPOS PERSONALIZADOS",
+    "projectId": "prj_7CHKhEJZcv7qInHFt1WZ1wnyRMth",
+    "projectName": "bs-copos-personalizados"
+  },
+  "BTU AR-CONDICIONADO": {
+    "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "path": "Vigentes/ADS/BTU AR-CONDICIONADO",
+    "projectId": "prj_yC4W7mJ4IFhZRr8nj3ZwkkwTFtzk",
+    "projectName": "btu-ar-condicionado"
+  },
+  "CAETANO AUTO CENTER CENTRO AUTOMOTIVO": {
+    "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "path": "Vigentes/ADS/CAETANO AUTO CENTER CENTRO AUTOMOTIVO",
+    "projectId": "prj_zp4o0mVbc6dwR32fQVlKANFbRyMs",
+    "projectName": "caetano-auto-center-centro-automotivo"
+  },
+  "CALC SOLUCOES DE ENGENHARIA E CONSULTORIA": {
+    "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "path": "Vigentes/ADS/CALC SOLUCOES DE ENGENHARIA E CONSULTORIA",
+    "projectId": "prj_vJChMyl7f8XuAHkStenIDq77MDIl",
+    "projectName": "calc-solucoes-de-engenharia-e-consultoria"
+  },
+  "CALDENSE LED": {
+    "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "path": "Vigentes/ADS/CALDENSE LED",
+    "projectId": "prj_aZhlnR5fXiLsMAf1MVVYLQlhaQoC",
+    "projectName": "caldense-led"
+  },
+  "Calderan Palace Hotel": {
+    "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "path": "Não vigentes/Calderan Palace Hotel",
+    "projectId": "prj_xEjFFlB0zwGWj6HXgWFQJvgYbvVx",
+    "projectName": "calderan-palace-hotel"
+  },
+  "CALHAS BARIGUI": {
+    "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "path": "Não vigentes/CALHAS BARIGUI",
+    "projectId": "prj_AgOAk806ziLRE3oSEHp7Wzi46159",
+    "projectName": "calhas-barigui"
   },
   "CAMAMAR": {
     "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "path": "Vigentes/ADS/CAMAMAR",
     "projectId": "prj_p1YfVfxkJ6m7a0Yq8pjGVJsnykr7",
     "projectName": "camamar"
   },
+  "Caramurú Tintas": {
+    "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "path": "Vigentes/ADS/Caramurú Tintas",
+    "projectId": "prj_ljSc8YiOtvlkEml5rxYjhu95PwmG",
+    "projectName": "caramuru-tintas"
+  },
+  "CARMEM MATERIAIS PARA CONSTRUCAO": {
+    "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "path": "Vigentes/ADS/CARMEM MATERIAIS PARA CONSTRUCAO",
+    "projectId": "prj_wdacMa0mfsOySod9aTiAZCOYokuI",
+    "projectName": "carmem-materiais-para-construcao"
+  },
+  "CARZONE BATERIAS": {
+    "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "path": "Vigentes/ADS/CARZONE BATERIAS",
+    "projectId": "prj_FUV8l1JQkk6TkXYCAyWbX462E0s2",
+    "projectName": "carzone-baterias"
+  },
+  "CASA DAS BOMBAS E COMPRESSORES": {
+    "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "path": "Vigentes/ADS/CASA DAS BOMBAS E COMPRESSORES",
+    "projectId": "prj_XN2hGAUAF0d7fmU1UoGBhbjutMyy",
+    "projectName": "casa-das-bombas-e-compressores"
+  },
+  "CASA DAS BOMBAS IPATINGA": {
+    "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "path": "Não vigentes/CASA DAS BOMBAS IPATINGA",
+    "projectId": "prj_nZpozhD2Sa4xsgKfSvvQj2aMhuDe",
+    "projectName": "casa-das-bombas-ipatinga"
+  },
+  "CASA DAS EMBALAGENS": {
+    "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "path": "Vigentes/ADS/CASA DAS EMBALAGENS",
+    "projectId": "prj_h0YEiGViushp0Ylk8UHQ60bLvjvP",
+    "projectName": "casa-das-embalagens"
+  },
+  "CASA DAS LATARIAS": {
+    "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "path": "Vigentes/ADS/CASA DAS LATARIAS",
+    "projectId": "prj_PmNOwYWzyyez4IB6xIpAZBagkmO6",
+    "projectName": "casa-das-latarias"
+  },
   "CASA DAS RACOES": {
     "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "path": "Vigentes/ADS/CASA DAS RACOES",
     "projectId": "prj_ecrhsPrTcVACbXgjoAlcV7xM2GNt",
     "projectName": "casa-das-racoes"
   },
+  "CASA DAS TINTAS": {
+    "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "path": "Vigentes/ADS/CASA DAS TINTAS",
+    "projectId": "prj_e0uot758rQpsW6HhrpcVjCNNza3x",
+    "projectName": "casa-das-tintas"
+  },
   "Casa do Futebol": {
     "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "path": "Vigentes/ADS/Casa do Futebol",
     "projectId": "prj_oUIebqu2Bz4iUqlySFIdbEpL4mND",
     "projectName": "casa-do-futebol"
   },
+  "Casa do serralheiro": {
+    "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "path": "Não vigentes/Casa do serralheiro",
+    "projectId": "prj_Ot9uqbuVbIC2ZcSq6wr0QX0YJSMc",
+    "projectName": "casadoserralheirodelavras"
+  },
+  "CASA RUSTICA MOVEIS DECORACOES": {
+    "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "path": "Vigentes/ADS/CASA RUSTICA MOVEIS DECORACOES",
+    "projectId": "prj_RIDosJS46a9JdibzZbW8aR83WQfh",
+    "projectName": "casa-rustica-uberlandia-website"
+  },
+  "Castelli & Thiago": {
+    "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "path": "Vigentes/ADS/Castelli & Thiago",
+    "projectId": "prj_iJLV77KeBxbh0nYa4YYVYkxCmhNI",
+    "projectName": "castelli-e-thiago"
+  },
+  "CENTER BATERIAS": {
+    "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "path": "Vigentes/ADS/CENTER BATERIAS",
+    "projectId": "prj_DHgUQxljxPt7ErRs4l5vcTVysxr3",
+    "projectName": "center-baterias"
+  },
+  "CENTER VIDROS": {
+    "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "path": "Não vigentes/CENTER VIDROS",
+    "projectId": "prj_leOsPfBVhMwbhJieWynqJCMrsjk6",
+    "projectName": "center-vidros"
+  },
+  "CENTRAL DA LIMPEZA DISTRIBUICAO DE PRODUTOS DE LIMPEZA": {
+    "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "path": "Não vigentes/CENTRAL DA LIMPEZA DISTRIBUICAO DE PRODUTOS DE LIMPEZA",
+    "projectId": "prj_DU3AJzrRMZ263cs6pFZ2jBVw0xRn",
+    "projectName": "central-da-limpeza-distribuicao-de-produtos-de-limpeza"
+  },
+  "Central Ferragens Materiais de Construção": {
+    "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "path": "Não vigentes/Central Ferragens Materiais de Construção",
+    "projectId": "prj_eMmDJzmgcBCZqJXukBjKYsxNmcmt",
+    "projectName": "centralferragens"
+  },
+  "CENTRAL GAS": {
+    "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "path": "Vigentes/ADS/CENTRAL GAS",
+    "projectId": "prj_ws1fOkFqQVLBzTxDFFGVlMgZWodV",
+    "projectName": "central-gas"
+  },
+  "CENTRAL TINTAS": {
+    "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "path": "Vigentes/ADS/CENTRAL TINTAS",
+    "projectId": "prj_DS6dwWzhYu8ti8Dks2Q99eY2LbGA",
+    "projectName": "central-tintas"
+  },
+  "Centro Automotivo Bosco": {
+    "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "path": "Vigentes/ADS/Centro Automotivo Bosco",
+    "projectId": "prj_LRWJPxIaRRfFswSCBRAALj2MwHIx",
+    "projectName": "centro-automotivo-bosco"
+  },
+  "CENTRO DE SOLUCOES AUDITIVAS": {
+    "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "path": "Não vigentes/CENTRO DE SOLUCOES AUDITIVAS",
+    "projectId": "prj_e9ZfnljZc3JPJ6KBvMib2bgPUNkH",
+    "projectName": "centro-de-solucoes-auditivas"
+  },
   "CENTRO ORTOPEDICO": {
     "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "path": "Vigentes/ADS/CENTRO ORTOPEDICO",
     "projectId": "prj_g98WBKqhTQwmpY7UjTsx1xyS0P1Z",
     "projectName": "centro-ortopedico"
   },
+  "Centro Paraibano de Quiropraxia e Saúde": {
+    "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "path": "Vigentes/ADS/Centro Paraibano de Quiropraxia e Saúde",
+    "projectId": "prj_zWNYIFNJu4w7YaOczpYYbmjtG0L1",
+    "projectName": "centro-paraibano-de-quiropraxia-e-saude"
+  },
+  "CHAVEIRO GLICERIO": {
+    "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "path": "Vigentes/ADS/CHAVEIRO GLICERIO",
+    "projectId": "prj_ghTi9J3iw7aDwxALwhTMTPQFaVKS",
+    "projectName": "chaveiro-glicerio"
+  },
+  "CHINA TENDAS": {
+    "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "path": "Vigentes/ADS/CHINA TENDAS",
+    "projectId": "prj_YOjyPOUBpEqK13MvwtuTk9uFryOE",
+    "projectName": "china-tendas"
+  },
+  "CHOPP NATTOS BRASIL": {
+    "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "path": "Não vigentes/CHOPP NATTOS BRASIL",
+    "projectId": "prj_CRY9vlAv9aehB2LVC9WIg6JFGdd0",
+    "projectName": "chopp-nattos-brasil"
+  },
+  "Choppao Restaurante e Delivery": {
+    "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "path": "Vigentes/ADS/Choppao Restaurante e Delivery",
+    "projectId": "prj_K3ezpSmPP81NFqQd1DThRj96rZU6",
+    "projectName": "choppaomt"
+  },
+  "Churrascaria costelaço": {
+    "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "path": "Vigentes/ADS/Churrascaria costelaço",
+    "projectId": "prj_SGUb7xmo99bYvgjVTswNC0NRsolU",
+    "projectName": "churrascaria-costelaco"
+  },
   "CHURRASCARIA E PIZZARIA BEZERRO DE OURO": {
     "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "path": "Vigentes/ADS/CHURRASCARIA E PIZZARIA BEZERRO DE OURO",
     "projectId": "prj_Z00xtxtW076BUw7ILcx62NxO6eG7",
     "projectName": "churrascaria-e-pizzaria-bezerro-de-ouro"
   },
-  "ciafibra/project": {
+  "CHURRASCARIA O COSTELAO": {
     "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "path": "Vigentes/ADS/CHURRASCARIA O COSTELAO",
+    "projectId": "prj_di1uUuLKPIYTVS5tBb2njep5L3J1",
+    "projectName": "churrascaria-o-costelao"
+  },
+  "CIA DA SOLDA": {
+    "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "path": "Não vigentes/CIA DA SOLDA",
+    "projectId": "prj_iokFAqQpIVPuX8UNBGVe8jej7vF0",
+    "projectName": "cia-da-solda"
+  },
+  "CIA FIBRA": {
+    "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "path": "Vigentes/ADS/CIA FIBRA",
     "projectId": "prj_F3GpDdLMef7xwWKR4Cu6kGGeWtDX",
-    "projectName": "ciafibra"
+    "projectName": "cia-fibra"
+  },
+  "CIA SOLDA E FERRAMENTAS": {
+    "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "path": "Vigentes/ADS/CIA SOLDA E FERRAMENTAS",
+    "projectId": "prj_GCv5nRa9ASBejT10cdvM3HhTPaqO",
+    "projectName": "cia-solda-e-ferramentas"
+  },
+  "CIENTEC-CENTRO INTEGRADO DE ENSINO TECNICO": {
+    "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "path": "Vigentes/ADS/CIENTEC-CENTRO INTEGRADO DE ENSINO TECNICO",
+    "projectId": "prj_YJeAaGwHu7L1zaS9Td2mJ3kV78EK",
+    "projectName": "cientec-centro-integrado-de-ensino-tecnico"
   },
   "CLIMATEC CLIMATIZACAO E REFRIGERACAO": {
     "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "path": "Vigentes/ADS/CLIMATEC CLIMATIZACAO E REFRIGERACAO",
     "projectId": "prj_cib8kAz3tcgR7Z51qGBAVcRBAWPO",
     "projectName": "climatec-climatizacao-e-refrigeracao"
   },
+  "CLINICA ADVICE E LABORATORIO CUIDAR - PATOS DE MINAS": {
+    "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "path": "Não vigentes/CLINICA ADVICE E LABORATORIO CUIDAR - PATOS DE MINAS",
+    "projectId": "prj_6TDrc9J88EkzW2F49JPBfvzDWS21",
+    "projectName": "clinica-advice-e-laboratorio-cuidar-patos-de-minas"
+  },
+  "CLINICA ADVICE E LABORATORIO CUIDAR - UBERLANDIA": {
+    "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "path": "Não vigentes/CLINICA ADVICE E LABORATORIO CUIDAR - UBERLANDIA",
+    "projectId": "prj_CNADYQsUalhKJa753uGgKBZyEiFC",
+    "projectName": "clinica-advice-e-laboratorio-cuidar-uberlandia"
+  },
+  "CLINICA SAUDE MOVIMENTO": {
+    "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "path": "Vigentes/ADS/CLINICA SAUDE MOVIMENTO",
+    "projectId": "prj_VluvYBjyuy19y8drT9srNsIZJyGQ",
+    "projectName": "clinica-saude-movimento"
+  },
+  "Clinica Weneck": {
+    "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "path": "Vigentes/ADS/Clinica Weneck",
+    "projectId": "prj_liw0P0cKN5mtyfQPAFeR7egUh5cG",
+    "projectName": "clinica-weneck"
+  },
   "Clube do kite": {
     "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "path": "Vigentes/ADS/Clube do kite",
     "projectId": "prj_yeMqs4dhFR4SN89cKu9C2tRkW6Gw",
     "projectName": "clube-do-kite"
   },
+  "CM GLASS": {
+    "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "path": "Não vigentes/CM GLASS",
+    "projectId": "prj_Skzdcl1RNO5N3BhYlUwbLoWYRGCv",
+    "projectName": "cm-glass"
+  },
+  "COIMBRA MOTO PECAS": {
+    "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "path": "Vigentes/ADS/COIMBRA MOTO PECAS",
+    "projectId": "prj_j67uGP3TWzhD10qXkQUQkJqgWl3t",
+    "projectName": "coimbra-moto-pecas"
+  },
+  "COIMBRA NAVEGACOES": {
+    "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "path": "Vigentes/ADS/COIMBRA NAVEGACOES",
+    "projectId": "prj_8fH3CM3SmWpRqwMT6gbRTCnHCaJF",
+    "projectName": "coimbra-navegacoes"
+  },
+  "COLEGIO SINAPSE": {
+    "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "path": "Vigentes/ADS/COLEGIO SINAPSE",
+    "projectId": "prj_1BCqyP6CnA7tA9rPoKkMjhN1wlFb",
+    "projectName": "colegio-sinapse"
+  },
+  "Comercial Magon": {
+    "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "path": "Não vigentes/Comercial Magon",
+    "projectId": "prj_HhVkM0uhgZsGtMxvcZ8CmIpozZOg",
+    "projectName": "comercial-magon"
+  },
+  "Comuny MK": {
+    "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "path": "Vigentes/ADS/Comuny MK",
+    "projectId": "prj_J7nQbgeEbgazpRZpU2r86N4JtelA",
+    "projectName": "comuny-mk"
+  },
+  "Conexão Negócios": {
+    "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "path": "Vigentes/ADS/Conexão Negócios",
+    "projectId": "prj_QgFsca0v8bRX0XKfBK0UTuNY8uXJ",
+    "projectName": "conexaonegociosturbinasesistemahidrau"
+  },
+  "Consultório veterinário Melina": {
+    "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "path": "Vigentes/ADS/Consultório veterinário Melina",
+    "projectId": "prj_Xjt3mbvLJ6H5nuefK2CfKXL3q5KC",
+    "projectName": "consultorio-veterinario-melina"
+  },
+  "CONTIX INOVACAO CONTABIL": {
+    "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "path": "Não vigentes/CONTIX INOVACAO CONTABIL",
+    "projectId": "prj_Dvi6C6e2Fl5HtbZS37rJ2UtHA3jG",
+    "projectName": "contixcontabil"
+  },
+  "Coopermedica Foz - Aluguem de Ambulância e Medicina do trabalho em Foz do Iguaçu, Paraná": {
+    "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "path": "Vigentes/ADS/Coopermedica Foz - Aluguem de Ambulância e Medicina do trabalho em Foz do Iguaçu, Paraná",
+    "projectId": "prj_vkvS7EtauI9HrsA7IDKBzFp130Nc",
+    "projectName": "coopermedica-foz-aluguem-de-ambulancia-e-medicina-do-trabalho-em-foz-do-iguacu-parana"
+  },
+  "Copiadora Roriz LTDA": {
+    "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "path": "Vigentes/ADS/Copiadora Roriz LTDA",
+    "projectId": "prj_XNF2Tn6308AlI9r9Tqpy2OAAXgaA",
+    "projectName": "copiadora-roriz-ltda"
+  },
+  "CORREA AUTO CENTER": {
+    "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "path": "Vigentes/ADS/CORREA AUTO CENTER",
+    "projectId": "prj_KaiHKdNjZxIwD71WsiUqTrgzugeE",
+    "projectName": "correa-auto-center"
+  },
+  "Corua Carretinha": {
+    "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "path": "Vigentes/ADS/Corua Carretinha",
+    "projectId": "prj_7LS4Lrstt3goYQW3m94qEzewHbBI",
+    "projectName": "corua-carretinha"
+  },
+  "COSTA LESTE LOCADORA DE VEICULOS": {
+    "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "path": "Não vigentes/COSTA LESTE LOCADORA DE VEICULOS",
+    "projectId": "prj_PVMMjnfhWuInaqFk69quKMDHxO5Z",
+    "projectName": "locadora-costa-leste"
+  },
+  "COTEC": {
+    "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "path": "Vigentes/ADS/COTEC",
+    "projectId": "prj_tH61OgQAQCqQouysMzapG95W5mvg",
+    "projectName": "cotec"
+  },
   "CUTELARIA BIELLIZ": {
     "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "path": "Vigentes/ADS/CUTELARIA BIELLIZ",
     "projectId": "prj_HfWLGEvp0gQzlyvqgAyHw85HVTTe",
     "projectName": "cutelaria-bielliz"
   },
-  "DAL PIVA SERVICOS ODONTOLOGICOS": {
+  "DAL PIVA SERVICOS ODONTOLOGICOS LTDA - ME": {
     "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "path": "Vigentes/ADS/DAL PIVA SERVICOS ODONTOLOGICOS LTDA - ME",
     "projectId": "prj_AfZRHKzPEBA6sdWFNVWJR7uq6Cey",
-    "projectName": "dal-piva-servicos-odontologicos"
+    "projectName": "dal-piva-servicos-odontologicos-ltda-me"
+  },
+  "DAVI ESPORTES": {
+    "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "path": "Vigentes/ADS/DAVI ESPORTES",
+    "projectId": "prj_211sm0q91xcIYAl9gFYiZMEZ6Jcp",
+    "projectName": "davi-esportes"
+  },
+  "DELTA GAS": {
+    "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "path": "Vigentes/ADS/DELTA GAS",
+    "projectId": "prj_CF0iPKhyySBhiKjkooPX7bZkoO1Y",
+    "projectName": "delta-gas"
+  },
+  "DEPOSITO DE GAS MOURA": {
+    "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "path": "Vigentes/ADS/DEPOSITO DE GAS MOURA",
+    "projectId": "prj_5riNgPQiqWvj9pDAz5xelOhTmRJw",
+    "projectName": "deposito-de-gas-moura"
+  },
+  "DESPACHANTE IGUASSU": {
+    "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "path": "Vigentes/ADS/DESPACHANTE IGUASSU",
+    "projectId": "prj_dlWlwV8S6YLYxL90HIooYXFC0xcO",
+    "projectName": "despachante-iguassu"
+  },
+  "DESPACHANTE TRANSITAR": {
+    "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "path": "Vigentes/ADS/DESPACHANTE TRANSITAR",
+    "projectId": "prj_Sz9bfL89aBdBN0Q6HdSC28J1AzPG",
+    "projectName": "despachante-transitar"
+  },
+  "DETUDO ELETRO FERRAGENS": {
+    "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "path": "Vigentes/ADS/DETUDO ELETRO FERRAGENS",
+    "projectId": "prj_oEYPlmhWWRVhfljxvtm0J5aXw9sg",
+    "projectName": "detudo-eletro-ferragens"
+  },
+  "DIAS MOTORS NAUTICA": {
+    "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "path": "Não vigentes/DIAS MOTORS NAUTICA",
+    "projectId": "prj_UXSSbfl22MFko13DYvsFfP6p9KQ2",
+    "projectName": "dias-motors-nautica"
+  },
+  "DINAPEL COMERCIAL DE PECAS": {
+    "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "path": "Não vigentes/DINAPEL COMERCIAL DE PECAS",
+    "projectId": "prj_6gA1qoLOUmJYBSZO9go3jWbVt1Qf",
+    "projectName": "dinapel-comercial-de-pecas"
+  },
+  "Disfran Descartáveis": {
+    "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "path": "Vigentes/ADS/Disfran Descartáveis",
+    "projectId": "prj_ziCOsbxg0Xg67Va1NNKxagZx2TaS",
+    "projectName": "disfran-descartaveis"
+  },
+  "DIVIACO": {
+    "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "path": "Vigentes/ADS/DIVIACO",
+    "projectId": "prj_Uth6plXZNpPu7b3T35wl7cyNWf6y",
+    "projectName": "diviaco"
+  },
+  "DJ Impermeabilizantes": {
+    "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "path": "Não vigentes/DJ Impermeabilizantes",
+    "projectId": "prj_3TSUP2raDejM9mss0MHOubI9A7ZB",
+    "projectName": "dj-impermeabilizantes"
+  },
+  "DN SEGUROS": {
+    "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "path": "Vigentes/ADS/DN SEGUROS",
+    "projectId": "prj_WFuguU4ErJFQ13UyxFgRNi6gKrfq",
+    "projectName": "dn-corretora-de-seguros"
+  },
+  "DOCCTOR MED PLANALTINA GO": {
+    "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "path": "Não vigentes/DOCCTOR MED PLANALTINA GO",
+    "projectId": "prj_JC8a6iUZKCgrYG7a6uCWmFvoSlgS",
+    "projectName": "docctor-med-planaltina-go"
+  },
+  "DOIS IRMAOS LAVA CAR E ESTETICA AUTOMOTIVA": {
+    "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "path": "Vigentes/ADS/DOIS IRMAOS LAVA CAR E ESTETICA AUTOMOTIVA",
+    "projectId": "prj_1N2T7Hp1oMdV0ULvS5SKsn7pl3Yg",
+    "projectName": "dois-irmaos-lava-car-e-estetica-automotiva"
+  },
+  "DOM MANOEL MOVEIS & DECORACOES": {
+    "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "path": "Vigentes/ADS/DOM MANOEL MOVEIS & DECORACOES",
+    "projectId": "prj_PLVuCOA5ltBTvcOahrnwYClV7FZG",
+    "projectName": "dom-manoel-moveis-e-decoracoes"
+  },
+  "DR.ENERGIA ELETRICA CONSULTORIA PROJETO E ENERGIA SOLAR": {
+    "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "path": "Vigentes/ADS/DR.ENERGIA ELETRICA CONSULTORIA PROJETO E ENERGIA SOLAR",
+    "projectId": "prj_SbcKZXpeW8RDOoVAhVUUSg5FilVS",
+    "projectName": "dr-energia-eletrica-consultoria-projeto-e-energia-solar"
+  },
+  "Dr. Hugo da cunha": {
+    "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "path": "Não vigentes/Dr. Hugo da cunha",
+    "projectId": "prj_DcN8CYRHu9lTxOS5U2MZI6Zq71cD",
+    "projectName": "dr-hugo-da-cunha"
+  },
+  "Dr Sillas Mourao - GV": {
+    "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "path": "Vigentes/ADS/Dr Sillas Mourao - GV",
+    "projectId": "prj_5yZfRRbZ6999CGhf0SyAI8BhdXFC",
+    "projectName": "dr-sillas-mourao-gv"
+  },
+  "Dr Vinícius rios": {
+    "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "path": "Não vigentes/Dr Vinícius rios",
+    "projectId": "prj_F97sE9ESeRO33inle0BwwHT5LpzE",
+    "projectName": "drvinicius"
+  },
+  "Dra Marcela Laender": {
+    "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "path": "Vigentes/ADS/Dra Marcela Laender",
+    "projectId": "prj_X7TpSJNRela2Q9Tt4Ivbt5O8PJHZ",
+    "projectName": "dra-marcela-laender"
   },
   "Dra Mariana Boccanera": {
     "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
-    "projectId": "prj_p2RmTZ8IKc8ituSvnNPWYNdO3s4n",
-    "projectName": "marianaboccanerapediatra-site"
+    "path": "Vigentes/ADS/Dra Mariana Boccanera",
+    "projectId": "prj_g0fjYun3YGCJY8CFYjXPDGCS1Vmw",
+    "projectName": "dra-mariana-boccanera"
   },
-  "Dra Tatiane Fernandes": {
+  "Dra Tatiane Fernandes (Terapeuta capilar)": {
     "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "path": "Não vigentes/Dra Tatiane Fernandes (Terapeuta capilar)",
     "projectId": "prj_ZTArAVwBkmbkAIcCX5juIhyZ7xhp",
-    "projectName": "dra-tatiane-fernandes"
+    "projectName": "dra-tatiane-fernandes-terapeuta-capilar"
+  },
+  "DROGARIA MEDALHA MILAGROSA": {
+    "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "path": "Vigentes/ADS/DROGARIA MEDALHA MILAGROSA",
+    "projectId": "prj_Y3iVQ2y4NCBQM3cb4wXdKeCYPjPs",
+    "projectName": "drogaria-medalha-milagrosa"
+  },
+  "DRYKA KIDS": {
+    "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "path": "Vigentes/ADS/DRYKA KIDS",
+    "projectId": "prj_cSb8fXTBickhRxwSGBiPMFUYLV9I",
+    "projectName": "dryka-kids"
+  },
+  "DUQUESA JOIAS": {
+    "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "path": "Vigentes/ADS/DUQUESA JOIAS",
+    "projectId": "prj_0pQL4VB2IAs8WvvjpMriNdqlVgq8",
+    "projectName": "duquesa-joias"
+  },
+  "E.C ODONTOLOGIA": {
+    "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "path": "Vigentes/ADS/E.C ODONTOLOGIA",
+    "projectId": "prj_q8M0CTQSiDJqqwRUqutfrEag3gYd",
+    "projectName": "e-c-odontologia"
+  },
+  "ECO GARDEN POUSADA": {
+    "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "path": "Não vigentes/ECO GARDEN POUSADA",
+    "projectId": "prj_ZJ3ZaPUTO8WzGJXkbOHIQWUCNX1t",
+    "projectName": "pousada-eco-garden"
   },
   "Eldorado Baterias e Lava Jato Chapisco": {
     "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
-    "projectId": "prj_mSDoJYPLPEZY0m37q3vOlX6Hbzkm",
-    "projectName": "eldoradobaterias-site"
+    "path": "Vigentes/ADS/Eldorado Baterias e Lava Jato Chapisco",
+    "projectId": "prj_IpCBaOLn7IIMyfLcd5ZkxBHm8WFt",
+    "projectName": "eldoradobaterias"
+  },
+  "ELETRICA MEGA WATTS": {
+    "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "path": "Não vigentes/ELETRICA MEGA WATTS",
+    "projectId": "prj_4v5XUTMDb4dxyMpQzWakLrKz6gDe",
+    "projectName": "eletrica-mega-watts"
+  },
+  "ELETROFRIO": {
+    "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "path": "Não vigentes/ELETROFRIO",
+    "projectId": "prj_jObJvXpOAyRujdrtkDtAFNSqHfDp",
+    "projectName": "eletrofrio"
+  },
+  "ELETROLUZ ENERGIA SOLAR 2": {
+    "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "path": "Vigentes/ADS/ELETROLUZ ENERGIA SOLAR 2",
+    "projectId": "prj_u9Khjbf737RQNg4hwVmDLMaZxf7I",
+    "projectName": "eletroluz-energia-solar-2"
   },
   "EMILIA HAIR INSTITUTE": {
     "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "path": "Vigentes/ADS/EMILIA HAIR INSTITUTE",
     "projectId": "prj_Rjd9dnB0lnfFmYNr8dXZ4OTOy3oG",
     "projectName": "emilia-hair-institute"
   },
-  "ExclusiveConstrutora": {
+  "EMPORIO DO DECK": {
     "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "path": "Vigentes/ADS/EMPORIO DO DECK",
+    "projectId": "prj_r7CpvyjhdKXvkmS0i7yoPfgCIr6v",
+    "projectName": "emporio-do-deck"
+  },
+  "EPISOLDA": {
+    "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "path": "Não vigentes/EPISOLDA",
+    "projectId": "prj_vfnKUtJWqUUmKcu70I0vUMQMFCV1",
+    "projectName": "episolda"
+  },
+  "Escola Modelo Cristão": {
+    "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "path": "Não vigentes/Escola Modelo Cristão",
+    "projectId": "prj_MIdFu4lRsOnuap7Hmzoolv1dtC0E",
+    "projectName": "escola-modelo-cristao"
+  },
+  "Escola Náutica M&M": {
+    "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "path": "Vigentes/ADS/Escola Náutica M&M",
+    "projectId": "prj_XXmOa0ZtHT2UjNMO6PrrZUiPokSl",
+    "projectName": "escola-nautica-m-e-m"
+  },
+  "ESLEI AUTO PECAS": {
+    "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "path": "Vigentes/ADS/ESLEI AUTO PECAS",
+    "projectId": "prj_jQtkvz7EuhUg3ZcSFW9Q6uEAgHbe",
+    "projectName": "esleiautopecasminacu"
+  },
+  "ESPACO CULTURAL MILAGRE DOS PEIXES": {
+    "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "path": "Não vigentes/ESPACO CULTURAL MILAGRE DOS PEIXES",
+    "projectId": "prj_UK1xKnZPvqPbZNg8F7ADZgRNiAtM",
+    "projectName": "milagre-dos-peixes"
+  },
+  "ESPACO NOBRE": {
+    "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "path": "Vigentes/ADS/ESPACO NOBRE",
+    "projectId": "prj_wtBfBD1X68RIiCkWEZQavbQvi8Yh",
+    "projectName": "espaco-nobre"
+  },
+  "Espetaria fio de prata": {
+    "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "path": "Vigentes/ADS/Espetaria fio de prata",
+    "projectId": "prj_rqbsV8k7wi2vVgmqaPHqOeXlKrrh",
+    "projectName": "fio-de-prata"
+  },
+  "ESTOFARIA JS SOARES": {
+    "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "path": "Vigentes/ADS/ESTOFARIA JS SOARES",
+    "projectId": "prj_z8A71S2x92KcGwlBUIImZKdN4XPD",
+    "projectName": "estofaria-js-soares"
+  },
+  "ESTOPAS MADRI": {
+    "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "path": "Vigentes/ADS/ESTOPAS MADRI",
+    "projectId": "prj_mcfEJYHRFUWWsWjiWgbLpD5riDSq",
+    "projectName": "estopas-madri"
+  },
+  "EXATIDAO CONTABILIDADE": {
+    "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "path": "Não vigentes/EXATIDAO CONTABILIDADE",
+    "projectId": "prj_RFiO1mtfscZwIPg7qP1di29HYnkL",
+    "projectName": "exatidao-contabilidade"
+  },
+  "EXCLUSIVE CONSTRUTORA E reformadora (V2)": {
+    "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "path": "Vigentes/ADS/EXCLUSIVE CONSTRUTORA E reformadora (V2)",
     "projectId": "prj_KVWXfCeGjwLfgOAoy4CRyzufG1ue",
-    "projectName": "exclusiveconstrutora"
+    "projectName": "exclusive-construtora-e-reformadora-v2"
   },
   "EXP MADEIRAS": {
     "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "path": "Não vigentes/EXP MADEIRAS",
     "projectId": "prj_DLRnRKNySYYzgz87QxO75n0HpYCq",
     "projectName": "exp-madeiras"
   },
+  "EXPRESS RECARGAS": {
+    "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "path": "Vigentes/ADS/EXPRESS RECARGAS",
+    "projectId": "prj_EAVOeQpZz5QquofTqv4Ph3NT5jLW",
+    "projectName": "scorpion-xpress"
+  },
+  "EXPRESSO CAR": {
+    "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "path": "Vigentes/ADS/EXPRESSO CAR",
+    "projectId": "prj_sKlEtPnz0G5dva06oriLhPgjQ3UH",
+    "projectName": "expresso-car"
+  },
+  "FABBITUR": {
+    "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "path": "Vigentes/ADS/FABBITUR",
+    "projectId": "prj_h9amxa41sS5nDzKeSmspXxG3DvTK",
+    "projectName": "fabbitur"
+  },
+  "Fábrica de Concertinas Piracicaba": {
+    "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "path": "Vigentes/ADS/Fábrica de Concertinas Piracicaba",
+    "projectId": "prj_zUVc5EJ1oy0wnpFqQU2oWW3fRxhc",
+    "projectName": "fabrica-de-concertinas-piracicaba"
+  },
+  "Fabricio Guincho Auto Socorro": {
+    "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "path": "Vigentes/ADS/Fabricio Guincho Auto Socorro",
+    "projectId": "prj_PN6UI4KfHsdH7oRR08lBfgTWxPob",
+    "projectName": "fabricio-guincho-site-documentation"
+  },
+  "FARMACIA GALENO": {
+    "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "path": "Não vigentes/FARMACIA GALENO",
+    "projectId": "prj_a7GklQA9cqMWXajNtZ8An0CLESYR",
+    "projectName": "farmacia-galeno"
+  },
+  "FAS CONSULTORIA E PROJETOS": {
+    "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "path": "Vigentes/ADS/FAS CONSULTORIA E PROJETOS",
+    "projectId": "prj_TalJb7SeIDlN9QZFyhqvXVBmnwmO",
+    "projectName": "fasrastreamentoveicular"
+  },
+  "Feedback Dobraço Cortes & Dobra de Chapa": {
+    "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "path": "Vigentes/ADS/Feedback Dobraço Cortes & Dobra de Chapa",
+    "projectId": "prj_VpGcg6Mi7CbymIOTDzaTg3xOYw7q",
+    "projectName": "dobracoplanaltina"
+  },
+  "FEIRA FIOS- Serviços de motores eletricos": {
+    "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "path": "Vigentes/ADS/FEIRA FIOS- Serviços de motores eletricos",
+    "projectId": "prj_AVYnvx1KfkiiTYoLHrhsJtZeHQba",
+    "projectName": "feirafiosmotoreseletricos"
+  },
+  "FERGRAF-servicos gráficos": {
+    "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "path": "Vigentes/ADS/FERGRAF-servicos gráficos",
+    "projectId": "prj_YuLocvZ8Od7mQRfis7EVpBuFKkaS",
+    "projectName": "fergraf-servicos-graficos"
+  },
+  "FERRARICONT CONTABILIDADE CONSULTIVA": {
+    "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "path": "Vigentes/ADS/FERRARICONT CONTABILIDADE CONSULTIVA",
+    "projectId": "prj_ykAXLcjsPzMbygmXf1iOPhXdVjvF",
+    "projectName": "ferraricont-contabilidade-consultiva"
+  },
+  "Ferreira Móveis Planejados": {
+    "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "path": "Vigentes/ADS/Ferreira Móveis Planejados",
+    "projectId": "prj_05nrszBkqbd5D80KRe0J2oFC0mRp",
+    "projectName": "ferreira-moveis-planejados"
+  },
+  "FERRO E ACO DO VALE": {
+    "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "path": "Não vigentes/FERRO E ACO DO VALE",
+    "projectId": "prj_EKISRseCj0Zw7fjxSV0dSdVCx5Ey",
+    "projectName": "ferro-e-aco-do-vale"
+  },
+  "FINAN - FACULDADE DE DIREITO DE NOVA ANDRADINA": {
+    "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "path": "Vigentes/ADS/FINAN - FACULDADE DE DIREITO DE NOVA ANDRADINA",
+    "projectId": "prj_rwERtFd4lInUCJ3DTMsDt3yp2yhV",
+    "projectName": "faculdadefinan"
+  },
+  "FINO ACABAMENTO": {
+    "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "path": "Vigentes/ADS/FINO ACABAMENTO",
+    "projectId": "prj_dyqLVg2lOF4DgBLzwFiA2DBMdUlF",
+    "projectName": "fino-acabamento"
+  },
+  "Flor de Maio Floricultura": {
+    "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "path": "Vigentes/ADS/Flor de Maio Floricultura",
+    "projectId": "prj_T07pWvXvRBTjgni3AgqEOWbx2VCi",
+    "projectName": "flor-de-maio-floricultura"
+  },
+  "FONSECA CONTABILIDADE": {
+    "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "path": "Vigentes/ADS/FONSECA CONTABILIDADE",
+    "projectId": "prj_UKAt74CfU0oeHU0IPfbgixwFs2Gp",
+    "projectName": "fonseca-contabilidade"
+  },
+  "FORCE LOCAÇÕES": {
+    "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "path": "Vigentes/ADS/FORCE LOCAÇÕES",
+    "projectId": "prj_U1XkMhYBI0CGue3C9dLeRAdEgVPb",
+    "projectName": "force-locacoes"
+  },
+  "FORT DAS CESTAS": {
+    "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "path": "Vigentes/ADS/FORT DAS CESTAS",
+    "projectId": "prj_w5dInj6XMl1LMXNgERxBhVpG6uVK",
+    "projectName": "fort-das-cestas"
+  },
+  "FORTMAQ": {
+    "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "path": "Vigentes/ADS/FORTMAQ",
+    "projectId": "prj_Z5ou1TNJa6gTwj1GkaeS3dBOuqQW",
+    "projectName": "fortmaq"
+  },
+  "Freza Retifica de Motores e Mecânica": {
+    "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "path": "Vigentes/ADS/Freza Retifica de Motores e Mecânica",
+    "projectId": "prj_25A170jQgevPzbm6L4Wp88HUDARM",
+    "projectName": "freza-retifica-de-motores-e-mecanica"
+  },
+  "Front-End AI Profile Optimizer": {
+    "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "path": "Vigentes/ADS/Front-End AI Profile Optimizer",
+    "projectId": "prj_AQF8U90P33ZRvAWtBSS2t0cWZWfD",
+    "projectName": "front-end-ai-profile-optimizer"
+  },
+  "FUNERARIA PORTAL DA PAZ": {
+    "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "path": "Vigentes/ADS/FUNERARIA PORTAL DA PAZ",
+    "projectId": "prj_meYeWpDSvfADI1IVSuUaVm7bzxdn",
+    "projectName": "portal-da-paz"
+  },
+  "Funerária São Paulo": {
+    "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "path": "Não vigentes/Funerária São Paulo",
+    "projectId": "prj_wSDMCJOuezGwKA9zZKNfektubJbQ",
+    "projectName": "funeraria-sao-paulo"
+  },
   "Funerária Uberaba- Hoje e Sempre": {
     "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "path": "Vigentes/ADS/Funerária Uberaba- Hoje e Sempre",
     "projectId": "prj_ASubRJkZL1tO1Gy2Qrc1d0bvx93D",
     "projectName": "funeraria-uberaba-hoje-e-sempre"
   },
+  "GAS FORTE": {
+    "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "path": "Vigentes/ADS/GAS FORTE",
+    "projectId": "prj_qDXR9EFOl8NrqDLaOvz5LNpWU3V4",
+    "projectName": "gas-forte"
+  },
+  "GERAL CONSERVACAO E LIMPEZA GERAL": {
+    "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "path": "Não vigentes/GERAL CONSERVACAO E LIMPEZA GERAL",
+    "projectId": "prj_giPvJvXPlkhao7P6TfcRsrjxNrWe",
+    "projectName": "geral-conservacao-e-limpeza-geral"
+  },
+  "GERARSOL": {
+    "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "path": "Não vigentes/GERARSOL",
+    "projectId": "prj_UW4GRnjP9k3o4udI13WdF5uWMFfw",
+    "projectName": "gerarsol"
+  },
+  "GERENCIAL CONTABIL": {
+    "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "path": "Vigentes/ADS/GERENCIAL CONTABIL",
+    "projectId": "prj_7W23IyRdkaF2CWdRrBiJbxtMzlon",
+    "projectName": "gerencial-contabil"
+  },
+  "GESSO JUNDIAI": {
+    "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "path": "Vigentes/ADS/GESSO JUNDIAI",
+    "projectId": "prj_0nCkfmNtVuoYZuinoQ6MWIUlhZzP",
+    "projectName": "gesso-jundiai"
+  },
+  "GIRALFLEX": {
+    "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "path": "Vigentes/ADS/GIRALFLEX",
+    "projectId": "prj_nJc0xTtyR08QtGPrHYW8yktE5UCD",
+    "projectName": "giralflex"
+  },
+  "GM MOTOS COMPRA, VENDA, TROCA E FINANCIAMENTO DE MOTOS": {
+    "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "path": "Vigentes/ADS/GM MOTOS COMPRA, VENDA, TROCA E FINANCIAMENTO DE MOTOS",
+    "projectId": "prj_VUL5mjpX9kFU3CxWp98l1KigwOka",
+    "projectName": "gm-motos-compra-venda-troca-e-financiamento-de-motos"
+  },
+  "Goes Flex cochoes": {
+    "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "path": "Vigentes/ADS/Goes Flex cochoes",
+    "projectId": "prj_WS2A1S0TByBKOWREI19HZFZhHOYq",
+    "projectName": "goes-flex-cochoes"
+  },
+  "Golden Car": {
+    "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "path": "Vigentes/ADS/Golden Car",
+    "projectId": "prj_qFO6GExQuQNN3q1jdXZsVDvcGL4c",
+    "projectName": "golden-car"
+  },
+  "GOLDEN HOUSE 873 - NEGÓCIOS IMOBILIÁRIOS": {
+    "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "path": "Vigentes/ADS/GOLDEN HOUSE 873 - NEGÓCIOS IMOBILIÁRIOS",
+    "projectId": "prj_9lMr7WHA6uYuf37zkISWHU4XALJA",
+    "projectName": "golden-house-873-negocios-imobiliarios"
+  },
+  "GOLDEN HOUSE 873 - NEGOCIOS IMOBILIARIOS (V2)": {
+    "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "path": "Vigentes/ADS/GOLDEN HOUSE 873 - NEGOCIOS IMOBILIARIOS (V2)",
+    "projectId": "prj_v3DNg5QafF4pChPuOEBqd8ZDLb1j",
+    "projectName": "golden-house-873-negocios-imobiliarios-v2"
+  },
+  "GRIFE DO CARRO": {
+    "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "path": "Vigentes/ADS/GRIFE DO CARRO",
+    "projectId": "prj_OdnRXEmWVbfAfx9yElmjvCj3wRHs",
+    "projectName": "grife-do-carro"
+  },
+  "GRUPO THECC SOLUCOES EM SEGURANÇA": {
+    "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "path": "Vigentes/ADS/GRUPO THECC SOLUCOES EM SEGURANÇA",
+    "projectId": "prj_P2g26dwt3ld6J2t7HbJKPuImSnZO",
+    "projectName": "grupo-thecc-solucoes-em-seguranca"
+  },
+  "GUERREIRO FERRO E ACO": {
+    "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "path": "Vigentes/ADS/GUERREIRO FERRO E ACO",
+    "projectId": "prj_sIIbcxhoGTNEAvPiW2FMyMIRFQgD",
+    "projectName": "guerreiro-ferro-e-aco"
+  },
   "Guiauto": {
     "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "path": "Vigentes/ADS/Guiauto",
     "projectId": "prj_WfjbMoFjiBA413VghXwuMH5JRr4E",
     "projectName": "guiauto"
   },
+  "GULGIELMIN TRANSFORMADORES": {
+    "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "path": "Vigentes/ADS/GULGIELMIN TRANSFORMADORES",
+    "projectId": "prj_exb23h8uuF9KxTATUKvJ35i3yZ6s",
+    "projectName": "gulgielmin-transformadores"
+  },
+  "GYN SUITES": {
+    "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "path": "Não vigentes/GYN SUITES",
+    "projectId": "prj_Z1AFLDvICYMXN5KX0N0OsjSpw336",
+    "projectName": "gyn-suites"
+  },
+  "HE GUINCHO": {
+    "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "path": "Vigentes/ADS/HE GUINCHO",
+    "projectId": "prj_d7a3QHpm5ykJfouJSdfSZAn4Pfqx",
+    "projectName": "he-guincho"
+  },
+  "HELENA DESPACHANTE": {
+    "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "path": "Vigentes/ADS/HELENA DESPACHANTE",
+    "projectId": "prj_6cP01km6ef9erFmbSy4H3ugS7g86",
+    "projectName": "helena-despachante"
+  },
+  "HERIVAN MOTOS": {
+    "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "path": "Vigentes/ADS/HERIVAN MOTOS",
+    "projectId": "prj_nnyEGcx0rLhE3PClMNEiECVojtoV",
+    "projectName": "herivan-motos"
+  },
+  "HIDRAU TURBO": {
+    "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "path": "Não vigentes/HIDRAU TURBO",
+    "projectId": "prj_HZpm4AC13EeWnIbE4wVtFKQJCUit",
+    "projectName": "hidrau-turbo"
+  },
+  "HIMITSU RESTAURANTE": {
+    "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "path": "Vigentes/ADS/HIMITSU RESTAURANTE",
+    "projectId": "prj_AdnJoHvCaE6uJS0P0CD7lkBMjqqE",
+    "projectName": "himitsu-landing"
+  },
+  "HIPER NETO": {
+    "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "path": "Vigentes/ADS/HIPER NETO",
+    "projectId": "prj_hUARf143U1jIFecAEDvmiPvlsS3r",
+    "projectName": "hiper-neto"
+  },
+  "HOLANDA TRANSPORTES & LOGISTICAS": {
+    "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "path": "Vigentes/ADS/HOLANDA TRANSPORTES & LOGISTICAS",
+    "projectId": "prj_nI8FfaGoPSGFIfPL5Z2Ro5y2Twpd",
+    "projectName": "holanda-transportes-e-logisticas"
+  },
+  "HOME FILTER": {
+    "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "path": "Não vigentes/HOME FILTER",
+    "projectId": "prj_XXpq4md3jyqflhlMDWFgvgcPJ0Ca",
+    "projectName": "home-filter"
+  },
+  "Hotel Avalon Benevides": {
+    "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "path": "Vigentes/ADS/Hotel Avalon Benevides",
+    "projectId": "prj_RbV6TlY4r8hEpEqk3GQGsHQXlFUc",
+    "projectName": "hotel-avalon-benevides"
+  },
   "HOTEL IPANEMA": {
     "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "path": "Vigentes/ADS/HOTEL IPANEMA",
     "projectId": "prj_sydsn2e6M2Go19svoJFgL5V90lOO",
     "projectName": "hotel-ipanema"
   },
+  "HOTEL LA ROCCA": {
+    "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "path": "Vigentes/ADS/HOTEL LA ROCCA",
+    "projectId": "prj_Q0EfrAt88sT4XSCP97dKR2XrRGgz",
+    "projectName": "hotel-la-rocca"
+  },
+  "HOTEL ROYAL": {
+    "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "path": "Não vigentes/HOTEL ROYAL",
+    "projectId": "prj_0xLN1UezrJCD3VW87TBnsRzQXtId",
+    "projectName": "royal-hotel"
+  },
+  "I-MOV MOBILIDADE ELETRICA": {
+    "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "path": "Não vigentes/I-MOV MOBILIDADE ELETRICA",
+    "projectId": "prj_tr7K2IVTT6DsXj5kfFA5S0mRqhju",
+    "projectName": "i-mov-mobilidade-eletrica"
+  },
+  "IDEA VIDROS & ESQUADRIAS": {
+    "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "path": "Vigentes/ADS/IDEA VIDROS & ESQUADRIAS",
+    "projectId": "prj_tsQi9Q4uiOyf2PyyDiThMVgEA60T",
+    "projectName": "idea-vidros-e-esquadrias"
+  },
+  "IDEALLE ODONTOLOGIA": {
+    "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "path": "Vigentes/ADS/IDEALLE ODONTOLOGIA",
+    "projectId": "prj_DV9S0ZlVDJR6DbAfojY3jAAAR1ry",
+    "projectName": "idealle-odontologia"
+  },
+  "IMH-GOIAFIO": {
+    "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "path": "Não vigentes/IMH-GOIAFIO",
+    "projectId": "prj_n5t4TsqjI4mYVknFR7P5ijQh70x5",
+    "projectName": "goiafiogo"
+  },
+  "IMPACTO BATERIAS": {
+    "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "path": "Vigentes/ADS/IMPACTO BATERIAS",
+    "projectId": "prj_BpYPSQDXO6dzmKvTcwHugNFbne0g",
+    "projectName": "impacto-baterias"
+  },
+  "IMPERIO DAS BOMBAS BOMBASEFERRAMENTAS": {
+    "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "path": "Vigentes/ADS/IMPERIO DAS BOMBAS BOMBASEFERRAMENTAS",
+    "projectId": "prj_C3yEO3XEgyW2lO8T94s4zacweWBr",
+    "projectName": "imperiodasbombaspa"
+  },
+  "Imperio Gás Ltda": {
+    "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "path": "Vigentes/ADS/Imperio Gás Ltda",
+    "projectId": "prj_lnrRlQknzLtlki0M7qRoXW10U1KX",
+    "projectName": "imperio-gas-ltda"
+  },
   "IN BRASA CHOPP E GRILL": {
     "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "path": "Vigentes/ADS/IN BRASA CHOPP E GRILL",
     "projectId": "prj_KFZkY0pThcU9nDI2BP9xgB3StTwO",
     "projectName": "in-brasa-chopp-e-grill"
   },
+  "INDCOM Ambiental Ltda": {
+    "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "path": "Vigentes/ADS/INDCOM Ambiental Ltda",
+    "projectId": "prj_U1OAWca8oClInSy1BxjfLiTKQgtH",
+    "projectName": "indcom-ambiental-ltda"
+  },
+  "INDUSTRIA DE PROTESE VITADENT DE FRANCA LTDA": {
+    "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "path": "Não vigentes/INDUSTRIA DE PROTESE VITADENT DE FRANCA LTDA",
+    "projectId": "prj_SdOdI5shgwa72ooBYkSH08C4RkF2",
+    "projectName": "vitadentdental"
+  },
+  "INSIDE PHARMACY": {
+    "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "path": "Não vigentes/INSIDE PHARMACY",
+    "projectId": "prj_zpMChxNJ3kNAphdTkyrFGq5virja",
+    "projectName": "inside-pharmacy"
+  },
+  "INSPIRAR CENTRO INTEGRADO DE FISIO. RESPIRATORIO E SONO": {
+    "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "path": "Vigentes/ADS/INSPIRAR CENTRO INTEGRADO DE FISIO. RESPIRATORIO E SONO",
+    "projectId": "prj_N6tWS3sQx8oVzHME0mD87p6P44hR",
+    "projectName": "inspirar-centro-integrado-de-fisio-respiratorio-e-sono"
+  },
+  "INSTITUTO NUVEM": {
+    "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "path": "Vigentes/ADS/INSTITUTO NUVEM",
+    "projectId": "prj_Cb03IHiqZAlGIRXvEPvzqlgWC8Hl",
+    "projectName": "instituto-nuvem"
+  },
+  "J A SOLUCOES CONTABEIS": {
+    "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "path": "Vigentes/ADS/J A SOLUCOES CONTABEIS",
+    "projectId": "prj_TRrOYiQ45ZIm3NoWm1Gi9HnG3QGK",
+    "projectName": "j-a-solucoes-contabeis"
+  },
+  "J D BATERIAS": {
+    "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "path": "Não vigentes/J D BATERIAS",
+    "projectId": "prj_ELtb1Csk44iJ5vyVsAsaUbyrlmBc",
+    "projectName": "j-d-baterias"
+  },
+  "JA Agro Drones": {
+    "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "path": "Vigentes/ADS/JA Agro Drones",
+    "projectId": "prj_Cssrd7a7aAQxrjMp3OzOWKmHl7sV",
+    "projectName": "ja-agro-drones"
+  },
+  "JC BATERIAS MOGI ME": {
+    "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "path": "Não vigentes/JC BATERIAS MOGI ME",
+    "projectId": "prj_J3NwODLaT0oKHmzPURYOkPSBQc6h",
+    "projectName": "jc-baterias-mogi-me"
+  },
   "JF Jefão Diesel": {
     "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "path": "Vigentes/ADS/JF Jefão Diesel",
     "projectId": "prj_qW1Uz66AVyYPVamNY2yznfanYmvn",
     "projectName": "jf-jefao-diesel"
   },
+  "JM CELULAR": {
+    "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "path": "Vigentes/ADS/JM CELULAR",
+    "projectId": "prj_tD1F53c6qIZruWftwDKEqzZT39EB",
+    "projectName": "jm-celular"
+  },
   "JM PRE MOLDADOS": {
     "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "path": "Vigentes/ADS/JM PRE MOLDADOS",
     "projectId": "prj_kWnNZn0D4MC7ZS9UXMplEN5Utmvd",
     "projectName": "jm-pre-moldados"
   },
-  "JPMAR Ambiental": {
+  "JN Materiais Construção": {
     "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "path": "Vigentes/ADS/JN Materiais Construção",
+    "projectId": "prj_slajTuwtiOLwr2MyNO71JfBtMErT",
+    "projectName": "jn-materiais-construcao"
+  },
+  "JOY AUTO CENTER": {
+    "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "path": "Vigentes/ADS/JOY AUTO CENTER",
+    "projectId": "prj_G68gsZbEIoxlHU1alXR8gtg5q2LA",
+    "projectName": "joy-auto-center"
+  },
+  "JP MAR ENGENHARIA": {
+    "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "path": "Vigentes/ADS/JP MAR ENGENHARIA",
     "projectId": "prj_klXuexKAzZCiDyPSZPcL4roKsLKT",
-    "projectName": "jpmar-ambiental"
+    "projectName": "jp-mar-engenharia"
+  },
+  "JR VEICULOS RONDONOPOLIS": {
+    "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "path": "Vigentes/ADS/JR VEICULOS RONDONOPOLIS",
+    "projectId": "prj_WEFhfoHgUlCUFlRymRAgSbbqZHkX",
+    "projectName": "jr-veiculos-rondonopolis"
+  },
+  "Kalmia Farmácia": {
+    "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "path": "Vigentes/ADS/Kalmia Farmácia",
+    "projectId": "prj_9Oj8yxWZ9LrW15Q6VSTVwgjcqz3x",
+    "projectName": "kalmia-farmacia"
+  },
+  "KALY AGON": {
+    "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "path": "Vigentes/ADS/KALY AGON",
+    "projectId": "prj_x6XhkeXmghlKu9PtEcnVaxBA8LCv",
+    "projectName": "kaly-agon"
+  },
+  "KANGAS LANCHES E PIZZAS": {
+    "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "path": "Vigentes/ADS/KANGAS LANCHES E PIZZAS",
+    "projectId": "prj_xMH8ZQsv9roj8kjHW6UkhX2a7FTM",
+    "projectName": "kangas-lanches-e-pizzas"
+  },
+  "Kelly Silva advocacia": {
+    "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "path": "Vigentes/ADS/Kelly Silva advocacia",
+    "projectId": "prj_I80zHw724m6fCQptnu0dgahMf53k",
+    "projectName": "kelly-silva-advocacia"
+  },
+  "KERBER GAS": {
+    "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "path": "Vigentes/ADS/KERBER GAS",
+    "projectId": "prj_b0jfUwgOM2sQtd38ZtbY1EFhkCLx",
+    "projectName": "kerber-gas"
+  },
+  "KERBER GAS SORRISO": {
+    "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "path": "Vigentes/ADS/KERBER GAS SORRISO",
+    "projectId": "prj_YiqraFJovK5v0EDmoL27No3UMqV2",
+    "projectName": "kerber-gas-sorriso"
+  },
+  "Kissai Pizza": {
+    "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "path": "Vigentes/ADS/Kissai Pizza",
+    "projectId": "prj_oG8xbjDscAKFXAmBdNrhcdJgqxGW",
+    "projectName": "kissai-pizza"
+  },
+  "L2 CARROS": {
+    "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "path": "Não vigentes/L2 CARROS",
+    "projectId": "prj_6DiXKaAx4owgicpZpaxnLX8Jo2Qd",
+    "projectName": "l2-carros"
   },
   "LA TOKA ESPETARIA E COZINHA": {
     "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "path": "Vigentes/ADS/LA TOKA ESPETARIA E COZINHA",
     "projectId": "prj_ShHByJddtRWmwJNexAdCu3je8zhw",
     "projectName": "la-toka-espetaria-e-cozinha"
   },
+  "LABORPHOTO COMERCIO E INDUSTRIA DE FOTOGRAFIAS E MOLDURAS EIRELI": {
+    "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "path": "Não vigentes/LABORPHOTO COMERCIO E INDUSTRIA DE FOTOGRAFIAS E MOLDURAS EIRELI",
+    "projectId": "prj_rr8rPBvu3pMhumL317vgL4LNnEeL",
+    "projectName": "laborphoto-comercio-e-industria-de-fotografias-e-molduras-eireli"
+  },
+  "LAMAR NETO COMERCIO E CORRETORA DE GRAOS E CEREAIS": {
+    "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "path": "Vigentes/ADS/LAMAR NETO COMERCIO E CORRETORA DE GRAOS E CEREAIS",
+    "projectId": "prj_7pRfISZO5Hoa1jX5nwfkLW7y4Dt0",
+    "projectName": "lamar-neto-comercio-e-corretora-de-graos-e-cereais"
+  },
+  "LAVA JATO OTTO": {
+    "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "path": "Vigentes/ADS/LAVA JATO OTTO",
+    "projectId": "prj_P8GtP3JnZg3tVt523JivVkiIOAEL",
+    "projectName": "lava-jato-otto"
+  },
+  "LavUp Lavanderia": {
+    "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "path": "Vigentes/ADS/LavUp Lavanderia",
+    "projectId": "prj_zsp4A99aFuP6USPQ6M6qZHgWNpn0",
+    "projectName": "lavup-lavanderia"
+  },
+  "LEGSOL": {
+    "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "path": "Não vigentes/LEGSOL",
+    "projectId": "prj_G69qDxJpNm0XE04jfjuCBHdcIo4Y",
+    "projectName": "legsol"
+  },
+  "LIH EXPERIENCIA DO SONO": {
+    "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "path": "Vigentes/ADS/LIH EXPERIENCIA DO SONO",
+    "projectId": "prj_Me7efiB3QS7oZhV4CQA3WhxLul9l",
+    "projectName": "lih-experiencia-do-sono"
+  },
+  "Lima advocacia Crixás GO": {
+    "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "path": "Vigentes/ADS/Lima advocacia Crixás GO",
+    "projectId": "prj_rJyDegflzrvGqPYteEjfpWtj3Wse",
+    "projectName": "limaadvocacia"
+  },
+  "LIMPONOP": {
+    "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "path": "Vigentes/ADS/LIMPONOP",
+    "projectId": "prj_pAkwepTwGmtL6veAyhpDNbm2ySAc",
+    "projectName": "limponop"
+  },
+  "LIVRARIA NEVES": {
+    "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "path": "Vigentes/ADS/LIVRARIA NEVES",
+    "projectId": "prj_Ipka6zxjnrLinUVsUKaIIT6BQr1w",
+    "projectName": "livraria-neves"
+  },
+  "Locadora Sul Maquinas e Equip P Construção CIvil LTDA": {
+    "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "path": "Vigentes/ADS/Locadora Sul Maquinas e Equip P Construção CIvil LTDA",
+    "projectId": "prj_16wVZsMbrLXiVDxTJNDQZZLZMoft",
+    "projectName": "locadorasul"
+  },
+  "LOJA DAS CONEXOES": {
+    "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "path": "Não vigentes/LOJA DAS CONEXOES",
+    "projectId": "prj_sSuJXXmlGqAWHyhkOKYO8Z6odk6p",
+    "projectName": "loja-das-conexoes"
+  },
+  "LOJA PADRE CICERO ARTIGOS RELIGIOSOS": {
+    "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "path": "Não vigentes/LOJA PADRE CICERO ARTIGOS RELIGIOSOS",
+    "projectId": "prj_vSPdgO5EakJ9FVe2Qpae0SajS4nD",
+    "projectName": "loja-padre-cicero-artigos-religiosos"
+  },
+  "LOJAO DO PARABRISA": {
+    "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "path": "Não vigentes/LOJAO DO PARABRISA",
+    "projectId": "prj_oTDHZTuR2jlvPYcKQxPwxnAzIBfH",
+    "projectName": "lojao-do-parabrisa"
+  },
   "LORDCAR AUTO CENTER": {
     "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "path": "Vigentes/ADS/LORDCAR AUTO CENTER",
     "projectId": "prj_PJtnkRc18oJR5XVguaPRruDc1yxs",
     "projectName": "lordcar-auto-center"
   },
+  "LOUISE POS OPERATORIO": {
+    "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "path": "Vigentes/ADS/LOUISE POS OPERATORIO",
+    "projectId": "prj_XDJBmi0Wj5OMQnDl0flHtgugpbXl",
+    "projectName": "louise-pos-operatorio"
+  },
+  "LR Personalizações": {
+    "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "path": "Vigentes/ADS/LR Personalizações",
+    "projectId": "prj_HZTStPZHvNVzOSyoOmA6xkmAouCz",
+    "projectName": "lr-personalizacoes"
+  },
+  "LUNA MOTOS": {
+    "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "path": "Não vigentes/LUNA MOTOS",
+    "projectId": "prj_Kat4IuqNdnXjJU7hqNRkhpKf1GrW",
+    "projectName": "luna-motos"
+  },
+  "LYON TRATOR PECAS": {
+    "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "path": "Vigentes/ADS/LYON TRATOR PECAS",
+    "projectId": "prj_mzGEe5gIR4dAkA1YVl99bcvmK1Zq",
+    "projectName": "lyon-trator-pecas"
+  },
+  "Madre Transportes LTDA": {
+    "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "path": "Vigentes/ADS/Madre Transportes LTDA",
+    "projectId": "prj_kxRJ1dbx2Z5wuLCd0u4z817pqMTW",
+    "projectName": "madre-transportes-ltda"
+  },
+  "Mago Das Tesouras Barbearia e Prótese Capilar": {
+    "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "path": "Vigentes/ADS/Mago Das Tesouras Barbearia e Prótese Capilar",
+    "projectId": "prj_YoGi2CvaSLkgVxbWbSoaraleVDcT",
+    "projectName": "magodastesouras"
+  },
+  "MAIS LUZ SERVICE": {
+    "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "path": "Não vigentes/MAIS LUZ SERVICE",
+    "projectId": "prj_fjFg8rxX7QMDOlHn560j5ACuhNYP",
+    "projectName": "mais-luz-service"
+  },
+  "Manaus Baterias": {
+    "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "path": "Vigentes/ADS/Manaus Baterias",
+    "projectId": "prj_dQGhJF5vSAuxPjCkLNEl4olOoS1j",
+    "projectName": "manaus-baterias"
+  },
+  "MANUTHERM REFRIGERACAO": {
+    "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "path": "Vigentes/ADS/MANUTHERM REFRIGERACAO",
+    "projectId": "prj_P3O1nwyXVauhFae7MCFI5INFWz2h",
+    "projectName": "manutherm-climatizacao"
+  },
+  "Manzi Construtora": {
+    "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "path": "Vigentes/ADS/Manzi Construtora",
+    "projectId": "prj_qfSZAleMW4jjjks3ZYIBohrNXnp8",
+    "projectName": "manzi-construtora"
+  },
+  "MAP LOCACOES": {
+    "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "path": "Vigentes/ADS/MAP LOCACOES",
+    "projectId": "prj_xSCnjMCYBioYKCrMsKKWMv2JTzOd",
+    "projectName": "map-locacoes"
+  },
+  "MAQNOP ALUGUEL DE EQUIPAMENTOS": {
+    "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "path": "Vigentes/ADS/MAQNOP ALUGUEL DE EQUIPAMENTOS",
+    "projectId": "prj_HDh6JqaQLUgAlzudU5Fd0pOwtjia",
+    "projectName": "maqnop-aluguel-de-equipamentos"
+  },
+  "Marabá Clinica RC Flor De Salute - Pilates, Osteopatia e Ozônioterapia em Marabá": {
+    "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "path": "Vigentes/ADS/Marabá Clinica RC Flor De Salute - Pilates, Osteopatia e Ozônioterapia em Marabá",
+    "projectId": "prj_b5wpWdPQrjKtriMLNyu5fzI6ue24",
+    "projectName": "maraba-clinica-rc-flor-de-salute-pilates-osteopatia-e-ozonioterapia-em-maraba"
+  },
+  "MARAJO DIESEL AUTOPECAS": {
+    "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "path": "Vigentes/ADS/MARAJO DIESEL AUTOPECAS",
+    "projectId": "prj_TWsj6i83kiK4qcpkikgECPsjaFC9",
+    "projectName": "marajo-diesel-autopecas"
+  },
+  "Marco Placas Industria e Comércio Ltda CNPJ 17.505.744-0001-60": {
+    "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "path": "Vigentes/ADS/Marco Placas Industria e Comércio Ltda CNPJ 17.505.744-0001-60",
+    "projectId": "prj_KoqBf1UGpJrnwL5wklRo115ePDMS",
+    "projectName": "marco-placas-industria-e-comercio-ltda-cnpj-17-505-744-0001-60"
+  },
+  "MARGUIA CORRETORA DE SEGUROS": {
+    "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "path": "Vigentes/ADS/MARGUIA CORRETORA DE SEGUROS",
+    "projectId": "prj_GlnJPpY9NetAkVrI9XZWY3GznYmP",
+    "projectName": "marguia-corretora-de-seguros"
+  },
+  "MARIZER MODA": {
+    "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "path": "Vigentes/ADS/MARIZER MODA",
+    "projectId": "prj_cIXGwq3nSLg5SuDjqW9jZhlzuG9U",
+    "projectName": "marize-uniformes"
+  },
+  "MARMORARIA ANHANGUERA": {
+    "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "path": "Vigentes/ADS/MARMORARIA ANHANGUERA",
+    "projectId": "prj_jCqEQHepJR9VYK4kO9JWFiWCUUvh",
+    "projectName": "marmoraria-anhanguera"
+  },
+  "Marques Marmoraria": {
+    "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "path": "Vigentes/ADS/Marques Marmoraria",
+    "projectId": "prj_cGFuJIxG02jv0Dcz8OXVR8cOEFKD",
+    "projectName": "marques-marmoraria"
+  },
+  "MASTER DIAGNOSTICOS AUTO ELETRICA": {
+    "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "path": "Vigentes/ADS/MASTER DIAGNOSTICOS AUTO ELETRICA",
+    "projectId": "prj_cizsF6YwQfij7ciAN77vWrciU4gc",
+    "projectName": "master-diagnosticos-auto-eletrica"
+  },
+  "MAX VISION VISTORIA VEICULAR": {
+    "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "path": "Não vigentes/MAX VISION VISTORIA VEICULAR",
+    "projectId": "prj_psNeN9ZD15gWn2j596AMBkodJPsB",
+    "projectName": "max-vision-vistoria-veicular"
+  },
+  "MAXXIMUS": {
+    "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "path": "Vigentes/ADS/MAXXIMUS",
+    "projectId": "prj_6nyo1lpSxipSRlZ6nSeADa7dfanS",
+    "projectName": "maxximus"
+  },
+  "MEC ROLAMENTOS": {
+    "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "path": "Vigentes/ADS/MEC ROLAMENTOS",
+    "projectId": "prj_BB7VJsXnahGpY7OBKLX5sY8moHh4",
+    "projectName": "mec-rolamentos"
+  },
+  "Mecânica 277": {
+    "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "path": "Vigentes/ADS/Mecânica 277",
+    "projectId": "prj_zzp2pui4eITaB4iatJ12OGTlgG9D",
+    "projectName": "mecanica-277"
+  },
+  "MECANICA CAMPOS": {
+    "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "path": "Não vigentes/MECANICA CAMPOS",
+    "projectId": "prj_TqNME3zzoDAOWO3zDvmNtQgkLPtP",
+    "projectName": "mecanica-campos"
+  },
+  "Mecanica Cordeiro": {
+    "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "path": "Vigentes/ADS/Mecanica Cordeiro",
+    "projectId": "prj_KA1vGbgP1pAc4GVJjybrwMqeo1ZT",
+    "projectName": "mecanica-cordeiro"
+  },
+  "MEGA BATERIAS": {
+    "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "path": "Não vigentes/MEGA BATERIAS",
+    "projectId": "prj_1zCg0XU97fA7v1k8fI1dxDdZ9ix1",
+    "projectName": "mega-baterias"
+  },
   "Mega Eventos": {
     "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "path": "Vigentes/ADS/Mega Eventos",
     "projectId": "prj_2hoTRitMlSHeSEYkOPo6jLmtjbAk",
     "projectName": "mega-eventos"
   },
+  "MEGGA AUTO PECAS": {
+    "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "path": "Vigentes/ADS/MEGGA AUTO PECAS",
+    "projectId": "prj_bqY6XNgh4xRc3sna2rw4ZGD9yfdP",
+    "projectName": "megga-auto-pecas"
+  },
+  "Menardi Odontologia Landing Page": {
+    "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "path": "Vigentes/ADS/Menardi Odontologia Landing Page",
+    "projectId": "prj_bpUctimJr8F24mad5XyWCLeAlxgS",
+    "projectName": "menardi-odontologia-landing-page"
+  },
+  "META BORDADOS": {
+    "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "path": "Vigentes/ADS/META BORDADOS",
+    "projectId": "prj_jATTHdQd6XDaWJmloWFXnGhD6bhJ",
+    "projectName": "meta-bordados"
+  },
+  "Meta Contabilidade": {
+    "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "path": "Não vigentes/Meta Contabilidade",
+    "projectId": "prj_JlBpsKyQCFC2TvCdhvi57huZcikb",
+    "projectName": "meta-contabilidade"
+  },
+  "MN ENXOVAIS": {
+    "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "path": "Vigentes/ADS/MN ENXOVAIS",
+    "projectId": "prj_9ymDY7XEGogH8fdHZL6j4jtz9kpS",
+    "projectName": "mn-enxovais"
+  },
+  "Modrali Equip. Hidráulicos e Pneumáticos": {
+    "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "path": "Não vigentes/Modrali Equip. Hidráulicos e Pneumáticos",
+    "projectId": "prj_fAD48WrfP6DTlSNeqp2eyQBQ51eO",
+    "projectName": "modrali-equip-hidraulicos-e-pneumaticos"
+  },
+  "MOONLIGHT PIJAMAS": {
+    "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "path": "Não vigentes/MOONLIGHT PIJAMAS",
+    "projectId": "prj_0oe2GPCoPwicJq3He9YTRecgDlVI",
+    "projectName": "moonlight-pijamas"
+  },
+  "Moto Silva": {
+    "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "path": "Não vigentes/Moto Silva",
+    "projectId": "prj_i3xcEZuuHUMXZyhen5kgbyqW5rPL",
+    "projectName": "moto-silva"
+  },
+  "MOVIMENTE CLINICA DE FISIOTERAPIA ESPECIALIZADA": {
+    "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "path": "Vigentes/ADS/MOVIMENTE CLINICA DE FISIOTERAPIA ESPECIALIZADA",
+    "projectId": "prj_euEvNyIT1Qsn4QwmtFPGDSxrcmb8",
+    "projectName": "movimente-clinica-de-fisioterapia-especializada"
+  },
+  "MP advocacia": {
+    "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "path": "Vigentes/ADS/MP advocacia",
+    "projectId": "prj_6inasdzNAH9KZ3DR36NHk9AQPVI8",
+    "projectName": "mp-advocacia"
+  },
+  "MS CLIMATIZADORES": {
+    "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "path": "Não vigentes/MS CLIMATIZADORES",
+    "projectId": "prj_yKqL8A0TrVKQYoxkr2PXnEsifDvC",
+    "projectName": "ms-climatizadores"
+  },
+  "MT AUTO PECAS": {
+    "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "path": "Vigentes/ADS/MT AUTO PECAS",
+    "projectId": "prj_OFIsieldekuUNpeMe1aHLlpesvcs",
+    "projectName": "mt-auto-pecas"
+  },
+  "MTTORK": {
+    "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "path": "Vigentes/ADS/MTTORK",
+    "projectId": "prj_OciQKjefAaSRVKZHbFaopQdgqp2T",
+    "projectName": "mttork"
+  },
+  "MUNDO DAS BATERIAS": {
+    "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "path": "Vigentes/ADS/MUNDO DAS BATERIAS",
+    "projectId": "prj_EQbcceWWWuJMUJGGh7cOCa8vMWhc",
+    "projectName": "mundo-das-baterias"
+  },
+  "MURALHA CORRETORA DE PLANOS DE SAUDE": {
+    "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "path": "Vigentes/ADS/MURALHA CORRETORA DE PLANOS DE SAUDE",
+    "projectId": "prj_vgNi7czbcmNcC6m5PvV6h12scDaq",
+    "projectName": "muralhacorretora"
+  },
   "NETCOMPANY INFORMATICA": {
     "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "path": "Vigentes/ADS/NETCOMPANY INFORMATICA",
     "projectId": "prj_uKdO7lFY60zemHDkyrzYLP3xCc8j",
     "projectName": "netcompany-informatica"
   },
+  "NETCON CONTABILIDADE": {
+    "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "path": "Vigentes/ADS/NETCON CONTABILIDADE",
+    "projectId": "prj_HiFC8LaQ4Imc0YJzLjffqMEyMvvr",
+    "projectName": "netcon-contabilidade"
+  },
+  "NILSON CORTINAS": {
+    "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "path": "Vigentes/ADS/NILSON CORTINAS",
+    "projectId": "prj_SSXQ3TYeyxJpYMcGs1ghq8FZGYnz",
+    "projectName": "nilson-cortinas"
+  },
+  "NOROESTE OXIGENIO": {
+    "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "path": "Vigentes/ADS/NOROESTE OXIGENIO",
+    "projectId": "prj_hMOFUohONUr6Iy7Olx53J436KaY5",
+    "projectName": "noroeste-oxigenio"
+  },
+  "NOSSO CARRO CENTRO AUTOMOTIVO": {
+    "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "path": "Vigentes/ADS/NOSSO CARRO CENTRO AUTOMOTIVO",
+    "projectId": "prj_tMhFC3iEKZO9tpNzjvcgbISGrmYA",
+    "projectName": "nosso-carro-centro-automotivo"
+  },
+  "NOVO CAMPO PECAS E IMPLEMENTOS AGRICOLAS": {
+    "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "path": "Vigentes/ADS/NOVO CAMPO PECAS E IMPLEMENTOS AGRICOLAS",
+    "projectId": "prj_S05k9XsBJm0pmm88lma5o4nPO33X",
+    "projectName": "novo-campo-agricola"
+  },
+  "NOVO CAMPO PECAS E IMPLEMENTOS AGRICOLAS - UNIDADE 1": {
+    "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "path": "Vigentes/ADS/NOVO CAMPO PECAS E IMPLEMENTOS AGRICOLAS - UNIDADE 1",
+    "projectId": "prj_4hPSYslhwoVb1Lcaou5I6R4eBKQL",
+    "projectName": "novo-campo-pecas-e-implementos-agricolas-unidade-1"
+  },
+  "OFICINA LANTERMAX": {
+    "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "path": "Vigentes/ADS/OFICINA LANTERMAX",
+    "projectId": "prj_yGye1bxWXMN0fhM1L9yZMkZN81R1",
+    "projectName": "lantermax"
+  },
+  "OPEX TELECOM": {
+    "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "path": "Vigentes/ADS/OPEX TELECOM",
+    "projectId": "prj_bPnAuYPh7rmJPL8DlxMbfz4RqHMV",
+    "projectName": "opex-telecom"
+  },
+  "OPTICA SALUTE": {
+    "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "path": "Vigentes/ADS/OPTICA SALUTE",
+    "projectId": "prj_vXvNSXxpqXGsEA94NTZSWDSxXJ5V",
+    "projectName": "optica-salute"
+  },
   "ORION CELULARES E ASSISTENCIA TECNICA": {
     "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "path": "Vigentes/ADS/ORION CELULARES E ASSISTENCIA TECNICA",
     "projectId": "prj_Mi7lJWlL57hAPfQBEdKJXGqWzBhN",
     "projectName": "orion-celulares-e-assistencia-tecnica"
   },
+  "Orquidário Orquídea & Cia - Valinhos": {
+    "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "path": "Vigentes/ADS/Orquidário Orquídea & Cia - Valinhos",
+    "projectId": "prj_fvdjPc7CFlHnXmcajb13QDQOeDXL",
+    "projectName": "orquidario-orquidea-e-cia-valinhos"
+  },
+  "Ortobom Afonso Pena": {
+    "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "path": "Vigentes/ADS/Ortobom Afonso Pena",
+    "projectId": "prj_fihegmAZpeKoeaS7QApu7a2lbf82",
+    "projectName": "ortobom-afonso-pena"
+  },
+  "OTICA BRILHAR": {
+    "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "path": "Vigentes/ADS/OTICA BRILHAR",
+    "projectId": "prj_v14WJDZ7pf3JHln0oAN9t0vMLS2Z",
+    "projectName": "otica-brilhar"
+  },
+  "OTICA MODERNA - A Lente perfeita na armação adequada": {
+    "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "path": "Vigentes/ADS/OTICA MODERNA - A Lente perfeita na armação adequada",
+    "projectId": "prj_cgxQlNvtWB1XRWw6aX4qo1Mu5n1o",
+    "projectName": "otica-moderna-a-lente-perfeita-na-armacao-adequada"
+  },
+  "OTICA VICTORIA": {
+    "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "path": "Não vigentes/OTICA VICTORIA",
+    "projectId": "prj_EQJCBSphO5O9cG17WiLNW3np8Vdt",
+    "projectName": "otica-victoria"
+  },
+  "OUROFINO JOIAS": {
+    "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "path": "Vigentes/ADS/OUROFINO JOIAS",
+    "projectId": "prj_j242i55Ugwd3XXY6odv3bLnXXo0C",
+    "projectName": "ourofino-joias"
+  },
+  "PALACE HOTEL": {
+    "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "path": "Vigentes/ADS/PALACE HOTEL",
+    "projectId": "prj_o87BEizKlKeISZupSq4Sf3xGBrrr",
+    "projectName": "palace-hotel"
+  },
+  "Palhetos Sorveteria e Hamburgueria - Vila Isaura": {
+    "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "path": "Não vigentes/Palhetos Sorveteria e Hamburgueria - Vila Isaura",
+    "projectId": "prj_2f6NLNQxJt99QpJqZIJLRl6XTRiB",
+    "projectName": "palhettossorveteriaehamburgueria"
+  },
+  "PAPELARIA PAULINO": {
+    "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "path": "Vigentes/ADS/PAPELARIA PAULINO",
+    "projectId": "prj_XICGF1rdtHqSgN4pleUoF9QJuXZj",
+    "projectName": "papelaria-paulino"
+  },
+  "PAPELARIA VASCONCELOS": {
+    "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "path": "Vigentes/ADS/PAPELARIA VASCONCELOS",
+    "projectId": "prj_rTjgIG51Rj9LpKX81200LaCFlBB0",
+    "projectName": "papelaria-vasconcelos"
+  },
+  "PASA TRATORES": {
+    "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "path": "Vigentes/ADS/PASA TRATORES",
+    "projectId": "prj_hw2TiBXl4pB5UTQA8IeKbxBFI9vG",
+    "projectName": "pasa-tratore-peca"
+  },
+  "PEMAQ LOCACAO DE MAQUINAS LTDA": {
+    "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "path": "Não vigentes/PEMAQ LOCACAO DE MAQUINAS LTDA",
+    "projectId": "prj_fHZFqiedgEdFMFuuo5vFCgW7av6S",
+    "projectName": "pemaq-locacao-de-maquinas-ltda"
+  },
+  "PET EXOTIC": {
+    "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "path": "Não vigentes/PET EXOTIC",
+    "projectId": "prj_oz5L8o7fiE55qYj5CNozGuOezwFW",
+    "projectName": "pet-exotic"
+  },
+  "PET SHOP RAPOSO CASTANHAL": {
+    "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "path": "Vigentes/ADS/PET SHOP RAPOSO CASTANHAL",
+    "projectId": "prj_lp29g7gP2649qwxUAKETAjd7Z5U5",
+    "projectName": "pet-shop-raposo-castanhal"
+  },
+  "PET SHOW ESTETICA ANIMAL": {
+    "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "path": "Não vigentes/PET SHOW ESTETICA ANIMAL",
+    "projectId": "prj_eUmTOYk9errlc3ZPwMyWZJvi13EO",
+    "projectName": "pet-show-estetica-animal"
+  },
+  "Pharma Floris": {
+    "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "path": "Não vigentes/Pharma Floris",
+    "projectId": "prj_YVK3MA5N8eUZWtlX1eIAi7mD49Jw",
+    "projectName": "pharma-floris"
+  },
+  "PIZZA NA PEDRA": {
+    "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "path": "Vigentes/ADS/PIZZA NA PEDRA",
+    "projectId": "prj_aJ7hXQ2HOiH6YHoZsOzHBrb0eqSy",
+    "projectName": "pizza-na-pedra"
+  },
+  "PJ TAPETES PERSONALIZADOS": {
+    "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "path": "Vigentes/ADS/PJ TAPETES PERSONALIZADOS",
+    "projectId": "prj_s86JNbtnu2HFjYT1DaZLeBuqk54Y",
+    "projectName": "pj-tapetes-personalizados"
+  },
+  "PLANETA FERROS": {
+    "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "path": "Vigentes/ADS/PLANETA FERROS",
+    "projectId": "prj_ai78niKLtsbqEvMdPinuQnjZpT0g",
+    "projectName": "planeta-ferros"
+  },
+  "PLANTAE - GESTAO AGRICOLA": {
+    "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "path": "Vigentes/ADS/PLANTAE - GESTAO AGRICOLA",
+    "projectId": "prj_IOOwvLnoWji2oE3SLUZnXbV9HSIu",
+    "projectName": "plantae-gestao-agricola"
+  },
+  "PLANUS AMBIENTAL": {
+    "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "path": "Vigentes/ADS/PLANUS AMBIENTAL",
+    "projectId": "prj_kXFFrZ8o7ZqfIlXh8iSko0ymwCI6",
+    "projectName": "planus-ambiental"
+  },
   "PLATO LIDER": {
     "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "path": "Vigentes/ADS/PLATO LIDER",
     "projectId": "prj_oCw7ouCVdEDK0fdzrzx2jLEpzIaV",
     "projectName": "plato-lider"
   },
   "PNEU ZERO": {
     "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "path": "Vigentes/ADS/PNEU ZERO",
     "projectId": "prj_G1uetIGaZWufcaXjg2SXKggbWley",
     "projectName": "pneu-zero"
   },
+  "POLIZEL AGROFERRAGENS": {
+    "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "path": "Vigentes/ADS/POLIZEL AGROFERRAGENS",
+    "projectId": "prj_wKZyfpJOEe9NYf8xlinnT4YpDrIc",
+    "projectName": "polizel-agroferragens"
+  },
+  "PONTO FRIO REFRIGERACAO": {
+    "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "path": "Vigentes/ADS/PONTO FRIO REFRIGERACAO",
+    "projectId": "prj_HPxm74u9RZxRElDGZPubbdyhtaUx",
+    "projectName": "ponto-frio-refrigeracao"
+  },
+  "PORTAL DAS TINTAS": {
+    "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "path": "Não vigentes/PORTAL DAS TINTAS",
+    "projectId": "prj_PtaVXJ6zASkDUycfD6J4T2Y28xG6",
+    "projectName": "portal-das-tintas"
+  },
+  "PR ENGENHARIA": {
+    "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "path": "Vigentes/ADS/PR ENGENHARIA",
+    "projectId": "prj_XFUNZyAhdG2EhS1YdG7gojRoB1PE",
+    "projectName": "pr-engenharia"
+  },
+  "Praia imóveis": {
+    "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "path": "Vigentes/ADS/Praia imóveis",
+    "projectId": "prj_d0mzpcAkZHZFxLua0ArQFAQXzo26",
+    "projectName": "praia-imoveis"
+  },
+  "PRESTSERV AMBIENTAL": {
+    "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "path": "Não vigentes/PRESTSERV AMBIENTAL",
+    "projectId": "prj_PBMvm8Vnq6IUUmIwYl75DbXqYfpn",
+    "projectName": "prestserv-ambiental"
+  },
+  "PRIME TECIDOS E ACESSORIOS PARA CORTINAS": {
+    "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "path": "Vigentes/ADS/PRIME TECIDOS E ACESSORIOS PARA CORTINAS",
+    "projectId": "prj_ZU78AWK3hEVkUabpLTnvOeqZtQ5p",
+    "projectName": "prime-tecidos-e-acessorios-para-cortinas"
+  },
+  "PRO ESCAPE": {
+    "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "path": "Não vigentes/PRO ESCAPE",
+    "projectId": "prj_fmRG83rJpXo6RlzaZ8mmvH3wh88S",
+    "projectName": "pro-escape"
+  },
+  "PRODUTOS ALIMENTICIOS VERANITA": {
+    "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "path": "Não vigentes/PRODUTOS ALIMENTICIOS VERANITA",
+    "projectId": "prj_wuXWmIGbe2VovP9JWmt4wQkaocVR",
+    "projectName": "veranita"
+  },
+  "PROTONS CONSULTORIA": {
+    "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "path": "Vigentes/ADS/PROTONS CONSULTORIA",
+    "projectId": "prj_36cIoyVnb8ujoaXIRRvz9Ui1DVIE",
+    "projectName": "protons-consultoria"
+  },
+  "PS Auto Serviçe": {
+    "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "path": "Vigentes/ADS/PS Auto Serviçe",
+    "projectId": "prj_jg7fxttr4wMyHPaArjakKcuLyB08",
+    "projectName": "ps-auto-service"
+  },
+  "Quase Tudo": {
+    "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "path": "Vigentes/ADS/Quase Tudo",
+    "projectId": "prj_Tt5SXA64hWVvWDmSGoofUXRRI6Jq",
+    "projectName": "quase-tudo"
+  },
+  "QUEIROZ METAIS": {
+    "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "path": "Vigentes/ADS/QUEIROZ METAIS",
+    "projectId": "prj_12UBvTBkAzUKplIWjZaeeFr2Ha4J",
+    "projectName": "queiroz-metais"
+  },
+  "Quitei Meu Carro": {
+    "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "path": "Vigentes/ADS/Quitei Meu Carro",
+    "projectId": "prj_HlPlZ16jNkgbonyxz1D5K7zFulPn",
+    "projectName": "quitei-meu-carro"
+  },
+  "R L TINTAS E ACESSORIOS AUTOMOTIVO": {
+    "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "path": "Vigentes/ADS/R L TINTAS E ACESSORIOS AUTOMOTIVO",
+    "projectId": "prj_4Bj7bEcQ8dbmjyARjm0BKyLfBSRQ",
+    "projectName": "rltintas"
+  },
+  "Rainha das Baterias, rodas e pneus": {
+    "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "path": "Não vigentes/Rainha das Baterias, rodas e pneus",
+    "projectId": "prj_7AULmfu5blQF9YXn4XNh212oogz9",
+    "projectName": "rainha-das-baterias-rodas-e-pneus"
+  },
+  "Raio- solar energia solar": {
+    "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "path": "Não vigentes/Raio- solar energia solar",
+    "projectId": "prj_xhBVJmvXHLLplfsF2ISKxEvnIIFn",
+    "projectName": "raio-solar-energia-solar"
+  },
+  "Rapidao Gás e Água": {
+    "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "path": "Vigentes/ADS/Rapidao Gás e Água",
+    "projectId": "prj_g4l6QSN3ryuerORmxSyl0HKcxlav",
+    "projectName": "rapidao-gas-e-agua"
+  },
   "RB AUTO PECAS": {
     "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "path": "Vigentes/ADS/RB AUTO PECAS",
     "projectId": "prj_9cwsccw6kuySyXDAkrDZlyhULE3m",
     "projectName": "rb-auto-pecas"
   },
+  "RECICLATECH": {
+    "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "path": "Vigentes/ADS/RECICLATECH",
+    "projectId": "prj_PmLUofR3AFWra6k34lmUK3p11q4P",
+    "projectName": "reciclatech"
+  },
+  "RECIFE COMPONENTES": {
+    "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "path": "Vigentes/ADS/RECIFE COMPONENTES",
+    "projectId": "prj_ErtaQRkBPqT4HZq849oaVCFqiOAr",
+    "projectName": "recife-componentes"
+  },
+  "REDE CONSIG": {
+    "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "path": "Vigentes/ADS/REDE CONSIG",
+    "projectId": "prj_7N7pfDusNTjO3TO76YuSvod1JWCB",
+    "projectName": "rede-consig"
+  },
+  "REDE CONSTRUCERTO CAMACARI": {
+    "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "path": "Vigentes/ADS/REDE CONSTRUCERTO CAMACARI",
+    "projectId": "prj_mZwaGNR6eW4Ee94jxtddx8ykvliU",
+    "projectName": "rede-construcerto-camacari"
+  },
+  "REFAMAQ": {
+    "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "path": "Vigentes/ADS/REFAMAQ",
+    "projectId": "prj_8o4htJGeS9Ix5cTlIx4Sn67ooS6h",
+    "projectName": "refamaq"
+  },
+  "REI DO TERNO CONFECCOES": {
+    "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "path": "Vigentes/ADS/REI DO TERNO CONFECCOES",
+    "projectId": "prj_IspQcPKLLzXdWfT9bwuQXz3puy9e",
+    "projectName": "rei-do-terno-confeccoes"
+  },
+  "Renner Henrique Alves Martins do Amaral": {
+    "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "path": "Vigentes/ADS/Renner Henrique Alves Martins do Amaral",
+    "projectId": "prj_9ijQnOmuyDgq2crfZpiFVxH3Fsvq",
+    "projectName": "dr-renner"
+  },
+  "RESTAURANTE E POUSADA OVOMALTINE": {
+    "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "path": "Vigentes/ADS/RESTAURANTE E POUSADA OVOMALTINE",
+    "projectId": "prj_e2SZzQ0CvJ2MZmtraRPyCyhLyRHM",
+    "projectName": "restaurante-e-pousada-ovomaltine"
+  },
+  "RETIFICA DE MOTORES ANHANGUERA": {
+    "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "path": "Não vigentes/RETIFICA DE MOTORES ANHANGUERA",
+    "projectId": "prj_0mCjLxKbVAg0dd5Sqmh1MunhK5k0",
+    "projectName": "retifica-de-motores-anhanguera"
+  },
+  "RETIGRILO": {
+    "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "path": "Vigentes/ADS/RETIGRILO",
+    "projectId": "prj_h5NG6GEygJAZ4mhKzUhtwLomrrKq",
+    "projectName": "retigrilo"
+  },
+  "RETOCAR": {
+    "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "path": "Vigentes/ADS/RETOCAR",
+    "projectId": "prj_gRUfT0aCp4LUvGLag4kR7jiq6soE",
+    "projectName": "retocar"
+  },
   "Rezende Odontologia": {
     "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "path": "Vigentes/ADS/Rezende Odontologia",
     "projectId": "prj_DtLBwan7pSYHUMG9mJQz1hSNaj2L",
     "projectName": "rezende-odontologia"
   },
+  "RG EVENTOS": {
+    "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "path": "Vigentes/ADS/RG EVENTOS",
+    "projectId": "prj_nAW2WC2T4wRYATaoA6A1P7X4459G",
+    "projectName": "rg-eventos"
+  },
+  "Ricardo Rodrigues sociedade individual de advocacia": {
+    "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "path": "Vigentes/ADS/Ricardo Rodrigues sociedade individual de advocacia",
+    "projectId": "prj_u2XmK7QTz1zD8AtJE384oRGBXbPw",
+    "projectName": "ricardo-rodrigues-advocacia"
+  },
+  "Rita Lucachinski Nutricionista": {
+    "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "path": "Vigentes/ADS/Rita Lucachinski Nutricionista",
+    "projectId": "prj_F50nBDozUL7Qsxbn0o03yVC9O4KG",
+    "projectName": "nutricionista-rita"
+  },
+  "RN informática e tecnologia": {
+    "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "path": "Vigentes/ADS/RN informática e tecnologia",
+    "projectId": "prj_RErU7LoYRSEj6yWz4XtMD6dcyDHA",
+    "projectName": "rninformatica"
+  },
+  "ROLIM CONFECCOES E BORDADOS": {
+    "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "path": "Vigentes/ADS/ROLIM CONFECCOES E BORDADOS",
+    "projectId": "prj_pFpUUWaQbm1D1UpSw8Sw1YAJyIKk",
+    "projectName": "malharia-rolim"
+  },
+  "ROMAQ": {
+    "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "path": "Não vigentes/ROMAQ",
+    "projectId": "prj_vN8oRUfQees6zNG7dSNBOWp1GzEU",
+    "projectName": "romaq"
+  },
+  "ROTA DO QUEIJO": {
+    "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "path": "Não vigentes/ROTA DO QUEIJO",
+    "projectId": "prj_HqAwubUZ8OtshFTdQGU6yX5rmkkR",
+    "projectName": "rota-do-queijo"
+  },
+  "RPN MECANICA AUTOMOTIVA": {
+    "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "path": "Vigentes/ADS/RPN MECANICA AUTOMOTIVA",
+    "projectId": "prj_sZwA6Vpdp9LkQg00OSCR2IdJ7xmM",
+    "projectName": "rpn-mecanica-automotiva"
+  },
+  "Rual Peças - Lojas de Peças para carros": {
+    "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "path": "Vigentes/ADS/Rual Peças - Lojas de Peças para carros",
+    "projectId": "prj_Wkfmsb5NMheEE74L8KiKHE7RB5ME",
+    "projectName": "rual-pecas-lojas-de-pecas-para-carros"
+  },
+  "S J BIKE": {
+    "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "path": "Vigentes/ADS/S J BIKE",
+    "projectId": "prj_HHnACIXGXIqQdeGs0K87okHFQud6",
+    "projectName": "s-j-bike"
+  },
+  "S.SIlva distribuidora": {
+    "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "path": "Vigentes/ADS/S.SIlva distribuidora",
+    "projectId": "prj_ewk347WHjV7ZXA1s0Zmwv9yHBDZK",
+    "projectName": "s-silva-distribuidora"
+  },
+  "SAGA CENTRO AUTOMOTIVO": {
+    "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "path": "Vigentes/ADS/SAGA CENTRO AUTOMOTIVO",
+    "projectId": "prj_rvSpSRIKTHK3ckjij9mSqW7yO39q",
+    "projectName": "saga-centro-automotivo"
+  },
+  "SATI TELECOM": {
+    "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "path": "Vigentes/ADS/SATI TELECOM",
+    "projectId": "prj_KxVhKDzDpwgZCBQzQRvkMrjrdV7a",
+    "projectName": "sati-telecom"
+  },
+  "SENSE COZINHA CONTEMPORANEA": {
+    "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "path": "Não vigentes/SENSE COZINHA CONTEMPORANEA",
+    "projectId": "prj_D3dnbTy2mhMo6hZPG5lDGN4h1qQv",
+    "projectName": "sense-cozinha-contemporanea"
+  },
+  "SENSUALLIZY MODA INTIMA": {
+    "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "path": "Vigentes/ADS/SENSUALLIZY MODA INTIMA",
+    "projectId": "prj_oq0U3EpCKeYZnRBv2aTAjhKRXSgv",
+    "projectName": "sensuallizy-moda-intima"
+  },
+  "SERRANO EMBUTIDOS E DEFUMADOS": {
+    "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "path": "Vigentes/ADS/SERRANO EMBUTIDOS E DEFUMADOS",
+    "projectId": "prj_kD2tBy03Xkj9dDLTGTKc0DS2Kwfn",
+    "projectName": "serrano-embutidos-e-defumados"
+  },
+  "SHOW LUZ LAMPADAS ESPECIAIS": {
+    "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "path": "Não vigentes/SHOW LUZ LAMPADAS ESPECIAIS",
+    "projectId": "prj_J2LQV4su9pJtb7ya7Yx9VkNiGi5t",
+    "projectName": "show-luz-lampadas-especiais"
+  },
+  "Signoretti e Barbosa sociedade de advogados": {
+    "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "path": "Vigentes/ADS/Signoretti e Barbosa sociedade de advogados",
+    "projectId": "prj_dwlX1xegbEs1fHu3XSv30Jj5EvYQ",
+    "projectName": "signoretti-barbosa"
+  },
+  "SILVERADO AUTO PECAS": {
+    "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "path": "Vigentes/ADS/SILVERADO AUTO PECAS",
+    "projectId": "prj_pggRx94DJJpC2jmG5wrtSgXdZiaA",
+    "projectName": "silverado-auto-pecas"
+  },
+  "SILVIA MOREIRA ADVOGADOS ASSOCIADOS": {
+    "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "path": "Não vigentes/SILVIA MOREIRA ADVOGADOS ASSOCIADOS",
+    "projectId": "prj_pctFL73h8qbdZnkqinVIkJV86fZy",
+    "projectName": "silviamoreira"
+  },
+  "Siqueira e lemos ltda": {
+    "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "path": "Vigentes/ADS/Siqueira e lemos ltda",
+    "projectId": "prj_IByVGFFYt8ROpxTMsXvtBcNCptWA",
+    "projectName": "siqueira-e-lemos-ltda"
+  },
   "SO AGRICOLA PECAS E IMPLEMENTOS": {
     "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "path": "Não vigentes/SO AGRICOLA PECAS E IMPLEMENTOS",
     "projectId": "prj_HAqGnJES2W8uvpvF985rg10icUoF",
     "projectName": "so-agricola-pecas-e-implementos"
   },
+  "Só Embreagens": {
+    "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "path": "Vigentes/ADS/Só Embreagens",
+    "projectId": "prj_f9TZvIWqo7swmbim4fYjZzl9fs7R",
+    "projectName": "so-embreagens"
+  },
+  "Sollar soluções energéticas -placa solar Aracaju": {
+    "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "path": "Vigentes/ADS/Sollar soluções energéticas -placa solar Aracaju",
+    "projectId": "prj_5DmHU932T2bUiGmzDawwryZwxsfN",
+    "projectName": "sollar-solucoes-energeticas-placa-solar-aracaju"
+  },
+  "SOLO PERFURACOES": {
+    "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "path": "Não vigentes/SOLO PERFURACOES",
+    "projectId": "prj_jfaNcCsEzb0orNiNlOmCQtaDAoOq",
+    "projectName": "solo-perfuracoes"
+  },
+  "SOLOENG Engenharia de solos": {
+    "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "path": "Não vigentes/SOLOENG Engenharia de solos",
+    "projectId": "prj_we7eAOhL2Jtj7ZXievD1q4UXIc3i",
+    "projectName": "soloeng-engenharia-de-solos"
+  },
+  "SORRIMAC Montagens e acabamentos Ltda": {
+    "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "path": "Vigentes/ADS/SORRIMAC Montagens e acabamentos Ltda",
+    "projectId": "prj_o4Ex4XPPbzTuhb47H6KNCQ2habdj",
+    "projectName": "sorrimac-montagens-e-acabamentos-ltda"
+  },
+  "SORRISO IMPERATRIZ": {
+    "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "path": "Vigentes/ADS/SORRISO IMPERATRIZ",
+    "projectId": "prj_P7PIlQxjWh0wJY5jwzQ0YbDc3dqg",
+    "projectName": "sorriso-imperatriz"
+  },
+  "Sowfit Suplementos": {
+    "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "path": "Vigentes/ADS/Sowfit Suplementos",
+    "projectId": "prj_ReaY5sVhEbKarFREDiwOZHF1CHNU",
+    "projectName": "sowfit-suplementos"
+  },
+  "SPEED ARENA": {
+    "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "path": "Vigentes/ADS/SPEED ARENA",
+    "projectId": "prj_uW0WFS82TtRMqcLW0wJl6l2iolVX",
+    "projectName": "speed-arena"
+  },
+  "Speed Car": {
+    "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "path": "Vigentes/ADS/Speed Car",
+    "projectId": "prj_U9rsRxC1auFKpxueZ68sDCHfM42V",
+    "projectName": "speedcar-centro-automotivo"
+  },
+  "Sport Horse": {
+    "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "path": "Vigentes/ADS/Sport Horse",
+    "projectId": "prj_9kP0Q86oC6Aq0xQtK3uqjsHVIE1k",
+    "projectName": "sport-horse"
+  },
+  "SR FIO": {
+    "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "path": "Vigentes/ADS/SR FIO",
+    "projectId": "prj_ui1oWgUM9sJoiwmhzu5Piuc5BbYD",
+    "projectName": "sr-fio"
+  },
+  "Ss escapamentos e performace": {
+    "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "path": "Vigentes/ADS/Ss escapamentos e performace",
+    "projectId": "prj_SUjJHt2RsDTrduX8En8UhlyfuONa",
+    "projectName": "ss-escapamentos-e-performace"
+  },
+  "STAR JOIAS": {
+    "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "path": "Vigentes/ADS/STAR JOIAS",
+    "projectId": "prj_FdJj4bkskm77utALINoI4M9N23YX",
+    "projectName": "star-joias"
+  },
+  "Stark Barbearia": {
+    "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "path": "Vigentes/ADS/Stark Barbearia",
+    "projectId": "prj_dG1xpPqIOrKOVbNaQWj2MY8X1H1M",
+    "projectName": "stark-barbearia"
+  },
+  "START INVESTIMENTOS EM CONSORCIOS": {
+    "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "path": "Vigentes/ADS/START INVESTIMENTOS EM CONSORCIOS",
+    "projectId": "prj_8nIQF6qAWH4YZrHKOzcFquQnQa0P",
+    "projectName": "start-consorcio"
+  },
+  "SUGÁS - Revenda de Gás de Cozinha": {
+    "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "path": "Vigentes/ADS/SUGÁS - Revenda de Gás de Cozinha",
+    "projectId": "prj_YhhzgnGE5W7VLGsum7j5JV4JIYZX",
+    "projectName": "sugas-revenda-de-gas-de-cozinha"
+  },
   "SULLTEC GERADORES": {
     "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "path": "Vigentes/ADS/SULLTEC GERADORES",
     "projectId": "prj_u7Yb2lXIZ6ORVGIDsVNxVzclJ8xg",
     "projectName": "sulltec-geradores"
   },
-  "Só Cópias": {
+  "SUPERCASA IMOVEIS": {
     "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
-    "projectId": "prj_XNF2Tn6308AlI9r9Tqpy2OAAXgaA",
-    "projectName": "so-copias"
+    "path": "Vigentes/ADS/SUPERCASA IMOVEIS",
+    "projectId": "prj_f4x7IO4GzJQAkyFmilK2QhqkNa24",
+    "projectName": "supercasa-imoveis"
+  },
+  "SUPERFIX": {
+    "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "path": "Vigentes/ADS/SUPERFIX",
+    "projectId": "prj_qLr98ElMZ0yw776uKIqaLHMO5n47",
+    "projectName": "superfix"
+  },
+  "SUPERMERCADO CONQUISTA": {
+    "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "path": "Não vigentes/SUPERMERCADO CONQUISTA",
+    "projectId": "prj_Vogb7UAtDF4e0HDnJLlWwKqrgEEi",
+    "projectName": "supermercado-conquista"
+  },
+  "TAMBORES UNIVERSO": {
+    "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "path": "Não vigentes/TAMBORES UNIVERSO",
+    "projectId": "prj_5tDxMBp2DFWShqjvlpLUeEGNb3BP",
+    "projectName": "tambores-universo"
+  },
+  "TAP METAL": {
+    "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "path": "Não vigentes/TAP METAL",
+    "projectId": "prj_tgzaXfJ6Q4Mlb2IKDA8FQdPHfXj3",
+    "projectName": "tapmet"
+  },
+  "TAQUARAL VEICULOS": {
+    "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "path": "Não vigentes/TAQUARAL VEICULOS",
+    "projectId": "prj_xDnZTPxUx0FQKd2njx1jYqDW8uhO",
+    "projectName": "taquaral-veiculos"
+  },
+  "tathiane Guimarães Ltda": {
+    "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "path": "Não vigentes/tathiane Guimarães Ltda",
+    "projectId": "prj_u9de61DXPu8CIjrULsE1ONbtLhkt",
+    "projectName": "tathiane-guimaraes-ltda"
+  },
+  "TAVARES PECAS E ACESSORIOS": {
+    "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "path": "Não vigentes/TAVARES PECAS E ACESSORIOS",
+    "projectId": "prj_0RxCfRV0Vz1hB49VwIZ0GVnzEBWY",
+    "projectName": "tavares-pecas-e-acessorios"
+  },
+  "TIBOLA PRE MOLDADOS": {
+    "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "path": "Vigentes/ADS/TIBOLA PRE MOLDADOS",
+    "projectId": "prj_6g3UaYDuFE1MA8oPFn7txbWWShDR",
+    "projectName": "tibola-pre-moldados"
+  },
+  "tocantinscodigofont": {
+    "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "path": "Vigentes/ADS/tocantinscodigofont",
+    "projectId": "prj_mDAKjTqAamaWdJYEJYj0xrwdLaqZ",
+    "projectName": "tocantinscodigofont"
+  },
+  "TOP MADEIRAS MATERIAIS E SERVICOS": {
+    "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "path": "Vigentes/ADS/TOP MADEIRAS MATERIAIS E SERVICOS",
+    "projectId": "prj_52Q74WQwBZ6XwVqhA7lbLBLzJaxg",
+    "projectName": "top-madeiras-materiais-e-servicos"
+  },
+  "TORRE ENGENHARIA": {
+    "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "path": "Vigentes/ADS/TORRE ENGENHARIA",
+    "projectId": "prj_DUn5GBGUf58TkC6sa213vqVLCWQJ",
+    "projectName": "torre-engenharia"
+  },
+  "TOTAL SPORT": {
+    "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "path": "Vigentes/ADS/TOTAL SPORT",
+    "projectId": "prj_EqyOhcsFOfjTe0gUIl00CXw5EzKd",
+    "projectName": "total-sport"
+  },
+  "TRADICAO PECAS AGRICOLAS": {
+    "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "path": "Não vigentes/TRADICAO PECAS AGRICOLAS",
+    "projectId": "prj_nSuoxunY5xoiFXb9nvGyPDO8FSlS",
+    "projectName": "tradicao-pecas-agricolas"
+  },
+  "TRANSPORTES S.S MOURA": {
+    "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "path": "Vigentes/ADS/TRANSPORTES S.S MOURA",
+    "projectId": "prj_vzqnN06kpk1nel3I5RWiHjGda1ub",
+    "projectName": "transportes-s-s-moura"
+  },
+  "TRC — Da Teoria ao Raciocínio Clínico": {
+    "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "path": "Vigentes/ADS/TRC — Da Teoria ao Raciocínio Clínico",
+    "projectId": "prj_KSuh5uJtNjVVHmO9bpUCjRGDBHBn",
+    "projectName": "trc-da-teoria-ao-raciocinio-clinico"
+  },
+  "TREVISO APART HOTEL": {
+    "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "path": "Vigentes/ADS/TREVISO APART HOTEL",
+    "projectId": "prj_udpN5dnvmw2qHGfAOVxrnaybTHuq",
+    "projectName": "treviso-apart-hotel"
+  },
+  "TROPICAL TOLDOS": {
+    "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "path": "Vigentes/ADS/TROPICAL TOLDOS",
+    "projectId": "prj_FgbIa3HQw54se2V0uu2tN69Zju6O",
+    "projectName": "tropical-toldos"
+  },
+  "TRUCK VEICULOS": {
+    "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "path": "Não vigentes/TRUCK VEICULOS",
+    "projectId": "prj_Y01AcWAXNnHtoPkWXyf3VgsyxlBX",
+    "projectName": "truck-veiculos"
+  },
+  "TRYP BRASÍLIA NAÇÕES": {
+    "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "path": "Não vigentes/TRYP BRASÍLIA NAÇÕES",
+    "projectId": "prj_TSij9NzRFMnm8WMO9lIw5yYTvHF4",
+    "projectName": "tryp-brasilia-nacoes"
+  },
+  "TS Serviços": {
+    "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "path": "Vigentes/ADS/TS Serviços",
+    "projectId": "prj_8BwxlR7IKuw1Be0ipRuRD3IfP2ca",
+    "projectName": "ts-servicos"
+  },
+  "TSA": {
+    "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "path": "Não vigentes/TSA",
+    "projectId": "prj_LbcOL0KwIH9EDMytjEjc4WUmUkWV",
+    "projectName": "tsa"
+  },
+  "TURBO MASTER": {
+    "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "path": "Vigentes/ADS/TURBO MASTER",
+    "projectId": "prj_qc2z5Zr1OYkt5DINYJLPWFOPgLjW",
+    "projectName": "turbo-master"
   },
   "TUREN PORTAS": {
     "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "path": "Vigentes/ADS/TUREN PORTAS",
     "projectId": "prj_Po156ED6eMabrgcUU1lUgzABzkuG",
     "projectName": "turen-portas"
   },
+  "UBER ESPUMAS": {
+    "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "path": "Vigentes/ADS/UBER ESPUMAS",
+    "projectId": "prj_X3pMYtBT5zvgJjPl6LuEpPim1Fdn",
+    "projectName": "uber-espumas"
+  },
+  "UDI COLCHOES": {
+    "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "path": "Vigentes/ADS/UDI COLCHOES",
+    "projectId": "prj_ySy9zVSi5yba5EjKGMPQ6SrPa3kQ",
+    "projectName": "udi-colchoes"
+  },
+  "UDI LATAS": {
+    "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "path": "Vigentes/ADS/UDI LATAS",
+    "projectId": "prj_t0vXS5TX8a3Olv6rAt7mk2myCuS5",
+    "projectName": "udi-latas"
+  },
+  "União Embreagens": {
+    "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "path": "Vigentes/ADS/União Embreagens",
+    "projectId": "prj_yIHVVHAGLScIkdRmi0ERDzWyvuMJ",
+    "projectName": "uniao-embreagens"
+  },
+  "UNIAO ENGATES": {
+    "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "path": "Vigentes/ADS/UNIAO ENGATES",
+    "projectId": "prj_hXcTa52QPOUpeRFcPoujtP28FOlo",
+    "projectName": "uniaoengatesdistgoiania"
+  },
+  "Única Express": {
+    "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "path": "Vigentes/ADS/Única Express",
+    "projectId": "prj_nxPqo1wM0MfvqDdaQTD7Kb4oAbT3",
+    "projectName": "unica-express"
+  },
+  "VAAP LUBRIFICANTES E SERVICOS": {
+    "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "path": "Vigentes/ADS/VAAP LUBRIFICANTES E SERVICOS",
+    "projectId": "prj_wtLkrsHFEtTAAJpnZrMSsTGwrPRl",
+    "projectName": "vaap-castrol-lubrificantes"
+  },
+  "VARZEA GRANDE-MT, Consultório odontológico - Dr. Antônio Carlos Junior": {
+    "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "path": "Vigentes/ADS/VARZEA GRANDE-MT, Consultório odontológico - Dr. Antônio Carlos Junior",
+    "projectId": "prj_cJzSoDHSsukYu0clhsm0WRGmKLfM",
+    "projectName": "varzea-grande-mt-consultorio-odontologico-dr-antonio-carlos-junior"
+  },
+  "VETOR CONTABILIDADE": {
+    "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "path": "Não vigentes/VETOR CONTABILIDADE",
+    "projectId": "prj_Tk5GD8hrCSuCiYXdHx8Qtzs1yyyx",
+    "projectName": "vetor-contabilidade"
+  },
+  "VIDA KRIATIVA": {
+    "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "path": "Não vigentes/VIDA KRIATIVA",
+    "projectId": "prj_eA5qEG82mqJAQb2zsS6tcFtUtyXV",
+    "projectName": "vida-kriativa"
+  },
+  "VIDRACARIA VIDRAL": {
+    "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "path": "Vigentes/ADS/VIDRACARIA VIDRAL",
+    "projectId": "prj_LqtsrCsIb2nO9Fk2i4DibJKohSaR",
+    "projectName": "vidral"
+  },
   "VIDROLATAS": {
     "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "path": "Vigentes/ADS/VIDROLATAS",
     "projectId": "prj_uh5364O2MgU08NRN2hPCAAJr6uuB",
     "projectName": "vidrolatas"
+  },
+  "VIP COLOR DESIGNER E EMBALAGENS": {
+    "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "path": "Vigentes/ADS/VIP COLOR DESIGNER E EMBALAGENS",
+    "projectId": "prj_Af5tC4ZcxbYEQKe5NXZPJzKnSHYP",
+    "projectName": "vip-embalagens"
+  },
+  "W Arantes Cosméticos Ltda": {
+    "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "path": "Vigentes/ADS/W Arantes Cosméticos Ltda",
+    "projectId": "prj_4jeMPr23I89W0r6qA1neFUg8PzBd",
+    "projectName": "w-arantes-cosmeticos-ltda"
+  },
+  "W & C DIGITAL": {
+    "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "path": "Vigentes/ADS/W & C DIGITAL",
+    "projectId": "prj_lMA1ILbzV2i2FZugzeSU20sgrBlh",
+    "projectName": "w-e-c-digital"
+  },
+  "W & C DIGITAL (WEC-DIGITAL)": {
+    "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "path": "Vigentes/ADS/W & C DIGITAL (WEC-DIGITAL)",
+    "projectId": "prj_tmrzdjjsCZ15WJGapgiekX3sIueO",
+    "projectName": "w-e-c-digital-wec-digital"
+  },
+  "WC BOMBEAMENTO E CONCRETO": {
+    "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "path": "Vigentes/ADS/WC BOMBEAMENTO E CONCRETO",
+    "projectId": "prj_AAOHDpkjRvN4HUMG9WbiMnqUSzVY",
+    "projectName": "wc-bombeamento-e-concreto"
+  },
+  "Wp transportes de passageiros e turismo": {
+    "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "path": "Vigentes/ADS/Wp transportes de passageiros e turismo",
+    "projectId": "prj_Y8N60utULX2q9ER05dGjqBtR23K4",
+    "projectName": "wptransportes"
+  },
+  "XC MOTORS": {
+    "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "path": "Vigentes/ADS/XC MOTORS",
+    "projectId": "prj_3RM15zLhoISTQJjVmR6AhB7F3oCp",
+    "projectName": "xc-motors"
+  },
+  "youconect+ provedor Ltda": {
+    "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "path": "Vigentes/ADS/youconect+ provedor Ltda",
+    "projectId": "prj_zTgMFbUHZXAA2FrfYMOR6Q3fh8HU",
+    "projectName": "youconect-provedor-ltda"
+  },
+  "ZE DA BATERIA": {
+    "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "path": "Não vigentes/ZE DA BATERIA",
+    "projectId": "prj_ujlU1lI9mocZBHUfzqbloENwupsH",
+    "projectName": "ze-da-bateria"
   }
 }
