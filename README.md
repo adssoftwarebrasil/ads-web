@@ -33,3 +33,21 @@ nao tem projeto correspondente na Vercel (`Alba's Cleaning Services`,
 `Premium Cleaning Services`, `Proposta de Parceria Digital`,
 `RETOCARS AUTO SERVICE LTDA`, `Royall`, `Veacci`) ou nao sao site
 (`_material`).
+
+## Balanco com a Vercel
+
+479 projetos na Vercel para 482 pastas, 472 delas vinculadas. As 32 duplicatas
+(projetos antigos que serviam o mesmo site de uma pasta ja mapeada) foram
+removidas.
+
+Sete projetos seguem sem pasta no repositorio:
+
+- **Falta o codigo-fonte** — `arthurautotruckcenter`, `globotransportes`,
+  `solene-construction` (dominio proprio www.soleneconstruction.com) e
+  `tancerva conveniencia`. Sao clientes no ar; o codigo precisa ser trazido
+  para ca.
+- **A conferir** — `imperatrizcolchoes`, `marcuswerneck` e
+  `starlit-begonia-818f64` tem o mesmo titulo de uma pasta existente
+  (`Ortobom Afonso Pena`, `Clinica Weneck` e `TRC`, respectivamente), mas com
+  nome de cliente diferente. Podem ser duplicatas ou sites distintos usando o
+  mesmo template.
