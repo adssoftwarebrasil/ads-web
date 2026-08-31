@@ -215,11 +215,104 @@ pasta, como foi feito em `GLOBO TRANSPORTES`.
 
 ## 11. Git
 
-- Mensagens de commit em portugues, explicando **por que**, nao so o que.
 - Nao faca `push` sem pedir.
 - O trabalho vai para a `main`.
 - Ao renomear muitas pastas, renomeie no sistema de arquivos e depois
   `git add -A`: o git detecta os renames sozinho e preserva o historico.
+
+### Quem le o historico e consultor comercial, nao programador
+
+O historico deste repositorio nao e lido so por quem programa. Os consultores
+abrem o log para saber **o que aconteceu com o site do cliente** — antes de
+uma reuniao, ao responder uma cobranca, ao checar se um pedido foi atendido.
+Eles nao leem codigo e nao vao abrir o diff.
+
+Por isso a mensagem de commit tem que se explicar sozinha, em portugues
+simples. Uma mensagem que so um programador entende, neste repositorio, e uma
+mensagem quebrada — mesmo que a alteracao esteja perfeita.
+
+**Nunca commite com mensagem generica**: `ajustes`, `correcoes`, `update`,
+`wip`, `fix`, nome de arquivo solto. Se a mensagem serviria para qualquer
+commit, ela nao serve para nenhum.
+
+### Formato obrigatorio
+
+Titulo, linha em branco, corpo. Sempre com corpo — commit de uma linha so vale
+para mudanca puramente interna que nao afeta site nenhum.
+
+**Titulo** (ate ~72 caracteres): verbo no presente + o que mudou + **nome do
+cliente/pasta**. O nome do cliente e obrigatorio: o consultor procura o site
+dele no log, nao o arquivo.
+
+    Corrige o horario de funcionamento no rodape do 2TJ Telas e Telhas
+
+**Corpo** (linhas ate ~72 colunas), cobrindo o que for aplicavel:
+
+1. **O que o visitante do site ve de diferente**, em linguagem de leigo. Este
+   e o item mais importante. Se nada muda na tela, diga isso com todas as
+   letras ("nada muda visualmente; e uma mudanca interna").
+2. **Por que** foi feito — pedido de quem, ou problema que estava causando.
+3. **Quais sites** foram afetados, se for mais de um.
+4. **O site foi republicado?** Diga sim ou nao, com o endereco. Commitar nao
+   poe no ar; o consultor nao sabe disso e vai supor que sim.
+5. **O que ficou pendente** ou precisa de decisao de alguem.
+
+### Traduza o jargao
+
+| Nao escreva | Escreva |
+|---|---|
+| refatorei o componente do formulario | reorganizei o codigo do formulario; para quem visita, nada muda |
+| bump de dependencias | atualizei as bibliotecas que o site usa por dentro |
+| fix do breakpoint mobile | o site estava desalinhado no celular e foi corrigido |
+| deploy em prod | o site novo entrou no ar |
+| adiciona GTM | instalei o codigo que mede as visitas do site (Google Tag Manager) |
+| lockfile commitado | travei as versoes das bibliotecas, para o site nao quebrar sozinho depois |
+
+Sigla so entra se vier explicada na primeira aparicao.
+
+### Casos que exigem destaque no corpo
+
+- Mudanca de **URL publica** (ver secao 8): escreva o endereco antigo e o novo,
+  e avise que links antigos, anuncios e QR codes deixam de funcionar.
+- Mudanca em `vercel-projects.json` (secao 9): diga em uma linha o que mudou
+  no vinculo pasta-projeto.
+- Movimentacao entre `Vigentes` e `Não vigentes` (secao 6): lembre que isso
+  **nao** tira o site do ar.
+- Site sem fonte, recuperado do deploy (secao 10): avise que da para
+  republicar, nao para editar.
+
+### Exemplo completo
+
+```
+Corrige o horario de funcionamento no rodape do 2TJ Telas e Telhas
+
+O rodape e a pagina de contato mostravam "segunda a sexta, das 8h as
+18h". A loja passou a fechar as 17h e a abrir aos sabados de manha,
+entao quem procurava no site ligava fora do horario.
+
+O que mudou para quem visita o site:
+- rodape e pagina de contato agora mostram "seg a sex, 8h as 17h" e
+  "sabado, 8h as 12h";
+- a mensagem automatica do botao de WhatsApp foi corrigida junto.
+
+Pedido pela Carla, no atendimento do dia 12/08.
+
+O site ja foi republicado e esta no ar em 2tj-telas-e-telhas.vercel.app.
+Nada ficou pendente.
+```
+
+### Como escrever a mensagem longa no Windows
+
+Aspas e acentos quebram `git commit -m` no PowerShell. Escreva a mensagem num
+arquivo e use `-F`:
+
+```bash
+git commit -F "$TMP/msg.txt"
+```
+
+Antes de commitar, releia a mensagem se perguntando: **um consultor que nao
+abre o codigo entende, so com isso, o que mudou no site do cliente dele?** Se
+a resposta for nao, reescreva.
 
 ## 12. Mantenha o README coerente
 
