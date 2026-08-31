@@ -1,5 +1,6 @@
 import Header from './components/Header';
 import Hero from './components/Hero';
+import BookingWidget from './components/BookingWidget';
 import Features from './components/Features';
 import History from './components/History';
 import Rooms from './components/Rooms';
@@ -15,6 +16,7 @@ export default function App() {
     <div id="home" className="min-h-screen">
       <Header />
       <Hero />
+      <BookingWidget />
       <Features />
       <History />
       <Rooms />
