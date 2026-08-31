@@ -2,9 +2,8 @@ type GalleryItem = { image: string; alt: string; span: string };
 
 const items: GalleryItem[] = [
   {
-    image:
-      'https://storage.lucasmendes.dev/site-sp/SULLTEC-GERADORES/gerador-sulltec-azul-portas-duplas-estacionado_1280x960.webp',
-    alt: 'Gerador Sulltec azul com portas duplas',
+    image: '/frota-geradores-sulltec.jpg',
+    alt: 'Frota de geradores Sulltec de diferentes potências em pátio',
     span: 'col-span-2',
   },
   {
@@ -39,8 +38,8 @@ export default function Gallery() {
             Equipamentos de Alta Qualidade
           </h2>
           <p className="text-gray-500 max-w-lg mx-auto text-base leading-relaxed">
-            Conheça nossa frota de geradores — revisados, testados e prontos
-            para atender sua demanda.
+            Conheça alguns modelos de nossa frota — revisados, testados e
+            prontos para atender sua demanda.
           </p>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-5">
