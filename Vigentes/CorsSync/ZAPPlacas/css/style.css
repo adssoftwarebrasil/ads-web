@@ -1,0 +1,316 @@
+/* ========================================
+   ZAP Placas - Auto Premium Theme
+   ======================================== */
+
+:root {
+    --primary: #0033A0;        /* Azul Oficial Mercosul */
+    --primary-dark: #001f66;
+    --accent: #FFB800;         /* Amarelo Cuidado/Atenção */
+    --accent-hover: #E6A600;
+    --bg-white: #FFFFFF;
+    --bg-light: #F4F6F9;
+    --bg-dark: #1A1A1A;
+    
+    --text-main: #333333;
+    --text-muted: #666666;
+    --border-color: #E2E8F0;
+    
+    --transition: all 0.3s ease;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+
+body {
+    font-family: 'Inter', sans-serif;
+    color: var(--text-main);
+    background-color: var(--bg-white);
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+h1, h2, h3, h4 { font-family: 'Oswald', sans-serif; color: var(--primary-dark); text-transform: uppercase; letter-spacing: 0.5px;}
+a { text-decoration: none; color: inherit; }
+img { max-width: 100%; height: auto; display: block; }
+.container { max-width: 1200px; margin: 0 auto; padding: 0 24px; }
+.text-center { text-align: center; }
+.text-primary { color: var(--primary); }
+.text-accent { color: var(--accent); }
+.bg-light { background-color: var(--bg-light); }
+.bg-primary { background-color: var(--primary); color: var(--bg-white); }
+.mt-3 { margin-top: 1rem; }
+
+/* ========================================
+   Botões
+   ======================================== */
+.btn {
+    display: inline-flex; align-items: center; justify-content: center; gap: 10px;
+    padding: 12px 24px; border-radius: 6px; font-weight: 700; font-family: 'Inter', sans-serif;
+    transition: var(--transition); cursor: pointer; border: 2px solid transparent; font-size: 0.95rem;
+}
+.btn-large { padding: 15px 30px; font-size: 1.05rem; }
+.btn-accent { background-color: var(--accent); color: #000; }
+.btn-accent:hover { background-color: var(--accent-hover); transform: translateY(-3px); box-shadow: 0 5px 15px rgba(255, 184, 0, 0.4); }
+.btn-primary { background-color: var(--primary); color: var(--bg-white); }
+.btn-primary:hover { background-color: var(--primary-dark); transform: translateY(-3px); box-shadow: 0 5px 15px rgba(0, 51, 160, 0.3); }
+.btn-outline-light { border-color: var(--bg-white); color: var(--bg-white); }
+.btn-outline-light:hover { background-color: var(--bg-white); color: var(--primary); }
+
+/* ========================================
+   Header e Logo
+   ======================================== */
+.header {
+    position: fixed; top: 0; left: 0; right: 0; z-index: 1000;
+    background: var(--primary); color: var(--bg-white);
+    transition: var(--transition); border-bottom: 3px solid var(--accent);
+}
+.header.scrolled { padding: 0; box-shadow: 0 4px 20px rgba(0,0,0,0.2); }
+
+.nav-container { display: flex; justify-content: space-between; align-items: center; padding: 10px 0; }
+
+/* AJUSTE DEFINITIVO DA LOGO NO HEADER: Controle por largura/altura para focar na legibilidade */
+.logo { 
+    height: auto; 
+    max-height: 80px; 
+    width: auto;
+    max-width: 280px;
+    object-fit: contain; 
+    border-radius: 6px; 
+    transition: var(--transition); 
+    background: var(--bg-white); 
+    padding: 8px 15px; 
+}
+.header.scrolled .logo { max-height: 60px; }
+
+.nav-main { flex: 1; display: flex; justify-content: center; }
+.nav-menu { display: flex; list-style: none; gap: 30px; }
+.nav-menu a { font-weight: 600; font-size: 0.95rem; transition: var(--transition); text-transform: uppercase; letter-spacing: 0.5px;}
+.nav-menu a:hover { color: var(--accent); }
+
+.nav-toggle { display: none; flex-direction: column; gap: 5px; cursor: pointer; z-index: 1001; }
+.nav-toggle span { width: 30px; height: 3px; background: var(--bg-white); transition: var(--transition); }
+
+/* ========================================
+   Hero Section
+   ======================================== */
+.hero { position: relative; padding: 180px 0 100px; min-height: 90vh; display: flex; align-items: center; overflow: hidden; background: url('https://images.pexels.com/photos/1015568/pexels-photo-1015568.jpeg?auto=compress&cs=tinysrgb&w=1600') center/cover no-repeat; }
+.hero-overlay { position: absolute; inset: 0; background: linear-gradient(90deg, rgba(0,31,102,0.95) 0%, rgba(0,51,160,0.8) 100%); z-index: 1; }
+
+.hero-grid { display: grid; grid-template-columns: 1.2fr 1fr; gap: 50px; align-items: center; position: relative; z-index: 2;}
+
+.hero-badge { display: inline-block; background: var(--accent); color: #000; padding: 8px 16px; border-radius: 4px; font-weight: 700; font-size: 0.85rem; margin-bottom: 25px; text-transform: uppercase; }
+.hero-content h1 { font-size: clamp(2.5rem, 4vw, 4rem); color: var(--bg-white); line-height: 1.1; margin-bottom: 25px; }
+.hero-content p { font-size: 1.15rem; color: #E2E8F0; margin-bottom: 40px; max-width: 550px; }
+.hero-buttons { display: flex; gap: 15px; flex-wrap: wrap; }
+
+.hero-img-plate {
+    width: 100%;
+    max-width: 500px;
+    transform: rotate(-8deg);
+    border-radius: 12px;
+    filter: drop-shadow(0 20px 40px rgba(0,0,0,0.6));
+    margin-left: auto;
+}
+
+/* ========================================
+   Títulos e Seções Comuns
+   ======================================== */
+.subtitle { display: block; font-size: 0.9rem; font-weight: 700; color: var(--accent); margin-bottom: 10px; letter-spacing: 2px; }
+.section-header { margin-bottom: 50px; }
+.section-header h2 { font-size: 2.5rem; margin-bottom: 15px; }
+.section-header p { color: var(--text-muted); font-size: 1.1rem; max-width: 600px; margin: 0 auto; }
+
+/* ========================================
+   Serviços (Cards e Imagens Corrigidos)
+   ======================================== */
+.services-section { padding: 100px 0; }
+.services-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 30px; }
+.service-card { background: var(--bg-white); padding: 30px; border-radius: 8px; border-bottom: 4px solid var(--primary); box-shadow: 0 5px 20px rgba(0,0,0,0.05); transition: var(--transition); }
+.service-card:hover { transform: translateY(-10px); border-bottom-color: var(--accent); box-shadow: 0 15px 30px rgba(0,0,0,0.1); }
+
+/* Fundo branco limpo, altura fixa e imagem sombreada */
+.service-img-wrapper {
+    width: 100%;
+    height: 200px; /* Altura fixa para manter todos do mesmo tamanho */
+    background: var(--bg-white); 
+    border-radius: 8px;
+    margin-bottom: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    border: 1px solid var(--border-color); /* Uma borda sutil dá o toque profissional */
+}
+
+.service-img-wrapper img {
+    max-height: 100%;
+    max-width: 100%;
+    object-fit: contain;
+    filter: drop-shadow(0 5px 15px rgba(0,0,0,0.15)); /* Realça o objeto no fundo branco */
+}
+
+.service-card h3 { font-size: 1.3rem; margin-bottom: 15px; color: var(--primary-dark); text-align: center;}
+.service-card p { color: var(--text-muted); font-size: 0.95rem; text-align: center;}
+
+/* ========================================
+   Sobre a Empresa (Logo em Destaque)
+   ======================================== */
+.about-section { padding: 100px 0; }
+.about-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: center; }
+.about-image { position: relative; padding: 20px; }
+
+/* Transforma a logo da seção Sobre num belo quadro centralizado */
+.about-brand-img { 
+    width: 100%; 
+    max-width: 450px; 
+    height: auto;
+    background: var(--bg-white);
+    padding: 40px; 
+    border-radius: 12px; 
+    box-shadow: 0 15px 40px rgba(0,0,0,0.08); 
+    border: 1px solid var(--border-color);
+    display: block;
+    margin: 0 auto;
+}
+
+.stamp-box { 
+    position: absolute; 
+    bottom: -15px; 
+    right: 10px; 
+    background: var(--primary); 
+    color: var(--bg-white); 
+    padding: 10px; /* Reduzido para dar espaço ao texto */
+    border-radius: 50%; 
+    width: 145px;  /* Levemente maior para acomodar a palavra */
+    height: 145px; 
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center; 
+    border: 4px solid var(--bg-white); 
+    box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+}
+
+.stamp-box i { 
+    font-size: 2.2rem; 
+    color: var(--accent); 
+    margin-bottom: 5px; 
+}
+
+/* Nova regra para garantir que o texto não quebre */
+.stamp-box strong {
+    white-space: nowrap; 
+    font-size: 1.15rem;
+}
+
+.about-content h2 { font-size: 2.2rem; margin-bottom: 20px; }
+.about-content p { color: var(--text-muted); margin-bottom: 20px; font-size: 1.05rem; }
+.check-list { list-style: none; margin-top: 30px; }
+.check-list li { display: flex; align-items: center; gap: 15px; margin-bottom: 15px; font-weight: 600; color: var(--primary-dark); }
+.check-list i { color: var(--accent); background: rgba(255, 184, 0, 0.2); padding: 8px; border-radius: 50%; font-size: 0.8rem;}
+
+/* ========================================
+   CTA Banner
+   ======================================== */
+.cta-banner { padding: 70px 0; border-bottom: 5px solid var(--accent); }
+.cta-banner h2 { color: var(--bg-white); font-size: 2.2rem; margin-bottom: 15px; }
+.cta-banner p { color: #E2E8F0; font-size: 1.1rem; }
+
+/* ========================================
+   Contato e Localização
+   ======================================== */
+.contact-section { padding: 100px 0; }
+.contact-grid { display: grid; grid-template-columns: 1fr 1.5fr; gap: 50px; }
+
+.info-card { display: flex; align-items: flex-start; gap: 20px; margin-bottom: 30px; }
+.info-card i { width: 50px; height: 50px; background: rgba(0, 51, 160, 0.1); color: var(--primary); display: flex; align-items: center; justify-content: center; border-radius: 8px; font-size: 1.5rem; flex-shrink: 0;}
+.info-card h4 { font-size: 1.1rem; margin-bottom: 5px; }
+.info-card p { color: var(--text-muted); font-size: 0.95rem; }
+
+.contact-map { border-radius: 12px; overflow: hidden; min-height: 400px; box-shadow: 0 10px 30px rgba(0,0,0,0.1); border: 2px solid var(--border-color);}
+
+/* ========================================
+   Footer
+   ======================================== */
+.footer { background: var(--bg-dark); color: #CCCCCC; padding-top: 80px; }
+.footer-content { display: grid; grid-template-columns: 2fr 1fr 1.5fr; gap: 50px; margin-bottom: 50px; }
+
+/* Logo do Rodapé ajustada para largura */
+.footer-logo { 
+    height: auto; 
+    max-width: 260px; 
+    border-radius: 6px; 
+    background: var(--bg-white); 
+    padding: 10px 20px; 
+}
+.footer-brand p { margin-top: 20px; max-width: 350px; }
+
+.footer h4 { color: var(--bg-white); font-size: 1.1rem; margin-bottom: 25px; }
+.footer-links ul { list-style: none; }
+.footer-links li { margin-bottom: 12px; }
+.footer-links a { transition: var(--transition); }
+.footer-links a:hover { color: var(--accent); }
+
+.footer-contact-info p { display: flex; align-items: center; gap: 10px; margin-bottom: 15px; }
+.footer-contact-info i { color: var(--accent); }
+
+.footer-bottom { background: #111; padding: 20px 0; text-align: center; font-size: 0.85rem; border-top: 1px solid #333;}
+
+/* ========================================
+   WhatsApp Flutuante
+   ======================================== */
+.float-whatsapp { position: fixed; bottom: 30px; right: 30px; background-color: #25D366; color: white; width: 65px; height: 65px; border-radius: 50%; display: flex; justify-content: center; align-items: center; font-size: 35px; box-shadow: 0 4px 15px rgba(37, 211, 102, 0.4); z-index: 1000; transition: var(--transition); animation: pulseWa 2s infinite; }
+.float-whatsapp:hover { transform: scale(1.1); }
+@keyframes pulseWa { 0% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.7); } 70% { box-shadow: 0 0 0 20px rgba(37, 211, 102, 0); } 100% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0); } }
+
+/* ========================================
+   Animações Reveal
+   ======================================== */
+.reveal { opacity: 0; transform: translateY(40px); transition: all 0.8s cubic-bezier(0.25, 0.8, 0.25, 1); }
+.reveal.active { opacity: 1; transform: translateY(0); }
+
+/* ========================================
+   Responsividade
+   ======================================== */
+.desktop-only { display: flex; }
+
+@media (max-width: 991px) {
+    .desktop-only { display: none; }
+    .hero-grid, .about-grid, .contact-grid, .footer-content { grid-template-columns: 1fr; gap: 40px; }
+    
+    .hero { padding-top: 130px; text-align: center; }
+    .hero-content p { margin: 0 auto 30px; }
+    .hero-buttons { justify-content: center; }
+    
+    /* Controles mobile para a Logo */
+    .logo { max-height: 70px; max-width: 220px; }
+    .header.scrolled .logo { max-height: 60px; }
+    
+    .about-brand-img { padding: 25px; max-width: 100%; }
+    .stamp-box { right: 0; bottom: -20px; width: 110px; height: 110px; padding: 15px; font-size: 0.8rem;}
+    .stamp-box i { font-size: 1.5rem; }
+    
+    .nav-main { display: none; }
+    .nav-toggle { display: flex; }
+    
+    .nav-main.active { 
+        display: flex; position: absolute; top: 100%; left: 0; width: 100%; background: var(--primary-dark); 
+        flex-direction: column; padding: 20px; box-shadow: 0 10px 20px rgba(0,0,0,0.2); border-top: 1px solid rgba(255,255,255,0.1);
+    }
+    .nav-menu { flex-direction: column; gap: 20px; text-align: center; }
+    
+    .nav-toggle.active span:nth-child(1) { transform: rotate(45deg) translate(5px, 5px); }
+    .nav-toggle.active span:nth-child(2) { opacity: 0; }
+    .nav-toggle.active span:nth-child(3) { transform: rotate(-45deg) translate(6px, -6px); }
+
+    .stamp-box { right: -5px; bottom: -20px; width: 120px; height: 120px; padding: 10px;}
+    .stamp-box i { font-size: 1.6rem; margin-bottom: 2px;}
+    .stamp-box strong { font-size: 0.95rem; }
+}
+
+@media (max-width: 768px) {
+    .hero-content h1 { font-size: 2.2rem; }
+    .hero-buttons { flex-direction: column; }
+    .hero-buttons a { width: 100%; }
+    .contact-map { min-height: 300px; }
+}
