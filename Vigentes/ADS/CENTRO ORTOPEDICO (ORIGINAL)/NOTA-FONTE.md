@@ -68,6 +68,25 @@ foto suma.
 
 Verificado depois no ar: as 23 paginas abrem e nenhuma imagem quebra.
 
+## A foto de capa da home
+
+Em 01/09/2026 o fundo da primeira secao da home passou a ser a **foto da
+fachada da loja** (`wp-content/uploads/2026/09/foto-de-capa.jpg`), a pedido do
+responsavel.
+
+Antes dela, essa secao usava o fundo em slideshow do Elementor, com duas fotos
+que trocavam sozinhas. Esse slideshow foi desligado: as duas fotos so entravam
+na tela por JavaScript, e sem isso a secao aparecia como um bloco cinza. Agora
+a foto e um fundo comum, escrito direto no CSS, e aparece mesmo que o
+JavaScript nao rode.
+
+O veu escuro por cima da foto foi mantido como estava (preto a 46%): e ele que
+deixa o texto branco legivel em cima da imagem.
+
+As duas fotos antigas do slideshow continuam guardadas na pasta
+(`wp-content/uploads/2025/04/b746ff71-....jpg` e `10c01b41-....jpg`). Nenhuma
+pagina as usa hoje; ficaram para o caso de alguem querer voltar atras.
+
 ## O que funciona e o que nao funciona
 
 O site e de **uma pagina so**: o menu leva a ancoras da propria home (sobre,
