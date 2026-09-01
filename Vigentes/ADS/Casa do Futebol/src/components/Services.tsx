@@ -30,7 +30,7 @@ const SERVICES = [
     description:
       'Disponibilizamos nosso campo para partidas, amistosos, treinamentos e eventos esportivos. Um espaço seguro, organizado e preparado para proporcionar a melhor experiência para atletas e equipes.',
     highlights: ['Campo disponível', 'Treinos', 'Jogos amistosos', 'Eventos esportivos', 'Cuiabá - MT'],
-    image: 'https://storage.lucasmendes.dev/site-sp/escolinha%20casa%20do%20futebol/img/criancas-jogando-futebol-campo-predio-ao-fundo_1440x1917.webp',
+    image: '/fotos/campo-locacao-por-do-sol.jpg',
     cta: 'Reservar campo',
     msg: 'Olá!%20Gostaria%20de%20reservar%20o%20campo%20da%20Casa%20do%20Futebol.',
   },

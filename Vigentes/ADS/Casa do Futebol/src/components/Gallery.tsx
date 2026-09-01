@@ -31,6 +31,38 @@ const IMAGES = [
     alt: 'Crianças reunidas em abraço no gramado',
   },
   {
+    src: '/fotos/treino-coletivo-manha.jpeg',
+    alt: 'Turmas em treino coletivo no campo da escolinha',
+  },
+  {
+    src: '/fotos/disputa-de-bola-no-treino.jpeg',
+    alt: 'Alunos disputando a bola durante o treino',
+  },
+  {
+    src: '/fotos/jogo-treino-turma-completa.jpeg',
+    alt: 'Jogo-treino com a turma completa em campo',
+  },
+  {
+    src: '/fotos/criancas-correndo-no-sol.jpeg',
+    alt: 'Crianças correndo pelo gramado em dia de sol',
+  },
+  {
+    src: '/fotos/partida-entre-turmas.jpeg',
+    alt: 'Partida entre turmas da escolinha',
+  },
+  {
+    src: '/fotos/chute-a-gol-no-campo-iluminado.jpeg',
+    alt: 'Aluno chutando a gol no campo iluminado',
+  },
+  {
+    src: '/fotos/familias-assistindo-o-treino.jpeg',
+    alt: 'Famílias acompanhando o treino na área coberta',
+  },
+  {
+    src: '/fotos/espaco-de-convivencia-do-complexo.jpeg',
+    alt: 'Espaço de convivência ao lado do campo',
+  },
+  {
     src: 'https://storage.lucasmendes.dev/site-sp/escolinha%20casa%20do%20futebol/img/time-de-futebol-infantil-uniforme-verde_1170x909.webp',
     alt: 'Time de futebol infantil',
   },
@@ -86,6 +118,7 @@ export default function Gallery() {
               <img
                 src={img.src}
                 alt={img.alt}
+                loading="lazy"
                 className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
               />
               <div className="absolute inset-0 bg-[#2C4D39]/0 group-hover:bg-[#2C4D39]/50 transition-all duration-300 flex items-center justify-center">

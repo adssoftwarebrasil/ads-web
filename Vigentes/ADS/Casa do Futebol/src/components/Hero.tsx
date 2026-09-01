@@ -10,22 +10,32 @@ export default function Hero() {
       id="hero"
       // 1. Trocado min-h-screen por min-h-[100svh] para melhor ajuste no celular
       // 2. Adicionado pt-28 pb-16 no mobile (e pt-20 no desktop) para dar espaço ao header
-      className="relative min-h-[100svh] flex flex-col justify-center items-center overflow-hidden pt-28 pb-16 sm:pt-20 sm:pb-12"
+      className="relative min-h-[100svh] flex flex-col justify-end sm:justify-center items-center overflow-hidden pt-28 pb-20 sm:pt-20 sm:pb-12"
     >
+      {/* No celular usamos um enquadramento mais fechado da capa, com as cabecas
+          das criancas no alto do quadro, para elas nao ficarem atras do texto */}
       <div
-        className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+        className="absolute inset-0 bg-cover bg-center bg-no-repeat sm:hidden"
+        style={{
+          backgroundImage: `url('/fotos/capa-mobile.jpg')`,
+        }}
+      />
+      <div
+        className="absolute inset-0 hidden sm:block bg-cover bg-center bg-no-repeat"
         style={{
           backgroundImage: `url('/fotos/capa.jpg')`,
         }}
       />
-      
-      {/* Overlay com a opacidade ajustada anteriormente */}
-      <div className="absolute inset-0 bg-gradient-to-b from-[#363434]/95 via-[#363434]/80 to-[#2C4D39]/95" />
+
+      {/* Escurecimento: no celular quase transparente no topo (onde ficam as
+          criancas) e forte embaixo, onde fica o texto */}
+      <div className="absolute inset-0 sm:hidden bg-gradient-to-b from-[#363434]/20 from-0% via-[#363434]/85 via-40% to-[#2C4D39]/95" />
+      <div className="absolute inset-0 hidden sm:block bg-gradient-to-b from-[#363434]/85 via-[#363434]/80 to-[#2C4D39]/93" />
 
       {/* Removido o flex items-center da div pai e repassado para o section, 
           permitindo que o padding funcione perfeitamente */}
       <div className="relative z-10 text-center px-4 sm:px-6 max-w-4xl mx-auto w-full">
-        <div className="flex justify-center mb-6">
+        <div className="hidden sm:flex justify-center mb-6">
           <img
             src="https://storage.lucasmendes.dev/site-sp/escolinha%20casa%20do%20futebol/img/logo-sem-fundo.webp"
             alt="Casa do Futebol"
@@ -42,11 +52,11 @@ export default function Hero() {
 
         <h1 className="text-4xl sm:text-5xl lg:text-6xl font-black text-white leading-tight mb-4 drop-shadow-lg">
           Onde o Futebol{' '}
-          <span className="text-[#236E45]">Transforma</span>{' '}
+          <span className="text-[#A3E635]">Transforma</span>{' '}
           Vidas
         </h1>
 
-        <p className="text-lg sm:text-xl text-white/90 max-w-2xl mx-auto mb-8 leading-relaxed">
+        <p className="text-lg sm:text-xl text-white/90 max-w-2xl mx-auto mb-8 leading-relaxed drop-shadow-md">
           Formamos crianças e jovens através do esporte, incentivando disciplina, respeito,
           trabalho em equipe e paixão pelo futebol em um ambiente seguro, acolhedor e preparado
           para o desenvolvimento de cada atleta.

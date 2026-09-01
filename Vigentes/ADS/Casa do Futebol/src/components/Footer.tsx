@@ -15,7 +15,6 @@ const SERVICES = [
   'Grama Sintética Esportiva',
   'Locação de Campo',
   'Complexo Esportivo',
-  'Paisagismo',
 ];
 
 const REGIONS = [
@@ -41,7 +40,7 @@ export default function Footer() {
               className="h-16 w-auto object-contain mb-4 brightness-0 invert"
             />
             <p className="text-white/70 text-sm leading-relaxed mb-5">
-              Mais de 6 anos transformando o esporte e o paisagismo em Mato Grosso com qualidade e dedicação.
+              Mais de 6 anos transformando o esporte em Mato Grosso com qualidade e dedicação.
             </p>
             <div className="flex gap-3">
               <a
