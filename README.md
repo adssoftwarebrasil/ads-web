@@ -21,7 +21,7 @@ Não vigentes/    sites que sairam do ar ou foram encerrados
 ## Estado atual
 
 Os 117 sites com contrato vencido ja foram separados em `Não vigentes/`; os
-376 vigentes seguem em `Vigentes/ADS/`. A separacao entre ADS e CorsSync ainda
+377 vigentes seguem em `Vigentes/ADS/`. A separacao entre ADS e CorsSync ainda
 precisa ser feita: basta mover a pasta do site para o diretorio correspondente.
 
 ## vercel-projects.json
@@ -33,7 +33,7 @@ versionada desse vinculo. Para relinkar um site, recrie
 `<path>/.vercel/project.json` a partir da entrada correspondente.
 
 O campo `path` da o diretorio completo, ja que as pastas vivem sob
-`Vigentes/ADS/` ou `Não vigentes/`. Cobre 482 das 493 pastas: as 11 restantes
+`Vigentes/ADS/` ou `Não vigentes/`. Cobre 483 das 494 pastas: as 11 restantes
 nao tem projeto correspondente na Vercel (`Alba's Cleaning Services`,
 `AURORA ODONTOLOGIA`, `EXCLUSIVE CONSTRUTORA E reformadora`,
 `GERENCIAL CONTABIL 1`, `IMPERIAL GAS`, `Premium Cleaning Services`,
@@ -42,7 +42,7 @@ nao tem projeto correspondente na Vercel (`Alba's Cleaning Services`,
 
 ## Balanco com a Vercel
 
-482 projetos na Vercel e 482 pastas vinculadas: **todo projeto tem pasta**.
+483 projetos na Vercel e 483 pastas vinculadas: **todo projeto tem pasta**.
 As 35 duplicatas — projetos antigos ou builds superados que serviam o mesmo
 site de uma pasta ja mapeada — foram removidas.
 
@@ -82,6 +82,15 @@ pagina so, com mais 9 paginas que existem em endereco proprio mas nunca
 estiveram no menu. **Ja esta no ar** em `gv-autos.vercel.app`. O formulario de
 contato nao envia mais e ainda precisa de decisao — ver `NOTA-FONTE.md` dentro
 da pasta.
+
+`IDEAL DESIGN E INTERIORES` veio pelo mesmo caminho: era um WordPress em
+`idealdesigneinteriores.com.br`, saiu do ar com a suspensao da conta
+`u257781368`, e foi remontado a partir dos arquivos da hospedagem mais o banco
+de dados do backup (`.dbdumps` de `sites-hostinger3`). As 14 paginas foram
+gravadas prontas e o site **ja esta no ar** em
+`ideal-design-e-interiores.vercel.app`. Aqui o formulario de contato nao ficou
+pendente: ele passou a abrir o WhatsApp da loja com a mensagem pronta. Ver
+`NOTA-FONTE.md` dentro da pasta.
 
 `CENTRO ORTOPEDICO` e o site original do Centro Ortopedico, recuperado por
 inteiro: os arquivos estavam na copia da hospedagem e o banco de dados no
