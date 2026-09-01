@@ -1,8 +1,9 @@
 # Nota sobre a origem deste site
 
 **Este e o site ORIGINAL do Centro Ortopedico, o mesmo que o cliente tinha na
-Hostinger, recuperado por inteiro.** Ele nao substitui sozinho o site que esta
-no ar hoje — leia a secao "Qual site vai ficar no ar" antes de mexer.
+Hostinger, recuperado por inteiro — e desde 01/09/2026 e o unico site do
+cliente.** O site em React que existia antes foi descartado; ver a secao
+"Qual site ficou no ar".
 
 ## De onde veio
 
@@ -10,8 +11,7 @@ O site original era um WordPress com Elementor, em
 `centroortopedicoce.com.br`. O dominio saiu do ar em 28/08/2026, quando a
 conta da Hostinger `u293911618` foi suspensa. Na epoca ele foi dado como
 perdido, e por isso um site novo foi escrito do zero, em React, a partir do que
-aparecia no Google — e esse novo esta no ar em `centro-ortopedico.vercel.app`,
-na pasta `CENTRO ORTOPEDICO`.
+aparecia no Google. Esse site novo foi descartado em 01/09/2026.
 
 O site original, porem, **nao estava perdido**. Faltavam duas metades que
 estavam guardadas em lugares diferentes da mesma maquina:
@@ -101,21 +101,31 @@ WhatsApp e os links de Facebook e Instagram.
 Nao funciona, porque dependia do WordPress ligado: busca, comentarios,
 formularios que enviam para o servidor e a area de administracao.
 
-## Qual site vai ficar no ar
+## Qual site ficou no ar
 
-Existem hoje dois sites para o mesmo cliente, e a escolha e comercial, nao
-tecnica:
+Por um tempo existiram dois sites para o mesmo cliente: este, o original
+recuperado, e um refeito em React a partir do que aparecia no Google, de quando
+o original era dado como perdido.
 
-| Pasta | O que e | Endereco |
-|---|---|---|
-| `CENTRO ORTOPEDICO` | site novo, refeito em React a partir do Google | `centro-ortopedico.vercel.app` |
-| `CENTRO ORTOPEDICO (ORIGINAL)` | este, o site original recuperado | `centro-ortopedico-original.vercel.app` |
+**Em 01/09/2026 ficou decidido: fica o original.** O site em React foi
+descartado. Este aqui ocupou a pasta `CENTRO ORTOPEDICO`, a pasta
+`CENTRO ORTOPEDICO (ORIGINAL)` deixou de existir, e o projeto na Vercel passou
+a se chamar `centro-ortopedico`.
 
-O site novo tem a informacao certa, mas layout diferente do que o cliente
-conhecia, e nao tem as fotos reais. Este aqui e exatamente o que o cliente
-tinha. **Trocar qual deles atende o endereco principal precisa de decisao do
-responsavel** — e, se o dominio `centroortopedicoce.com.br` for apontado para a
-Vercel um dia, preservar os registros de e-mail da zona, senao o e-mail cai.
+Enderecos, hoje:
+
+| Endereco | Situacao |
+|---|---|
+| `centro-ortopedico-original.vercel.app` | e o que abre; continua valendo mesmo depois da troca de nome |
+| `centroortopedicoce.com.br` | esta ligado ao projeto na Vercel, mas **o DNS nao resolve** — nao abre para ninguem |
+
+Duas coisas para quem for mexer nisso:
+
+- O projeto tem **protecao de acesso ligada** ("tudo, menos dominio proprio"),
+  entao o endereco `.vercel.app` responde 403 para quem nao esta logado na
+  conta da Vercel. Enquanto estiver assim, o site nao serve para divulgar.
+- Se o dominio `centroortopedicoce.com.br` for apontado para a Vercel, preserve
+  os registros de e-mail da zona, senao o e-mail do cliente cai.
 
 ## Se o cliente pedir alteracao
 

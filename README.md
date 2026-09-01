@@ -21,7 +21,7 @@ Não vigentes/    sites que sairam do ar ou foram encerrados
 ## Estado atual
 
 Os 117 sites com contrato vencido ja foram separados em `Não vigentes/`; os
-375 vigentes seguem em `Vigentes/ADS/`. A separacao entre ADS e CorsSync ainda
+374 vigentes seguem em `Vigentes/ADS/`. A separacao entre ADS e CorsSync ainda
 precisa ser feita: basta mover a pasta do site para o diretorio correspondente.
 
 ## vercel-projects.json
@@ -33,7 +33,7 @@ versionada desse vinculo. Para relinkar um site, recrie
 `<path>/.vercel/project.json` a partir da entrada correspondente.
 
 O campo `path` da o diretorio completo, ja que as pastas vivem sob
-`Vigentes/ADS/` ou `Não vigentes/`. Cobre 481 das 492 pastas: as 11 restantes
+`Vigentes/ADS/` ou `Não vigentes/`. Cobre 480 das 491 pastas: as 11 restantes
 nao tem projeto correspondente na Vercel (`Alba's Cleaning Services`,
 `AURORA ODONTOLOGIA`, `EXCLUSIVE CONSTRUTORA E reformadora`,
 `GERENCIAL CONTABIL 1`, `IMPERIAL GAS`, `Premium Cleaning Services`,
@@ -75,10 +75,14 @@ em `ecodescarte-reciclagem-e-manufatura.vercel.app` — o endereco saiu cortado
 porque a Vercel encurta nomes longos de projeto. O formulario de contato nao
 envia mais e ainda precisa de decisao — ver `NOTA-FONTE.md` dentro da pasta.
 
-`CENTRO ORTOPEDICO (ORIGINAL)` e o site original do Centro Ortopedico,
-recuperado por inteiro: os arquivos estavam na copia da hospedagem e o banco
-de dados no backup da conta, em `.dbdumps`. O WordPress foi levantado numa
-instalacao temporaria e as 23 paginas foram gravadas prontas. Convivem hoje
-dois sites do mesmo cliente: este e o `CENTRO ORTOPEDICO`, refeito em React
-quando o original era dado como perdido — qual fica no ar e decisao do
-responsavel, ver `NOTA-FONTE.md` dentro da pasta.
+`CENTRO ORTOPEDICO` e o site original do Centro Ortopedico, recuperado por
+inteiro: os arquivos estavam na copia da hospedagem e o banco de dados no
+backup da conta, em `.dbdumps`. O WordPress foi levantado numa instalacao
+temporaria e as 23 paginas foram gravadas prontas.
+
+Por um tempo existiram dois sites do mesmo cliente — este e um refeito em
+React, de quando o original era dado como perdido. Em 01/09/2026 a escolha foi
+feita: **fica o original**. Ele ocupou a pasta `CENTRO ORTOPEDICO`, a pasta
+`CENTRO ORTOPEDICO (ORIGINAL)` deixou de existir, e o projeto na Vercel passou
+a se chamar `centro-ortopedico`. O site em React nao esta mais no repositorio
+nem na Vercel. Ver `NOTA-FONTE.md` dentro da pasta.
