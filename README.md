@@ -21,7 +21,7 @@ Não vigentes/    sites que sairam do ar ou foram encerrados
 ## Estado atual
 
 Os 117 sites com contrato vencido ja foram separados em `Não vigentes/`; os
-373 vigentes seguem em `Vigentes/ADS/`. A separacao entre ADS e CorsSync ainda
+374 vigentes seguem em `Vigentes/ADS/`. A separacao entre ADS e CorsSync ainda
 precisa ser feita: basta mover a pasta do site para o diretorio correspondente.
 
 ## vercel-projects.json
@@ -33,7 +33,7 @@ versionada desse vinculo. Para relinkar um site, recrie
 `<path>/.vercel/project.json` a partir da entrada correspondente.
 
 O campo `path` da o diretorio completo, ja que as pastas vivem sob
-`Vigentes/ADS/` ou `Não vigentes/`. Cobre 479 das 490 pastas: as 11 restantes
+`Vigentes/ADS/` ou `Não vigentes/`. Cobre 480 das 491 pastas: as 11 restantes
 nao tem projeto correspondente na Vercel (`Alba's Cleaning Services`,
 `AURORA ODONTOLOGIA`, `EXCLUSIVE CONSTRUTORA E reformadora`,
 `GERENCIAL CONTABIL 1`, `IMPERIAL GAS`, `Premium Cleaning Services`,
@@ -42,7 +42,7 @@ nao tem projeto correspondente na Vercel (`Alba's Cleaning Services`,
 
 ## Balanco com a Vercel
 
-479 projetos na Vercel e 479 pastas vinculadas: **todo projeto tem pasta**.
+480 projetos na Vercel e 480 pastas vinculadas: **todo projeto tem pasta**.
 As 35 duplicatas — projetos antigos ou builds superados que serviam o mesmo
 site de uma pasta ja mapeada — foram removidas.
 
@@ -61,6 +61,16 @@ globo veio dos arquivos servidos, que sao a saida do build — ver
 `NOTA-FONTE.md` dentro da pasta.
 
 `Carretas e engates Emanuel` tambem nao tem fonte: era um WordPress cuja
-hospedagem caiu junto com o banco de dados, e o site foi remontado a partir
-das paginas que o cache do proprio WordPress tinha guardado. Da para
-republicar, nao para editar — ver `NOTA-FONTE.md` dentro da pasta.
+hospedagem foi suspensa, e o site foi remontado a partir das paginas que o
+cache do proprio WordPress tinha guardado. O banco de dados dele existe no
+backup da conta (`.dbdumps`), entao o site nao esta congelado: da para
+remontar o WordPress numa hospedagem com PHP se for preciso editar — ver
+`NOTA-FONTE.md` dentro da pasta.
+
+`CENTRO ORTOPEDICO (ORIGINAL)` e o site original do Centro Ortopedico,
+recuperado por inteiro: os arquivos estavam na copia da hospedagem e o banco
+de dados no backup da conta, em `.dbdumps`. O WordPress foi levantado numa
+instalacao temporaria e as 23 paginas foram gravadas prontas. Convivem hoje
+dois sites do mesmo cliente: este e o `CENTRO ORTOPEDICO`, refeito em React
+quando o original era dado como perdido — qual fica no ar e decisao do
+responsavel, ver `NOTA-FONTE.md` dentro da pasta.
