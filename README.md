@@ -21,7 +21,7 @@ Não vigentes/    sites que sairam do ar ou foram encerrados
 ## Estado atual
 
 Os 117 sites com contrato vencido ja foram separados em `Não vigentes/`; os
-371 vigentes seguem em `Vigentes/ADS/`. A separacao entre ADS e CorsSync ainda
+372 vigentes seguem em `Vigentes/ADS/`. A separacao entre ADS e CorsSync ainda
 precisa ser feita: basta mover a pasta do site para o diretorio correspondente.
 
 ## vercel-projects.json
@@ -33,7 +33,7 @@ versionada desse vinculo. Para relinkar um site, recrie
 `<path>/.vercel/project.json` a partir da entrada correspondente.
 
 O campo `path` da o diretorio completo, ja que as pastas vivem sob
-`Vigentes/ADS/` ou `Não vigentes/`. Cobre 478 das 488 pastas: as 10 restantes
+`Vigentes/ADS/` ou `Não vigentes/`. Cobre 479 das 489 pastas: as 10 restantes
 nao tem projeto correspondente na Vercel (`Alba's Cleaning Services`,
 `EXCLUSIVE CONSTRUTORA E reformadora`, `GERENCIAL CONTABIL 1`, `IMPERIAL GAS`,
 `Premium Cleaning Services`, `Proposta de Parceria Digital`,
@@ -42,7 +42,7 @@ nao tem projeto correspondente na Vercel (`Alba's Cleaning Services`,
 
 ## Balanco com a Vercel
 
-478 projetos na Vercel e 478 pastas vinculadas: **todo projeto tem pasta**.
+479 projetos na Vercel e 479 pastas vinculadas: **todo projeto tem pasta**.
 As 35 duplicatas — projetos antigos ou builds superados que serviam o mesmo
 site de uma pasta ja mapeada — foram removidas.
 
@@ -58,3 +58,8 @@ deploy na Vercel, via `/v6/deployments/<id>/files`, por nao haver copia local.
 A do tancerva veio do `source.tgz` que o CLI subiu, entao e o fonte real. A do
 globo veio dos arquivos servidos, que sao a saida do build — ver
 `NOTA-FONTE.md` dentro da pasta.
+
+`Carretas e engates Emanuel` tambem nao tem fonte: era um WordPress cuja
+hospedagem caiu junto com o banco de dados, e o site foi remontado a partir
+das paginas que o cache do proprio WordPress tinha guardado. Da para
+republicar, nao para editar — ver `NOTA-FONTE.md` dentro da pasta.
