@@ -21,7 +21,7 @@ Não vigentes/    sites que sairam do ar ou foram encerrados
 ## Estado atual
 
 Os 117 sites com contrato vencido ja foram separados em `Não vigentes/`; os
-374 vigentes seguem em `Vigentes/ADS/`. A separacao entre ADS e CorsSync ainda
+375 vigentes seguem em `Vigentes/ADS/`. A separacao entre ADS e CorsSync ainda
 precisa ser feita: basta mover a pasta do site para o diretorio correspondente.
 
 ## vercel-projects.json
@@ -33,12 +33,13 @@ versionada desse vinculo. Para relinkar um site, recrie
 `<path>/.vercel/project.json` a partir da entrada correspondente.
 
 O campo `path` da o diretorio completo, ja que as pastas vivem sob
-`Vigentes/ADS/` ou `Não vigentes/`. Cobre 480 das 491 pastas: as 11 restantes
+`Vigentes/ADS/` ou `Não vigentes/`. Cobre 480 das 492 pastas: as 12 restantes
 nao tem projeto correspondente na Vercel (`Alba's Cleaning Services`,
 `AURORA ODONTOLOGIA`, `EXCLUSIVE CONSTRUTORA E reformadora`,
-`GERENCIAL CONTABIL 1`, `IMPERIAL GAS`, `Premium Cleaning Services`,
-`Proposta de Parceria Digital`, `RETOCARS AUTO SERVICE LTDA`, `Royall`,
-`Veacci`) ou nao sao site (`_material`).
+`GERENCIAL CONTABIL 1`, `GV AUTOS`, `IMPERIAL GAS`,
+`Premium Cleaning Services`, `Proposta de Parceria Digital`,
+`RETOCARS AUTO SERVICE LTDA`, `Royall`, `Veacci`) ou nao sao site
+(`_material`).
 
 ## Balanco com a Vercel
 
@@ -46,13 +47,14 @@ nao tem projeto correspondente na Vercel (`Alba's Cleaning Services`,
 As 35 duplicatas — projetos antigos ou builds superados que serviam o mesmo
 site de uma pasta ja mapeada — foram removidas.
 
-Faltam vincular 11 pastas. Nove nunca chegaram a ser publicadas:
+Faltam vincular 12 pastas. Nove nunca chegaram a ser publicadas:
 `Alba's Cleaning Services`, `EXCLUSIVE CONSTRUTORA E reformadora`,
 `GERENCIAL CONTABIL 1`, `IMPERIAL GAS`, `Premium Cleaning Services`,
 `Proposta de Parceria Digital`, `RETOCARS AUTO SERVICE LTDA`, `Royall` e
 `Veacci`. A decima, `AURORA ODONTOLOGIA`, esta no ar, mas na Netlify e nao
 na Vercel. A decima primeira, `_material`, nao e site — e a pasta de assets
-compartilhados.
+compartilhados. A decima segunda, `GV AUTOS`, acabou de ser recuperada e ainda
+nao foi publicada — ver abaixo.
 
 `TANCERVA CONVENIENCIA` e `GLOBO TRANSPORTES` foram recuperadas do proprio
 deploy na Vercel, via `/v6/deployments/<id>/files`, por nao haver copia local.
@@ -74,6 +76,14 @@ remontado a partir dos arquivos da hospedagem mais o banco de dados do backup
 em `ecodescarte-reciclagem-e-manufatura.vercel.app` — o endereco saiu cortado
 porque a Vercel encurta nomes longos de projeto. O formulario de contato nao
 envia mais e ainda precisa de decisao — ver `NOTA-FONTE.md` dentro da pasta.
+
+`GV AUTOS` veio pelo mesmo caminho: era um WordPress em `gvautos.com.br`, saiu
+do ar com a suspensao da conta, e foi remontado a partir dos arquivos da
+hospedagem mais o banco de dados do backup (`.dbdumps`). E um site de uma
+pagina so, com mais 9 paginas que existem em endereco proprio mas nunca
+estiveram no menu. A pasta esta pronta para publicar, mas **ainda nao foi para
+o ar** e nao tem projeto na Vercel. O formulario de contato nao envia mais e
+precisa de decisao antes de publicar — ver `NOTA-FONTE.md` dentro da pasta.
 
 `CENTRO ORTOPEDICO` e o site original do Centro Ortopedico, recuperado por
 inteiro: os arquivos estavam na copia da hospedagem e o banco de dados no
