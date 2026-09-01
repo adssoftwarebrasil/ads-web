@@ -5,6 +5,10 @@ O site do GV Autos era um WordPress na Hostinger, em `gvautos.com.br`. Ele
 responder e nao ha mais nada publicado nesse endereco. O que esta nesta pasta e
 o site recuperado por inteiro a partir do backup, em 01/09/2026.
 
+**Ele voltou ao ar em 01/09/2026, em `https://gv-autos.vercel.app`.** O
+endereco antigo, `gvautos.com.br`, continua morto: o dominio nao responde
+desde a suspensao da conta.
+
 ## De onde veio
 
 Duas metades, guardadas em lugares diferentes da mesma maquina:
@@ -70,8 +74,8 @@ se as duas ainda sao para manter.
 **Nao funciona: o formulario de contato da home.** Ele era do Elementor Pro e
 dependia do PHP do WordPress para mandar o e-mail. Num site estatico nao ha
 para onde enviar: quem preencher e clicar nao recebe resposta e o contato se
-perde. Isso precisa de decisao comercial antes de o site ir para o ar — ligar
-o formulario a um servico externo de envio, ou tirar o formulario e deixar o
+perde. **O site ja esta no ar assim**, entao vale resolver logo: ligar o
+formulario a um servico externo de envio, ou tirar o formulario e deixar o
 WhatsApp e o e-mail, que ja aparecem na mesma pagina.
 
 Tambem ficaram para tras, e nao fazem falta para o visitante: a area de
