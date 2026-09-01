@@ -46,6 +46,28 @@ de testes antigo que hoje esta morto e de onde as fontes do site eram
 carregadas. As fontes foram trazidas para dentro da pasta e essas referencias
 sumiram.
 
+## As fotos que faltaram na primeira publicacao
+
+Na primeira vez que este site foi publicado, o fundo de uma das secoes da home
+ficou sem foto. Vale entender por que, porque o mesmo erro pode acontecer em
+qualquer outro site recuperado assim.
+
+Ao gravar as paginas, so vieram as fotos escritas de forma direta no HTML. Mas
+essa secao usa um **fundo em slideshow**: as duas fotos dela nao estao no HTML
+como imagem, e sim dentro de uma lista em JSON que o Elementor le e monta com
+JavaScript depois que a pagina abre. Como a lista usa barras escapadas
+(`\/wp-content\/uploads\/...`), a leitura nao a reconhecia como endereco de
+imagem, e as duas fotos nunca foram copiadas.
+
+Das 44 fotos que as paginas pedem, **eram essas 2 que faltavam** — as outras 42
+sempre estiveram certas. Para nao correr o risco de novo, a pasta de imagens do
+site foi copiada inteira, e nao so o que estava sendo citado: sao 362 arquivos,
+46 MB. Boa parte deles sao versoes em tamanhos diferentes que o WordPress gera
+sozinho e que talvez nunca sejam usadas — e barato manter, e garante que nenhuma
+foto suma.
+
+Verificado depois no ar: as 23 paginas abrem e nenhuma imagem quebra.
+
 ## O que funciona e o que nao funciona
 
 O site e de **uma pagina so**: o menu leva a ancoras da propria home (sobre,
