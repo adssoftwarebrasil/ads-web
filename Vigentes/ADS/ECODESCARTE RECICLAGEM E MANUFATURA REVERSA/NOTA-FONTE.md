@@ -5,6 +5,15 @@ ar** quando a conta `u293911618` foi suspensa: o dominio parou de responder e
 nao ha mais nada publicado nesse endereco. O que esta nesta pasta e o site
 recuperado por inteiro a partir do backup, em 01/09/2026.
 
+**Ele voltou ao ar em 01/09/2026, em
+`https://ecodescarte-reciclagem-e-manufatura.vercel.app`.** O endereco saiu
+cortado de proposito pela Vercel: o projeto se chama
+`ecodescarte-reciclagem-e-manufatura-reversa`, mas ela encurta nomes longos ao
+montar o `.vercel.app`. O endereco antigo, `ecodescarte.com`, continua morto —
+o dominio nao e da Hostinger e a zona de DNS dele foi apagada na suspensao.
+Note que `ecodescarte.vercel.app` existe, mas **nao e nosso**: e outro projeto,
+de outra conta, com o mesmo nome.
+
 ## De onde veio
 
 Duas metades, guardadas em lugares diferentes da mesma maquina:
