@@ -57,8 +57,42 @@ usar o painel do WordPress.
    `wp-content/uploads/elementor/google-fonts/`, entao o site nao depende mais
    de servidor de terceiro para aparecer com a letra certa.
 
+## Revisao de 01/09/2026
+
+Depois de publicar, o codigo foi revisto inteiro. O que se achou e o que foi
+feito:
+
+- **Faltavam os pacotes que o Elementor carrega sob demanda.** O nome deles
+  (`<hash>.bundle.min.js`) e montado por JavaScript na hora, entao nenhum
+  percorredor os descobre e nenhum aparece no HTML. Sem eles, contador,
+  carrossel de depoimentos, menu e galeria ficariam sem funcionar. Os 119
+  arquivos (0,9 MB) foram trazidos do backup para
+  `wp-content/plugins/elementor{,-pro}/assets/js/`. **Confira isso em qualquer
+  outro site recuperado do mesmo jeito.**
+- **O telefone (62) 98427-8289 foi retirado** do cabecalho e do rodape das 15
+  paginas, a pedido. Ficou so o (62) 99435-9946.
+- **Tags mortas no cabecalho da pagina**: o WordPress anunciava feed RSS,
+  `wp-json`, `xmlrpc` e oEmbed, que nao existem mais. Foram removidas (110 no
+  total). Nada disso aparecia na tela; eram avisos para robos de busca.
+- **O link "Ir para o conteudo"** (usado por leitor de tela) apontava para uma
+  ancora que nao existia. Corrigido nas 15 paginas.
+- Conferido tambem: os 26 arquivos de JavaScript compilam, o
+  `frontend.min.js` do Elementor esta inteiro (32098 bytes, nao e a copia
+  truncada que apareceu em outros sites), nenhum arquivo esta com a caixa das
+  letras trocada (o que quebraria so na Vercel, que roda Linux) e nenhum dos
+  153 links internos aponta para pagina inexistente.
+
+### Duas coisas do site antigo que continuam erradas e precisam de decisao
+
+No menu do topo, **"Produtos" e "Galeria" nao levam a lugar nenhum**. Eles
+apontam para `/#produtos` e `/#galeria`, e essas marcacoes nunca existiram na
+pagina — o defeito ja era assim no site no ar, nao veio da recuperacao. A
+secao que lista os 10 ambientes se chama "Nossos servicos" e responde por
+`/#servicos`; galeria de fotos, propriamente, a home nao tem. Decidir para
+onde esses dois itens devem apontar e escolha de quem cuida do cliente.
+
 ## O que continua igual
 
 O codigo que mede as visitas (Google Tag Manager, GTM-NWZHGP6R) segue instalado
-em todas as paginas. Os botoes de WhatsApp, o telefone, o e-mail e o mapa
-continuam como estavam.
+em todas as paginas. Os botoes de WhatsApp, o e-mail, o mapa e o telefone
+(62) 99435-9946 continuam como estavam.
