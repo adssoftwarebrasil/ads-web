@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <title>Mega Compressores - Feira de Santana e Região</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Mega Compressores - Venda, manutenção e instalação de compressores e lavadoras de alta pressão em Feira de Santana e região." />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;600;700;800&family=Barlow:wght@400;500;600&display=swap" rel="stylesheet" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+
+    <!-- NAVBAR a-->
+    <header class="navbar" id="navbar">
+      <div class="container navbar__inner">
+        <a href="#inicio" class="navbar__logo">
+          <img src="assets/image.png" alt="Mega Compressores" />
+        </a>
+        <nav class="navbar__links" id="navLinks">
+          <a href="#inicio">Início</a>
+          <a href="#sobre">Sobre</a>
+          <a href="#produtos">Produtos</a>
+          <a href="#servicos">Serviços</a>
+          <a href="#contato">Contato</a>
+        </nav>
+        <a href="https://wa.me/5575991987074" class="btn btn--gold" target="_blank" rel="noopener">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+          WhatsApp
+        </a>
+        <button class="navbar__burger" id="burger" aria-label="Menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </header>
+
+    <!-- HERO -->
+    <section class="hero" id="inicio">
+      <div class="hero__bg-overlay"></div>
+      <div class="hero__particles" id="particles"></div>
+      <div class="container hero__content">
+        <div class="hero__badge reveal">Desde 2019</div>
+        <h1 class="hero__title reveal">
+          Soluções em <span class="text-gold">Compressores</span><br>e Lavagem de Alta Pressão
+        </h1>
+        <p class="hero__sub reveal">Venda, manutenção e instalação com profissionais treinados pelas fábricas.<br>Atendemos Feira de Santana e toda a região.</p>
+        <div class="hero__ctas reveal">
+          <a href="#produtos" class="btn btn--gold btn--lg">Ver Catálogo</a>
+          <a href="#contato" class="btn btn--outline btn--lg">Fale Conosco</a>
+        </div>
+      </div>
+      <div class="hero__scroll">
+        <span></span>
+      </div>
+    </section>
+
+    <!-- STATS BAR -->
+    <section class="stats">
+      <div class="container stats__grid">
+        <div class="stat-item">
+          <span class="stat-item__number" data-target="6">0</span>
+          <span class="stat-item__suffix">+</span>
+          <p>Anos de Mercado</p>
+        </div>
+        <div class="stat-item">
+          <span class="stat-item__number" data-target="1500">0</span>
+          <span class="stat-item__suffix">+</span>
+          <p>Clientes Atendidos</p>
+        </div>
+        <div class="stat-item">
+          <span class="stat-item__number" data-target="12">0</span>
+          <span class="stat-item__suffix"></span>
+          <p>Cidades Atendidas</p>
+        </div>
+        <div class="stat-item">
+          <span class="stat-item__number" data-target="100">0</span>
+          <span class="stat-item__suffix">%</span>
+          <p>Comprometimento</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- SOBRE -->
+    <section class="sobre section" id="sobre">
+      <div class="container sobre__inner">
+        <div class="sobre__text reveal">
+          <div class="section-label">Quem Somos</div>
+          <h2 class="section-title">A Mega Compressores</h2>
+          <p>Fundada em 2019, a <strong>Mega Compressores</strong> vem se consolidando no mercado de compressores e bombas de lavagem, pela eficiência e qualidade em seus produtos e serviços.</p>
+          <p>Com profissionais capacitados e treinados pelas fábricas, levamos soluções rápidas e eficazes para nossos clientes em Feira de Santana e em toda a região da Bahia.</p>
+          <ul class="sobre__list">
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              Profissionais treinados pelas fábricas
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              Atendimento rápido e eficaz
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              Peças e equipamentos originais
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              Cobertura regional ampla
+            </li>
+          </ul>
+          <a href="https://wa.me/5575991987074" class="btn btn--gold" target="_blank" rel="noopener">Solicitar Orçamento</a>
+        </div>
+        <div class="sobre__visual reveal">
+          <div class="sobre__card-stack">
+            <div class="sobre__card">
+              <img src="https://images.pexels.com/photos/1108101/pexels-photo-1108101.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Compressor industrial" />
+            </div>
+            <div class="sobre__badge-float">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+              Qualidade Garantida
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PRODUTOS -->
+    <section class="produtos section section--dark" id="produtos">
+      <div class="container">
+        <div class="section-header reveal">
+          <div class="section-label">Nosso Portfólio</div>
+          <h2 class="section-title">Produtos & Serviços</h2>
+          <p class="section-desc">Tudo que você precisa para ar comprimido e lavagem de alta pressão em um só lugar.</p>
+        </div>
+
+        <div class="filter-tabs reveal" id="filterTabs">
+          <button class="filter-tab active" data-filter="all">Todos</button>
+          <button class="filter-tab" data-filter="produto">Produtos</button>
+          <button class="filter-tab" data-filter="servico">Serviços</button>
+        </div>
+
+        <div class="produtos__grid" id="catalogGrid">
+
+          <div class="catalog-card" data-category="produto">
+            <div class="catalog-card__img">
+              <img src="https://images.pexels.com/photos/1108101/pexels-photo-1108101.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Compressores" loading="lazy" />
+              <span class="catalog-card__tag">Produto</span>
+            </div>
+            <div class="catalog-card__body">
+              <h3>Compressores</h3>
+              <p>Linha completa de compressores de ar para uso profissional e industrial. Diversas capacidades e marcas.</p>
+              <a href="https://wa.me/5575991987074?text=Olá! Tenho interesse em Compressores." class="btn btn--ghost btn--sm" target="_blank" rel="noopener">Consultar</a>
+            </div>
+          </div>
+
+          <div class="catalog-card" data-category="produto">
+            <div class="catalog-card__img">
+              <img src="https://images.pexels.com/photos/6419129/pexels-photo-6419129.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Lavadoras de Alta Pressão" loading="lazy" />
+              <span class="catalog-card__tag">Produto</span>
+            </div>
+            <div class="catalog-card__body">
+              <h3>Lavadoras de Alta Pressão</h3>
+              <p>Bombas de lavagem de alta pressão para uso profissional, residencial e industrial.</p>
+              <a href="https://wa.me/5575991987074?text=Olá! Tenho interesse em Lavadoras de Alta Pressão." class="btn btn--ghost btn--sm" target="_blank" rel="noopener">Consultar</a>
+            </div>
+          </div>
+
+          <div class="catalog-card" data-category="produto">
+            <div class="catalog-card__img">
+              <img src="https://images.pexels.com/photos/162553/keys-workshop-mechanic-tools-162553.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Peças para Compressores" loading="lazy" />
+              <span class="catalog-card__tag">Produto</span>
+            </div>
+            <div class="catalog-card__body">
+              <h3>Peças para Compressores</h3>
+              <p>Reposição com peças originais e compatíveis para todas as marcas e modelos.</p>
+              <a href="https://wa.me/5575991987074?text=Olá! Preciso de peças para compressor." class="btn btn--ghost btn--sm" target="_blank" rel="noopener">Consultar</a>
+            </div>
+          </div>
+
+          <div class="catalog-card" data-category="produto">
+            <div class="catalog-card__img">
+              <img src="https://images.pexels.com/photos/210881/pexels-photo-210881.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Peças para Lavadoras" loading="lazy" />
+              <span class="catalog-card__tag">Produto</span>
+            </div>
+            <div class="catalog-card__body">
+              <h3>Peças para Lavadoras</h3>
+              <p>Componentes e acessórios para lavajato e bombas de alta pressão.</p>
+              <a href="https://wa.me/5575991987074?text=Olá! Preciso de peças para lavadora." class="btn btn--ghost btn--sm" target="_blank" rel="noopener">Consultar</a>
+            </div>
+          </div>
+
+          <div class="catalog-card" data-category="produto">
+            <div class="catalog-card__img">
+              <img src="https://images.pexels.com/photos/3846508/pexels-photo-3846508.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Rolamentos" loading="lazy" />
+              <span class="catalog-card__tag">Produto</span>
+            </div>
+            <div class="catalog-card__body">
+              <h3>Rolamentos</h3>
+              <p>Rolamentos de qualidade para manutenção e reposição em compressores e equipamentos.</p>
+              <a href="https://wa.me/5575991987074?text=Olá! Preciso de rolamentos." class="btn btn--ghost btn--sm" target="_blank" rel="noopener">Consultar</a>
+            </div>
+          </div>
+
+          <div class="catalog-card" data-category="produto">
+            <div class="catalog-card__img">
+              <img src="https://images.pexels.com/photos/1078884/pexels-photo-1078884.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Filtros para Compressores" loading="lazy" />
+              <span class="catalog-card__tag">Produto</span>
+            </div>
+            <div class="catalog-card__body">
+              <h3>Filtros para Compressores</h3>
+              <p>Filtros de ar, óleo e separadores para garantir o melhor desempenho do seu compressor.</p>
+              <a href="https://wa.me/5575991987074?text=Olá! Preciso de filtros para compressor." class="btn btn--ghost btn--sm" target="_blank" rel="noopener">Consultar</a>
+            </div>
+          </div>
+
+          <div class="catalog-card" data-category="servico">
+            <div class="catalog-card__img">
+              <img src="https://images.pexels.com/photos/4489794/pexels-photo-4489794.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Manutenção em Compressores" loading="lazy" />
+              <span class="catalog-card__tag catalog-card__tag--service">Serviço</span>
+            </div>
+            <div class="catalog-card__body">
+              <h3>Manutenção em Compressores</h3>
+              <p>Manutenção preventiva e corretiva realizada por técnicos certificados pelas fábricas.</p>
+              <a href="https://wa.me/5575991987074?text=Olá! Preciso de manutenção no meu compressor." class="btn btn--ghost btn--sm" target="_blank" rel="noopener">Solicitar</a>
+            </div>
+          </div>
+
+          <div class="catalog-card" data-category="servico">
+            <div class="catalog-card__img">
+              <img src="https://images.pexels.com/photos/3862627/pexels-photo-3862627.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Manutenção em Lavajato" loading="lazy" />
+              <span class="catalog-card__tag catalog-card__tag--service">Serviço</span>
+            </div>
+            <div class="catalog-card__body">
+              <h3>Manutenção em Lavajato</h3>
+              <p>Revisão completa e reparo de bombas de lavagem de alta pressão de todas as marcas.</p>
+              <a href="https://wa.me/5575991987074?text=Olá! Preciso de manutenção no meu lavajato." class="btn btn--ghost btn--sm" target="_blank" rel="noopener">Solicitar</a>
+            </div>
+          </div>
+
+          <div class="catalog-card" data-category="servico">
+            <div class="catalog-card__img">
+              <img src="https://images.pexels.com/photos/1108572/pexels-photo-1108572.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Sistema de Ar Comprimido" loading="lazy" />
+              <span class="catalog-card__tag catalog-card__tag--service">Serviço</span>
+            </div>
+            <div class="catalog-card__body">
+              <h3>Sistema de Ar Comprimido</h3>
+              <p>Projeto e instalação completa de redes e sistemas de ar comprimido para sua empresa.</p>
+              <a href="https://wa.me/5575991987074?text=Olá! Tenho interesse em instalação de sistema de ar comprimido." class="btn btn--ghost btn--sm" target="_blank" rel="noopener">Solicitar</a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- DIFERENCIAIS -->
+    <section class="diferenciais section" id="servicos">
+      <div class="container">
+        <div class="section-header reveal">
+          <div class="section-label">Por que nos escolher</div>
+          <h2 class="section-title">Nossos Diferenciais</h2>
+        </div>
+        <div class="diferenciais__grid">
+          <div class="diferencial-card reveal">
+            <div class="diferencial-card__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            </div>
+            <h3>Técnicos Certificados</h3>
+            <p>Profissionais capacitados e treinados diretamente pelas fábricas dos principais fabricantes.</p>
+          </div>
+          <div class="diferencial-card reveal">
+            <div class="diferencial-card__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+            </div>
+            <h3>Atendimento Rápido</h3>
+            <p>Respostas ágeis e soluções eficazes para que seu equipamento volte a funcionar sem demora.</p>
+          </div>
+          <div class="diferencial-card reveal">
+            <div class="diferencial-card__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            </div>
+            <h3>Ampla Cobertura Regional</h3>
+            <p>Atendemos Feira de Santana, Salvador e mais de 10 cidades da Bahia.</p>
+          </div>
+          <div class="diferencial-card reveal">
+            <div class="diferencial-card__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+            </div>
+            <h3>Melhor Custo-Benefício</h3>
+            <p>Preços competitivos com qualidade garantida em produtos e serviços.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ÁREA DE ATUAÇÃO -->
+    <section class="atuacao section section--dark">
+      <div class="container">
+        <div class="section-header reveal">
+          <div class="section-label">Onde Atuamos</div>
+          <h2 class="section-title">Área de Atendimento</h2>
+          <p class="section-desc">Levamos nossas soluções para Feira de Santana e toda a região da Bahia.</p>
+        </div>
+        <div class="atuacao__cities reveal">
+          <span class="city-tag">Feira de Santana</span>
+          <span class="city-tag">Alagoinhas</span>
+          <span class="city-tag">Santo Antônio de Jesus</span>
+          <span class="city-tag">Cruz das Almas</span>
+          <span class="city-tag">Serrinha</span>
+          <span class="city-tag">Salvador</span>
+          <span class="city-tag">Coité</span>
+          <span class="city-tag">Conceição do Jacuípe</span>
+          <span class="city-tag">Riachão do Jacuípe</span>
+          <span class="city-tag">São Gonçalo</span>
+          <span class="city-tag">Conceição da Feira</span>
+          <span class="city-tag">Bahia</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTATO -->
+    <section class="contato section" id="contato">
+      <div class="container contato__inner">
+        <div class="contato__info reveal">
+          <div class="section-label">Fale Conosco</div>
+          <h2 class="section-title">Entre em Contato</h2>
+          <p>Estamos prontos para atender você. Entre em contato pelo WhatsApp, e-mail ou visite nossa loja.</p>
+
+          <div class="contato__items">
+            <div class="contato__item">
+              <div class="contato__item-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              </div>
+              <div>
+                <strong>Endereço</strong>
+                <span>Av. Eduardo Froes da Mota, 4511<br>Cidade Nova, Feira de Santana - BA</span>
+              </div>
+            </div>
+            <div class="contato__item">
+              <div class="contato__item-icon">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+              </div>
+              <div>
+                <strong>WhatsApp</strong>
+                <a href="https://wa.me/5575991987074" target="_blank" rel="noopener">+55 (75) 99198-7074</a>
+              </div>
+            </div>
+            <div class="contato__item">
+              <div class="contato__item-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              </div>
+              <div>
+                <strong>E-mail</strong>
+                <a href="mailto:Trabalhomegacompressores.net@gmail.com">Trabalhomegacompressores.net@gmail.com</a>
+              </div>
+            </div>
+            <div class="contato__item">
+              <div class="contato__item-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+              </div>
+              <div>
+                <strong>Horário de Funcionamento</strong>
+                <span>Segunda a Sexta: 8h às 18h</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="contato__social">
+            <a href="https://www.facebook.com/megacompressores" class="social-btn" target="_blank" rel="noopener" aria-label="Facebook">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+            </a>
+            <a href="https://www.instagram.com/megacompressores" class="social-btn" target="_blank" rel="noopener" aria-label="Instagram">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="contato__cta reveal">
+          <div class="cta-box">
+            <h3>Precisa de um Orçamento?</h3>
+            <p>Fale direto com nossa equipe pelo WhatsApp e receba atendimento personalizado.</p>
+            <a href="https://wa.me/5575991987074?text=Olá! Gostaria de solicitar um orçamento." class="btn btn--gold btn--lg" target="_blank" rel="noopener">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+              Chamar no WhatsApp
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="container footer__inner">
+        <div class="footer__brand">
+          <img src="assets/image.png" alt="Mega Compressores" />
+          <p>Soluções em compressores e lavagem de alta pressão desde 2019.</p>
+        </div>
+        <div class="footer__links">
+          <h4>Navegação</h4>
+          <a href="#inicio">Início</a>
+          <a href="#sobre">Sobre</a>
+          <a href="#produtos">Produtos</a>
+          <a href="#servicos">Serviços</a>
+          <a href="#contato">Contato</a>
+        </div>
+        <div class="footer__links">
+          <h4>Produtos</h4>
+          <a href="#produtos">Compressores</a>
+          <a href="#produtos">Lavadoras de Alta Pressão</a>
+          <a href="#produtos">Peças e Acessórios</a>
+          <a href="#produtos">Filtros</a>
+          <a href="#produtos">Rolamentos</a>
+        </div>
+        <div class="footer__contact">
+          <h4>Contato</h4>
+          <p>+55 (75) 99198-7074</p>
+          <p>Feira de Santana - BA</p>
+          <div class="footer__social">
+            <a href="https://www.facebook.com/megacompressores" target="_blank" rel="noopener" aria-label="Facebook">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+            </a>
+            <a href="https://www.instagram.com/megacompressores" target="_blank" rel="noopener" aria-label="Instagram">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <div class="container">
+          <p>&copy; 2025 Mega Compressores. Todos os direitos reservados.</p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- WhatsApp Float -->
+    <a href="https://wa.me/5575991987074" class="whatsapp-float" target="_blank" rel="noopener" aria-label="WhatsApp">
+      <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+    </a>
+
+  </body>
+</html>
