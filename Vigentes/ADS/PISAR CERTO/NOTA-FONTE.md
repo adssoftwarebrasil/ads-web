@@ -76,8 +76,12 @@ Funciona: todas as paginas, as fotos, o telefone `(62) 3638 2931`, o e-mail
 da R. 94 A, Qd-F-18, Lt-02, Nº 30 — Setor Sul, Goiania/GO, os depoimentos e os
 links do Instagram (`instagram.com/pisarcerto`) e do Facebook.
 
-O codigo que mede as visitas (Google Tag Manager) veio junto e continua
-funcionando, na conta `GTM-M7K8WMZ8`.
+O codigo que mede as visitas (Google Tag Manager) veio junto, na conta
+`GTM-M7K8WMZ8`, mas **veio quebrado**: a troca dos enderecos apagou o
+`?id=` do endereco de onde o codigo e baixado, entao o site pedia ao
+Google um arquivo inexistente e nada era medido. Corrigido em 02/09/2026,
+nas 28 paginas. Se o site for gerado de novo a partir do banco, confira
+essa linha antes de publicar.
 
 **Nao funciona: o formulario de contato da home.** Ele era do Elementor Pro e
 dependia do PHP do WordPress para mandar o e-mail. Num site estatico nao ha
