@@ -2,6 +2,7 @@ import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import Promo from './components/Promo';
 import Services from './components/Services';
+import Reviews from './components/Reviews';
 import About from './components/About';
 import Differentials from './components/Differentials';
 import BookingForm from './components/BookingForm';
@@ -17,6 +18,7 @@ export default function App() {
         <Hero />
         <Promo />
         <Services />
+        <Reviews />
         <About />
         <Differentials />
         <BookingForm />

@@ -115,6 +115,28 @@ reconstrucao razoavel da original, que nao era recuperavel.
   `SERVICES` em `src/components/Services.tsx` e por o arquivo em
   `public/servicos/`.
 
+## Avaliacoes do Google
+
+A secao "O que dizem nossos pacientes" (`src/components/Reviews.tsx`) fica
+entre Servicos e Sobre. Ela **nao busca nada do Google sozinha**: os textos
+estao escritos na lista `AVALIACOES`, copiados a mao do perfil da clinica
+(https://share.google/hAbC17VhgZLR1Sl5g), que o cliente enviou em 01/09/2026.
+
+Nao da para puxar automaticamente sem contratar: a pagina do perfil so
+carrega com JavaScript e o Google barra leitura automatica (o endereco interno
+`search.google.com/local/reviews` responde 400). Fazer isso sozinho exigiria
+chave da API do Google Places com faturamento ativo, ou um widget pago.
+
+Consequencia pratica: **avaliacao nova nao aparece sozinha no site**. Para
+incluir, edite a lista `AVALIACOES` e republique.
+
+O texto de cada avaliacao e copiado como a pessoa escreveu — inclusive emojis
+e erros de digitacao. Isso e de proposito: e citacao de paciente real, nao
+texto nosso. Nunca inventar depoimento nem "melhorar" o que a pessoa escreveu.
+
+Se a lista ficar vazia, a secao inteira some da pagina (nao fica um espaco em
+branco).
+
 ## Formulario de agendamento
 
 A secao "Agende agora uma avaliacao" **nao envia e-mail e nao tem sistema por
