@@ -66,10 +66,14 @@ Funciona: todas as paginas, as fotos, o telefone `(85) 99612-2422`, o e-mail
 Avenida Jose Leon, 1131, Jardim das Oliveiras — Fortaleza/CE, os depoimentos
 do Google e o link do Instagram (`instagram.com/gvautos_`).
 
-O codigo que mede as visitas (Google Tag Manager) veio junto e continua
-funcionando. Sao **duas contas de medicao** no site, `GTM-KPMJZP9X` e
-`GTM-MWLC9W9J` — provavelmente uma da agencia e uma do cliente. Vale conferir
-se as duas ainda sao para manter.
+O codigo que mede as visitas (Google Tag Manager) veio junto, mas chegou
+**quebrado**: a limpeza dos enderecos comeu o `?id=` do endereco de onde o
+arquivo do Google e baixado, entao ele pedia um arquivo inexistente e nenhuma
+visita era registrada. Isso foi corrigido nas 10 paginas em 02/09/2026 e o
+medidor voltou a carregar. **Se o site for gerado de novo a partir do banco,
+confira essa linha de novo.** Sao **duas contas de medicao** no site,
+`GTM-KPMJZP9X` e `GTM-MWLC9W9J` — provavelmente uma da agencia e uma do
+cliente. Vale conferir se as duas ainda sao para manter.
 
 **Nao funciona: o formulario de contato da home.** Ele era do Elementor Pro e
 dependia do PHP do WordPress para mandar o e-mail. Num site estatico nao ha
