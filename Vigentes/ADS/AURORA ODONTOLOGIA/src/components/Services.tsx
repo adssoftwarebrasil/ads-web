@@ -51,19 +51,18 @@ const SERVICES: Service[] = [
     name: 'Bioestimulador de Colágeno',
     desc: 'Estimula a produção natural de colágeno, melhorando a firmeza, a elasticidade e a qualidade da sua pele de dentro para fora.',
   },
-  // Os tres abaixo nao tem foto entregue pelo cliente; entram com icone.
   {
-    icon: '🌟',
+    img: '/servicos/profilaxia.jpg',
     name: 'Profilaxia e Raspagem',
     desc: 'Limpeza profissional para manter a saúde bucal em dia e prevenir cáries, tártaro e doenças da gengiva.',
   },
   {
-    icon: '👶',
+    img: '/servicos/infantil.jpg',
     name: 'Atendimento Infantil',
     desc: 'Cuidado especializado, lúdico e acolhedor para os pequenos pacientes, criando uma boa relação com o dentista desde cedo.',
   },
   {
-    icon: '💉',
+    img: '/servicos/preenchimento.jpg',
     name: 'Preenchimento Facial e Labial',
     desc: 'Preenchimento labial e facial com resultados harmônicos e naturais, respeitando os traços de cada rosto.',
   },
