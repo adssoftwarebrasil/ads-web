@@ -224,7 +224,7 @@ export const content = {
 };
 
 export const WHATSAPP =
-  "https://wa.me/5585981011262?text=" +
+  "https://wa.me/5585998064592?text=" +
   encodeURIComponent(
     "Olá! Vim pelo site do Clube do Kite PF e gostaria de saber mais sobre as aulas de kitesurf na Praia do Futuro."
   );
