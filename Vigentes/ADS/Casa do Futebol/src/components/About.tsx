@@ -84,7 +84,7 @@ export default function About() {
                 <div className="bg-white/95 rounded-xl p-4 shadow-lg">
                   <div className="flex items-center gap-3">
                     <img
-                      src="https://storage.lucasmendes.dev/site-sp/escolinha%20casa%20do%20futebol/img/logo-grama-sintetica-mato-grosso-verde_1563x1563.webp"
+                      src="/logo-casa-do-futebol.png"
                       alt="Logo"
                       className="h-12 w-12 object-contain rounded-lg bg-[#236E45]/10 p-1"
                     />

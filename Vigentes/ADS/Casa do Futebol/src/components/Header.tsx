@@ -37,12 +37,15 @@ export default function Header() {
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between">
         <a href="#hero" onClick={(e) => { e.preventDefault(); handleNav('#hero'); }} className="flex items-center gap-3">
-          {/* Dica: Se o seu logo atual for totalmente branco, ele pode sumir aqui. 
-              Se isso acontecer, você pode precisar de uma versão com cor do logo. */}
+          {/* Enquanto o header e transparente a logo fica sobre a foto escura da
+              capa, entao damos um contorno branco leve para o "ESCOLINHA" verde
+              nao sumir. Com o header branco a logo aparece nas cores originais */}
           <img
-            src="https://storage.lucasmendes.dev/site-sp/escolinha%20casa%20do%20futebol/img/logo-sem-fundo.webp"
+            src="/logo-casa-do-futebol.png"
             alt="Casa do Futebol"
-            className="h-16 w-auto object-contain"
+            className={`h-16 w-auto object-contain ${
+              isWhiteBg ? '' : '[filter:drop-shadow(0_0_1.5px_rgba(255,255,255,0.95))_drop-shadow(0_2px_4px_rgba(0,0,0,0.5))]'
+            }`}
           />
         </a>
 
