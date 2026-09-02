@@ -108,7 +108,12 @@ export default function Products() {
                 <p className="text-[#424242] text-sm leading-relaxed line-clamp-2 mb-5">
                   {p.desc}
                 </p>
-                <button className="w-full bg-gradient-to-r from-[#4CAF50] to-[#2E7D32] text-white py-3.5 rounded-xl font-bold hover:shadow-xl hover:shadow-[#4CAF50]/40 transition-all duration-300 hover:scale-105 flex items-center justify-center gap-2 group/btn">
+                <a
+                  href={WHATSAPP_URL}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-full bg-gradient-to-r from-[#4CAF50] to-[#2E7D32] text-white py-3.5 rounded-xl font-bold hover:shadow-xl hover:shadow-[#4CAF50]/40 transition-all duration-300 hover:scale-105 flex items-center justify-center gap-2 group/btn"
+                >
                   <span>Consultar Preço</span>
                   <svg
                     className="w-5 h-5 transform group-hover/btn:translate-x-1 transition-transform"
@@ -123,7 +128,7 @@ export default function Products() {
                       d="M9 5l7 7-7 7"
                     />
                   </svg>
-                </button>
+                </a>
               </div>
             </div>
           ))}
