@@ -3,7 +3,9 @@ import WhatsAppIcon from './WhatsAppIcon';
 
 const WHATSAPP = 'https://wa.me/5566996456124';
 
-const SERVICES = [
+type Service = { img?: string; icon?: string; name: string; desc: string };
+
+const SERVICES: Service[] = [
   {
     img: '/servicos/implante.jpg',
     name: 'Implante Dentário',
@@ -49,6 +51,22 @@ const SERVICES = [
     name: 'Bioestimulador de Colágeno',
     desc: 'Estimula a produção natural de colágeno, melhorando a firmeza, a elasticidade e a qualidade da sua pele de dentro para fora.',
   },
+  // Os tres abaixo nao tem foto entregue pelo cliente; entram com icone.
+  {
+    icon: '🌟',
+    name: 'Profilaxia e Raspagem',
+    desc: 'Limpeza profissional para manter a saúde bucal em dia e prevenir cáries, tártaro e doenças da gengiva.',
+  },
+  {
+    icon: '👶',
+    name: 'Atendimento Infantil',
+    desc: 'Cuidado especializado, lúdico e acolhedor para os pequenos pacientes, criando uma boa relação com o dentista desde cedo.',
+  },
+  {
+    icon: '💉',
+    name: 'Preenchimento Facial e Labial',
+    desc: 'Preenchimento labial e facial com resultados harmônicos e naturais, respeitando os traços de cada rosto.',
+  },
 ];
 
 export default function Services() {
@@ -70,9 +88,15 @@ export default function Services() {
               className={`service-card${inView ? ' animate-in' : ''}`}
               style={{ animationDelay: `${i * 0.06}s` }}
             >
-              <div className="service-card__media">
-                <img src={service.img} alt={service.name} loading="lazy" />
-              </div>
+              {service.img ? (
+                <div className="service-card__media">
+                  <img src={service.img} alt={service.name} loading="lazy" />
+                </div>
+              ) : (
+                <div className="service-card__media service-card__media--icon">
+                  <span aria-hidden="true">{service.icon}</span>
+                </div>
+              )}
               <div className="service-card__body">
                 <h3 className="service-card__name">{service.name}</h3>
                 <div className="service-card__line" />

@@ -1135,6 +1135,23 @@ body {
   overflow: hidden;
 }
 
+.service-card__media--icon {
+  background: linear-gradient(135deg, var(--off-white), #e8f1fc);
+  border-bottom: 1px solid var(--border);
+  place-items: center;
+  display: grid;
+}
+
+.service-card__media--icon span {
+  font-size: 54px;
+  line-height: 1;
+  transition: transform var(--transition);
+}
+
+.service-card:hover .service-card__media--icon span {
+  transform: scale(1.08);
+}
+
 .service-card__media img {
   object-fit: cover;
   transition: transform .5s cubic-bezier(.4,0,.2,1);

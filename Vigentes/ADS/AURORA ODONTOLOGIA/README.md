@@ -18,6 +18,31 @@ Build de producao:
 npm run build
 ```
 
+## Onde o site esta publicado
+
+Endereco publico atual: **https://aurora-odontologia-gamma.vercel.app**
+
+Atencao ao sufixo `-gamma`: `aurora-odontologia.vercel.app` (sem sufixo) ja
+pertence a outra conta, de outra clinica com o mesmo nome, e serve um site que
+nao e o nosso. O endereco valido e sempre o com `-gamma`.
+
+Projeto na Vercel: `aurora-odontologia`
+(`prj_GtVsYTGPNFAXcXpCVdKw7okshHwS`), registrado no `vercel-projects.json`.
+A protecao de acesso da Vercel (`ssoProtection`) foi desligada, senao o
+endereco `.vercel.app` pediria login e o cliente nao conseguiria abrir.
+
+O site tambem continua no ar na Netlify (`auroraodonto.netlify.app`), agora
+com uma versao **antiga**: sem as fotos do cliente e com os textos antigos dos
+servicos. Enquanto a clinica nao apontar um dominio proprio, o endereco que
+deve ser divulgado e o da Vercel. Desligar a Netlify e decisao do responsavel.
+
+Publicar uma alteracao:
+
+```bash
+npm run build   # confirma que o build passa
+vercel deploy --prod --yes --token="$VERCEL_TOKEN"
+```
+
 ## Origem deste codigo
 
 O codigo-fonte original desta pasta se perdeu. O conteudo aqui foi
@@ -71,7 +96,7 @@ reconstrucao razoavel da original, que nao era recuperavel.
 - `public/fachada.jpg` e `public/consultorio.jpg` sao fotos do espaco da
   clinica, entregues pelo cliente no documento `SITE AURORA`. Aparecem na
   secao Sobre.
-- `public/servicos/*.jpg` sao as fotos dos 9 servicos. O cliente entregou
+- `public/servicos/*.jpg` sao as fotos dos 9 servicos que o cliente entregou. O cliente entregou
   cada servico como uma imagem 433x433 ja montada, com foto, titulo e texto
   desenhados dentro. Do arquivo dele foi recortada **so a foto** (com o icone
   redondo, que faz parte do desenho); titulo e descricao foram reescritos
@@ -81,6 +106,14 @@ reconstrucao razoavel da original, que nao era recuperavel.
   por leitor de tela, e num celular a letra daquele quadrado ficaria pequena
   demais. Do jeito que ficou, o desenho do cliente foi respeitado e o texto
   continua sendo texto.
+
+  **Tres servicos nao tem foto**: Profilaxia e Raspagem, Atendimento Infantil
+  e Preenchimento Facial e Labial. Eles estao no briefing e estavam no site
+  antigo, entao entram no mesmo lugar dos outros, so que com um icone grande
+  em fundo azul claro no lugar da foto (`service-card__media--icon`). Se o
+  cliente mandar foto desses tres, basta trocar `icon` por `img` na lista
+  `SERVICES` em `src/components/Services.tsx` e por o arquivo em
+  `public/servicos/`.
 
 ## Formulario de agendamento
 
