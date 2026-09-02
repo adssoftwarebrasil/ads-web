@@ -33,25 +33,24 @@ versionada desse vinculo. Para relinkar um site, recrie
 `<path>/.vercel/project.json` a partir da entrada correspondente.
 
 O campo `path` da o diretorio completo, ja que as pastas vivem sob
-`Vigentes/ADS/` ou `Não vigentes/`. Cobre 483 das 494 pastas: as 11 restantes
+`Vigentes/ADS/` ou `Não vigentes/`. Cobre 485 das 495 pastas: as 10 restantes
 nao tem projeto correspondente na Vercel (`Alba's Cleaning Services`,
-`AURORA ODONTOLOGIA`, `EXCLUSIVE CONSTRUTORA E reformadora`,
-`GERENCIAL CONTABIL 1`, `IMPERIAL GAS`, `Premium Cleaning Services`,
-`Proposta de Parceria Digital`, `RETOCARS AUTO SERVICE LTDA`, `Royall`,
-`Veacci`) ou nao sao site (`_material`).
+`EXCLUSIVE CONSTRUTORA E reformadora`, `GERENCIAL CONTABIL 1`,
+`IMPERIAL GAS`, `Premium Cleaning Services`, `Proposta de Parceria Digital`,
+`RETOCARS AUTO SERVICE LTDA`, `Royall`, `Veacci`) ou nao sao site
+(`_material`).
 
 ## Balanco com a Vercel
 
-483 projetos na Vercel e 483 pastas vinculadas: **todo projeto tem pasta**.
+485 projetos na Vercel e 485 pastas vinculadas: **todo projeto tem pasta**.
 As 35 duplicatas — projetos antigos ou builds superados que serviam o mesmo
 site de uma pasta ja mapeada — foram removidas.
 
-Faltam vincular 11 pastas. Nove nunca chegaram a ser publicadas:
+Faltam vincular 10 pastas. Nove nunca chegaram a ser publicadas:
 `Alba's Cleaning Services`, `EXCLUSIVE CONSTRUTORA E reformadora`,
 `GERENCIAL CONTABIL 1`, `IMPERIAL GAS`, `Premium Cleaning Services`,
 `Proposta de Parceria Digital`, `RETOCARS AUTO SERVICE LTDA`, `Royall` e
-`Veacci`. A decima, `AURORA ODONTOLOGIA`, esta no ar, mas na Netlify e nao
-na Vercel. A decima primeira, `_material`, nao e site — e a pasta de assets
+`Veacci`. A decima, `_material`, nao e site — e a pasta de assets
 compartilhados.
 
 `TANCERVA CONVENIENCIA` e `GLOBO TRANSPORTES` foram recuperadas do proprio

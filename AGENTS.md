@@ -28,6 +28,7 @@ todos. Antes de rodar qualquer comando, olhe o que a pasta tem.
 |---|---|
 | `BRAZITEC EMPILHADEIRAS E BATERIAS TRACI` | HTML/CSS/JS puro, sem build |
 | `TANCERVA CONVENIENCIA` | HTML estatico, migrado da Hostinger |
+| `HOUSE CODE` | HTML estatico, migrado da Hostinger |
 | `GLOBO TRANSPORTES` | saida de build, sem fonte — ver `NOTA-FONTE.md` |
 | `CIA FIBRA` | codigo dentro de `project/`, nao na raiz da pasta |
 | `SOLENE CONSTRUCTION` | pnpm, com `patches/` — `npm install` quebra o patch |
