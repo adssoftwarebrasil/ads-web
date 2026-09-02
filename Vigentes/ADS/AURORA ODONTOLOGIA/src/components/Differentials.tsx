@@ -2,34 +2,20 @@ import useInView from '../hooks/useInView';
 
 const DIFFERENTIALS = [
   {
-    icon: '❤️',
-    title: 'Atendimento Humanizado',
-    desc: 'Cada paciente é tratado com atenção, empatia e cuidado individualizados.',
+    title: 'Especialistas em Implantes e Próteses',
+    desc: 'Nossos dentistas são altamente qualificados e especializados, garantindo resultados excepcionais.',
   },
   {
-    icon: '📋',
-    title: 'Planejamento Individual',
-    desc: 'Plano de tratamento exclusivo criado para as necessidades de cada sorriso.',
+    title: 'Tecnologia de Ponta',
+    desc: 'Utilizamos a mais avançada tecnologia odontológica para proporcionar um tratamento seguro e eficaz.',
   },
   {
-    icon: '🏥',
-    title: 'Estrutura Moderna',
-    desc: 'Ambiente confortável e acolhedor, equipado com tecnologia de ponta.',
+    title: 'Atendimento Personalizado',
+    desc: 'Cada paciente recebe um plano de tratamento personalizado, adaptado às suas necessidades específicas.',
   },
   {
-    icon: '🔬',
-    title: 'Tecnologia Avançada',
-    desc: 'Diagnósticos precisos e tratamentos seguros com equipamentos modernos.',
-  },
-  {
-    icon: '🌟',
-    title: 'Estética Natural',
-    desc: 'Resultados que harmonizam com sua beleza, de forma sutil e sofisticada.',
-  },
-  {
-    icon: '👥',
-    title: 'Equipe Comprometida',
-    desc: 'Profissionais especializados e dedicados a resultados reais e duradouros.',
+    title: 'Ambiente Confortável',
+    desc: 'Nossa clínica oferece um ambiente acolhedor e confortável para que você se sinta à vontade durante todo o processo.',
   },
 ];
 
@@ -52,9 +38,7 @@ export default function Differentials() {
               className={`diff-card${inView ? ' animate-in' : ''}`}
               style={{ animationDelay: `${i * 0.1}s` }}
             >
-              <div className="diff-card__icon-wrap">
-                <span className="diff-card__icon">{item.icon}</span>
-              </div>
+              <div className="diff-card__mark" />
               <h3>{item.title}</h3>
               <p>{item.desc}</p>
             </div>

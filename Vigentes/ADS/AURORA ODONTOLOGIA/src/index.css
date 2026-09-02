@@ -1397,7 +1397,7 @@ body {
 }
 
 .diff__grid {
-  grid-template-columns: repeat(auto-fill,minmax(300px,1fr));
+  grid-template-columns: repeat(auto-fit,minmax(240px,1fr));
   gap: 20px;
   display: grid;
 }
@@ -1423,25 +1423,17 @@ body {
   transform: translateY(-6px);
 }
 
-.diff-card__icon-wrap {
-  width: 56px;
-  height: 56px;
-  transition: background var(--transition);
-  background: #4a9eff1f;
-  border: 1px solid #4a9eff33;
-  border-radius: 14px;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 18px;
-  display: flex;
+.diff-card__mark {
+  background: var(--accent);
+  width: 36px;
+  height: 3px;
+  transition: width var(--transition);
+  border-radius: 2px;
+  margin-bottom: 20px;
 }
 
-.diff-card:hover .diff-card__icon-wrap {
-  background: #4a9eff33;
-}
-
-.diff-card__icon {
-  font-size: 28px;
+.diff-card:hover .diff-card__mark {
+  width: 68px;
 }
 
 .diff-card h3 {
