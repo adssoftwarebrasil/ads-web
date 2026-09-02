@@ -1,5 +1,6 @@
 import { Phone, Mail, MapPin, Instagram } from 'lucide-react';
 import WhatsAppIcon from './WhatsAppIcon';
+import { WHATSAPP_URL } from '../lib/whatsapp';
 import { scrollToSection } from '../utils/scroll';
 
 const menu = [
@@ -86,10 +87,15 @@ export default function Footer() {
               <span className="absolute -bottom-2 left-0 w-10 h-0.5 bg-[#F8D617]"></span>
             </h3>
             <div className="space-y-4 mb-6">
-              <button className="inline-flex items-center gap-2 bg-[#25D366] text-white px-6 py-3 rounded-lg font-bold hover:bg-[#1fb855] transition-all w-full justify-center group">
+              <a
+                href={WHATSAPP_URL}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 bg-[#25D366] text-white px-6 py-3 rounded-lg font-bold hover:bg-[#1fb855] transition-all w-full justify-center group"
+              >
                 <WhatsAppIcon className="w-5 h-5 group-hover:scale-110 transition-transform" />
                 Falar no WhatsApp
-              </button>
+              </a>
             </div>
             <div className="space-y-4 text-white/80 text-sm">
               <div className="flex items-start gap-3">

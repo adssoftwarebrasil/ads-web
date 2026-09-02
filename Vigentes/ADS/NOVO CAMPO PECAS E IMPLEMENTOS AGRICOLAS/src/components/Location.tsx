@@ -1,9 +1,15 @@
 import { MapPin, Clock, Instagram, Navigation } from 'lucide-react';
 import WhatsAppIcon from './WhatsAppIcon';
+import {
+  WHATSAPP_NUMBERS,
+  WHATSAPP_URL,
+  whatsappLink,
+} from '../lib/whatsapp';
 
 const otherUnits = [
   {
     title: 'Matriz - Dourados',
+    whatsapp: WHATSAPP_NUMBERS.dourados,
     mapTitle: 'Mapa Matriz - Dourados',
     iframe:
       'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7657305.260431205!2d-56.846845332927245!3d-20.427431338227628!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94890785343a8c51%3A0x7b7e138d3ba21ed3!2sNOVO%20CAMPO%20PE%C3%87AS%20E%20IMPLEMENTOS%20AGRICOLAS!5e0!3m2!1spt-BR!2sbr!4v1765300667505!5m2!1spt-BR!2sbr',
@@ -13,6 +19,7 @@ const otherUnits = [
   },
   {
     title: 'São Gabriel do Oeste',
+    whatsapp: WHATSAPP_NUMBERS.saoGabriel,
     mapTitle: 'Mapa São Gabriel do Oeste',
     iframe:
       'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3763.562967218149!2d-54.572927199999995!3d-19.3880672!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9481a7989dda5495%3A0x404de024c365e5bd!2sR.%20Elvino%20R.%20Nogueira%2C%201869%20-%20Centro%2C%20S%C3%A3o%20Gabriel%20do%20Oeste%20-%20MS%2C%2079490-000!5e0!3m2!1spt-BR!2sbr!4v1765301041468!5m2!1spt-BR!2sbr',
@@ -22,6 +29,7 @@ const otherUnits = [
   },
   {
     title: 'Chapadão do Sul',
+    whatsapp: WHATSAPP_NUMBERS.dourados,
     mapTitle: 'Mapa Chapadão do Sul',
     iframe:
       'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7657305.260431205!2d-56.846845332927245!3d-20.427431338227628!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x949d33ef569ab8cf%3A0x995bfc84813850eb!2sNovo%20Campo%20Pe%C3%A7as%20e%20Implementos%20Agr%C3%ADcolas!5e0!3m2!1spt-BR!2sbr!4v1765300403561!5m2!1spt-BR!2sbr',
@@ -30,6 +38,7 @@ const otherUnits = [
   },
   {
     title: 'R8 Agro Peças',
+    whatsapp: WHATSAPP_NUMBERS.r8,
     mapTitle: 'Mapa R8 Agro Peças',
     iframe:
       'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3693.2859332372127!2d-54.82631112470957!3d-22.229227479737723!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9489a9b68e5bfbf1%3A0x31bc7ac16a4cdb81!2sR8%20Agro%20Pe%C3%A7as%20e%20Equipamentos%20Agr%C3%ADcolas!5e0!3m2!1spt-BR!2sbr!4v1765300147896!5m2!1spt-BR!2sbr',
@@ -39,6 +48,7 @@ const otherUnits = [
   },
   {
     title: 'AGRIMEC',
+    whatsapp: WHATSAPP_NUMBERS.agrimec,
     mapTitle: 'Mapa AGRIMEC',
     iframe:
       'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2219.4169076600533!2d-55.1464461030977!3d-21.621736438558006!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94880d92e9499ebb%3A0x9ed4e0e2d983230!2sGreen%20Ville%20Residence!5e0!3m2!1spt-BR!2sbr!4v1765301521038!5m2!1spt-BR!2sbr',
@@ -151,10 +161,15 @@ export default function Location() {
                 </div>
               </div>
               <div className="flex flex-wrap gap-4 justify-center">
-                <button className="flex items-center gap-2 bg-[#25D366] text-white px-8 py-4 rounded-xl font-bold hover:bg-[#1fb855] transition-all hover:shadow-lg hover:scale-105">
+                <a
+                  href={whatsappLink(WHATSAPP_NUMBERS.rioBrilhante)}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center gap-2 bg-[#25D366] text-white px-8 py-4 rounded-xl font-bold hover:bg-[#1fb855] transition-all hover:shadow-lg hover:scale-105"
+                >
                   <WhatsAppIcon className="w-5 h-5" />
                   WhatsApp
-                </button>
+                </a>
                 <a
                   href="https://instagram.com/novocampo.dourados"
                   target="_blank"
@@ -233,10 +248,15 @@ export default function Location() {
                     </p>
                   </div>
                   <div className="flex gap-2">
-                    <button className="flex-1 flex items-center justify-center gap-2 bg-[#25D366] text-white px-4 py-3 rounded-lg font-bold text-sm hover:bg-[#1fb855] transition-all">
+                    <a
+                      href={whatsappLink(u.whatsapp)}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex-1 flex items-center justify-center gap-2 bg-[#25D366] text-white px-4 py-3 rounded-lg font-bold text-sm hover:bg-[#1fb855] transition-all"
+                    >
                       <WhatsAppIcon className="w-4 h-4" />
                       WhatsApp
-                    </button>
+                    </a>
                     <a
                       href={u.maps}
                       target="_blank"
@@ -261,10 +281,15 @@ export default function Location() {
             Nossa equipe está pronta para atender você com as melhores peças e
             implementos agrícolas
           </p>
-          <button className="inline-flex items-center gap-3 bg-[#25D366] text-white px-8 py-4 rounded-xl font-bold text-lg hover:bg-[#1fb855] transition-all hover:shadow-2xl hover:scale-105">
+          <a
+            href={WHATSAPP_URL}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-3 bg-[#25D366] text-white px-8 py-4 rounded-xl font-bold text-lg hover:bg-[#1fb855] transition-all hover:shadow-2xl hover:scale-105"
+          >
             <WhatsAppIcon className="w-6 h-6" />
             Escolher Unidade
-          </button>
+          </a>
         </div>
       </div>
     </section>

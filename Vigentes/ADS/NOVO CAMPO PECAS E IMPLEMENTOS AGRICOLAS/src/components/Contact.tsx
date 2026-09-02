@@ -1,5 +1,6 @@
 import { Phone, Mail, Clock, MapPin } from 'lucide-react';
 import WhatsAppIcon from './WhatsAppIcon';
+import { WHATSAPP_URL } from '../lib/whatsapp';
 
 export default function Contact() {
   return (
@@ -104,7 +105,12 @@ export default function Contact() {
               </p>
             </div>
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-              <button className="group w-full sm:w-auto bg-[#25D366] text-white px-10 py-5 rounded-xl font-bold text-lg hover:bg-[#1fb855] transition-all duration-300 hover:shadow-2xl hover:shadow-[#25D366]/40 hover:scale-105 flex items-center justify-center gap-3">
+              <a
+                href={WHATSAPP_URL}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group w-full sm:w-auto bg-[#25D366] text-white px-10 py-5 rounded-xl font-bold text-lg hover:bg-[#1fb855] transition-all duration-300 hover:shadow-2xl hover:shadow-[#25D366]/40 hover:scale-105 flex items-center justify-center gap-3"
+              >
                 <WhatsAppIcon className="w-7 h-7 group-hover:scale-110 transition-transform" />
                 <span>Falar no WhatsApp</span>
                 <svg
@@ -120,7 +126,7 @@ export default function Contact() {
                     d="M14 5l7 7m0 0l-7 7m7-7H3"
                   />
                 </svg>
-              </button>
+              </a>
               <button className="group w-full sm:w-auto border-2 border-white/80 bg-white/10 backdrop-blur-sm text-white px-10 py-5 rounded-xl font-bold text-lg hover:bg-white hover:text-[#1A385C] transition-all duration-300 hover:shadow-2xl flex items-center justify-center gap-3">
                 <Phone
                   width={24}

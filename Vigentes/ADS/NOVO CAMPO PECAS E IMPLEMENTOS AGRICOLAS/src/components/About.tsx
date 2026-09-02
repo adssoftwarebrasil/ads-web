@@ -1,5 +1,6 @@
 import { ArrowRight, Target, Award, Users, TrendingUp } from 'lucide-react';
 import WhatsAppIcon from './WhatsAppIcon';
+import { WHATSAPP_URL } from '../lib/whatsapp';
 import { scrollToSection } from '../utils/scroll';
 
 const features = [
@@ -103,7 +104,12 @@ export default function About() {
               </p>
             </div>
             <div className="mt-8 md:mt-10 flex flex-col sm:flex-row gap-4">
-              <button className="group inline-flex items-center justify-center gap-3 bg-[#25D366] text-white px-8 py-4 rounded-xl font-bold text-base md:text-lg hover:bg-[#1fb855] transition-all duration-300 hover:shadow-2xl hover:shadow-[#25D366]/30 hover:scale-105">
+              <a
+                href={WHATSAPP_URL}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group inline-flex items-center justify-center gap-3 bg-[#25D366] text-white px-8 py-4 rounded-xl font-bold text-base md:text-lg hover:bg-[#1fb855] transition-all duration-300 hover:shadow-2xl hover:shadow-[#25D366]/30 hover:scale-105"
+              >
                 <WhatsAppIcon className="w-5 h-5 md:w-6 md:h-6 group-hover:scale-110 transition-transform" />
                 Falar com Especialista
                 <ArrowRight
@@ -111,7 +117,7 @@ export default function About() {
                   height={20}
                   className="lucide lucide-arrow-right group-hover:translate-x-1 transition-transform"
                 />
-              </button>
+              </a>
               <button
                 onClick={() => scrollToSection('servicos')}
                 className="group inline-flex items-center justify-center gap-3 border-2 border-[#001F7A] text-[#001F7A] px-8 py-4 rounded-xl font-bold text-base md:text-lg hover:bg-[#001F7A] hover:text-white transition-all duration-300"

@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { Quote, Star, ChevronLeft, ChevronRight } from 'lucide-react';
 import WhatsAppIcon from './WhatsAppIcon';
+import { WHATSAPP_URL } from '../lib/whatsapp';
 
 const testimonials = [
   {
@@ -164,10 +165,15 @@ export default function Testimonials() {
           <p className="text-[#424242] text-lg mb-6">
             Faça parte dessa história de sucesso
           </p>
-          <button className="inline-flex items-center gap-2 bg-[#25D366] text-white px-8 py-4 rounded-xl font-bold text-lg hover:bg-[#1fb855] transition-all duration-300 hover:shadow-xl hover:scale-105">
+          <a
+            href={WHATSAPP_URL}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 bg-[#25D366] text-white px-8 py-4 rounded-xl font-bold text-lg hover:bg-[#1fb855] transition-all duration-300 hover:shadow-xl hover:scale-105"
+          >
             <WhatsAppIcon className="w-6 h-6" />
             Solicitar Orçamento
-          </button>
+          </a>
         </div>
       </div>
     </section>

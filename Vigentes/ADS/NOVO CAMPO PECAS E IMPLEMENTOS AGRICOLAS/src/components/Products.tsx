@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { Sparkles, Package } from 'lucide-react';
 import WhatsAppIcon from './WhatsAppIcon';
+import { WHATSAPP_URL } from '../lib/whatsapp';
 import { products, categories } from '../data/products';
 
 export default function Products() {
@@ -136,10 +137,15 @@ export default function Products() {
               Entre em contato conosco! Temos muito mais produtos disponíveis e
               nossa equipe está pronta para ajudar.
             </p>
-            <button className="inline-flex items-center gap-3 bg-gradient-to-r from-[#25D366] to-[#1fb855] text-white px-8 py-4 rounded-xl font-bold text-lg hover:shadow-2xl hover:shadow-[#25D366]/40 transition-all duration-300 hover:scale-105">
+            <a
+              href={WHATSAPP_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-3 bg-gradient-to-r from-[#25D366] to-[#1fb855] text-white px-8 py-4 rounded-xl font-bold text-lg hover:shadow-2xl hover:shadow-[#25D366]/40 transition-all duration-300 hover:scale-105"
+            >
               <WhatsAppIcon className="w-6 h-6" />
               Falar com Especialista
-            </button>
+            </a>
           </div>
         </div>
       </div>
