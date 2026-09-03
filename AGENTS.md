@@ -4,7 +4,7 @@ Leia antes de mexer neste repositorio ou na conta da Vercel da ADS.
 
 ## 1. Escala: nunca opere no repositorio inteiro
 
-Sao **486 pastas de site**, cada uma um projeto independente, somando 13.905
+Sao **487 pastas de site**, cada uma um projeto independente, somando 13.905
 arquivos versionados e um `.git` de 611 MB. Nao existe build, lint, teste ou
 `install` na raiz — nao ha `package.json` raiz, e nao deve haver.
 
