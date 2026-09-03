@@ -1,5 +1,12 @@
 # De onde veio este site
 
+> **Onde esta no ar:** `https://cirurgica-campmed.vercel.app`
+> (projeto `cirurgica-campmed` na Vercel).
+> O dominio `cirurgicacampmed.com.br` **ainda nao aponta para ca** — ele
+> continua servindo o WordPress antigo na Hostinger. Trocar o DNS e um passo
+> separado, que precisa ser pedido.
+
+
 O codigo-fonte original da CAMPMED estava perdido. O que existe aqui foi
 remontado, e este arquivo registra de onde veio cada parte — para nao se
 perder de novo.
