@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://cirurgicacampmed.com.br/sitemap.xml

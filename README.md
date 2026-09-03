@@ -33,8 +33,9 @@ versionada desse vinculo. Para relinkar um site, recrie
 `<path>/.vercel/project.json` a partir da entrada correspondente.
 
 O campo `path` da o diretorio completo, ja que as pastas vivem sob
-`Vigentes/ADS/` ou `Não vigentes/`. Cobre 486 das 496 pastas: as 10 restantes
+`Vigentes/ADS/` ou `Não vigentes/`. Cobre 486 das 497 pastas: as 11 restantes
 nao tem projeto correspondente na Vercel (`Alba's Cleaning Services`,
+`CIRURGICA CAMPMED PRODUTOS HOSPITALARES`,
 `EXCLUSIVE CONSTRUTORA E reformadora`, `GERENCIAL CONTABIL 1`,
 `IMPERIAL GAS`, `Premium Cleaning Services`, `Proposta de Parceria Digital`,
 `RETOCARS AUTO SERVICE LTDA`, `Royall`, `Veacci`) ou nao sao site
@@ -46,12 +47,14 @@ nao tem projeto correspondente na Vercel (`Alba's Cleaning Services`,
 As 35 duplicatas — projetos antigos ou builds superados que serviam o mesmo
 site de uma pasta ja mapeada — foram removidas.
 
-Faltam vincular 10 pastas. Nove nunca chegaram a ser publicadas:
-`Alba's Cleaning Services`, `EXCLUSIVE CONSTRUTORA E reformadora`,
-`GERENCIAL CONTABIL 1`, `IMPERIAL GAS`, `Premium Cleaning Services`,
+Faltam vincular 11 pastas. Dez nunca chegaram a ser publicadas:
+`Alba's Cleaning Services`, `CIRURGICA CAMPMED PRODUTOS HOSPITALARES`,
+`EXCLUSIVE CONSTRUTORA E reformadora`, `GERENCIAL CONTABIL 1`,
+`IMPERIAL GAS`, `Premium Cleaning Services`,
 `Proposta de Parceria Digital`, `RETOCARS AUTO SERVICE LTDA`, `Royall` e
-`Veacci`. A decima, `_material`, nao e site — e a pasta de assets
-compartilhados.
+`Veacci`. A `CIRURGICA CAMPMED` e a mais recente: o site foi refeito neste
+repositorio e ainda espera a criacao do projeto na Vercel. A decima primeira,
+`_material`, nao e site — e a pasta de assets compartilhados.
 
 `TANCERVA CONVENIENCIA` e `GLOBO TRANSPORTES` foram recuperadas do proprio
 deploy na Vercel, via `/v6/deployments/<id>/files`, por nao haver copia local.
