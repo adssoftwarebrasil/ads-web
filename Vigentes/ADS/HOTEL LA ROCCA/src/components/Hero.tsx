@@ -30,7 +30,7 @@ export default function Hero() {
         </div>
         <div className="flex flex-col sm:flex-row gap-6 justify-center items-center mb-20">
           <a
-            href="https://wa.me/5562983080229"
+            href="https://reservas.hotellarocca.com.br/"
             target="_blank"
             rel="noopener noreferrer"
             className="group bg-[rgb(190,0,3)] hover:bg-[rgb(160,0,3)] text-white font-bold px-12 py-6 rounded-full transition-all transform hover:scale-105 hover:shadow-2xl shadow-xl flex items-center gap-3 w-full sm:w-auto justify-center text-lg min-w-[280px]"
