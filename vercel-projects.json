@@ -1505,6 +1505,12 @@
     "projectId": "prj_fihegmAZpeKoeaS7QApu7a2lbf82",
     "projectName": "ortobom-afonso-pena"
   },
+  "IMPERIAL GAS": {
+    "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "path": "Vigentes/ADS/IMPERIAL GAS",
+    "projectId": "prj_lnrRlQknzLtlki0M7qRoXW10U1KX",
+    "projectName": "imperial-gas"
+  },
   "IMPERIO DAS BOMBAS BOMBASEFERRAMENTAS": {
     "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
     "path": "Vigentes/ADS/IMPERIO DAS BOMBAS BOMBASEFERRAMENTAS",
@@ -1514,7 +1520,7 @@
   "Imperio Gás Ltda": {
     "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
     "path": "Vigentes/ADS/Imperio Gás Ltda",
-    "projectId": "prj_lnrRlQknzLtlki0M7qRoXW10U1KX",
+    "projectId": "prj_BgscHQ1lVOyNhAJWcU2HHV5ahj5K",
     "projectName": "imperio-gas-ltda"
   },
   "IN BRASA CHOPP E GRILL": {
