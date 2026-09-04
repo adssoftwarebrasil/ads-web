@@ -1,0 +1,255 @@
+/* ========================================
+   Itelas - Dynamic Metal Theme
+   ======================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Oswald:wght@400;600;700&display=swap');
+
+:root {
+    --brand-red: #D32F2F;
+    --brand-red-dark: #B71C1C;
+    --metal-dark: #121417;
+    --metal-medium: #1C1F24;
+    --metal-light: #2C3038;
+    --steel: #E0E0E0;
+    --white: #FFFFFF;
+    --whatsapp: #25D366;
+    
+    --transition-fast: 0.3s ease;
+    --transition-slow: 0.6s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #F8F9FA;
+    color: var(--metal-light);
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+h1, h2, h3, h4, .font-oswald {
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+    color: var(--metal-dark);
+}
+
+a { text-decoration: none; color: inherit; }
+img { max-width: 100%; height: auto; display: block; }
+.container { max-width: 1200px; margin: 0 auto; padding: 0 24px; }
+.text-red { color: var(--brand-red); }
+.w-100 { width: 100%; }
+
+/* ========================================
+   Componentes & Botões
+   ======================================== */
+.btn {
+    display: inline-flex; align-items: center; justify-content: center; gap: 8px;
+    padding: 15px 30px; font-family: 'Oswald', sans-serif; font-size: 1rem; letter-spacing: 1px;
+    border-radius: 4px; transition: var(--transition-fast); cursor: pointer; border: 2px solid transparent;
+}
+.btn-red { background: var(--brand-red); color: var(--white); box-shadow: 0 4px 15px rgba(211, 47, 47, 0.4); }
+.btn-red:hover { background: var(--brand-red-dark); transform: translateY(-3px); }
+
+.btn-outline { border-color: var(--white); color: var(--white); }
+.btn-outline:hover { background: var(--white); color: var(--metal-dark); transform: translateY(-3px); }
+
+.btn-solid-red {
+    background: var(--brand-red); color: var(--white); padding: 10px 20px; font-family: 'Oswald', sans-serif;
+    font-size: 0.9rem; letter-spacing: 1px; border-radius: 4px; transition: var(--transition-fast);
+}
+.btn-solid-red:hover { background: var(--brand-red-dark); }
+
+/* ========================================
+   Header Glassmorphism
+   ======================================== */
+.header {
+    position: fixed; top: 0; left: 0; width: 100%; z-index: 1000;
+    padding: 20px 0; transition: var(--transition-fast); background: transparent;
+}
+.header.scrolled {
+    padding: 10px 0; background: rgba(18, 20, 23, 0.95); backdrop-filter: blur(10px);
+    box-shadow: 0 4px 20px rgba(0,0,0,0.5);
+}
+
+.nav { display: flex; justify-content: space-between; align-items: center; }
+.logo { height: 50px; transition: var(--transition-fast); filter: drop-shadow(0 2px 4px rgba(0,0,0,0.5));} /* Usa a logo sem fundo */
+
+.nav-menu { display: flex; gap: 30px; list-style: none; }
+.nav-menu a { color: var(--white); font-weight: 500; font-size: 0.95rem; position: relative; padding-bottom: 5px; transition: var(--transition-fast);}
+.nav-menu a::after { content: ''; position: absolute; left: 0; bottom: 0; width: 0; height: 2px; background: var(--brand-red); transition: var(--transition-fast); }
+.nav-menu a:hover::after { width: 100%; }
+.nav-menu a:hover { color: var(--brand-red); }
+
+.nav-actions { display: flex; align-items: center; gap: 20px; }
+.nav-toggle { display: none; flex-direction: column; gap: 5px; cursor: pointer; }
+.nav-toggle span { width: 30px; height: 3px; background: var(--white); transition: var(--transition-fast); border-radius: 2px;}
+.nav-toggle.active span:nth-child(1) { transform: rotate(45deg) translate(6px, 6px); }
+.nav-toggle.active span:nth-child(2) { opacity: 0; }
+.nav-toggle.active span:nth-child(3) { transform: rotate(-45deg) translate(5px, -5px); }
+
+/* ========================================
+   Hero Dinâmico
+   ======================================== */
+.hero { position: relative; min-height: 100vh; display: flex; align-items: center; overflow: hidden; }
+.hero-bg { position: absolute; inset: 0; background-position: center; background-size: cover; background-attachment: fixed; transform: scale(1.05); animation: slowZoom 20s linear infinite alternate;}
+@keyframes slowZoom { 0% { transform: scale(1); } 100% { transform: scale(1.1); } }
+
+.hero-overlay { position: absolute; inset: 0; background: linear-gradient(90deg, rgba(18,20,23,0.95) 0%, rgba(18,20,23,0.7) 50%, rgba(18,20,23,0.4) 100%); }
+.hero-content { position: relative; z-index: 2; display: flex; justify-content: space-between; align-items: center; width: 100%; padding-top: 80px;}
+.hero-text { max-width: 650px; }
+.hero-text span:first-child { display: inline-block; color: var(--brand-red); font-weight: 600; letter-spacing: 2px; margin-bottom: 15px; }
+.hero-text h1 { font-size: clamp(3rem, 5vw, 4.5rem); color: var(--white); line-height: 1.1; margin-bottom: 25px; }
+.hero-text p { color: var(--steel); font-size: 1.15rem; margin-bottom: 40px; max-width: 550px;}
+
+.hero-cards { display: flex; flex-direction: column; gap: 20px; }
+.glass-card { background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1); backdrop-filter: blur(10px); padding: 25px; border-radius: 8px; width: 280px; color: var(--white); box-shadow: 0 10px 30px rgba(0,0,0,0.3); transition: var(--transition-fast);}
+.glass-card:hover { transform: translateX(-10px); border-color: var(--brand-red); }
+.glass-card i { font-size: 2rem; margin-bottom: 15px; }
+.glass-card h4 { color: var(--white); font-size: 1.2rem; margin-bottom: 5px; }
+.glass-card p { font-size: 0.9rem; color: var(--steel); }
+
+/* ========================================
+   Sobre a Indústria
+   ======================================== */
+.about-section { padding: 100px 0; background: #FFFFFF; }
+.about-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: center; }
+
+.about-images { position: relative; }
+.img-main { border-radius: 8px; box-shadow: 0 20px 40px rgba(0,0,0,0.15); width: 100%; height: 500px; object-fit: cover;}
+.experience-badge { position: absolute; bottom: 30px; right: -30px; background: var(--brand-red); padding: 30px; border-radius: 8px; color: var(--white); text-align: center; box-shadow: 0 15px 30px rgba(211, 47, 47, 0.3); display: flex; align-items: center; gap: 15px;}
+.experience-badge .counter { font-family: 'Oswald', sans-serif; font-size: 4rem; line-height: 1; font-weight: 700; }
+.experience-badge .badge-text { font-size: 0.9rem; text-transform: uppercase; font-weight: 600; text-align: left; line-height: 1.2;}
+
+.section-title { font-size: clamp(2.5rem, 4vw, 3.5rem); margin-bottom: 25px; line-height: 1.2; }
+.about-info p { margin-bottom: 20px; font-size: 1.05rem; color: #555; }
+.check-list { list-style: none; margin-top: 30px; }
+.check-list li { margin-bottom: 15px; display: flex; align-items: center; gap: 15px; font-weight: 500; color: var(--metal-dark);}
+.check-list li i { color: var(--white); background: var(--brand-red); width: 25px; height: 25px; display: flex; justify-content: center; align-items: center; border-radius: 50%; font-size: 0.7rem;}
+
+/* ========================================
+   Produtos (Cards com Dinamismo/Overlay)
+   ======================================== */
+.products-section { padding: 100px 0; background: #F4F5F7; }
+.section-header { text-align: center; margin-bottom: 60px; }
+.section-header .subtitle { color: var(--brand-red); font-weight: 700; letter-spacing: 2px; display: block; margin-bottom: 10px;}
+
+.product-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 30px; }
+.product-card { position: relative; border-radius: 8px; overflow: hidden; height: 380px; box-shadow: 0 10px 20px rgba(0,0,0,0.1); cursor: pointer; }
+.product-card img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.6s ease; }
+.product-card:hover img { transform: scale(1.1); }
+
+.card-overlay { position: absolute; inset: 0; background: linear-gradient(180deg, rgba(18,20,23,0.1) 0%, rgba(18,20,23,0.95) 100%); display: flex; flex-direction: column; justify-content: flex-end; padding: 30px; color: var(--white); transition: var(--transition-slow); }
+.card-overlay h3 { color: var(--white); font-size: 1.8rem; margin-bottom: 10px; transform: translateY(20px); transition: var(--transition-slow); }
+.card-overlay p { font-size: 0.95rem; color: var(--steel); opacity: 0; transform: translateY(20px); transition: var(--transition-slow); margin-bottom: 20px; display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; }
+.card-btn { display: inline-block; padding: 10px 20px; background: var(--brand-red); color: var(--white); font-family: 'Oswald', sans-serif; text-transform: uppercase; letter-spacing: 1px; border-radius: 4px; opacity: 0; transform: translateY(20px); transition: var(--transition-slow); align-self: flex-start;}
+
+.product-card:hover .card-overlay { background: rgba(18,20,23,0.85); }
+.product-card:hover .card-overlay h3, 
+.product-card:hover .card-overlay p, 
+.product-card:hover .card-btn { opacity: 1; transform: translateY(0); }
+.product-card:hover .card-overlay p { transition-delay: 0.1s; }
+.product-card:hover .card-btn { transition-delay: 0.2s; }
+
+/* ========================================
+   Diferenciais (Seção Escura)
+   ======================================== */
+.differentials-section { background: var(--metal-dark); color: var(--white); padding: 100px 0; }
+.differentials-grid { display: grid; grid-template-columns: 1.2fr 0.8fr; gap: 60px; align-items: center; }
+.diff-content h2 { color: var(--white); margin-bottom: 20px; }
+.diff-content p { color: var(--steel); font-size: 1.1rem; margin-bottom: 40px; }
+
+.diff-stats { display: flex; gap: 40px; }
+.diff-stats .stat .counter { font-size: 4rem; font-family: 'Oswald', sans-serif; font-weight: 700; line-height: 1;}
+.diff-stats .stat p { color: var(--white); font-weight: 500; font-size: 1rem; text-transform: uppercase; margin-top: 5px;}
+
+.branded-img { border-radius: 8px; border: 4px solid var(--metal-light); box-shadow: 0 15px 30px rgba(0,0,0,0.5); }
+
+/* ========================================
+   Contato Integrado
+   ======================================== */
+.contact-section { padding: 100px 0; background: #FFFFFF; }
+.contact-wrapper { display: grid; grid-template-columns: 1fr 1fr; background: var(--white); border-radius: 12px; box-shadow: 0 20px 50px rgba(0,0,0,0.08); overflow: hidden; border: 1px solid #EEE;}
+
+.contact-info { background: var(--metal-dark); color: var(--white); padding: 60px 50px; }
+.contact-info h2 { color: var(--white); margin-bottom: 15px; }
+.contact-info p { color: var(--steel); margin-bottom: 40px; }
+
+.contact-list { list-style: none; display: flex; flex-direction: column; gap: 30px; }
+.contact-list li { display: flex; gap: 20px; align-items: flex-start; }
+.icon-box { background: rgba(211, 47, 47, 0.1); color: var(--brand-red); width: 50px; height: 50px; border-radius: 8px; display: flex; align-items: center; justify-content: center; font-size: 1.2rem; border: 1px solid rgba(211, 47, 47, 0.2);}
+.info-text strong { display: block; font-size: 1.1rem; margin-bottom: 5px; }
+.info-text span { color: var(--steel); font-size: 0.9rem; }
+
+.contact-form-box { padding: 60px 50px; background: var(--white); }
+.contact-form-box h3 { margin-bottom: 30px; font-size: 1.8rem; }
+.contact-form-box form { display: flex; flex-direction: column; gap: 20px; }
+.contact-form-box input, .contact-form-box select, .contact-form-box textarea { width: 100%; padding: 15px; border: 1px solid #DDD; border-radius: 4px; font-family: 'Inter', sans-serif; font-size: 1rem; background: #F9F9F9; transition: var(--transition-fast);}
+.contact-form-box input:focus, .contact-form-box select:focus, .contact-form-box textarea:focus { outline: none; border-color: var(--brand-red); background: var(--white); }
+
+/* ========================================
+   Footer
+   ======================================== */
+.footer { background: #0A0B0D; color: #888; padding: 80px 0 20px; border-top: 4px solid var(--brand-red);}
+.footer-grid { display: grid; grid-template-columns: 2fr 1fr 1.5fr; gap: 50px; margin-bottom: 50px; }
+.footer-brand img { width: 180px; margin-bottom: 20px; filter: brightness(1.2);} /* Clareia a logo no fundo escuro */
+.footer-brand p { margin-bottom: 25px; font-size: 0.95rem; }
+.socials a { display: inline-flex; width: 40px; height: 40px; background: rgba(255,255,255,0.05); color: var(--white); border-radius: 4px; align-items: center; justify-content: center; margin-right: 10px; transition: var(--transition-fast);}
+.socials a:hover { background: var(--brand-red); transform: translateY(-3px); }
+
+.footer-links h4, .footer-contact h4 { color: var(--white); margin-bottom: 20px; font-size: 1.1rem;}
+.footer-links ul { list-style: none; }
+.footer-links ul li { margin-bottom: 10px; }
+.footer-links ul li a { transition: var(--transition-fast); }
+.footer-links ul li a:hover { color: var(--brand-red); padding-left: 5px; }
+
+.footer-contact p { margin-bottom: 10px; display: flex; align-items: center; gap: 10px; }
+
+.footer-bottom { text-align: center; padding-top: 20px; border-top: 1px solid rgba(255,255,255,0.05); font-size: 0.85rem; }
+
+/* ========================================
+   WhatsApp Float
+   ======================================== */
+.float-whatsapp { position: fixed; bottom: 30px; right: 30px; background: var(--whatsapp); color: var(--white); width: 60px; height: 60px; border-radius: 50%; display: flex; justify-content: center; align-items: center; font-size: 2rem; z-index: 1000; box-shadow: 0 4px 15px rgba(37, 211, 102, 0.4); transition: var(--transition-fast); animation: pulse 2s infinite; }
+.float-whatsapp:hover { transform: scale(1.1); }
+@keyframes pulse { 0% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.6); } 70% { box-shadow: 0 0 0 20px rgba(37, 211, 102, 0); } 100% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0); } }
+
+/* ========================================
+   Animações Globais (Dinamismo Solicitado)
+   ======================================== */
+.fade-up { opacity: 0; transform: translateY(40px); transition: opacity 0.8s ease, transform 0.8s ease; transition-delay: var(--delay, 0s); }
+.fade-right { opacity: 0; transform: translateX(-40px); transition: opacity 0.8s ease, transform 0.8s ease; }
+.fade-left { opacity: 0; transform: translateX(40px); transition: opacity 0.8s ease, transform 0.8s ease; }
+
+.fade-up.visible, .fade-right.visible, .fade-left.visible { opacity: 1; transform: translate(0); }
+
+/* ========================================
+   Responsividade
+   ======================================== */
+@media (max-width: 991px) {
+    .nav-actions .btn-solid-red { display: none; }
+    .nav-toggle { display: flex; }
+    .nav-menu { position: fixed; top: 0; right: -100%; width: 280px; height: 100vh; background: var(--metal-dark); flex-direction: column; padding: 100px 30px; box-shadow: -10px 0 30px rgba(0,0,0,0.5); transition: var(--transition-fast); border-left: 2px solid var(--brand-red);}
+    .nav-menu.active { right: 0; }
+    .nav-menu a { font-size: 1.2rem; }
+    
+    .hero-content { flex-direction: column; text-align: center; }
+    .hero-cards { flex-direction: row; justify-content: center; margin-top: 40px; width: 100%;}
+    .hero-text { align-items: center; display: flex; flex-direction: column; }
+    
+    .about-grid, .differentials-grid { grid-template-columns: 1fr; }
+    .contact-wrapper { grid-template-columns: 1fr; }
+    .footer-grid { grid-template-columns: 1fr 1fr; }
+    
+    .experience-badge { bottom: -20px; right: 20px; padding: 20px;}
+}
+
+@media (max-width: 768px) {
+    .hero-text h1 { font-size: 2.8rem; }
+    .hero-cards { flex-direction: column; align-items: center; }
+    .hero-buttons { flex-direction: column; width: 100%; }
+    .hero-buttons a { width: 100%; }
+    .footer-grid { grid-template-columns: 1fr; }
+    .diff-stats { flex-direction: column; gap: 20px; }
+}

@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Auto Socorro Dois Irmãos - Guincho, Munck e Auto Socorro 24h</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header" id="header">
+        <nav class="nav">
+            <div class="nav-brand">
+                <img src="./logo.png" alt="Auto Socorro Dois Irmãos Logo" class="logo">
+                <div class="brand-text">
+                    <span class="brand-name">Dois Irmãos</span>
+                    <span class="brand-tagline">24H: (64) 99950-6100</span>
+                </div>
+            </div>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#home">Início</a></li>
+                <li><a href="#products">Serviços</a></li>
+                <li><a href="#about">Sobre</a></li>
+                <li><a href="#services">Diferenciais</a></li>
+                <li><a href="#contact">Contato</a></li>
+            </ul>
+            <div class="nav-right">
+                <a href="tel:+5564999506100" class="nav-phone">
+                    <i class="fas fa-phone"></i>
+                    <span>(64) 99950-6100</span>
+                </a>
+                <a href="https://wa.me/5564999506100" target="_blank" class="btn-whatsapp-nav">Falar no WhatsApp</a>
+            </div>
+            <div class="nav-toggle" id="navToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <div class="hero-badge">
+                <span class="badge-dot"></span>
+                Mais de 20 anos de experiência em auto socorro
+            </div>
+            <h1 class="hero-title">
+                Guincho, Munck e<br>
+                <span class="text-accent">Auto Socorro 24 Horas</span>
+            </h1>
+            <p class="hero-subtitle">
+                Atendimento rápido e seguro para guincho, içamento de cargas,
+                transporte de máquinas, caminhões, troca de pneus, bateria e emergências.
+            </p>
+            <div class="hero-buttons">
+                <a href="https://wa.me/5564999506100" target="_blank" class="btn btn-gold">
+                    <i class="fab fa-whatsapp"></i>
+                    Solicitar Atendimento
+                </a>
+                <a href="#products" class="btn btn-outline">Ver Serviços</a>
+            </div>
+            <div class="hero-stats">
+                <div class="hero-stat">
+                    <span class="hero-stat-number" data-target="20">0</span><span class="hero-stat-suffix">+</span>
+                    <span class="hero-stat-label">Anos de experiência</span>
+                </div>
+                <div class="hero-stat">
+                    <span class="hero-stat-number" data-target="20">0</span><span class="hero-stat-suffix">+</span>
+                    <span class="hero-stat-label">Cidades atendidas</span>
+                </div>
+                <div class="hero-stat">
+                    <span class="hero-stat-number" data-target="24">0</span><span class="hero-stat-suffix">h</span>
+                    <span class="hero-stat-label">Atendimento emergencial</span>
+                </div>
+            </div>
+            <div class="hero-scroll-indicator">
+                <i class="fas fa-chevron-down"></i>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section id="products" class="products-section">
+        <div class="container">
+            <div class="section-label">NOSSOS SERVIÇOS</div>
+            <h2 class="section-title">
+                Soluções Completas em<br>
+                <span class="text-accent">Guincho, Munck e Transporte</span>
+            </h2>
+            <p class="section-subtitle">
+                Atendimento 24 horas com agilidade, segurança e equipe preparada. Solicite seu serviço diretamente pelo WhatsApp.
+            </p>
+
+            <div class="product-filter">
+                <i class="fas fa-filter"></i>
+                <button class="filter-btn active" data-filter="all">Todos</button>
+                <button class="filter-btn" data-filter="maquinas">Guincho</button>
+                <button class="filter-btn" data-filter="insumos">Munck</button>
+                <button class="filter-btn" data-filter="veterinarios">Auto Socorro</button>
+            </div>
+
+            <div class="products-grid">
+                <div class="product-card" data-category="maquinas">
+                    <div class="product-card-image">
+                        <span class="product-badge badge-novo">Destaque</span>
+                        <span class="product-badge badge-category">Guincho</span>
+                        <img src="https://img.magnific.com/fotos-gratis/caminhao-de-avaria-do-transportador-de-carro-durante-o-trabalho-usando-o-transporte-de-cinto-bloqueado-outro-carro-verde_1150-6453.jpg?semt=ais_hybrid&w=740&q=80" alt="Guincho 24 horas">
+                        <div class="product-card-overlay">
+                            <h3>Guincho 24h</h3>
+                            <p>Atendimento emergencial</p>
+                        </div>
+                    </div>
+                    <div class="product-card-info">
+                        <h4>Guincho Leve e Pesado</h4>
+                        <span class="product-detail">Remoção de veículos</span>
+                        <a href="https://wa.me/5564999506100?text=Olá! Preciso de atendimento com guincho 24 horas." target="_blank" class="btn-consult">
+                            <i class="fab fa-whatsapp"></i> Solicitar Atendimento
+                        </a>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="insumos">
+                    <div class="product-card-image">
+                        <span class="product-badge badge-category">Munck</span>
+                        <img src="https://img.magnific.com/fotos-gratis/guindastes-num-porto-maritimo_1112-1224.jpg?semt=ais_hybrid&w=740&q=80" alt="Serviço de Munck">
+                        <div class="product-card-overlay">
+                            <h3>Munck</h3>
+                            <p>Içamento de cargas</p>
+                        </div>
+                    </div>
+                    <div class="product-card-info">
+                        <h4>Caminhão Munck</h4>
+                        <span class="product-detail">Carga e descarga pesada</span>
+                        <a href="https://wa.me/5564999506100?text=Olá! Gostaria de solicitar serviço de Munck." target="_blank" class="btn-consult">
+                            <i class="fab fa-whatsapp"></i> Solicitar Atendimento
+                        </a>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="maquinas">
+                    <div class="product-card-image">
+                        <span class="product-badge badge-category">Transporte</span>
+                        <img src="https://img.magnific.com/fotos-gratis/caminhao-de-entrega-em-um-armazem-durante-o-por-do-sol_23-2151998692.jpg?semt=ais_hybrid&w=740&q=80" alt="Transporte de máquinas">
+                        <div class="product-card-overlay">
+                            <h3>Transporte</h3>
+                            <p>Máquinas e caminhões</p>
+                        </div>
+                    </div>
+                    <div class="product-card-info">
+                        <h4>Transporte de Máquinas</h4>
+                        <span class="product-detail">Equipamentos e caminhões</span>
+                        <a href="https://wa.me/5564999506100?text=Olá! Gostaria de solicitar transporte de máquinas ou caminhões." target="_blank" class="btn-consult">
+                            <i class="fab fa-whatsapp"></i> Solicitar Atendimento
+                        </a>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="insumos">
+                    <div class="product-card-image">
+                        <span class="product-badge badge-novo">Destaque</span>
+                        <span class="product-badge badge-category">Içamento</span>
+                        <img src="https://images.pexels.com/photos/2760242/pexels-photo-2760242.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Içamento de cargas">
+                        <div class="product-card-overlay">
+                            <h3>Içamento</h3>
+                            <p>Cargas pesadas</p>
+                        </div>
+                    </div>
+                    <div class="product-card-info">
+                        <h4>Içamento de Cargas</h4>
+                        <span class="product-detail">Operações seguras</span>
+                        <a href="https://wa.me/5564999506100?text=Olá! Gostaria de solicitar içamento de carga." target="_blank" class="btn-consult">
+                            <i class="fab fa-whatsapp"></i> Solicitar Atendimento
+                        </a>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="veterinarios">
+                    <div class="product-card-image">
+                        <span class="product-badge badge-novo">Destaque</span>
+                        <span class="product-badge badge-category">Socorro</span>
+                        <img src="https://images.pexels.com/photos/3807329/pexels-photo-3807329.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Auto socorro">
+                        <div class="product-card-overlay">
+                            <h3>Auto Socorro</h3>
+                            <p>Atendimento rápido</p>
+                        </div>
+                    </div>
+                    <div class="product-card-info">
+                        <h4>Socorro Emergencial</h4>
+                        <span class="product-detail">Pane mecânica e resgate</span>
+                        <a href="https://wa.me/5564999506100?text=Olá! Preciso de auto socorro urgente." target="_blank" class="btn-consult">
+                            <i class="fab fa-whatsapp"></i> Solicitar Atendimento
+                        </a>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="veterinarios">
+                    <div class="product-card-image">
+                        <span class="product-badge badge-category">Pneus</span>
+                        <img src="https://images.pexels.com/photos/3806252/pexels-photo-3806252.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Troca de pneus">
+                        <div class="product-card-overlay">
+                            <h3>Troca de Pneus</h3>
+                            <p>Socorro no local</p>
+                        </div>
+                    </div>
+                    <div class="product-card-info">
+                        <h4>Troca de Pneus</h4>
+                        <span class="product-detail">Atendimento emergencial</span>
+                        <a href="https://wa.me/5564999506100?text=Olá! Preciso de ajuda com troca de pneus." target="_blank" class="btn-consult">
+                            <i class="fab fa-whatsapp"></i> Solicitar Atendimento
+                        </a>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="veterinarios">
+                    <div class="product-card-image">
+                        <span class="product-badge badge-category">Bateria</span>
+                        <img src="https://images.pexels.com/photos/3806288/pexels-photo-3806288.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Troca de bateria">
+                        <div class="product-card-overlay">
+                            <h3>Bateria</h3>
+                            <p>Suporte emergencial</p>
+                        </div>
+                    </div>
+                    <div class="product-card-info">
+                        <h4>Troca de Bateria</h4>
+                        <span class="product-detail">Atendimento rápido</span>
+                        <a href="https://wa.me/5564999506100?text=Olá! Preciso de atendimento para troca de bateria." target="_blank" class="btn-consult">
+                            <i class="fab fa-whatsapp"></i> Solicitar Atendimento
+                        </a>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="maquinas">
+                    <div class="product-card-image">
+                        <span class="product-badge badge-novo">Destaque</span>
+                        <span class="product-badge badge-category">Guarda</span>
+                        <img src="https://img.magnific.com/fotos-gratis/linha-de-carros-novos-no-porto_335224-806.jpg?semt=ais_hybrid&w=740&q=80" alt="Pátio de guarda de veículos">
+                        <div class="product-card-overlay">
+                            <h3>Guarda</h3>
+                            <p>Veículos e cargas</p>
+                        </div>
+                    </div>
+                    <div class="product-card-info">
+                        <h4>Pátio e Guarda de Carga</h4>
+                        <span class="product-detail">Veículos, cargas e equipamentos</span>
+                        <a href="https://wa.me/5564999506100?text=Olá! Gostaria de saber mais sobre pátio e guarda de carga." target="_blank" class="btn-consult">
+                            <i class="fab fa-whatsapp"></i> Solicitar Atendimento
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-text">
+                    <div class="section-label">SOBRE A DOIS IRMÃOS</div>
+                    <h2 class="section-title-left">
+                        Referência em<br>
+                        <span class="text-accent">Guincho, Munck e Auto Socorro</span>
+                    </h2>
+                    <p>A <strong>Auto Socorro Dois Irmãos</strong> é referência há mais de 20 anos em serviços de guincho, munck, içamento de cargas e auto socorro.</p>
+                    <p>Atuamos com agilidade, segurança e eficiência na remoção de veículos leves e pesados, transporte de máquinas e equipamentos, além de serviços de carga e descarga com caminhão munck.</p>
+                    <p>Atendemos obras, indústrias e clientes particulares, oferecendo soluções completas em operações de içamento com equipamentos modernos e equipe qualificada. Nosso compromisso é garantir um atendimento rápido, seguro e confiável em qualquer situação.</p>
+                    <div class="about-buttons">
+                        <a href="https://wa.me/5564999506100" target="_blank" class="btn btn-gold">Fale Conosco</a>
+                        <a href="#products" class="btn btn-outline">Ver Serviços</a>
+                    </div>
+                </div>
+                <div class="about-right">
+                    <div class="about-image-wrapper">
+                        <img src="./logo2.png" alt="Auto Socorro Dois Irmãos">
+                    </div>
+                    <div class="about-features">
+                        <div class="about-feature">
+                            <div class="feature-icon"><i class="fas fa-clock"></i></div>
+                            <div>
+                                <h4>Atendimento 24 Horas</h4>
+                                <p>Suporte todos os dias, a qualquer hora.</p>
+                            </div>
+                        </div>
+                        <div class="about-feature">
+                            <div class="feature-icon"><i class="fas fa-shield-alt"></i></div>
+                            <div>
+                                <h4>Segurança nas Operações</h4>
+                                <p>Serviços realizados com cuidado e responsabilidade.</p>
+                            </div>
+                        </div>
+                        <div class="about-feature">
+                            <div class="feature-icon"><i class="fas fa-history"></i></div>
+                            <div>
+                                <h4>20+ Anos de Mercado</h4>
+                                <p>Experiência e confiança em auto socorro.</p>
+                            </div>
+                        </div>
+                        <div class="about-feature">
+                            <div class="feature-icon"><i class="fas fa-truck-moving"></i></div>
+                            <div>
+                                <h4>Estrutura Completa</h4>
+                                <p>Guincho, munck, transporte e guarda de veículos.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services-section">
+        <div class="container">
+            <div class="section-label">O QUE OFERECEMOS</div>
+            <h2 class="section-title">
+                Atendimento Profissional para<br>
+                <span class="text-accent">Emergências e Serviços Pesados</span>
+            </h2>
+            <p class="section-subtitle">
+                Do socorro emergencial ao transporte de cargas e máquinas, oferecemos soluções completas com rapidez, segurança e confiança.
+            </p>
+
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon"><i class="fas fa-truck-pickup"></i></div>
+                    <h3>Guincho 24 Horas</h3>
+                    <p>Remoção de veículos leves e pesados com atendimento emergencial todos os dias.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon"><i class="fas fa-industry"></i></div>
+                    <h3>Munck e Içamento</h3>
+                    <p>Içamento de cargas, máquinas, motores, estruturas e materiais pesados com segurança.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon"><i class="fas fa-car-crash"></i></div>
+                    <h3>Auto Socorro</h3>
+                    <p>Atendimento para pane mecânica, resgate, troca de pneus e troca de bateria.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon"><i class="fas fa-truck-moving"></i></div>
+                    <h3>Transporte Pesado</h3>
+                    <p>Transporte de máquinas, caminhões, equipamentos e veículos com eficiência.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon"><i class="fas fa-warehouse"></i></div>
+                    <h3>Pátio de Guarda</h3>
+                    <p>Espaço para guarda de veículos, cargas e equipamentos com mais segurança.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon"><i class="fas fa-headset"></i></div>
+                    <h3>Atendimento Rápido</h3>
+                    <p>Equipe pronta para atender sua emergência com agilidade e compromisso.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Coverage Area -->
+    <section class="coverage-section">
+        <div class="container">
+            <div class="section-label">ÁREA DE ATENDIMENTO</div>
+            <h2 class="section-title">
+                Atendimento em Goiás,<br>
+                <span class="text-accent">Distrito Federal e Região</span>
+            </h2>
+            <div class="cities-grid">
+                <div class="city-card"><i class="fas fa-map-marker-alt"></i> Pires do Rio - Matriz</div>
+                <div class="city-card"><i class="fas fa-map-marker-alt"></i> Cristalina</div>
+                <div class="city-card"><i class="fas fa-map-marker-alt"></i> Luziânia</div>
+                <div class="city-card"><i class="fas fa-map-marker-alt"></i> Goiânia</div>
+                <div class="city-card"><i class="fas fa-map-marker-alt"></i> Catalão</div>
+                <div class="city-card"><i class="fas fa-map-marker-alt"></i> Caldas Novas</div>
+                <div class="city-card"><i class="fas fa-map-marker-alt"></i> Ipameri</div>
+                <div class="city-card"><i class="fas fa-map-marker-alt"></i> Orizona</div>
+                <div class="city-card"><i class="fas fa-map-marker-alt"></i> Brasília</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <div class="section-label">FALE CONOSCO</div>
+            <h2 class="section-title">
+                Precisa de Guincho ou Munck?<br>
+                <span class="text-accent">Chame Agora no WhatsApp</span>
+            </h2>
+            <p class="section-subtitle">
+                Preencha o formulário e fale diretamente pelo WhatsApp. Atendimento 24 horas para emergências e serviços agendados.
+            </p>
+
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
+                        <div>
+                            <span class="contact-label">ENDEREÇO</span>
+                            <strong>Alameda das Caraíbas, SN</strong>
+                            <span>Jd. Sonho Verde - Pires do Rio - GO</span>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon"><i class="fas fa-phone"></i></div>
+                        <div>
+                            <span class="contact-label">TELEFONE / WHATSAPP</span>
+                            <strong>(64) 99950-6100</strong>
+                            <span>Clique para ligar ou chamar no WhatsApp</span>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon"><i class="fas fa-clock"></i></div>
+                        <div>
+                            <span class="contact-label">HORÁRIO DE ATENDIMENTO</span>
+                            <strong>24 Horas</strong>
+                            <span>Todos os dias da semana</span>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon"><i class="fab fa-instagram"></i></div>
+                        <div>
+                            <span class="contact-label">INSTAGRAM</span>
+                            <strong>@dois_irmaos_guinchos_munck</strong>
+                            <span>Acompanhe nossos serviços</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form-wrapper">
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <label>SEU NOME *</label>
+                            <input type="text" placeholder="Digite seu nome completo" required>
+                        </div>
+                        <div class="form-group">
+                            <label>WHATSAPP / TELEFONE *</label>
+                            <input type="tel" placeholder="(64) 9 0000-0000" required>
+                        </div>
+                        <div class="form-group">
+                            <label>SERVIÇO DE INTERESSE</label>
+                            <input type="text" placeholder="Ex: Guincho, Munck, Içamento, Transporte...">
+                        </div>
+                        <div class="form-group">
+                            <label>MENSAGEM</label>
+                            <textarea rows="4" placeholder="Descreva o que você precisa..."></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-gold btn-full">
+                            <i class="fab fa-whatsapp"></i>
+                            Enviar pelo WhatsApp
+                        </button>
+                        <p class="form-note">Ao enviar, você será redirecionado para o WhatsApp com sua mensagem pré-preenchida.</p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-divider"></div>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <div class="footer-brand">
+                        <img src="./logo.png" alt="Auto Socorro Dois Irmãos Logo" class="footer-logo">
+                        <span class="footer-brand-name">Dois Irmãos</span>
+                    </div>
+                    <p class="footer-desc">
+                        Referência há mais de 20 anos em guincho, munck, içamento de cargas,
+                        transporte de máquinas e auto socorro 24 horas.
+                    </p>
+                    <div class="footer-social">
+                        <a href="https://www.instagram.com/dois_irmaos_guinchos_munck" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="mailto:autosocorrovianopolis@hotmail.com"><i class="fas fa-envelope"></i></a>
+                        <a href="https://wa.me/5564999506100" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>NAVEGAÇÃO</h4>
+                    <ul>
+                        <li><a href="#home">Início</a></li>
+                        <li><a href="#products">Serviços</a></li>
+                        <li><a href="#about">Sobre</a></li>
+                        <li><a href="#services">Diferenciais</a></li>
+                        <li><a href="#contact">Contato</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>CONTATO</h4>
+                    <ul class="footer-contact-list">
+                        <li><i class="fas fa-phone"></i> (64) 99950-6100</li>
+                        <li><i class="fas fa-envelope"></i> autosocorrovianopolis@hotmail.com</li>
+                        <li><i class="fas fa-clock"></i> Atendimento 24h</li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>LOCALIZAÇÃO</h4>
+                    <ul class="footer-contact-list">
+                        <li><i class="fas fa-map-marker-alt"></i> Alameda das Caraíbas, SN<br>Jd. Sonho Verde - Pires do Rio - GO</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Auto Socorro Dois Irmãos. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Float Button -->
+    <div class="whatsapp-float" id="whatsappFloat">
+        <div class="whatsapp-tooltip" id="whatsappTooltip">
+            Fale conosco!
+            <button class="tooltip-close" id="tooltipClose">&times;</button>
+        </div>
+        <a href="https://wa.me/5564999506100" target="_blank" class="whatsapp-btn">
+            <i class="fab fa-whatsapp"></i>
+        </a>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

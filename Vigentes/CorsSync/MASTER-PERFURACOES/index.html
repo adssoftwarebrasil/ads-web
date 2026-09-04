@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <title>Master Perfurações - Perfuração de Poços Artesianos</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Master Perfurações - Especialistas em perfuração de poços artesianos há mais de 10 anos. Atendemos cidades de Mato Grosso e região. Qualidade e responsabilidade garantidas." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+
+    <!-- NAVBAR -->
+    <header class="navbar" id="navbar">
+      <div class="container navbar__inner">
+        <a href="#home" class="navbar__logo">
+          <img src="images/logo-fundo-branco.png" alt="Master Perfurações" class="navbar__logo-img" />
+        </a>
+        <nav class="navbar__links">
+          <a href="#sobre">Sobre</a>
+          <a href="#servicos">Serviços</a>
+          <a href="#diferenciais">Diferenciais</a>
+          <a href="#historia">Nossa História</a>
+          <a href="#contato" class="btn btn--nav">Fale Conosco</a>
+        </nav>
+        <button class="navbar__hamburger" id="hamburger" aria-label="Menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+      <div class="navbar__mobile" id="mobileMenu">
+        <a href="#sobre" class="mobile-link">Sobre</a>
+        <a href="#servicos" class="mobile-link">Serviços</a>
+        <a href="#diferenciais" class="mobile-link">Diferenciais</a>
+        <a href="#historia" class="mobile-link">Nossa História</a>
+        <a href="#contato" class="mobile-link mobile-link--cta">Fale Conosco</a>
+      </div>
+    </header>
+
+    <!-- HERO -->
+    <section class="hero" id="home">
+      <div class="hero__bg-overlay"></div>
+      <div class="hero__water-anim">
+        <div class="water-drop water-drop--1"></div>
+        <div class="water-drop water-drop--2"></div>
+        <div class="water-drop water-drop--3"></div>
+        <div class="wave wave--1"></div>
+        <div class="wave wave--2"></div>
+      </div>
+      <div class="container hero__content">
+        <div class="hero__copy">
+          <div class="hero__badge reveal">Mais de 10 anos de experiência</div>
+          <h1 class="hero__title reveal reveal--delay-1">
+            Perfuração de<br/>
+            <span class="text-cyan">Poços Artesianos</span><br/>
+            com Excelência
+          </h1>
+          <p class="hero__subtitle reveal reveal--delay-2">
+            Água limpa e segura para sua propriedade. Atendemos Lucas do Rio Verde, cidades vizinhas e fazendas em todo Mato Grosso.
+          </p>
+          <div class="hero__actions reveal reveal--delay-3">
+            <a href="https://wa.me/5565996703404" target="_blank" class="btn btn--primary btn--lg">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+              Solicitar Orçamento
+            </a>
+            <a href="#sobre" class="btn btn--outline btn--lg">Conhecer mais</a>
+          </div>
+          <div class="hero__stats reveal reveal--delay-4">
+            <div class="stat">
+              <span class="stat__number" data-target="10">0</span><span class="stat__plus">+</span>
+              <span class="stat__label">Anos de experiência</span>
+            </div>
+            <div class="stat__divider"></div>
+            <div class="stat">
+              <span class="stat__number" data-target="500">0</span><span class="stat__plus">+</span>
+              <span class="stat__label">Poços perfurados</span>
+            </div>
+            <div class="stat__divider"></div>
+            <div class="stat">
+              <span class="stat__number" data-target="100">0</span><span class="stat__percent">%</span>
+              <span class="stat__label">Compromisso</span>
+            </div>
+          </div>
+        </div>
+        <div class="hero__visual reveal-right">
+          <img src="images/hero-saude.png" alt="Manutenção preventiva e cuidado com a saúde" class="hero__image" />
+        </div>
+      </div>
+      <div class="hero__scroll-hint">
+        <div class="scroll-arrow"></div>
+      </div>
+    </section>
+
+    <!-- SOBRE -->
+    <section class="section sobre" id="sobre">
+      <div class="container">
+        <div class="sobre__grid">
+          <div class="sobre__visual reveal-left">
+            <div class="sobre__img-wrap">
+              <img src="images/quem-somos-infografico.png" alt="Infográfico da Master Perfurações sobre a demanda mundial por água, energia e alimento até 2030" class="sobre__img" loading="lazy" decoding="async" />
+              <div class="sobre__badge-float">
+                <span class="badge-number">2016</span>
+                <span class="badge-label">Fundada em</span>
+              </div>
+            </div>
+          </div>
+          <div class="sobre__text reveal-right">
+            <div class="section__label">Quem somos</div>
+            <h2 class="section__title">Especialistas em água subterrânea</h2>
+            <p class="sobre__desc">
+              A <strong>Master Perfurações</strong> é uma empresa especializada em perfuração de poços artesianos, atuando há mais de <strong>10 anos</strong> no mercado de Mato Grosso. Trabalhamos com materiais de primeira linha e equipamentos modernos, garantindo agilidade, segurança e qualidade em cada projeto.
+            </p>
+            <p class="sobre__desc">
+              Nossa equipe é qualificada e comprometida com a satisfação do cliente, realizando perfurações completas em até 2 dias, com toda a responsabilidade que o serviço exige.
+            </p>
+            <div class="sobre__infos">
+              <div class="info-item">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="20" height="20"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                Serviço com garantia
+              </div>
+              <div class="info-item">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="20" height="20"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                Atendimento rápido
+              </div>
+              <div class="info-item">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="20" height="20"><polyline points="20 6 9 17 4 12"/></svg>
+                Materiais de 1ª linha
+              </div>
+            </div>
+            <div class="sobre__hours">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18" height="18"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+              Seg - Sex: 7h às 11h30 | 13h às 18h
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVIÇOS -->
+    <section class="section servicos" id="servicos">
+      <div class="container">
+        <div class="section__header reveal">
+          <div class="section__label">O que fazemos</div>
+          <h2 class="section__title">Nossos Serviços</h2>
+          <p class="section__subtitle">Soluções completas em captação de água subterrânea para residências, propriedades rurais e empresas.</p>
+        </div>
+        <div class="servicos__grid">
+          <div class="service-card reveal reveal--delay-1">
+            <div class="service-card__icon">
+              <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg" width="48" height="48">
+                <circle cx="32" cy="32" r="30" fill="rgba(0,170,221,0.12)"/>
+                <path d="M32 10 L32 54" stroke="#00aadd" stroke-width="3" stroke-linecap="round"/>
+                <path d="M20 22 L32 10 L44 22" stroke="#1a3a8f" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                <circle cx="32" cy="36" r="8" stroke="#00aadd" stroke-width="3"/>
+                <path d="M26 36 Q32 28 38 36" stroke="#1a3a8f" stroke-width="2"/>
+              </svg>
+            </div>
+            <h3 class="service-card__title">Perfuração de Poço Artesiano</h3>
+            <p class="service-card__desc">Perfuração profissional com maquinário moderno. Concluímos a maioria das obras em 1 a 2 dias, com eficiência e segurança.</p>
+          </div>
+          <div class="service-card reveal reveal--delay-2">
+            <div class="service-card__icon">
+              <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg" width="48" height="48">
+                <circle cx="32" cy="32" r="30" fill="rgba(0,170,221,0.12)"/>
+                <path d="M16 48 L16 24 Q16 16 32 16 Q48 16 48 24 L48 48" stroke="#1a3a8f" stroke-width="3" stroke-linecap="round"/>
+                <path d="M20 32 L44 32" stroke="#00aadd" stroke-width="2" stroke-dasharray="4 3"/>
+                <path d="M20 40 L44 40" stroke="#00aadd" stroke-width="2" stroke-dasharray="4 3"/>
+                <circle cx="32" cy="20" r="4" fill="#00aadd"/>
+              </svg>
+            </div>
+            <h3 class="service-card__title">Instalação de Tubulação</h3>
+            <p class="service-card__desc">Instalação completa de revestimento e tubulação com materiais de primeira linha, garantindo a durabilidade da obra.</p>
+          </div>
+          <div class="service-card reveal reveal--delay-3">
+            <div class="service-card__icon">
+              <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg" width="48" height="48">
+                <circle cx="32" cy="32" r="30" fill="rgba(0,170,221,0.12)"/>
+                <path d="M24 48 L24 32 L20 32 L20 20 L28 20 L28 32 L24 32" stroke="#1a3a8f" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M36 48 L36 28 L40 22 L44 28 L44 48" stroke="#1a3a8f" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M36 36 L44 36" stroke="#00aadd" stroke-width="2"/>
+                <circle cx="32" cy="14" r="5" stroke="#00aadd" stroke-width="3"/>
+                <path d="M30 18 Q32 22 34 18" stroke="#00aadd" stroke-width="2"/>
+              </svg>
+            </div>
+            <h3 class="service-card__title">Manutenção de Poços</h3>
+            <p class="service-card__desc">Limpeza, desobstrução e manutenção preventiva para garantir a vazão e qualidade da água do seu poço.</p>
+          </div>
+          <div class="service-card reveal reveal--delay-4">
+            <div class="service-card__icon">
+              <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg" width="48" height="48">
+                <circle cx="32" cy="32" r="30" fill="rgba(0,170,221,0.12)"/>
+                <path d="M14 44 Q20 34 32 34 Q44 34 50 44" stroke="#1a3a8f" stroke-width="3" stroke-linecap="round"/>
+                <path d="M32 34 L32 18" stroke="#00aadd" stroke-width="3" stroke-linecap="round"/>
+                <circle cx="32" cy="14" r="5" fill="#00aadd"/>
+                <path d="M22 26 Q28 20 38 26" stroke="#1a3a8f" stroke-width="2" stroke-linecap="round"/>
+              </svg>
+            </div>
+            <h3 class="service-card__title">Atendimento Rural</h3>
+            <p class="service-card__desc">Especialistas em atender fazendas, sítios e propriedades rurais com deslocamento para toda a região de Mato Grosso.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- DIFERENCIAIS -->
+    <section class="section diferenciais" id="diferenciais">
+      <div class="diferenciais__bg-shape"></div>
+      <div class="container">
+        <div class="section__header reveal">
+          <div class="section__label section__label--light">Por que nos escolher</div>
+          <h2 class="section__title section__title--light">Nossos Diferenciais</h2>
+        </div>
+        <div class="diferenciais__grid">
+          <div class="dif-card reveal reveal--delay-1">
+            <div class="dif-card__num">01</div>
+            <h3 class="dif-card__title">Experiência Comprovada</h3>
+            <p class="dif-card__desc">10 anos no mercado com centenas de poços perfurados em cidades e fazendas da região.</p>
+          </div>
+          <div class="dif-card reveal reveal--delay-2">
+            <div class="dif-card__num">02</div>
+            <h3 class="dif-card__title">Agilidade na Execução</h3>
+            <p class="dif-card__desc">Perfuramos um poço em 1 a 2 dias, sem comprometer qualidade e segurança.</p>
+          </div>
+          <div class="dif-card reveal reveal--delay-3">
+            <div class="dif-card__num">03</div>
+            <h3 class="dif-card__title">Materiais de 1ª Linha</h3>
+            <p class="dif-card__desc">Utilizamos apenas materiais de alta qualidade, garantindo durabilidade e eficiência do seu poço.</p>
+          </div>
+          <div class="dif-card reveal reveal--delay-4">
+            <div class="dif-card__num">04</div>
+            <h3 class="dif-card__title">Equipe Qualificada</h3>
+            <p class="dif-card__desc">Profissionais treinados e em constante atualização para melhor atender nossos clientes.</p>
+          </div>
+          <div class="dif-card reveal reveal--delay-1">
+            <div class="dif-card__num">05</div>
+            <h3 class="dif-card__title">Atendimento Regional</h3>
+            <p class="dif-card__desc">Atendemos Lucas do Rio Verde, cidades vizinhas e fazendas em todo o estado de Mato Grosso.</p>
+          </div>
+          <div class="dif-card reveal reveal--delay-2">
+            <div class="dif-card__num">06</div>
+            <h3 class="dif-card__title">Satisfação Garantida</h3>
+            <p class="dif-card__desc">Trabalhamos com responsabilidade e compromisso total com a satisfação de cada cliente.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- HISTÓRIA -->
+    <section class="section historia" id="historia">
+      <div class="container">
+        <div class="section__header reveal">
+          <div class="section__label">Nossa trajetória</div>
+          <h2 class="section__title">Uma história de superação</h2>
+        </div>
+        <div class="timeline">
+          <div class="timeline__line"></div>
+          <div class="timeline__item reveal reveal--left">
+            <div class="timeline__dot"></div>
+            <div class="timeline__card">
+              <span class="timeline__year">2016</span>
+              <h3 class="timeline__title">O começo de tudo</h3>
+              <p class="timeline__desc">Tudo começou com uma conversa embaixo de uma árvore entre dois rapazes sem trabalho. Sem formação formal na área, eles construíram sua própria máquina caseira e deram os primeiros passos no mundo da perfuração.</p>
+            </div>
+          </div>
+          <div class="timeline__item timeline__item--right reveal reveal--right">
+            <div class="timeline__dot"></div>
+            <div class="timeline__card">
+              <span class="timeline__year">2017–2020</span>
+              <h3 class="timeline__title">Aprendizado e crescimento</h3>
+              <p class="timeline__desc">Com dedicação e muita persistência, foram aperfeiçoando técnicas e conhecimentos. Cada poço era uma nova lição, e o aprendizado constante foi transformando amadores em especialistas.</p>
+            </div>
+          </div>
+          <div class="timeline__item reveal reveal--left">
+            <div class="timeline__dot"></div>
+            <div class="timeline__card">
+              <span class="timeline__year">2021–2023</span>
+              <h3 class="timeline__title">Consolidação no mercado</h3>
+              <p class="timeline__desc">A empresa ganhou reconhecimento regional. Os poços que antes levavam semanas passaram a ser concluídos em 1 ou 2 dias, reflexo do alto nível de qualificação atingido.</p>
+            </div>
+          </div>
+          <div class="timeline__item timeline__item--right reveal reveal--right">
+            <div class="timeline__dot"></div>
+            <div class="timeline__card">
+              <span class="timeline__year">Hoje</span>
+              <h3 class="timeline__title">Master Perfurações — referência regional</h3>
+              <p class="timeline__desc">Com 10 anos de mercado, a Master Perfurações é referência em perfuração de poços artesianos em Mato Grosso. Seguimos aprendendo para melhor atender nossos clientes, com gratidão, responsabilidade e excelência.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- GALERIA / FOTOS -->
+    <section class="section galeria">
+      <div class="container">
+        <div class="section__header reveal">
+          <div class="section__label">Nosso trabalho</div>
+          <h2 class="section__title">Qualidade em cada obra</h2>
+        </div>
+        <div class="galeria__grid">
+          <div class="galeria__item reveal reveal--delay-1">
+            <img src="images/trabalho-perfuracao-01.jpeg" alt="Equipamento da Master Perfurações em operação em área rural" loading="lazy" decoding="async" />
+            <div class="galeria__overlay"><span>Perfuração em Área Rural</span></div>
+          </div>
+          <div class="galeria__item reveal reveal--delay-2">
+            <img src="images/trabalho-perfuracao-02.jpeg" alt="Máquina de perfuração durante execução de poço artesiano" loading="lazy" decoding="async" />
+            <div class="galeria__overlay"><span>Equipamento em Operação</span></div>
+          </div>
+          <div class="galeria__item reveal reveal--delay-3">
+            <img src="images/trabalho-perfuracao-03.jpeg" alt="Tubulações e equipamento preparados para perfuração" loading="lazy" decoding="async" />
+            <div class="galeria__overlay"><span>Estrutura para Perfuração</span></div>
+          </div>
+          <div class="galeria__item galeria__item--wide reveal reveal--delay-4">
+            <video autoplay muted loop playsinline preload="metadata" aria-label="Master Perfurações em atividade numa propriedade rural">
+              <source src="images/trabalho-perfuracao-04.mp4" type="video/mp4" />
+              Seu navegador não oferece suporte à reprodução de vídeos.
+            </video>
+            <div class="galeria__overlay"><span>Atendimento em Propriedade Rural</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- OBRAS RESIDENCIAIS -->
+    <section class="section obras-residenciais" id="obras-residenciais">
+      <div class="container">
+        <div class="section__header reveal">
+          <div class="section__label">Galeria em vídeo</div>
+          <h2 class="section__title">Obras Residenciais</h2>
+          <p class="section__subtitle">Acompanhe alguns dos nossos trabalhos realizados em residências.</p>
+        </div>
+        <div class="obras-residenciais__grid">
+          <div class="obras-residenciais__item reveal reveal--delay-1">
+            <video controls playsinline preload="metadata" aria-label="Vídeo da obra residencial 1">
+              <source src="images/obras-residenciais-01.mp4" type="video/mp4" />
+              Seu navegador não oferece suporte à reprodução de vídeos.
+            </video>
+          </div>
+          <div class="obras-residenciais__item reveal reveal--delay-2">
+            <video controls playsinline preload="metadata" aria-label="Vídeo da obra residencial 2">
+              <source src="images/obras-residenciais-02.mp4" type="video/mp4" />
+              Seu navegador não oferece suporte à reprodução de vídeos.
+            </video>
+          </div>
+          <div class="obras-residenciais__item reveal reveal--delay-3">
+            <video controls playsinline preload="metadata" aria-label="Vídeo da obra residencial 3">
+              <source src="images/obras-residenciais-03.mp4" type="video/mp4" />
+              Seu navegador não oferece suporte à reprodução de vídeos.
+            </video>
+          </div>
+          <div class="obras-residenciais__item reveal reveal--delay-4">
+            <video controls playsinline preload="metadata" aria-label="Vídeo da obra residencial 4">
+              <source src="images/obras-residenciais-04.mp4" type="video/mp4" />
+              Seu navegador não oferece suporte à reprodução de vídeos.
+            </video>
+          </div>
+          <div class="obras-residenciais__item reveal reveal--delay-1">
+            <video controls playsinline preload="metadata" aria-label="Vídeo da obra residencial 5">
+              <source src="images/obras-residenciais-05.mp4" type="video/mp4" />
+              Seu navegador não oferece suporte à reprodução de vídeos.
+            </video>
+          </div>
+          <div class="obras-residenciais__item reveal reveal--delay-2">
+            <video controls playsinline preload="metadata" aria-label="Vídeo da obra residencial 6">
+              <source src="images/obras-residenciais-06.mp4" type="video/mp4" />
+              Seu navegador não oferece suporte à reprodução de vídeos.
+            </video>
+          </div>
+          <div class="obras-residenciais__item reveal reveal--delay-3">
+            <video controls playsinline preload="metadata" aria-label="Vídeo da obra residencial 7">
+              <source src="images/obras-residenciais-07.mp4" type="video/mp4" />
+              Seu navegador não oferece suporte à reprodução de vídeos.
+            </video>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA BAND -->
+    <section class="cta-band">
+      <div class="container cta-band__inner">
+        <div class="cta-band__text reveal">
+          <h2>Precisa de um poço artesiano?</h2>
+          <p>Entre em contato agora mesmo e solicite seu orçamento sem compromisso!</p>
+        </div>
+        <a href="https://wa.me/5565996703404" target="_blank" class="btn btn--white btn--lg reveal reveal--delay-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+          Falar pelo WhatsApp
+        </a>
+      </div>
+    </section>
+
+    <!-- CONTATO -->
+    <section class="section contato" id="contato">
+      <div class="container">
+        <div class="section__header reveal">
+          <div class="section__label">Fale conosco</div>
+          <h2 class="section__title">Entre em contato</h2>
+          <p class="section__subtitle">Estamos prontos para atender você. Solicite um orçamento gratuito!</p>
+        </div>
+        <div class="contato__grid">
+          <div class="contato__info reveal-left">
+            <div class="contact-item">
+              <div class="contact-item__icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="22" height="22"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.82 19.79 19.79 0 01.01 1.18 2 2 0 012 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 14.92v2z"/></svg>
+              </div>
+              <div>
+                <span class="contact-item__label">Telefone / WhatsApp</span>
+                <a href="https://wa.me/5565996703404" class="contact-item__value">(65) 99670-3404</a>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-item__icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="22" height="22"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              </div>
+              <div>
+                <span class="contact-item__label">Endereço</span>
+                <a href="https://share.google/6kLzzVSXdLDo2B716" target="_blank" rel="noopener" class="contact-item__value">R. Itanhangá, 4163S<br/>Lucas do Rio Verde, MT, 78455-000</a>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-item__icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="22" height="22"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+              </div>
+              <div>
+                <span class="contact-item__label">Horário de Funcionamento</span>
+                <span class="contact-item__value">Seg–Sex: 7h às 11h30 | 13h às 18h</span>
+              </div>
+            </div>
+            <div class="contato__social">
+              <a href="https://www.instagram.com/masterperfuracoeslrv/" target="_blank" rel="noopener" class="social-btn social-btn--ig" aria-label="Instagram">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+                @masterperfuracoeslrv
+              </a>
+            </div>
+          </div>
+          <div class="contato__form-wrap reveal-right">
+            <form class="contato__form" id="contactForm">
+              <div class="form-group">
+                <label for="nome">Nome completo</label>
+                <input type="text" id="nome" name="nome" placeholder="Seu nome" required />
+              </div>
+              <div class="form-group">
+                <label for="telefone">Telefone / WhatsApp</label>
+                <input type="tel" id="telefone" name="telefone" placeholder="(65) 99999-9999" required />
+              </div>
+              <div class="form-group">
+                <label for="cidade">Cidade / Localidade</label>
+                <input type="text" id="cidade" name="cidade" placeholder="Sua cidade ou fazenda" />
+              </div>
+              <div class="form-group">
+                <label for="mensagem">Mensagem</label>
+                <textarea id="mensagem" name="mensagem" rows="4" placeholder="Descreva sua necessidade..." required></textarea>
+              </div>
+              <button type="submit" class="btn btn--primary btn--full">Enviar Mensagem</button>
+              <div class="form-success" id="formSuccess">Mensagem enviada! Entraremos em contato em breve.</div>
+            </form>
+          </div>
+          <div class="contato__map reveal">
+            <iframe
+              title="Localização da Master Perfurações em Lucas do Rio Verde"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3886.0424669064428!2d-55.90455642492123!3d-13.096495187230468!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x93a0f479dc057fb5%3A0x3f294b6a59150509!2sR.%20Itanhang%C3%A1%2C%204163%20-%20Lucas%20do%20Rio%20Verde%2C%20MT%2C%2078455-000!5e0!3m2!1spt-BR!2sbr!4v1785262617533!5m2!1spt-BR!2sbr"
+              width="600"
+              height="450"
+              style="border:0;"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="strict-origin-when-cross-origin"
+            ></iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="container footer__inner">
+        <div class="footer__brand">
+          <img src="images/logo-fundo-branco.png" alt="Master Perfurações" class="footer__logo" />
+          <p class="footer__tagline">Perfuração de Poços Artesianos e Manutenção</p>
+        </div>
+        <div class="footer__links">
+          <h4>Navegação</h4>
+          <a href="#sobre">Sobre</a>
+          <a href="#servicos">Serviços</a>
+          <a href="#diferenciais">Diferenciais</a>
+          <a href="#historia">Nossa História</a>
+          <a href="#contato">Contato</a>
+        </div>
+        <div class="footer__contact">
+          <h4>Contato</h4>
+          <p>(65) 99670-3404</p>
+          <p>R. Itanhangá, 4163S - Lucas do Rio Verde, MT</p>
+          <a href="https://www.instagram.com/masterperfuracoeslrv/" target="_blank" rel="noopener">@masterperfuracoeslrv</a>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <div class="container">
+          <p>&copy; 2026 Master Perfurações. Todos os direitos reservados.</p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- WHATSAPP FLOAT -->
+    <a href="https://wa.me/5565996703404" target="_blank" class="whatsapp-float" aria-label="WhatsApp">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="28" height="28"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+    </a>
+
+    <script src="script.js"></script>
+  </body>
+</html>

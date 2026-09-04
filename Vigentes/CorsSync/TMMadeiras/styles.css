@@ -1,0 +1,898 @@
+:root {
+  --forest: #173b2f;
+  --forest-2: #0d251d;
+  --leaf: #2d6a4f;
+  --wood: #c47a32;
+  --wood-light: #f0c16f;
+  --cream: #fbf5e9;
+  --paper: #fffaf1;
+  --charcoal: #17201c;
+  --muted: #68766e;
+  --line: rgba(23, 59, 47, 0.14);
+  --shadow: 0 22px 55px rgba(13, 37, 29, 0.18);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: "Inter", Arial, sans-serif;
+  color: var(--charcoal);
+  background: var(--paper);
+  overflow-x: hidden;
+}
+
+body.menu-open {
+  overflow: hidden;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.container {
+  width: min(1120px, calc(100% - 40px));
+  margin: 0 auto;
+}
+
+.site-header {
+  position: fixed;
+  top: 14px;
+  left: 50%;
+  z-index: 20;
+  width: min(1120px, calc(100% - 28px));
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 10px 12px;
+  color: #fff;
+  background: rgba(13, 37, 29, 0.72);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  border-radius: 8px;
+  backdrop-filter: blur(18px);
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.22);
+  transition: background 0.25s ease, top 0.25s ease;
+}
+
+.site-header.scrolled {
+  top: 8px;
+  background: rgba(13, 37, 29, 0.92);
+}
+
+.brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  min-width: 0;
+}
+
+.brand-mark {
+  display: grid;
+  place-items: center;
+  width: 44px;
+  aspect-ratio: 1;
+  color: var(--forest-2);
+  font-family: "Oswald", sans-serif;
+  font-weight: 700;
+  background:
+    linear-gradient(135deg, rgba(255, 255, 255, 0.18), transparent),
+    linear-gradient(90deg, #f4c778, #b66b28);
+  border-radius: 6px;
+  box-shadow: inset 0 -8px 14px rgba(84, 37, 6, 0.18);
+}
+
+.brand strong {
+  display: block;
+  font-family: "Oswald", sans-serif;
+  font-size: 1.1rem;
+  line-height: 1;
+  text-transform: uppercase;
+}
+
+.brand small {
+  display: block;
+  margin-top: 3px;
+  color: rgba(255, 255, 255, 0.72);
+  font-size: 0.75rem;
+}
+
+.main-nav {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.main-nav a {
+  padding: 10px 12px;
+  color: rgba(255, 255, 255, 0.86);
+  font-size: 0.9rem;
+  font-weight: 700;
+  border-radius: 6px;
+  transition: background 0.2s ease, color 0.2s ease;
+}
+
+.main-nav a:hover {
+  color: #fff;
+  background: rgba(255, 255, 255, 0.11);
+}
+
+.menu-toggle {
+  display: none;
+  width: 42px;
+  height: 42px;
+  border: 0;
+  border-radius: 6px;
+  background: rgba(255, 255, 255, 0.11);
+}
+
+.menu-toggle span {
+  display: block;
+  width: 19px;
+  height: 2px;
+  margin: 5px auto;
+  background: #fff;
+  border-radius: 999px;
+}
+
+.hero {
+  position: relative;
+  min-height: clamp(560px, 78svh, 690px);
+  display: grid;
+  align-items: center;
+  padding: 92px 0 38px;
+  isolation: isolate;
+  overflow: hidden;
+  background: var(--forest-2);
+}
+
+.hero-bg,
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+}
+
+.hero-bg {
+  z-index: -3;
+  background: url("assets/img/tm-madeiras-estoque.png") center right / cover no-repeat;
+  transform: scale(1.02);
+}
+
+.hero-overlay {
+  z-index: -2;
+  background:
+    linear-gradient(90deg, rgba(8, 24, 19, 0.92) 0%, rgba(13, 37, 29, 0.78) 36%, rgba(13, 37, 29, 0.18) 72%),
+    linear-gradient(0deg, rgba(8, 24, 19, 0.82), rgba(8, 24, 19, 0.06) 42%);
+}
+
+.hero::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  height: 14px;
+  background: repeating-linear-gradient(90deg, #7c431d 0 54px, #bb7631 54px 116px, #e5a14d 116px 152px);
+  opacity: 0.9;
+}
+
+.hero-content {
+  color: #fff;
+}
+
+.eyebrow,
+.section-kicker {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  color: var(--wood-light);
+  font-size: 0.78rem;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.eyebrow span,
+.section-kicker::before {
+  content: "";
+  width: 28px;
+  height: 3px;
+  background: currentColor;
+  border-radius: 999px;
+}
+
+.hero h1,
+.section-heading h2,
+.intro-grid h2,
+.showcase-copy h2,
+.craft-copy h2,
+.terms-grid h2,
+.area-panel h2,
+.final-contact h2 {
+  margin: 12px 0 0;
+  font-family: "Oswald", sans-serif;
+  font-weight: 700;
+  line-height: 0.98;
+  letter-spacing: 0;
+}
+
+.hero h1 {
+  max-width: 720px;
+  font-size: clamp(2.3rem, 5vw, 4.9rem);
+  text-transform: uppercase;
+}
+
+.hero p {
+  max-width: 620px;
+  margin: 18px 0 0;
+  color: rgba(255, 255, 255, 0.84);
+  font-size: clamp(1rem, 1.5vw, 1.16rem);
+  line-height: 1.55;
+}
+
+.hero-actions,
+.contact-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 26px;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 46px;
+  padding: 0 20px;
+  font-weight: 800;
+  border-radius: 6px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+}
+
+.btn-primary {
+  color: var(--forest-2);
+  background: linear-gradient(135deg, #f5d387, #bd762f);
+  box-shadow: 0 14px 30px rgba(196, 122, 50, 0.32);
+}
+
+.btn-secondary {
+  color: #fff;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.hero-strip {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 1px;
+  width: min(760px, 100%);
+  margin-top: clamp(28px, 5vh, 52px);
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.14);
+}
+
+.hero-strip span {
+  min-height: 54px;
+  display: grid;
+  place-items: center;
+  padding: 10px;
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 0.9rem;
+  font-weight: 800;
+  text-align: center;
+  background: rgba(13, 37, 29, 0.5);
+}
+
+.section {
+  padding: clamp(58px, 8vw, 98px) 0;
+}
+
+.intro-band {
+  padding: clamp(38px, 5vw, 58px) 0;
+  background: var(--cream);
+  border-bottom: 1px solid var(--line);
+}
+
+.intro-grid {
+  display: grid;
+  grid-template-columns: 1.05fr 1fr auto;
+  align-items: end;
+  gap: 28px;
+}
+
+.intro-grid h2,
+.section-heading h2,
+.showcase-copy h2,
+.craft-copy h2,
+.terms-grid h2,
+.area-panel h2,
+.final-contact h2 {
+  font-size: clamp(1.8rem, 3.2vw, 3.15rem);
+}
+
+.intro-grid p,
+.showcase-copy p,
+.craft-copy p,
+.area-panel p,
+.final-contact p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 1rem;
+  line-height: 1.72;
+}
+
+.text-link,
+.service-list a,
+.instagram {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  color: var(--forest);
+  font-weight: 800;
+  border-bottom: 2px solid var(--wood);
+}
+
+.section-heading {
+  max-width: 680px;
+  margin-bottom: 24px;
+}
+
+.product-tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 18px;
+}
+
+.tab {
+  min-height: 40px;
+  padding: 0 16px;
+  color: var(--forest);
+  font: inherit;
+  font-weight: 800;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: #fff;
+  cursor: pointer;
+}
+
+.tab.active {
+  color: #fff;
+  background: var(--forest);
+  border-color: var(--forest);
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.product-card {
+  position: relative;
+  min-height: 220px;
+  padding: 22px;
+  overflow: hidden;
+  background:
+    linear-gradient(145deg, rgba(255, 255, 255, 0.94), rgba(251, 245, 233, 0.9)),
+    repeating-linear-gradient(0deg, rgba(196, 122, 50, 0.14) 0 1px, transparent 1px 16px);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  box-shadow: 0 16px 36px rgba(23, 59, 47, 0.08);
+  transition: transform 0.25s ease, opacity 0.2s ease;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+}
+
+.product-card.hidden {
+  display: none;
+}
+
+.product-card::after {
+  content: "";
+  position: absolute;
+  right: -36px;
+  bottom: -46px;
+  width: 130px;
+  height: 130px;
+  background: radial-gradient(circle, rgba(196, 122, 50, 0.24), transparent 68%);
+}
+
+.product-card span {
+  color: var(--wood);
+  font-family: "Oswald", sans-serif;
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+
+.product-card h3 {
+  margin: 28px 0 10px;
+  font-size: clamp(1.08rem, 1.7vw, 1.32rem);
+  line-height: 1.22;
+}
+
+.product-card p {
+  margin: 0;
+  color: var(--muted);
+  line-height: 1.58;
+}
+
+.product-card.featured {
+  color: #fff;
+  background:
+    linear-gradient(rgba(13, 37, 29, 0.76), rgba(13, 37, 29, 0.82)),
+    url("assets/img/tm-madeiras-deck-pinus.png") center / cover;
+  border-color: rgba(255, 255, 255, 0.16);
+}
+
+.product-card.featured p,
+.product-card.featured span {
+  color: rgba(255, 255, 255, 0.86);
+}
+
+.showcase {
+  display: grid;
+  grid-template-columns: minmax(0, 1.12fr) minmax(360px, 0.88fr);
+  min-height: 520px;
+  background: var(--forest-2);
+}
+
+.showcase-image {
+  min-height: 520px;
+}
+
+.showcase-image img,
+.craft-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.showcase-copy {
+  align-self: center;
+  padding: clamp(48px, 7vw, 82px);
+  color: #fff;
+}
+
+.showcase-copy p {
+  color: rgba(255, 255, 255, 0.76);
+}
+
+.check-list {
+  display: grid;
+  gap: 10px;
+  margin: 24px 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.check-list li {
+  position: relative;
+  padding-left: 26px;
+  color: rgba(255, 255, 255, 0.86);
+  font-weight: 700;
+}
+
+.check-list li::before {
+  content: "";
+  position: absolute;
+  top: 0.55em;
+  left: 0;
+  width: 14px;
+  height: 8px;
+  border-left: 3px solid var(--wood-light);
+  border-bottom: 3px solid var(--wood-light);
+  transform: rotate(-45deg);
+}
+
+.craft-section {
+  background:
+    linear-gradient(90deg, rgba(251, 245, 233, 0.95), rgba(251, 245, 233, 0.72)),
+    repeating-linear-gradient(90deg, rgba(196, 122, 50, 0.08) 0 1px, transparent 1px 28px);
+}
+
+.craft-grid {
+  display: grid;
+  grid-template-columns: 0.85fr 1.15fr;
+  align-items: center;
+  gap: clamp(28px, 5vw, 58px);
+}
+
+.craft-copy p {
+  margin-top: 16px;
+}
+
+.service-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 18px;
+  margin-top: 24px;
+}
+
+.craft-photo {
+  position: relative;
+  height: clamp(330px, 45vw, 520px);
+  margin: 0;
+  overflow: hidden;
+  border-radius: 8px;
+  box-shadow: var(--shadow);
+}
+
+.craft-photo::before {
+  content: "";
+  position: absolute;
+  inset: 14px;
+  z-index: 1;
+  border: 1px solid rgba(255, 255, 255, 0.46);
+  pointer-events: none;
+}
+
+.search-terms {
+  padding-top: clamp(46px, 6vw, 70px);
+  padding-bottom: clamp(46px, 6vw, 70px);
+  color: #fff;
+  background: var(--forest);
+}
+
+.terms-grid {
+  display: grid;
+  grid-template-columns: 0.8fr 1.2fr;
+  gap: 34px;
+  align-items: center;
+}
+
+.term-cloud {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.term-cloud span {
+  padding: 12px 14px;
+  color: #fff;
+  font-size: 0.95rem;
+  font-weight: 800;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  border-radius: 999px;
+}
+
+.service-area {
+  background: var(--paper);
+}
+
+.area-grid,
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1fr 0.86fr;
+  gap: clamp(26px, 5vw, 58px);
+  align-items: stretch;
+}
+
+.area-panel {
+  padding: clamp(28px, 4vw, 46px);
+  color: #fff;
+  background:
+    linear-gradient(135deg, rgba(13, 37, 29, 0.96), rgba(23, 59, 47, 0.88)),
+    url("assets/img/tm-madeiras-estoque.png") center / cover;
+  border-radius: 8px;
+  box-shadow: var(--shadow);
+}
+
+.area-panel p {
+  max-width: 620px;
+  margin-top: 16px;
+  color: rgba(255, 255, 255, 0.78);
+}
+
+.city-line {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 1px;
+  margin-top: 26px;
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 8px;
+}
+
+.city-line span {
+  display: grid;
+  place-items: center;
+  min-height: 66px;
+  padding: 10px;
+  text-align: center;
+  font-weight: 800;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.hours-card {
+  padding: clamp(28px, 4vw, 42px);
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  box-shadow: 0 16px 36px rgba(23, 59, 47, 0.08);
+}
+
+.hours-card h3 {
+  margin: 0 0 18px;
+  font-family: "Oswald", sans-serif;
+  font-size: 2rem;
+}
+
+.hours-card dl {
+  display: grid;
+  gap: 16px;
+  margin: 0;
+}
+
+.hours-card div {
+  padding-bottom: 16px;
+  border-bottom: 1px solid var(--line);
+}
+
+.hours-card div:last-child {
+  padding-bottom: 0;
+  border-bottom: 0;
+}
+
+.hours-card dt {
+  color: var(--muted);
+  font-size: 0.86rem;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.hours-card dd {
+  margin: 6px 0 0;
+  font-size: 1.02rem;
+  font-weight: 800;
+  line-height: 1.45;
+}
+
+.final-contact {
+  padding: clamp(58px, 8vw, 96px) 0;
+  color: #fff;
+  background:
+    linear-gradient(135deg, rgba(8, 24, 19, 0.96), rgba(23, 59, 47, 0.9)),
+    url("assets/img/tm-madeiras-formas-kit-porta.png") center / cover;
+}
+
+.final-contact p {
+  max-width: 650px;
+  margin-top: 16px;
+  color: rgba(255, 255, 255, 0.78);
+}
+
+.contact-actions {
+  align-content: center;
+  justify-content: flex-start;
+  margin-top: 0;
+}
+
+.contact-actions .btn-secondary {
+  min-width: 230px;
+}
+
+.instagram {
+  color: var(--wood-light);
+  border-color: rgba(240, 193, 111, 0.72);
+}
+
+.site-footer {
+  padding: 22px 0;
+  color: rgba(255, 255, 255, 0.78);
+  background: #081813;
+}
+
+.footer-grid {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  font-size: 0.92rem;
+}
+
+.footer-grid strong {
+  color: #fff;
+  font-family: "Oswald", sans-serif;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+}
+
+[data-reveal] {
+  opacity: 0;
+  transform: translateY(22px);
+  transition: opacity 0.55s ease, transform 0.55s ease;
+}
+
+[data-reveal].visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@media (max-height: 780px) and (min-width: 860px) {
+  .hero {
+    min-height: 590px;
+    padding-top: 82px;
+  }
+
+  .hero h1 {
+    max-width: 650px;
+    font-size: clamp(2.2rem, 4.4vw, 4.05rem);
+  }
+
+  .hero p {
+    margin-top: 14px;
+  }
+
+  .hero-strip {
+    margin-top: 28px;
+  }
+
+  .section {
+    padding-top: 64px;
+    padding-bottom: 64px;
+  }
+}
+
+@media (max-width: 920px) {
+  .container {
+    width: min(100% - 30px, 720px);
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  .main-nav {
+    position: fixed;
+    top: 72px;
+    right: 14px;
+    left: 14px;
+    display: grid;
+    gap: 2px;
+    padding: 12px;
+    background: rgba(13, 37, 29, 0.97);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    border-radius: 8px;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.24);
+    opacity: 0;
+    pointer-events: none;
+    transform: translateY(-8px);
+    transition: opacity 0.2s ease, transform 0.2s ease;
+  }
+
+  .main-nav.open {
+    opacity: 1;
+    pointer-events: auto;
+    transform: translateY(0);
+  }
+
+  .main-nav a {
+    padding: 14px;
+  }
+
+  .hero {
+    min-height: 640px;
+    align-items: end;
+  }
+
+  .hero-overlay {
+    background:
+      linear-gradient(0deg, rgba(8, 24, 19, 0.95) 0%, rgba(13, 37, 29, 0.78) 52%, rgba(13, 37, 29, 0.28) 100%),
+      linear-gradient(90deg, rgba(8, 24, 19, 0.66), transparent);
+  }
+
+  .hero-strip,
+  .intro-grid,
+  .showcase,
+  .craft-grid,
+  .terms-grid,
+  .area-grid,
+  .contact-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-strip {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .product-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .intro-grid {
+    align-items: start;
+  }
+
+  .showcase-image {
+    min-height: 360px;
+  }
+
+  .showcase-copy {
+    padding: 42px 24px 50px;
+  }
+
+  .city-line {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 620px) {
+  .site-header {
+    top: 8px;
+    width: calc(100% - 18px);
+  }
+
+  .brand small {
+    display: none;
+  }
+
+  .hero {
+    min-height: 620px;
+    padding-bottom: 30px;
+  }
+
+  .hero h1 {
+    font-size: clamp(2.1rem, 12vw, 3.2rem);
+  }
+
+  .hero-actions,
+  .contact-actions,
+  .service-list {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .btn {
+    width: 100%;
+  }
+
+  .hero-strip,
+  .product-grid,
+  .city-line {
+    grid-template-columns: 1fr;
+  }
+
+  .product-card {
+    min-height: auto;
+  }
+
+  .section {
+    padding-top: 48px;
+    padding-bottom: 48px;
+  }
+
+  .craft-photo {
+    height: 330px;
+  }
+
+  .term-cloud span {
+    width: 100%;
+  }
+
+  .footer-grid {
+    display: grid;
+  }
+}

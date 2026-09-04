@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Contato e orçamento | Atelier das Rochas</title>
+    <meta
+      name="description"
+      content="Centralize seu atendimento com a Atelier das Rochas: WhatsApp, e-mail, endereço, mapa, horários e formulário de orçamento."
+    >
+    <link rel="icon" href="assets/img/LOGO-ATELIER-01.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Urbanist:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    >
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <script defer src="assets/js/main.js"></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+    <div class="site-shell">
+      <div class="site-topbar">
+        <div class="container topbar-inner">
+          <div class="topbar-list">
+            <span>Atendimento centralizado</span>
+            <span>WhatsApp, e-mail, mapa e redes sociais</span>
+          </div>
+          <div class="topbar-socials">
+            <a href="mailto:atelierdasrochas@gmail.com">atelierdasrochas@gmail.com</a>
+            <a href="https://wa.me/5547996418380" target="_blank" rel="noreferrer">WhatsApp</a>
+          </div>
+        </div>
+      </div>
+
+      <header class="site-header" data-header>
+        <div class="container header-inner">
+          <a class="brand" href="index.html" aria-label="Atelier das Rochas">
+            <img src="assets/img/LOGO-ATELIER-01.png" alt="Logo Atelier das Rochas">
+          </a>
+          <button class="menu-toggle" type="button" data-menu-toggle aria-expanded="false" aria-label="Abrir navegação">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M4 7h16M4 12h16M4 17h16"></path>
+            </svg>
+          </button>
+          <nav class="main-nav" data-nav aria-label="Principal">
+            <a href="index.html">Início</a>
+            <a href="empresa.html">A empresa</a>
+            <a href="solucoes.html">Soluções</a>
+            <a href="sustentabilidade.html">Sustentabilidade</a>
+            <a href="projetos.html">Projetos</a>
+            <a href="contato.html" aria-current="page">Contato</a>
+          </nav>
+          <div class="header-cta">
+            <a class="btn btn-primary" href="#formulario">Solicitar orçamento</a>
+          </div>
+        </div>
+      </header>
+
+      <main id="conteudo">
+        <section class="page-hero">
+          <div class="container page-hero-inner" data-reveal>
+            <span class="eyebrow">Contato</span>
+            <h1>Todos os caminhos para falar com a Atelier das Rochas em um só lugar.</h1>
+            <p>
+              O site foi pensado para facilitar o atendimento: links diretos para WhatsApp, e-mail, localização,
+              horários e um formulário pronto para receber pedidos de orçamento.
+            </p>
+          </div>
+        </section>
+
+        <section class="section">
+          <div class="container contact-grid">
+            <article class="contact-card" data-reveal>
+              <span class="tag">WhatsApp</span>
+              <h3>Atendimento rápido</h3>
+              <p>Canal ideal para tirar dúvidas, solicitar orçamento e enviar referências do projeto.</p>
+              <a class="contact-link" href="https://wa.me/5547996418380" target="_blank" rel="noreferrer">+55 47 99641-8380</a>
+            </article>
+            <article class="contact-card" data-reveal>
+              <span class="tag">E-mail</span>
+              <h3>Contato institucional</h3>
+              <p>Use para orçamentos detalhados, envio de informações e alinhamentos comerciais.</p>
+              <a class="contact-link" href="mailto:atelierdasrochas@gmail.com">atelierdasrochas@gmail.com</a>
+            </article>
+            <article class="contact-card" data-reveal>
+              <span class="tag">Endereço</span>
+              <h3>Visite a empresa</h3>
+              <p>Avenida Marginal Oeste, 1113, Municípios, Balneário Camboriú, CEP 88337-335.</p>
+              <a class="contact-link" href="https://maps.google.com/?q=Avenida+Marginal+Oeste,+1113,+Munic%C3%ADpios,+Balne%C3%A1rio+Cambori%C3%BA,+SC" target="_blank" rel="noreferrer">Abrir no mapa</a>
+            </article>
+            <article class="contact-card" data-reveal>
+              <span class="tag">Horário</span>
+              <h3>Segunda a sexta</h3>
+              <p>Das 8:00 às 12:00 e das 13:30 às 18:00 para atendimento presencial e digital.</p>
+              <a class="contact-link" href="https://www.instagram.com/atelierdasrochas/" target="_blank" rel="noreferrer">Acompanhar no Instagram</a>
+            </article>
+          </div>
+        </section>
+
+        <section class="section">
+          <div class="container contact-layout">
+            <div class="contact-panel">
+              <div class="form-card" data-reveal id="formulario">
+                <div class="section-heading">
+                  <span class="eyebrow">Formulário</span>
+                  <h2>Peça um orçamento pelo site.</h2>
+                  <p>Compatível com Netlify Forms para facilitar o recebimento de contatos sem depender de estrutura complexa.</p>
+                </div>
+                <form name="contato-atelier" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+                  <input type="hidden" name="form-name" value="contato-atelier">
+                  <p hidden>
+                    <label>Não preencha este campo: <input name="bot-field"></label>
+                  </p>
+                  <div class="field-row">
+                    <div class="field">
+                      <label for="nome">Nome</label>
+                      <input id="nome" name="nome" type="text" required>
+                    </div>
+                    <div class="field">
+                      <label for="telefone">Telefone / WhatsApp</label>
+                      <input id="telefone" name="telefone" type="tel" required>
+                    </div>
+                  </div>
+                  <div class="field-row">
+                    <div class="field">
+                      <label for="email">E-mail</label>
+                      <input id="email" name="email" type="email">
+                    </div>
+                    <div class="field">
+                      <label for="interesse">Interesse principal</label>
+                      <select id="interesse" name="interesse">
+                        <option value="Bancadas de cozinha">Bancadas de cozinha</option>
+                        <option value="Lavatórios">Lavatórios</option>
+                        <option value="Soleiras e peitoris">Soleiras e peitoris</option>
+                        <option value="Pisos">Pisos</option>
+                        <option value="Área gourmet">Área gourmet</option>
+                        <option value="Lápides e túmulos">Lápides e túmulos</option>
+                        <option value="Outro">Outro</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="field">
+                    <label for="mensagem">Mensagem</label>
+                    <textarea id="mensagem" name="mensagem" placeholder="Conte sobre o ambiente, a cidade da obra e o que você precisa."></textarea>
+                  </div>
+                  <button class="btn btn-primary" type="submit">Enviar solicitação</button>
+                </form>
+              </div>
+            </div>
+
+            <div class="contact-panel">
+              <div class="map-frame" data-reveal>
+                <iframe
+                  src="https://www.google.com/maps?q=Avenida%20Marginal%20Oeste%2C%201113%2C%20Munic%C3%ADpios%2C%20Balne%C3%A1rio%20Cambori%C3%BA%20-%20SC%2C%2088337-335&output=embed"
+                  loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"
+                  title="Mapa da Atelier das Rochas"
+                ></iframe>
+              </div>
+              <div class="info-card" data-reveal>
+                <h3>Área de atendimento</h3>
+                <div class="service-area">
+                  <span class="area-chip">Balneário Camboriú</span>
+                  <span class="area-chip">Camboriú</span>
+                  <span class="area-chip">Itapema</span>
+                  <span class="area-chip">Navegantes</span>
+                  <span class="area-chip">Penha</span>
+                  <span class="area-chip">Bombinhas</span>
+                </div>
+              </div>
+              <div class="info-card" data-reveal>
+                <h3>Redes sociais</h3>
+                <div class="service-area">
+                  <a class="social-chip" href="https://www.instagram.com/atelierdasrochas/" target="_blank" rel="noreferrer">Instagram</a>
+                  <a class="social-chip" href="https://www.facebook.com/atelierdasrochas/" target="_blank" rel="noreferrer">Facebook</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <footer class="site-footer">
+        <div class="container">
+          <div class="footer-grid">
+            <div class="footer-brand">
+              <img src="assets/img/LOGO-ATELIER-01.png" alt="Atelier das Rochas">
+              <p>Atendimento organizado para aproximar o cliente da empresa e simplificar o pedido de orçamento.</p>
+            </div>
+            <div>
+              <h2 class="footer-title">Páginas</h2>
+              <div class="footer-links">
+                <a href="empresa.html">A empresa</a>
+                <a href="solucoes.html">Soluções</a>
+                <a href="sustentabilidade.html">Sustentabilidade</a>
+                <a href="projetos.html">Projetos</a>
+              </div>
+            </div>
+            <div>
+              <h2 class="footer-title">Contato</h2>
+              <div class="footer-contact">
+                <a href="https://wa.me/5547996418380" target="_blank" rel="noreferrer">+55 47 99641-8380</a>
+                <a href="mailto:atelierdasrochas@gmail.com">atelierdasrochas@gmail.com</a>
+                <a href="https://maps.google.com/?q=Avenida+Marginal+Oeste,+1113,+Munic%C3%ADpios,+Balne%C3%A1rio+Cambori%C3%BA,+SC" target="_blank" rel="noreferrer">
+                  Abrir localização
+                </a>
+              </div>
+            </div>
+            <div>
+              <h2 class="footer-title">Redes</h2>
+              <div class="footer-links">
+                <a href="https://www.instagram.com/atelierdasrochas/" target="_blank" rel="noreferrer">Instagram</a>
+                <a href="https://www.facebook.com/atelierdasrochas/" target="_blank" rel="noreferrer">Facebook</a>
+              </div>
+            </div>
+          </div>
+          <div class="footer-bottom">
+            <span>© <span data-current-year></span> Atelier das Rochas.</span>
+            <span>Contato e orçamento</span>
+          </div>
+        </div>
+      </footer>
+
+      <a class="whatsapp-float" href="https://wa.me/5547996418380?text=Ol%C3%A1%2C%20quero%20solicitar%20um%20or%C3%A7amento." target="_blank" rel="noreferrer" aria-label="Falar no WhatsApp">
+        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+          <path d="M17.47 14.38c-.27-.13-1.57-.77-1.81-.85-.24-.09-.42-.13-.6.14-.18.27-.68.85-.84 1.03-.15.18-.31.2-.58.07-.27-.13-1.13-.42-2.16-1.35-.8-.71-1.35-1.6-1.5-1.87-.16-.27-.02-.42.11-.55.12-.12.27-.31.4-.47.14-.16.18-.27.27-.45.09-.18.05-.34-.02-.47-.07-.13-.6-1.46-.83-2-.22-.53-.44-.46-.6-.47h-.51c-.18 0-.47.07-.72.34-.24.27-.93.91-.93 2.21 0 1.3.95 2.56 1.08 2.74.13.18 1.86 2.84 4.51 3.98.63.27 1.13.43 1.52.55.64.2 1.22.17 1.68.1.51-.08 1.57-.64 1.79-1.25.22-.61.22-1.13.15-1.24-.07-.11-.24-.18-.51-.31Z"></path>
+          <path d="M20.52 3.45A11.8 11.8 0 0 0 12.11 0C5.53 0 .19 5.34.19 11.92c0 2.1.55 4.16 1.59 5.97L0 24l6.29-1.64a11.87 11.87 0 0 0 5.82 1.48h.01c6.58 0 11.92-5.35 11.92-11.92 0-3.18-1.24-6.17-3.52-8.47Zm-8.41 18.38h-.01a9.88 9.88 0 0 1-5.03-1.37l-.36-.21-3.73.98 1-3.63-.24-.38a9.87 9.87 0 0 1-1.52-5.28c0-5.47 4.45-9.92 9.92-9.92 2.65 0 5.14 1.03 7.02 2.91a9.84 9.84 0 0 1 2.9 7.02c0 5.47-4.45 9.92-9.91 9.92Z"></path>
+        </svg>
+      </a>
+    </div>
+  </body>
+</html>
