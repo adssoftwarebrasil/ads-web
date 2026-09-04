@@ -4,9 +4,10 @@ import { useInView } from '../hooks/useInView';
 const highlights = [
   'Mais de 30 anos no mercado de eventos',
   'Atendimento em todo o Mato Grosso',
-  'Equipamentos de última geração',
+  'Sonorização importada e equipamentos de última geração',
   'Equipe técnica especializada',
   'Shows nacionais e eventos corporativos',
+  'Piso modular IRMARFER (estrado português)',
   'Estrutura completa em um único fornecedor',
 ];
 

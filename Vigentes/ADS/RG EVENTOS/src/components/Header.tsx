@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react';
 import { Menu, X, Phone } from 'lucide-react';
 
 const navLinks = [
+  { label: 'Full Service', href: '#full-service' },
   { label: 'Serviços', href: '#servicos' },
   { label: 'Sobre Nós', href: '#sobre' },
   { label: 'Portfólio', href: '#portfolio' },
@@ -43,7 +44,7 @@ export default function Header() {
             />
           </a>
 
-          <nav className="hidden lg:flex items-center gap-8">
+          <nav className="hidden lg:flex items-center gap-6">
             {navLinks.map((link) => (
               <button
                 key={link.href}

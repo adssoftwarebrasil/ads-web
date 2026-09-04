@@ -1,12 +1,13 @@
 import { Instagram, Facebook, Youtube, Phone, Mail, MapPin, Clock } from 'lucide-react';
 
 const services = [
-  'Sonorização Profissional',
+  'Sonorização Profissional Importada',
   'Iluminação para Eventos',
   'Painel de LED',
   'Palcos e Camarotes',
   'Tendas e Coberturas',
   'Banheiro Químico de Luxo',
+  'Piso Modular IRMARFER',
   'Estruturas de Alumínio',
   'Gerador de Energia',
 ];
@@ -39,7 +40,7 @@ export default function Footer() {
               className="h-12 w-auto object-contain mb-4"
             />
             <p className="text-[rgb(245,244,249)]/55 text-sm leading-relaxed mb-6">
-              Desde 1995, transformando eventos em memórias inesquecíveis em Sorriso e toda a região do Mato Grosso.
+              Desde 1995, transformando eventos em memórias inesquecíveis em Sorriso e toda a região do Mato Grosso. A única empresa full service da região.
             </p>
             <div className="flex gap-3">
               <a

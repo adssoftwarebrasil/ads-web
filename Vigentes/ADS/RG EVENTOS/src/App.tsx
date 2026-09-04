@@ -1,6 +1,8 @@
 import Header from './components/Header';
 import Hero from './components/Hero';
+import FullService from './components/FullService';
 import Services from './components/Services';
+import PisoIrmarfer from './components/PisoIrmarfer';
 import About from './components/About';
 import Gallery from './components/Gallery';
 import Testimonials from './components/Testimonials';
@@ -14,7 +16,9 @@ function App() {
       <Header />
       <main>
         <Hero />
+        <FullService />
         <Services />
+        <PisoIrmarfer />
         <About />
         <Gallery />
         <Testimonials />

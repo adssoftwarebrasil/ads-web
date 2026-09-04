@@ -13,17 +13,24 @@ export default function Hero() {
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
         style={{
           backgroundImage:
-            'url(https://storage.lucasmendes.dev/site-sp/rg%20eventos/img/hero-background.webp)',
+            'url(https://storage.lucasmendes.dev/site-sp/rg%20eventos/img/multidao-festa-noite-luzes-palco_1280x852.webp)',
         }}
       />
       <div className="absolute inset-0 bg-gradient-to-b from-[rgb(3,7,8)]/70 via-[rgb(3,7,8)]/50 to-[rgb(3,7,8)]" />
 
       <div className="relative z-10 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-        <div className="inline-flex items-center gap-2 mb-6 px-4 py-1.5 rounded-full border border-[#C9962F]/40 bg-[#C9962F]/10 backdrop-blur-sm">
-          <span className="w-2 h-2 rounded-full bg-[#C9962F] animate-pulse" />
-          <span className="text-[#C9962F] text-xs font-semibold tracking-widest uppercase">
-            Desde 1995 · Mais de 30 Anos de Experiência
-          </span>
+        <div className="flex flex-wrap items-center justify-center gap-3 mb-6">
+          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-[#C9962F]/40 bg-[#C9962F]/10 backdrop-blur-sm">
+            <span className="w-2 h-2 rounded-full bg-[#C9962F] animate-pulse" />
+            <span className="text-[#C9962F] text-xs font-semibold tracking-widest uppercase">
+              Desde 1995 · Mais de 30 Anos de Experiência
+            </span>
+          </div>
+          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-[#C9962F] bg-[#C9962F] backdrop-blur-sm">
+            <span className="text-[rgb(3,7,8)] text-xs font-bold tracking-widest uppercase">
+              Única empresa FULL SERVICE da região
+            </span>
+          </div>
         </div>
 
         <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-black text-[rgb(245,244,249)] leading-tight mb-6 tracking-tight">
@@ -33,9 +40,17 @@ export default function Hero() {
           </span>
         </h1>
 
-        <p className="text-base sm:text-lg md:text-xl text-[rgb(245,244,249)]/75 max-w-3xl mx-auto mb-10 leading-relaxed">
-          Sonorização profissional, iluminação espetacular, palcos, tendas e toda estrutura que o seu evento merece.
-          Atendemos Sorriso, Sinop, Lucas do Rio Verde e toda a região de Mato Grosso.
+        <p className="text-base sm:text-lg md:text-xl text-[rgb(245,244,249)]/80 max-w-3xl mx-auto mb-4 leading-relaxed">
+          Sonorização importada, iluminação profissional e estrutura completa para eventos de alto padrão.
+        </p>
+
+        <p className="text-sm sm:text-base md:text-lg text-[rgb(245,244,249)]/65 max-w-3xl mx-auto mb-3 leading-relaxed">
+          Atendemos eventos corporativos, casamentos, shows e grandes celebrações com equipamentos
+          profissionais e equipe especializada.
+        </p>
+
+        <p className="text-xs sm:text-sm text-[rgb(245,244,249)]/65 max-w-3xl mx-auto mb-10 tracking-wide">
+          Sorriso, Sinop, Lucas do Rio Verde e toda a região de Mato Grosso.
         </p>
 
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
