@@ -71,7 +71,7 @@ export default function Footer() {
           </div>
           <div className="border-t border-gray-800 pt-10 text-center">
             <a
-              href="https://wa.me/5562983080229"
+              href="https://reservas.hotellarocca.com.br/"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-3 bg-[rgb(190,0,3)] hover:bg-[rgb(160,0,3)] text-white font-bold px-10 py-4 rounded-xl transition-all transform hover:scale-105 mb-8 text-lg shadow-lg hover:shadow-xl"

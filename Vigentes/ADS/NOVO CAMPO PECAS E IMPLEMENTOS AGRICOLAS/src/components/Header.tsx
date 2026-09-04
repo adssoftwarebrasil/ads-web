@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { Phone, Mail, Menu, X } from 'lucide-react';
 import WhatsAppIcon from './WhatsAppIcon';
+import { WHATSAPP_URL } from '../lib/whatsapp';
 import { scrollToSection } from '../utils/scroll';
 
 const navItems = [
@@ -51,10 +52,15 @@ export default function Header() {
               </a>
             </div>
             <div className="flex items-center gap-3">
-              <button className="hidden sm:flex items-center gap-2 text-[#25D366] hover:text-[#1fb855] transition-colors text-xs font-semibold">
+              <a
+                href={WHATSAPP_URL}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hidden sm:flex items-center gap-2 text-[#25D366] hover:text-[#1fb855] transition-colors text-xs font-semibold"
+              >
                 <WhatsAppIcon className="w-4 h-4" />
                 Atendimento WhatsApp
-              </button>
+              </a>
             </div>
           </div>
         </div>
@@ -98,10 +104,15 @@ export default function Header() {
                   {item.label}
                 </button>
               ))}
-              <button className="ml-2 bg-[#25D366] text-white px-5 py-2.5 rounded-lg font-bold hover:bg-[#1fb855] transition-all hover:shadow-lg hover:scale-105 flex items-center gap-2 text-sm xl:text-base group">
+              <a
+                href={WHATSAPP_URL}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="ml-2 bg-[#25D366] text-white px-5 py-2.5 rounded-lg font-bold hover:bg-[#1fb855] transition-all hover:shadow-lg hover:scale-105 flex items-center gap-2 text-sm xl:text-base group"
+              >
                 <WhatsAppIcon className="w-5 h-5 group-hover:scale-110 transition-transform" />
                 <span className="hidden xl:inline">WhatsApp</span>
-              </button>
+              </a>
             </div>
           </nav>
           {mobileOpen && (
@@ -115,10 +126,15 @@ export default function Header() {
                   {item.label}
                 </button>
               ))}
-              <button className="mt-2 bg-[#25D366] text-white px-5 py-3 rounded-lg font-bold hover:bg-[#1fb855] transition-all flex items-center justify-center gap-2">
+              <a
+                href={WHATSAPP_URL}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="mt-2 bg-[#25D366] text-white px-5 py-3 rounded-lg font-bold hover:bg-[#1fb855] transition-all flex items-center justify-center gap-2"
+              >
                 <WhatsAppIcon className="w-5 h-5" />
                 <span>WhatsApp</span>
-              </button>
+              </a>
             </div>
           )}
         </div>

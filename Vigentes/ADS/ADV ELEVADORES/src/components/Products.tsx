@@ -18,42 +18,85 @@ const categories = [
 const imagesByCategory: Record<string, ProductImage[]> = {
   'Elevadores Comerciais': [
     {
-      src: 'https://storage.lucasmendes.dev/site-sp/advence-elevadores/servicos-produtos/Elevador%20Comercial%20.%201%20%202026-04-01%20at%2013.33.15.webp',
-      alt: 'Elevador Comercial 1',
-    },
-    {
-      src: 'https://storage.lucasmendes.dev/site-sp/advence-elevadores/servicos-produtos/Elevador%20Comercial%20.%202%202026-04-01%20at%2013.33.14.webp',
-      alt: 'Elevador Comercial 2',
-    },
-    {
-      src: 'https://storage.lucasmendes.dev/site-sp/advence-elevadores/servicos-produtos/Elevador%20Comercial%20.%203%20%202026-04-01%20at%2013.33.12.webp',
-      alt: 'Elevador Comercial 3',
-    },
-    {
-      src: 'https://storage.lucasmendes.dev/site-sp/advence-elevadores/servicos-produtos/Elevador%20Comercial.%204%20%202026-04-01%20at%2013.33.11.webp',
-      alt: 'Elevador Comercial 4',
-    },
-    {
       src: 'https://storage.lucasmendes.dev/site-sp/advence-elevadores/elevadores-comerciais/elevadores-comerciais%20(1).webp',
-      alt: 'Elevador Comercial 5',
+      alt: 'Cabine de elevador comercial com portas de vidro e acabamento em inox',
     },
     {
       src: 'https://storage.lucasmendes.dev/site-sp/advence-elevadores/elevadores-comerciais/elevadores-comerciais%20(2).webp',
-      alt: 'Elevador Comercial 6',
+      alt: 'Elevador comercial instalado ao lado da escada em ambiente corporativo',
     },
     {
       src: 'https://storage.lucasmendes.dev/site-sp/advence-elevadores/elevadores-comerciais/elevadores-comerciais%20(3).webp',
-      alt: 'Elevador Comercial 7',
+      alt: 'Elevador comercial com iluminação em LED e portas em inox',
     },
     {
       src: 'https://storage.lucasmendes.dev/site-sp/advence-elevadores/elevadores-comerciais/elevadores-comerciais%20(4).webp',
-      alt: 'Elevador Comercial 8',
+      alt: 'Interior de elevador comercial com teto decorativo iluminado',
+    },
+  ],
+  'Elevadores Panorâmicos': [
+    {
+      src: '/produtos/elevadores-panoramicos/panoramico-1.webp',
+      alt: 'Elevador panorâmico com cabine em inox instalado ao lado de escada de vidro',
+    },
+    {
+      src: '/produtos/elevadores-panoramicos/panoramico-2.webp',
+      alt: 'Elevador panorâmico com caixa e portas de vidro em hall de entrada',
+    },
+    {
+      src: '/produtos/elevadores-panoramicos/panoramico-3.webp',
+      alt: 'Elevador panorâmico residencial com vista para o jardim',
+    },
+  ],
+  'Elevadores de Carga': [
+    {
+      src: '/produtos/elevadores-de-carga/elevador-carga-1.webp',
+      alt: 'Elevador de carga com cabine amarela e enclausuramento em tela',
+    },
+    {
+      src: '/produtos/elevadores-de-carga/elevador-carga-2.webp',
+      alt: 'Elevador de carga industrial com porta pantográfica',
+    },
+    {
+      src: '/produtos/elevadores-de-carga/elevador-carga-3.webp',
+      alt: 'Elevador de carga com portas duplas e piso antiderrapante',
+    },
+    {
+      src: '/produtos/elevadores-de-carga/elevador-carga-4.webp',
+      alt: 'Interior de cabine de elevador de carga em aço com protetores de parede',
+    },
+  ],
+  'Escadas e Esteiras': [
+    {
+      src: '/produtos/escadas-esteiras/escada-rolante-1.webp',
+      alt: 'Escadas rolantes em shopping center',
+    },
+    {
+      src: '/produtos/escadas-esteiras/esteira-rolante-1.webp',
+      alt: 'Esteira rolante em área de grande circulação',
+    },
+  ],
+  'Acessórios': [
+    {
+      src: '/produtos/acessorios/botoeira-pavimento.webp',
+      alt: 'Botoeira de pavimento em inox com display digital',
+    },
+    {
+      src: '/produtos/acessorios/painel-cabine-personalizado.webp',
+      alt: 'Painel de cabine em inox com recorte personalizado do logotipo do cliente',
+    },
+    {
+      src: '/produtos/acessorios/quadro-comando.webp',
+      alt: 'Quadro de comando de elevador',
     },
   ],
 };
 
+// Só exibe a aba da categoria que já tem fotos publicadas.
+const visibleCategories = categories.filter((cat) => (imagesByCategory[cat] ?? []).length > 0);
+
 export default function Products() {
-  const [activeCategory, setActiveCategory] = useState(categories[0]);
+  const [activeCategory, setActiveCategory] = useState(visibleCategories[0]);
   const [lightbox, setLightbox] = useState<ProductImage | null>(null);
 
   const images = imagesByCategory[activeCategory] ?? [];
@@ -74,7 +117,7 @@ export default function Products() {
           </p>
         </div>
         <div className="flex flex-wrap justify-center gap-3 mb-10">
-          {categories.map((cat) => (
+          {visibleCategories.map((cat) => (
             <button
               key={cat}
               onClick={() => setActiveCategory(cat)}

@@ -49,8 +49,8 @@ const services = [
   },
   {
     icon: Cpu,
-    title: 'Piso Paris & Piso Deck',
-    desc: 'Pisos premium para stands, feiras e eventos corporativos. Elegância e praticidade na montagem.',
+    title: 'Piso Modular IRMARFER',
+    desc: 'Estrado português IRMARFER, piso Paris e piso Deck. Nivelamento, resistência e acabamento profissional.',
   },
   {
     icon: Camera,
@@ -86,7 +86,7 @@ export default function Services() {
             </span>
           </h2>
           <p className="text-[rgb(245,244,249)]/60 max-w-2xl mx-auto text-base sm:text-lg">
-            Da sonorização ao palco, do banheiro químico à iluminação — entregamos tudo que você precisa em um único fornecedor.
+            Do piso ao palco, da sonorização importada à iluminação cênica — entregamos tudo que o seu evento precisa em um único fornecedor.
           </p>
         </div>
 

@@ -89,7 +89,7 @@ export const content = {
     items: [
       {
         name: { pt: "Aula avulsa", en: "Single lesson" },
-        detail: { pt: "1 aula", en: "1 lesson" },
+        detail: { pt: "1 aula · 1 hora", en: "1 lesson · 1 hour" },
         price: "250",
         per: { pt: "Valor por aula", en: "Price per lesson" },
         badge: null,
@@ -97,7 +97,7 @@ export const content = {
       },
       {
         name: { pt: "Pacote 5 aulas", en: "5-lesson package" },
-        detail: { pt: "5 aulas de 2h cada", en: "5 lessons, 2h each" },
+        detail: { pt: "5 aulas de 1h · 5 horas", en: "5 lessons of 1h · 5 hours" },
         price: "1.200",
         per: { pt: "R$ 240 por aula · economize R$ 50", en: "R$ 240 per lesson · save R$ 50" },
         badge: null,
@@ -105,7 +105,7 @@ export const content = {
       },
       {
         name: { pt: "Pacote 10 aulas", en: "10-lesson package" },
-        detail: { pt: "10 aulas de 2h cada", en: "10 lessons, 2h each" },
+        detail: { pt: "10 aulas de 1h · 10 horas", en: "10 lessons of 1h · 10 hours" },
         price: "2.200",
         per: { pt: "R$ 220 por aula · economize R$ 300", en: "R$ 220 per lesson · save R$ 300" },
         badge: { pt: "Melhor custo-benefício", en: "Best value" },
@@ -224,7 +224,7 @@ export const content = {
 };
 
 export const WHATSAPP =
-  "https://wa.me/5585981011262?text=" +
+  "https://wa.me/5585998064592?text=" +
   encodeURIComponent(
     "Olá! Vim pelo site do Clube do Kite PF e gostaria de saber mais sobre as aulas de kitesurf na Praia do Futuro."
   );

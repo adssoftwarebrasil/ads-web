@@ -41,6 +41,12 @@
     "projectId": "prj_7wwlf3npaPOGnZEWJsxDdCs8QT0q",
     "projectName": "a-priori-cafe"
   },
+  "A SOLUCAO ENGENHARIA": {
+    "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "path": "Vigentes/ADS/A SOLUCAO ENGENHARIA",
+    "projectId": "prj_pyrwX2we1KsHdubidZpLKhNbMUzF",
+    "projectName": "a-solucao-engenharia"
+  },
   "ACAI & GRANOLA": {
     "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
     "path": "Não vigentes/ACAI & GRANOLA",
@@ -154,6 +160,12 @@
     "path": "Vigentes/ADS/Aliança Assessoria",
     "projectId": "prj_KR9tvDINCKaO3EKCcegdxgPLniiw",
     "projectName": "alianca-assessoria"
+  },
+  "ALIANCA RECUPERADORA DE CREDITO": {
+    "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "path": "Vigentes/ADS/ALIANCA RECUPERADORA DE CREDITO",
+    "projectId": "prj_hqBScqoeZRq2wDxDYbY5fanLrzk5",
+    "projectName": "alianca-recuperadora-de-credito"
   },
   "ALINE RODRIGUES - SERVICOS DE PSICOLOGIA": {
     "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
@@ -688,6 +700,12 @@
     "path": "Vigentes/ADS/CIENTEC-CENTRO INTEGRADO DE ENSINO TECNICO",
     "projectId": "prj_YJeAaGwHu7L1zaS9Td2mJ3kV78EK",
     "projectName": "cientec-centro-integrado-de-ensino-tecnico"
+  },
+  "CIRURGICA CAMPMED PRODUTOS HOSPITALARES": {
+    "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "path": "Vigentes/ADS/CIRURGICA CAMPMED PRODUTOS HOSPITALARES",
+    "projectId": "prj_lrbkWJHRVAEMogW1SxMMxLwUNBFm",
+    "projectName": "cirurgica-campmed"
   },
   "CLIMATEC CLIMATIZACAO E REFRIGERACAO": {
     "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
@@ -1438,6 +1456,12 @@
     "path": "Não vigentes/HOTEL ROYAL",
     "projectId": "prj_0xLN1UezrJCD3VW87TBnsRzQXtId",
     "projectName": "royal-hotel"
+  },
+  "HOUSE CODE": {
+    "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "path": "Vigentes/ADS/HOUSE CODE",
+    "projectId": "prj_WEXxVvLitwcADAAG1JnoEgdwuF8H",
+    "projectName": "house-code"
   },
   "I-MOV MOBILIDADE ELETRICA": {
     "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",

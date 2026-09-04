@@ -40,6 +40,12 @@ const images = [
     span: 'col-span-1',
   },
   {
+    src: '/img/casamento-palco-led-piso-personalizado.webp',
+    alt: 'Casamento com painel de LED, iluminação cênica e piso personalizado',
+    label: 'Estrutura Completa',
+    span: 'col-span-1',
+  },
+  {
     src: 'https://storage.lucasmendes.dev/site-sp/rg%20eventos/img/pessoas-palco-evento-merito-lojista-roupas-formais_1974x1318.webp',
     alt: 'Evento corporativo de mérito',
     label: 'Formaturas & Mérito',

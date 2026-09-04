@@ -20,26 +20,30 @@ export default function Hero() {
           backgroundImage: `url('/fotos/capa-mobile.jpg')`,
         }}
       />
+      {/* No desktop a foto e vertical: com o enquadramento no centro as cabecas
+          das criancas ficavam cortadas na borda de cima. Ancorando em 35% da
+          altura, o grupo aparece inteiro, do rosto ate a cintura */}
       <div
-        className="absolute inset-0 hidden sm:block bg-cover bg-center bg-no-repeat"
+        className="absolute inset-0 hidden sm:block bg-cover bg-no-repeat"
         style={{
           backgroundImage: `url('/fotos/capa.jpg')`,
+          backgroundPosition: 'center 35%',
         }}
       />
 
       {/* Escurecimento: no celular quase transparente no topo (onde ficam as
           criancas) e forte embaixo, onde fica o texto */}
       <div className="absolute inset-0 sm:hidden bg-gradient-to-b from-[#363434]/20 from-0% via-[#363434]/85 via-40% to-[#2C4D39]/95" />
-      <div className="absolute inset-0 hidden sm:block bg-gradient-to-b from-[#363434]/85 via-[#363434]/80 to-[#2C4D39]/93" />
+      <div className="absolute inset-0 hidden sm:block bg-gradient-to-b from-[#363434]/55 from-0% via-[#363434]/80 via-45% to-[#2C4D39]/93" />
 
       {/* Removido o flex items-center da div pai e repassado para o section, 
           permitindo que o padding funcione perfeitamente */}
       <div className="relative z-10 text-center px-4 sm:px-6 max-w-4xl mx-auto w-full">
         <div className="hidden sm:flex justify-center mb-6">
           <img
-            src="https://storage.lucasmendes.dev/site-sp/escolinha%20casa%20do%20futebol/img/logo-sem-fundo.webp"
+            src="/logo-casa-do-futebol.png"
             alt="Casa do Futebol"
-            className="h-24 sm:h-32 w-auto object-contain drop-shadow-2xl"
+            className="h-24 sm:h-32 w-auto object-contain [filter:drop-shadow(0_0_2px_rgba(255,255,255,0.95))_drop-shadow(0_4px_10px_rgba(0,0,0,0.55))]"
           />
         </div>
 

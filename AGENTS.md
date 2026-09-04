@@ -4,7 +4,7 @@ Leia antes de mexer neste repositorio ou na conta da Vercel da ADS.
 
 ## 1. Escala: nunca opere no repositorio inteiro
 
-Sao **486 pastas de site**, cada uma um projeto independente, somando 13.905
+Sao **487 pastas de site**, cada uma um projeto independente, somando 13.905
 arquivos versionados e um `.git` de 611 MB. Nao existe build, lint, teste ou
 `install` na raiz — nao ha `package.json` raiz, e nao deve haver.
 
@@ -28,6 +28,7 @@ todos. Antes de rodar qualquer comando, olhe o que a pasta tem.
 |---|---|
 | `BRAZITEC EMPILHADEIRAS E BATERIAS TRACI` | HTML/CSS/JS puro, sem build |
 | `TANCERVA CONVENIENCIA` | HTML estatico, migrado da Hostinger |
+| `HOUSE CODE` | HTML estatico, migrado da Hostinger |
 | `GLOBO TRANSPORTES` | saida de build, sem fonte — ver `NOTA-FONTE.md` |
 | `CIA FIBRA` | codigo dentro de `project/`, nao na raiz da pasta |
 | `SOLENE CONSTRUCTION` | pnpm, com `patches/` — `npm install` quebra o patch |

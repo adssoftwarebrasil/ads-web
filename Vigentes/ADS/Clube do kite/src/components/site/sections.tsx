@@ -10,6 +10,7 @@ import {
   Compass,
   Sparkles,
   Mail,
+  MessageCircle,
   Phone,
   MapPin,
   Clock,
@@ -545,7 +546,8 @@ export function ContactFooter() {
             <div className="text-xs uppercase tracking-[0.3em] text-primary mb-4">{t(content.contact.eyebrow)}</div>
             <h2 className="text-5xl md:text-6xl font-black mb-8"><span className="text-gradient-fire">{t(content.contact.title)}</span></h2>
             <ul className="space-y-4 text-foreground/85">
-              <li className="flex items-center gap-3"><Phone className="h-5 w-5 text-primary" /><a href={WHATSAPP} className="hover:text-primary">(85) 98101-1262</a></li>
+              <li className="flex items-center gap-3"><Phone className="h-5 w-5 text-primary" /><a href="tel:+5585981011262" className="hover:text-primary">(85) 98101-1262</a></li>
+              <li className="flex items-center gap-3"><MessageCircle className="h-5 w-5 text-primary" /><a href={WHATSAPP} target="_blank" rel="noopener noreferrer" className="hover:text-primary">WhatsApp (85) 99806-4592</a></li>
               <li className="flex items-center gap-3"><Mail className="h-5 w-5 text-primary" /><a href="mailto:clubedokitehouse@gmail.com" className="hover:text-primary">clubedokitehouse@gmail.com</a></li>
               <li className="flex items-center gap-3"><MapPin className="h-5 w-5 text-primary" />{t(content.contact.address)}</li>
               <li className="flex items-center gap-3"><Clock className="h-5 w-5 text-primary" />{t(content.contact.hours)}</li>

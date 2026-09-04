@@ -71,8 +71,15 @@ Verificado depois no ar: as 23 paginas abrem e nenhuma imagem quebra.
 ## A foto de capa da home
 
 Em 01/09/2026 o fundo da primeira secao da home passou a ser a **foto da
-fachada da loja** (`wp-content/uploads/2026/09/foto-de-capa.jpg`), a pedido do
-responsavel.
+fachada da loja**, a pedido do responsavel. Em 03/09/2026 essa foto foi
+trocada por uma nova foto da fachada, enviada pelo responsavel, que hoje esta
+em `wp-content/uploads/2026/09/foto-de-capa-2026-09.jpg`. A foto anterior
+(`foto-de-capa.jpg`) saiu da pasta e so existe no historico do git.
+
+O nome do arquivo muda de proposito a cada troca: o `vercel.json` manda o
+navegador guardar tudo que esta em `wp-content/uploads` por um ano
+(`immutable`), entao gravar por cima do mesmo nome faria quem ja visitou o
+site continuar vendo a foto velha.
 
 Antes dela, essa secao usava o fundo em slideshow do Elementor, com duas fotos
 que trocavam sozinhas. Esse slideshow foi desligado: as duas fotos so entravam

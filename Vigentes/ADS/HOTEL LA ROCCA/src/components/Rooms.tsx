@@ -178,7 +178,7 @@ export default function Rooms() {
                   ))}
                 </ul>
                 <a
-                  href="https://wa.me/5562983080229"
+                  href="https://reservas.hotellarocca.com.br/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="block w-full bg-[rgb(190,0,3)] hover:bg-[rgb(160,0,3)] text-white font-bold py-4 px-6 rounded-xl text-center text-lg transition-all transform hover:scale-105 shadow-lg hover:shadow-xl"

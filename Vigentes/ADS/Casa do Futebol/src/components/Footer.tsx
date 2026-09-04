@@ -35,9 +35,9 @@ export default function Footer() {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10">
           <div className="sm:col-span-2 lg:col-span-1">
             <img
-              src="https://storage.lucasmendes.dev/site-sp/escolinha%20casa%20do%20futebol/img/logo-sem-fundo.webp"
+              src="/logo-casa-do-futebol.png"
               alt="Casa do Futebol"
-              className="h-16 w-auto object-contain mb-4 brightness-0 invert"
+              className="h-16 w-auto object-contain mb-4 [filter:drop-shadow(0_0_1.5px_rgba(255,255,255,0.95))]"
             />
             <p className="text-white/70 text-sm leading-relaxed mb-5">
               Mais de 6 anos transformando o esporte em Mato Grosso com qualidade e dedicação.
