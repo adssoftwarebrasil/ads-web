@@ -1,0 +1,7 @@
+{
+  "rewrites": [
+    { "source": "/buscar-produto", "destination": "/produtos.html" },
+    { "source": "/buscar-produto/", "destination": "/produtos.html" },
+    { "source": "/buscar-produto/:caminho*", "destination": "/produtos.html" }
+  ]
+}
