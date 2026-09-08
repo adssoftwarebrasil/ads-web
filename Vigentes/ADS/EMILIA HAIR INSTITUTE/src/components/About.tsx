@@ -23,9 +23,9 @@ export default function About() {
           <div className="relative">
             <div className="relative z-10 rounded-2xl overflow-hidden shadow-2xl">
               <img
-                src="https://storage.lucasmendes.dev/site-sp/emilia%20hair%20e%20care/galeria/mulher-cabelo-grisalho-avental-preto-emilia_2268x4032.webp"
-                alt="Profissional Emilia Hair & Care"
-                className="w-full h-[500px] md:h-[600px] object-cover object-top"
+                src="/img/equipe-emilia.jpg"
+                alt="Equipe Emília Hair &amp; Care"
+                className="w-full aspect-[16/10] object-cover object-center"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-stone/50 via-transparent to-transparent"></div>
             </div>
@@ -33,13 +33,6 @@ export default function About() {
               <p className="font-serif text-5xl font-light leading-none">50</p>
               <p className="font-sans text-xs uppercase tracking-widest mt-1 font-medium">Anos de</p>
               <p className="font-sans text-xs uppercase tracking-widest font-medium">Excelência</p>
-            </div>
-            <div className="absolute -top-6 -left-6 z-20 w-48 h-48 rounded-2xl overflow-hidden shadow-lg border-4 border-white hidden md:block">
-              <img
-                src="https://storage.lucasmendes.dev/site-sp/emilia%20hair%20e%20care/galeria/cabeleireiro-ajeitando-cabelo-cliente-salao-beleza_2268x4032.webp"
-                alt="Atendimento no salão"
-                className="w-full h-full object-cover"
-              />
             </div>
           </div>
           <div>
