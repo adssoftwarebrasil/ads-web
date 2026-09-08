@@ -39,42 +39,42 @@ const servicos = [
   {
     title: 'Persianas',
     img: 'assets/servicos/persianas.png?v=2',
-    desc: 'Linha completa de persianas verticais, horizontais, rolô e romana com tecidos blackout, translúcido e tela solar — funcionalidade e design em perfeita harmonia.'
+    desc: 'Variedade completa de estilos, trabalhamos com modelos de persianas verticais, horizontais de alumínio, rolô e romana, além de uma ampla linha de tecidos blackout, translúcidos e tela solar (1, 3 e 5%), ideais para controle de luminosidade, conforto térmico e sofisticação em qualquer ambiente.'
   },
   {
     title: 'Papel de Parede',
     img: 'assets/servicos/papel-parede.png?v=3',
-    desc: 'Ampla variedade de texturas, estampas e cores — florais, geométricos, botânicos, listrados e efeitos linho — para transformar salas, quartos e escritórios.'
+    desc: 'Disponibilizamos uma ampla variedade de texturas, estampas e cores, incluindo florais, listrados, infantis, botânicos, efeitos linho e geométricos, perfeitos para transformar salas, quartos, escritórios e espaços comerciais.'
   },
   {
     title: 'Boiserie',
     img: 'assets/servicos/boiserie.png?v=2',
-    desc: 'Um clássico atemporal que agrega requinte, profundidade e personalidade às paredes. Molduras aplicadas que criam uma composição arquitetônica elegante.'
+    desc: 'O boiserie é um elemento decorativo atemporal que agrega requinte, profundidade e personalidade às paredes. Com molduras aplicadas diretamente na superfície, cria composição arquitetônica elegante, valorizando espaços como salas, quartos, corredores, halls, escritórios e ambientes comerciais.'
   },
   {
     title: 'Vidraçaria',
     img: 'assets/servicos/vidracaria.png?v=2',
-    desc: 'Projetos em vidro temperado certificado com design, segurança e acabamento de alto padrão — sob medida para residências e empresas.'
+    desc: 'Soluções em vidro com segurança, design e acabamento de alto padrão, oferecendo projetos sob medida com vidro temperado certificado, garantindo durabilidade, sofisticação e máxima segurança.'
   },
   {
     title: 'Toldos',
     img: 'assets/servicos/toldos.png?v=3',
-    desc: 'Proteção solar, conforto térmico e valorização estética para áreas externas. Modelos modernos, resistentes e instalados por equipe especializada.'
+    desc: 'Proteção, conforto e estética para áreas externas. Oferecemos toldos modernos e resistentes, desenvolvidos para garantir proteção solar, conforto térmico e valorização estética de varandas, fachadas, janelas, áreas gourmet e espaços comerciais. Trabalhamos com materiais de alta qualidade, instalação profissional e acabamento impecável.'
   },
   {
     title: 'Cobertura em Policarbonato',
     img: 'assets/servicos/cobertura.png?v=3',
-    desc: 'Coberturas que unem proteção, iluminação natural e design contemporâneo, com materiais de alta qualidade e instalação técnica precisa.'
+    desc: 'Soluções em cobertura de policarbonato que unem proteção, iluminação natural e design moderno. Trabalhamos com instalação profissional, materiais de alta qualidade e acabamento impecável, ideais para garagens, áreas gourmet, corredores, varandas e espaços comerciais.'
   },
   {
     title: 'Forro PVC',
     img: 'assets/servicos/forro-pvc.png?v=2',
-    desc: 'Solução resistente e versátil para ambientes residenciais, comerciais e industriais, com excelente custo-benefício e acabamento impecável.'
+    desc: 'O forro de PVC é a solução ideal para quem busca revestimento resistente e com excelente custo-benefício. Indicado para ambientes residenciais, comerciais e industriais, oferece visual sofisticado, conforto térmico e mínima necessidade de manutenção.'
   },
   {
     title: 'Drywall',
     img: 'assets/servicos/drywall.png?v=3',
-    desc: 'Divisórias, forros e revestimentos em drywall com acabamento de alto nível e instalação ágil para projetos residenciais e comerciais.'
+    desc: 'Versatilidade e eficiência para construção e reformas. Soluções em drywall sob medida para divisórias, forros, sancas e projetos personalizados, oferecendo instalação rápida, excelente acabamento, conforto térmico e acústico, além de praticidade e economia para obras residenciais e comerciais.'
   }
 ];
 
@@ -82,7 +82,7 @@ const grid = document.getElementById('servicosGrid');
 if (grid) {
   grid.innerHTML = servicos.map(s => {
     const wppText = `Olá, vim do seu site e gostaria de solicitar um orçamento para ${s.title}.`;
-    const wppLink = `https://wa.me/5562999807315?text=${encodeURIComponent(wppText)}`;
+    const wppLink = `https://wa.me/5562999911485?text=${encodeURIComponent(wppText)}`;
     return `
       <article class="card reveal">
         <div class="card-img" style="background-image:url('${s.img}')"></div>
@@ -105,7 +105,7 @@ document.getElementById('contactForm')?.addEventListener('submit', (e) => {
   e.preventDefault();
   const data = new FormData(e.target);
   const text = `Olá! Meu nome é ${data.get('nome')}.\nAssunto: ${data.get('assunto') || 'Orçamento'}\nMensagem: ${data.get('mensagem') || '-'}\nContato: ${data.get('whatsapp')} / ${data.get('email')}`;
-  window.open(`https://wa.me/5562999807315?text=${encodeURIComponent(text)}`, '_blank');
+  window.open(`https://wa.me/5562999911485?text=${encodeURIComponent(text)}`, '_blank');
 });
 
 // Reveal on scroll
@@ -124,36 +124,33 @@ function observeReveal() {
 observeReveal();
 
 // ===== Galeria de Vídeos =====
+// Sem titulo por pedido da cliente: os titulos nao correspondiam aos videos.
 const videoList = [
-  { src: 'assets/videos/video-3.mp4', title: 'Cortinas Sob Medida' },
-  { src: 'assets/videos/video-4.mp4', title: 'Ambiente Residencial' },
-  { src: 'assets/videos/video-5.mp4', title: 'Persianas Modernas' },
-  { src: 'assets/videos/video-6.mp4', title: 'Detalhes de Acabamento' },
-  { src: 'assets/videos/video-7.mp4', title: 'Projeto de Alto Padrão' },
-  { src: 'assets/videos/video-8.mp4', title: 'Showroom Nova Opção' },
-  { src: 'assets/videos/video-9.mp4', title: 'Instalação Profissional' },
-  { src: 'assets/videos/video-10.mp4', title: 'Boiserie e Papel de Parede' },
-  { src: 'assets/videos/video-11.mp4', title: 'Decoração Sob Medida' },
-  { src: 'assets/videos/video-12.mp4', title: 'Nossa Equipe' },
+  'assets/videos/video-3.mp4',
+  'assets/videos/video-4.mp4',
+  'assets/videos/video-5.mp4',
+  'assets/videos/video-6.mp4',
+  'assets/videos/video-7.mp4',
+  'assets/videos/video-8.mp4',
+  'assets/videos/video-9.mp4',
+  'assets/videos/video-10.mp4',
+  'assets/videos/video-11.mp4',
+  'assets/videos/video-12.mp4',
 ];
 
 const galTrack = document.getElementById('galTrack');
 const galDots = document.getElementById('galDots');
 if (galTrack) {
-  galTrack.innerHTML = videoList.map((v, i) => `
+  galTrack.innerHTML = videoList.map((src, i) => `
     <article class="gal-card" data-index="${i}">
       <div class="gal-media">
-        <video muted loop playsinline preload="metadata" src="${v.src}#t=0.5"></video>
+        <video muted loop playsinline preload="metadata" src="${src}#t=0.5"></video>
         <div class="gal-overlay">
-          <button class="gal-play" aria-label="Assistir ${v.title}">
+          <button class="gal-play" aria-label="Assistir vídeo ${i + 1}">
             <i class="fa-solid fa-play"></i>
           </button>
         </div>
         <span class="gal-badge"><i class="fa-solid fa-volume-xmark"></i> Sem som</span>
-      </div>
-      <div class="gal-info">
-        <span class="gal-num">${String(i + 1).padStart(2, '0')}</span>
-        <h4>${v.title}</h4>
       </div>
     </article>
   `).join('');
@@ -221,7 +218,7 @@ if (galTrack) {
   galTrack.addEventListener('click', (e) => {
     const card = e.target.closest('.gal-card');
     if (!card) return;
-    openModal(videoList[+card.dataset.index].src);
+    openModal(videoList[+card.dataset.index]);
   });
   modal.querySelectorAll('[data-close]').forEach(el => el.addEventListener('click', closeModal));
   document.addEventListener('keydown', (e) => { if (e.key === 'Escape' && modal.classList.contains('open')) closeModal(); });
