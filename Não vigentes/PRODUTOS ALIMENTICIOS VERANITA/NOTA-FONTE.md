@@ -47,9 +47,10 @@ inicial, nao o arquivo), entao a leitura foi manual.
 
 ## Situacao da publicacao
 
-- O site que o cliente usa continua sendo o da Netlify (`veranita2.netlify.app`).
-- O projeto na Vercel (`veranita`, em `veranita.vercel.app`) ainda serve a
-  versao antiga, de pagina unica. Publicar esta versao nova la e um passo
-  separado, que ainda nao foi dado.
-- O `vercel.json` desta pasta ja deixa preparado o desvio de rotas de que o site
-  precisa: sem ele, abrir `/produtos` direto no navegador daria erro 404.
+- Em 08/09/2026 esta versao entrou no ar em **veranita.vercel.app**, no lugar da
+  versao antiga de pagina unica. As seis paginas foram comparadas com as do
+  `veranita2.netlify.app` depois de publicadas, e o resultado ficou identico.
+- O site da Netlify (`veranita2.netlify.app`) continua no ar do mesmo jeito, sem
+  ter sido tocado. Os dois enderecos mostram o mesmo site.
+- O `vercel.json` desta pasta e o que faz o desvio de rotas: sem ele, abrir
+  `/produtos` direto no navegador daria erro 404.
