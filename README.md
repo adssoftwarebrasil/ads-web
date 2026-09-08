@@ -21,7 +21,7 @@ Não vigentes/    sites que sairam do ar ou foram encerrados
 ## Estado atual
 
 Os 117 sites com contrato vencido ja foram separados em `Não vigentes/`. Os
-vigentes estao em `Vigentes/ADS/` (382 pastas) e `Vigentes/CorsSync/`
+vigentes estao em `Vigentes/ADS/` (383 pastas) e `Vigentes/CorsSync/`
 (89 pastas). A separacao entre ADS e CorsSync ja comecou, mas ainda ha sites
 da CorsSync sem projeto na Vercel.
 
@@ -34,7 +34,7 @@ versionada desse vinculo. Para relinkar um site, recrie
 `<path>/.vercel/project.json` a partir da entrada correspondente.
 
 O campo `path` da o diretorio completo, ja que as pastas vivem sob
-`Vigentes/ADS/`, `Vigentes/CorsSync/` ou `Não vigentes/`. Cobre 491 das 588
+`Vigentes/ADS/`, `Vigentes/CorsSync/` ou `Não vigentes/`. Cobre 492 das 589
 pastas. Das 97 restantes, 88 sao da `Vigentes/CorsSync/`, que ainda nao foram
 publicadas; oito nao tem projeto correspondente na Vercel
 (`Alba's Cleaning Services`, `EXCLUSIVE CONSTRUTORA E reformadora`,
@@ -44,7 +44,7 @@ publicadas; oito nao tem projeto correspondente na Vercel
 
 ## Balanco com a Vercel
 
-491 projetos na Vercel e 491 pastas vinculadas: **todo projeto tem pasta**.
+492 projetos na Vercel e 492 pastas vinculadas: **todo projeto tem pasta**.
 As 35 duplicatas — projetos antigos ou builds superados que serviam o mesmo
 site de uma pasta ja mapeada — foram removidas.
 
