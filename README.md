@@ -20,9 +20,10 @@ Não vigentes/    sites que sairam do ar ou foram encerrados
 
 ## Estado atual
 
-Os 117 sites com contrato vencido ja foram separados em `Não vigentes/`; os
-377 vigentes seguem em `Vigentes/ADS/`. A separacao entre ADS e CorsSync ainda
-precisa ser feita: basta mover a pasta do site para o diretorio correspondente.
+Os 117 sites com contrato vencido ja foram separados em `Não vigentes/`. Os
+vigentes estao em `Vigentes/ADS/` (382 pastas) e `Vigentes/CorsSync/`
+(89 pastas). A separacao entre ADS e CorsSync ja comecou, mas ainda ha sites
+da CorsSync sem projeto na Vercel.
 
 ## vercel-projects.json
 
@@ -33,20 +34,22 @@ versionada desse vinculo. Para relinkar um site, recrie
 `<path>/.vercel/project.json` a partir da entrada correspondente.
 
 O campo `path` da o diretorio completo, ja que as pastas vivem sob
-`Vigentes/ADS/` ou `Não vigentes/`. Cobre 490 das 499 pastas: as 9 restantes
-nao tem projeto correspondente na Vercel (`Alba's Cleaning Services`,
-`EXCLUSIVE CONSTRUTORA E reformadora`, `GERENCIAL CONTABIL 1`,
-`Premium Cleaning Services`, `Proposta de Parceria Digital`,
-`RETOCARS AUTO SERVICE LTDA`, `Royall`, `Veacci`) ou nao sao site
-(`_material`).
+`Vigentes/ADS/`, `Vigentes/CorsSync/` ou `Não vigentes/`. Cobre 491 das 588
+pastas. Das 97 restantes, 88 sao da `Vigentes/CorsSync/`, que ainda nao foram
+publicadas; oito nao tem projeto correspondente na Vercel
+(`Alba's Cleaning Services`, `EXCLUSIVE CONSTRUTORA E reformadora`,
+`GERENCIAL CONTABIL 1`, `Premium Cleaning Services`,
+`Proposta de Parceria Digital`, `RETOCARS AUTO SERVICE LTDA`, `Royall`,
+`Veacci`) e uma nao e site (`_material`).
 
 ## Balanco com a Vercel
 
-490 projetos na Vercel e 490 pastas vinculadas: **todo projeto tem pasta**.
+491 projetos na Vercel e 491 pastas vinculadas: **todo projeto tem pasta**.
 As 35 duplicatas — projetos antigos ou builds superados que serviam o mesmo
 site de uma pasta ja mapeada — foram removidas.
 
-Faltam vincular 9 pastas. Oito nunca chegaram a ser publicadas:
+Faltam vincular 97 pastas. Oitenta e oito estao em `Vigentes/CorsSync/` e
+nunca foram publicadas. Das outras nove, oito tambem nunca chegaram ao ar:
 `Alba's Cleaning Services`, `EXCLUSIVE CONSTRUTORA E reformadora`,
 `GERENCIAL CONTABIL 1`, `Premium Cleaning Services`,
 `Proposta de Parceria Digital`, `RETOCARS AUTO SERVICE LTDA`, `Royall` e
