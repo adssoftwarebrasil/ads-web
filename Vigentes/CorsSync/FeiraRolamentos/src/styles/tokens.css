@@ -1,0 +1,27 @@
+:root {
+  --brand-blue: #29277f;
+  --brand-blue-bright: #086fbc;
+  --brand-cyan: #04a2d8;
+  --brand-yellow: #f4ca16;
+  --brand-yellow-soft: #ffe461;
+  --ink: #171a22;
+  --ink-soft: #555b68;
+  --navy: #10162f;
+  --navy-light: #1a2347;
+  --steel-50: #f7f8fa;
+  --steel-100: #edf0f3;
+  --steel-200: #d9dde3;
+  --steel-400: #9299a5;
+  --white: #ffffff;
+  --success: #1da851;
+  --container: 1200px;
+  --gutter: clamp(1.15rem, 3vw, 2rem);
+  --section-space: clamp(4.8rem, 8vw, 8rem);
+  --radius-sm: 10px;
+  --radius-md: 18px;
+  --radius-lg: 28px;
+  --shadow-soft: 0 24px 70px rgba(16, 22, 47, 0.12);
+  --shadow-card: 0 16px 40px rgba(16, 22, 47, 0.1);
+  --transition: 220ms ease;
+}
+
