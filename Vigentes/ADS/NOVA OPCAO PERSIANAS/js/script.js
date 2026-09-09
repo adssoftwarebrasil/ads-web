@@ -33,46 +33,64 @@ window.addEventListener('scroll', () => {
 const servicos = [
   {
     title: 'Cortinas em Tecido',
+    galeria: 'cortinas',
+    fotos: 20,
     img: 'assets/servicos/cortinas.png?v=2',
     desc: 'Do clássico ao contemporâneo: tecidos leves, blackout, translúcidos e texturizados que conferem conforto térmico, controle de luminosidade e sofisticação ao ambiente.'
   },
   {
     title: 'Persianas',
+    galeria: 'persianas',
+    fotos: 13,
     img: 'assets/servicos/persianas.png?v=2',
     desc: 'Variedade completa de estilos, trabalhamos com modelos de persianas verticais, horizontais de alumínio, rolô e romana, além de uma ampla linha de tecidos blackout, translúcidos e tela solar (1, 3 e 5%), ideais para controle de luminosidade, conforto térmico e sofisticação em qualquer ambiente.'
   },
   {
     title: 'Papel de Parede',
+    galeria: 'papel-parede',
+    fotos: 10,
     img: 'assets/servicos/papel-parede.png?v=3',
     desc: 'Disponibilizamos uma ampla variedade de texturas, estampas e cores, incluindo florais, listrados, infantis, botânicos, efeitos linho e geométricos, perfeitos para transformar salas, quartos, escritórios e espaços comerciais.'
   },
   {
     title: 'Boiserie',
+    galeria: 'boiserie',
+    fotos: 9,
     img: 'assets/servicos/boiserie.png?v=2',
     desc: 'O boiserie é um elemento decorativo atemporal que agrega requinte, profundidade e personalidade às paredes. Com molduras aplicadas diretamente na superfície, cria composição arquitetônica elegante, valorizando espaços como salas, quartos, corredores, halls, escritórios e ambientes comerciais.'
   },
   {
     title: 'Vidraçaria',
+    galeria: 'vidracaria',
+    fotos: 28,
     img: 'assets/servicos/vidracaria.png?v=2',
     desc: 'Soluções em vidro com segurança, design e acabamento de alto padrão, oferecendo projetos sob medida com vidro temperado certificado, garantindo durabilidade, sofisticação e máxima segurança.'
   },
   {
     title: 'Toldos',
+    galeria: 'toldos',
+    fotos: 10,
     img: 'assets/servicos/toldos.png?v=3',
     desc: 'Proteção, conforto e estética para áreas externas. Oferecemos toldos modernos e resistentes, desenvolvidos para garantir proteção solar, conforto térmico e valorização estética de varandas, fachadas, janelas, áreas gourmet e espaços comerciais. Trabalhamos com materiais de alta qualidade, instalação profissional e acabamento impecável.'
   },
   {
     title: 'Cobertura em Policarbonato',
+    galeria: 'cobertura',
+    fotos: 9,
     img: 'assets/servicos/cobertura.png?v=3',
     desc: 'Soluções em cobertura de policarbonato que unem proteção, iluminação natural e design moderno. Trabalhamos com instalação profissional, materiais de alta qualidade e acabamento impecável, ideais para garagens, áreas gourmet, corredores, varandas e espaços comerciais.'
   },
   {
     title: 'Forro PVC',
+    galeria: 'forro-pvc',
+    fotos: 10,
     img: 'assets/servicos/forro-pvc.png?v=2',
     desc: 'O forro de PVC é a solução ideal para quem busca revestimento resistente e com excelente custo-benefício. Indicado para ambientes residenciais, comerciais e industriais, oferece visual sofisticado, conforto térmico e mínima necessidade de manutenção.'
   },
   {
     title: 'Drywall',
+    galeria: 'drywall',
+    fotos: 5,
     img: 'assets/servicos/drywall.png?v=3',
     desc: 'Versatilidade e eficiência para construção e reformas. Soluções em drywall sob medida para divisórias, forros, sancas e projetos personalizados, oferecendo instalação rápida, excelente acabamento, conforto térmico e acústico, além de praticidade e economia para obras residenciais e comerciais.'
   }
@@ -80,12 +98,28 @@ const servicos = [
 
 const grid = document.getElementById('servicosGrid');
 if (grid) {
-  grid.innerHTML = servicos.map(s => {
+  grid.innerHTML = servicos.map((s, si) => {
     const wppText = `Olá, vim do seu site e gostaria de solicitar um orçamento para ${s.title}.`;
     const wppLink = `https://wa.me/5562999911485?text=${encodeURIComponent(wppText)}`;
+    // capa + fotos reais da categoria, tudo num carrossel dentro do proprio card
+    const shots = [s.img];
+    for (let i = 1; i <= (s.fotos || 0); i++) {
+      shots.push(`assets/servicos/galeria/${s.galeria}/${String(i).padStart(2, '0')}.jpg`);
+    }
+    const slides = shots.map((src, i) => `
+          <div class="cs-slide${i === 0 ? ' active' : ''}" data-src="${src}">
+            <img alt="${s.title} — foto ${i + 1}" ${i === 0 ? `src="${src}"` : ''} loading="lazy" decoding="async">
+          </div>`).join('');
+    const nav = shots.length > 1 ? `
+        <button class="cs-nav cs-prev" type="button" aria-label="Foto anterior de ${s.title}"><i class="fa-solid fa-chevron-left"></i></button>
+        <button class="cs-nav cs-next" type="button" aria-label="Próxima foto de ${s.title}"><i class="fa-solid fa-chevron-right"></i></button>
+        <span class="cs-count"><b>1</b> / ${shots.length}</span>` : '';
     return `
       <article class="card reveal">
-        <div class="card-img" style="background-image:url('${s.img}')"></div>
+        <div class="card-slider" data-slider="${si}" role="group" aria-roledescription="carrossel" aria-label="Fotos de ${s.title}">
+          <div class="cs-slides">${slides}</div>
+          ${nav}
+        </div>
         <div class="card-body">
           <h3>${s.title}</h3>
           <p>${s.desc}</p>
@@ -96,6 +130,47 @@ if (grid) {
       </article>
     `;
   }).join('');
+
+  // carrossel de cada card: setas, arrastar no celular e carga sob demanda
+  grid.querySelectorAll('.card-slider').forEach(sl => {
+    const slides = [...sl.querySelectorAll('.cs-slide')];
+    if (slides.length < 2) return;
+    const count = sl.querySelector('.cs-count b');
+    let i = 0;
+
+    const preload = (n) => {
+      [n - 1, n, n + 1].forEach(k => {
+        const el = slides[(k + slides.length) % slides.length];
+        const img = el.querySelector('img');
+        if (!img.getAttribute('src')) img.src = el.dataset.src;
+      });
+    };
+    const go = (n) => {
+      i = (n + slides.length) % slides.length;
+      preload(i);
+      slides.forEach((el, k) => el.classList.toggle('active', k === i));
+      if (count) count.textContent = i + 1;
+    };
+
+    sl.querySelector('.cs-prev')?.addEventListener('click', () => go(i - 1));
+    sl.querySelector('.cs-next')?.addEventListener('click', () => go(i + 1));
+
+    // arrastar com o dedo
+    let x0 = null;
+    sl.addEventListener('touchstart', e => { x0 = e.touches[0].clientX; }, { passive: true });
+    sl.addEventListener('touchend', e => {
+      if (x0 === null) return;
+      const dx = e.changedTouches[0].clientX - x0;
+      if (Math.abs(dx) > 40) go(dx < 0 ? i + 1 : i - 1);
+      x0 = null;
+    }, { passive: true });
+
+    // so comeca a baixar as fotos quando o card aparece na tela
+    new IntersectionObserver((en, obs) => {
+      if (en[0].isIntersecting) { preload(0); obs.disconnect(); }
+    }, { rootMargin: '200px' }).observe(sl);
+  });
+
   // re-observe new cards
   observeReveal();
 }
