@@ -1,0 +1,147 @@
+@media (max-width: 1100px) {
+  .site-nav { gap: 1.1rem; }
+  .site-nav > a:not(.button) { display: none; }
+  .hero__grid { grid-template-columns: minmax(0,1fr) 300px; gap: 3rem; }
+  .story-grid, .breakfast-grid, .essentials-grid { gap: 3.5rem; }
+  .story-grid { grid-template-columns: 1fr 1fr; }
+  .story-visual, .story-visual > img { min-height: 560px; height: 560px; }
+  .gallery-mosaic:not(.gallery-mosaic--rooms) { grid-auto-rows: 200px; }
+}
+
+@media (max-width: 860px) {
+  .site-header__inner { min-height: 70px; }
+  .site-nav {
+    position: fixed;
+    z-index: -1;
+    inset: 70px 0 auto;
+    display: flex;
+    padding: 2rem;
+    align-items: stretch;
+    flex-direction: column;
+    color: var(--paper);
+    background: var(--navy-950);
+    border-top: 1px solid rgba(255,255,255,.12);
+    opacity: 0;
+    pointer-events: none;
+    transform: translateY(-16px);
+    transition: opacity 180ms ease, transform 180ms ease;
+  }
+  .site-nav.is-open { opacity: 1; pointer-events: auto; transform: translateY(0); }
+  .site-nav > a:not(.button) { display: block; padding: .6rem 0; font-size: 1rem; }
+  .site-nav__cta { margin-top: .5rem; }
+  .menu-toggle { display: inline-flex; }
+
+  .hero { min-height: auto; padding-top: 7.5rem; }
+  .hero__grid { grid-template-columns: 1fr; }
+  .hero__room-card { display: none; }
+  .hero__proofs { margin-top: 1.5rem; }
+
+  .section-heading,
+  .gallery-heading { grid-template-columns: 1fr; gap: 1rem; }
+  .gallery-heading .section-eyebrow { grid-column: auto; }
+
+  .story-grid,
+  .breakfast-grid,
+  .essentials-grid,
+  .contact-card { grid-template-columns: 1fr; }
+
+  .story-copy { order: 1; }
+  .story-visual { order: 0; }
+  .story-visual, .story-visual > img { min-height: 520px; height: 520px; }
+
+  .rooms-grid { grid-template-columns: repeat(2, 1fr); }
+  .room-card:nth-child(2) { margin-top: 0; }
+  .room-card:nth-child(3) { grid-column: 1/-1; max-width: 50%; margin-inline: auto; }
+
+  .breakfast-visual { max-width: 650px; }
+  .essentials-photo { max-width: 650px; margin-inline: auto; }
+  .essentials-photo img { min-height: 520px; }
+
+  .gallery-mosaic { grid-template-columns: repeat(2, 1fr); }
+  .gallery-mosaic:not(.gallery-mosaic--rooms) { grid-auto-rows: 230px; }
+
+  .site-footer__top { grid-template-columns: repeat(2,1fr); }
+}
+
+@media (max-width: 620px) {
+  .container { width: min(100% - 2rem, var(--container)); }
+  .section { padding-block: 4.5rem; }
+  .section-title { font-size: clamp(2.35rem, 12vw, 3.5rem); }
+  .site-header__brand .brand-mark { width: 120px; height: 49px; border-radius: 8px; }
+  .brand-mark--compact { width: 169px; height: 68px; }
+
+  .hero { padding: 7rem 0 1.5rem; background-position: 58% center; }
+  .hero::before { background: linear-gradient(90deg, rgba(5,20,41,.95), rgba(5,20,41,.7)), linear-gradient(0deg, rgba(5,20,41,.9), transparent); }
+  .hero h1 { font-size: clamp(3rem, 15vw, 4.3rem); }
+  .hero__actions { align-items: flex-start; flex-direction: column; gap: 1rem; }
+  .hero__proofs { grid-template-columns: 1fr; }
+  .hero-proof { padding: .9rem 0; border-right: 0; border-bottom: 1px solid rgba(255,255,255,.16); }
+  .hero-proof:last-child { border-bottom: 0; }
+
+  .facts-grid { grid-template-columns: 1fr; }
+  .fact { display: grid; grid-template-columns: auto auto 1fr; gap: .9rem; align-items: center; }
+  .fact svg, .fact span { margin: 0; }
+  .fact strong { font-size: 2.1rem; }
+
+  .story-visual, .story-visual > img { min-height: 430px; height: 430px; }
+  .story-visual > img { width: calc(100% - 24px); }
+  .story-visual__note { bottom: 18px; }
+
+  .rooms-grid { grid-template-columns: 1fr; }
+  .room-card:nth-child(3) { grid-column: auto; max-width: none; }
+  .room-card img { aspect-ratio: 1.05; }
+  .room-features { justify-content: flex-start; border-radius: 20px; }
+
+  .breakfast-visual { padding: 0 38px 58px 0; }
+  .breakfast-visual__main { aspect-ratio: .95; border-radius: 120px 120px 16px 16px; }
+  .breakfast-visual__detail { width: 44%; border-width: 7px; }
+  .breakfast-visual__seal { left: -6px; width: 78px; height: 78px; }
+
+  .services-grid { grid-template-columns: 1fr; }
+  .essentials-photo::before { inset: -16px 16px 16px -16px; }
+  .essentials-photo img { min-height: 430px; }
+
+  .video-grid { grid-template-columns: 1fr; }
+  .video-card video { aspect-ratio: 4/3; }
+  .gallery-categories {
+    margin-inline: -1rem;
+    padding-inline: 1rem;
+    overflow-x: auto;
+    flex-wrap: nowrap;
+    scrollbar-width: none;
+  }
+  .gallery-categories::-webkit-scrollbar { display: none; }
+  .gallery-category { min-width: max-content; }
+  .gallery-panel { min-height: 350px; }
+  .gallery-mosaic { gap: .65rem; }
+  .gallery-item > span { opacity: 1; transform: none; }
+  .gallery-empty { min-height: 320px; padding: 2rem 1.25rem; }
+
+  .parking-section { min-height: 640px; }
+  .parking-section__inner { min-height: 470px; }
+  .parking-card { padding: 2rem 1.4rem; }
+  .parking-card__benefits { flex-direction: column; }
+
+  .contact-card__main, .contact-card__details { padding: 2rem 1.35rem; }
+  .contact-card__main h2 { font-size: 2.8rem; }
+
+  .site-footer__top { grid-template-columns: 1fr; }
+  .site-footer__bottom { flex-direction: column; gap: .3rem; }
+  .whatsapp-button { right: 14px; bottom: 14px; min-width: 52px; height: 52px; padding: 0; justify-content: center; }
+  .whatsapp-button span { display: none; }
+
+  .lightbox { padding: 4.5rem 1rem 5rem; }
+  .lightbox figure { max-width: 100%; }
+  .lightbox__nav { top: auto; bottom: 14px; transform: none; }
+  .lightbox__nav--prev { left: calc(50% - 58px); }
+  .lightbox__nav--next { right: calc(50% - 58px); }
+}
+
+@media (max-height: 800px) and (min-width: 900px) {
+  .hero { min-height: 650px; padding-top: 7.3rem; }
+  .hero h1 { font-size: clamp(3.6rem, 5.4vw, 5rem); }
+  .hero__room-card { max-width: 300px; margin-left: auto; }
+  .hero__room-card img { aspect-ratio: .82; }
+  .hero__grid { margin-bottom: 1.5rem; }
+  .hero__lead { margin-bottom: 1.35rem; }
+}
