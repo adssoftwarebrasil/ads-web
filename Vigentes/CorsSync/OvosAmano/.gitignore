@@ -1,0 +1,12 @@
+node_modules
+dist
+.env
+.env.*
+!.env.example
+*.local
+*.log
+.DS_Store
+
+# Os vídeos do processo fazem parte do site e precisam ser versionados.
+!src/assets/videos/
+!src/assets/videos/*.mp4
