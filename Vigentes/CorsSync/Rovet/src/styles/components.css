@@ -1,0 +1,358 @@
+.emergency-bar {
+  position: relative;
+  z-index: 80;
+  background: var(--navy-950);
+  color: var(--white);
+  font-size: 0.78rem;
+}
+
+.emergency-bar__content,
+.emergency-bar__content p,
+.emergency-bar__links,
+.emergency-bar__links a {
+  display: flex;
+  align-items: center;
+}
+
+.emergency-bar__content {
+  min-height: 36px;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.emergency-bar__content p {
+  gap: 8px;
+  margin: 0;
+  font-weight: 700;
+}
+
+.emergency-bar svg {
+  width: 15px;
+  height: 15px;
+  color: var(--teal-400);
+}
+
+.emergency-bar__links {
+  gap: 22px;
+}
+
+.emergency-bar__links a {
+  gap: 7px;
+  color: rgba(255, 255, 255, 0.84);
+  transition: color 180ms ease;
+}
+
+.emergency-bar__links a:hover {
+  color: var(--white);
+}
+
+.site-header {
+  position: sticky;
+  z-index: 70;
+  top: 0;
+  border-bottom: 1px solid rgba(16, 43, 53, 0.08);
+  background: rgba(255, 255, 255, 0.96);
+  box-shadow: 0 8px 30px rgba(3, 47, 58, 0.06);
+  backdrop-filter: blur(18px);
+}
+
+.header-inner {
+  display: grid;
+  grid-template-columns: 166px 1fr auto;
+  align-items: center;
+  min-height: 76px;
+  gap: 30px;
+}
+
+.brand {
+  display: inline-flex;
+  align-items: center;
+  width: 146px;
+}
+
+.brand img {
+  width: 100%;
+}
+
+.desktop-nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: clamp(18px, 2vw, 32px);
+}
+
+.desktop-nav a {
+  position: relative;
+  color: var(--ink-soft);
+  font-size: 0.89rem;
+  font-weight: 700;
+}
+
+.desktop-nav a::after {
+  position: absolute;
+  right: 0;
+  bottom: -8px;
+  left: 0;
+  height: 2px;
+  border-radius: var(--radius-pill);
+  background: var(--teal-600);
+  content: "";
+  transform: scaleX(0);
+  transition: transform 180ms ease;
+}
+
+.desktop-nav a:hover {
+  color: var(--navy-900);
+}
+
+.desktop-nav a:hover::after {
+  transform: scaleX(1);
+}
+
+.menu-toggle {
+  display: none;
+  width: 46px;
+  height: 46px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: var(--mint-100);
+  color: var(--navy-900);
+  cursor: pointer;
+}
+
+.menu-toggle svg {
+  width: 24px;
+  height: 24px;
+}
+
+.mobile-menu {
+  display: none;
+}
+
+.button {
+  display: inline-flex;
+  min-height: 50px;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 13px 21px;
+  border: 1px solid transparent;
+  border-radius: var(--radius-pill);
+  font-size: 0.9rem;
+  font-weight: 800;
+  line-height: 1.2;
+  text-align: center;
+  transition:
+    transform 180ms ease,
+    box-shadow 180ms ease,
+    background 180ms ease,
+    border-color 180ms ease;
+}
+
+.button svg {
+  width: 18px;
+  height: 18px;
+  flex: 0 0 auto;
+}
+
+.button:hover {
+  transform: translateY(-2px);
+}
+
+.button--primary {
+  background: var(--navy-900);
+  color: var(--white);
+  box-shadow: 0 10px 24px rgba(6, 63, 76, 0.16);
+}
+
+.button--primary:hover {
+  background: var(--navy-800);
+  box-shadow: 0 13px 30px rgba(6, 63, 76, 0.22);
+}
+
+.button--accent {
+  background: var(--orange);
+  color: var(--navy-950);
+  box-shadow: 0 12px 28px rgba(244, 162, 97, 0.22);
+}
+
+.button--accent:hover {
+  background: #ffb477;
+  box-shadow: 0 15px 34px rgba(244, 162, 97, 0.3);
+}
+
+.button--ghost-light {
+  border-color: rgba(255, 255, 255, 0.38);
+  color: var(--white);
+}
+
+.button--ghost-light:hover {
+  border-color: rgba(255, 255, 255, 0.72);
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.section-heading {
+  max-width: 760px;
+  margin-bottom: clamp(34px, 5vw, 58px);
+}
+
+.section-heading--center {
+  margin-inline: auto;
+  text-align: center;
+}
+
+.eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 13px;
+  color: var(--teal-600);
+  font-size: 0.76rem;
+  font-weight: 900;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.eyebrow::before {
+  width: 24px;
+  height: 2px;
+  border-radius: var(--radius-pill);
+  background: currentColor;
+  content: "";
+}
+
+.section-heading h2,
+.location-content h2 {
+  max-width: 720px;
+  margin-bottom: 18px;
+  color: var(--navy-950);
+  font-size: clamp(2rem, 4.1vw, 3.85rem);
+  font-weight: 750;
+  line-height: 1.02;
+}
+
+.section-heading > p {
+  max-width: 640px;
+  margin-bottom: 0;
+  color: var(--ink-soft);
+  font-size: clamp(1rem, 1.5vw, 1.14rem);
+  line-height: 1.72;
+}
+
+.section-heading--light h2,
+.section-heading--light > p {
+  color: var(--white);
+}
+
+.section-heading--light > p {
+  color: rgba(255, 255, 255, 0.68);
+}
+
+.text-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  border-bottom: 2px solid var(--teal-600);
+  color: var(--navy-900);
+  font-size: 0.93rem;
+  font-weight: 850;
+}
+
+.whatsapp-float {
+  position: fixed;
+  z-index: 65;
+  right: 20px;
+  bottom: 22px;
+  display: flex;
+  min-height: 54px;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 18px;
+  border: 3px solid var(--white);
+  border-radius: var(--radius-pill);
+  background: #24b965;
+  box-shadow: 0 14px 32px rgba(7, 69, 38, 0.26);
+  color: var(--white);
+  font-size: 0.84rem;
+  font-weight: 850;
+  transition:
+    transform 180ms ease,
+    background 180ms ease;
+}
+
+.whatsapp-float:hover {
+  background: #1ba75a;
+  transform: translateY(-3px);
+}
+
+.whatsapp-float svg {
+  width: 22px;
+  height: 22px;
+}
+
+.site-footer {
+  padding: 68px 0 22px;
+  background: #021f27;
+  color: rgba(255, 255, 255, 0.72);
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: 1.25fr 0.75fr 1fr;
+  gap: clamp(38px, 6vw, 80px);
+  padding-bottom: 48px;
+}
+
+.footer-brand img {
+  width: 164px;
+  margin-bottom: 18px;
+  padding: 8px;
+  border-radius: 9px;
+  background: var(--white);
+}
+
+.footer-brand p {
+  max-width: 330px;
+}
+
+.site-footer h2 {
+  margin-bottom: 16px;
+  color: var(--white);
+  font-size: 1rem;
+  letter-spacing: 0;
+}
+
+.site-footer a {
+  display: flex;
+  align-items: flex-start;
+  gap: 9px;
+  margin-top: 12px;
+  transition: color 180ms ease;
+}
+
+.site-footer a:hover {
+  color: var(--white);
+}
+
+.site-footer a svg {
+  width: 17px;
+  height: 17px;
+  flex: 0 0 auto;
+  margin-top: 4px;
+  color: var(--teal-400);
+}
+
+.footer-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  padding-top: 22px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  font-size: 0.78rem;
+}
+
+.footer-bottom p {
+  margin: 0;
+}
