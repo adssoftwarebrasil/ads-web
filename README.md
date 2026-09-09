@@ -34,8 +34,8 @@ versionada desse vinculo. Para relinkar um site, recrie
 `<path>/.vercel/project.json` a partir da entrada correspondente.
 
 O campo `path` da o diretorio completo, ja que as pastas vivem sob
-`Vigentes/ADS/`, `Vigentes/CorsSync/` ou `Não vigentes/`. Cobre 492 das 589
-pastas. Das 97 restantes, 88 sao da `Vigentes/CorsSync/`, que ainda nao foram
+`Vigentes/ADS/`, `Vigentes/CorsSync/` ou `Não vigentes/`. Cobre 493 das 589
+pastas. Das 96 restantes, 87 sao da `Vigentes/CorsSync/`, que ainda nao foram
 publicadas; oito nao tem projeto correspondente na Vercel
 (`Alba's Cleaning Services`, `EXCLUSIVE CONSTRUTORA E reformadora`,
 `GERENCIAL CONTABIL 1`, `Premium Cleaning Services`,
@@ -44,11 +44,11 @@ publicadas; oito nao tem projeto correspondente na Vercel
 
 ## Balanco com a Vercel
 
-492 projetos na Vercel e 492 pastas vinculadas: **todo projeto tem pasta**.
+493 projetos na Vercel e 493 pastas vinculadas: **todo projeto tem pasta**.
 As 35 duplicatas — projetos antigos ou builds superados que serviam o mesmo
 site de uma pasta ja mapeada — foram removidas.
 
-Faltam vincular 97 pastas. Oitenta e oito estao em `Vigentes/CorsSync/` e
+Faltam vincular 96 pastas. Oitenta e sete estao em `Vigentes/CorsSync/` e
 nunca foram publicadas. Das outras nove, oito tambem nunca chegaram ao ar:
 `Alba's Cleaning Services`, `EXCLUSIVE CONSTRUTORA E reformadora`,
 `GERENCIAL CONTABIL 1`, `Premium Cleaning Services`,

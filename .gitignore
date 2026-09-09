@@ -10,3 +10,4 @@ build/
 Thumbs.db
 desktop.ini
 *.stackdump
+.claude/settings.local.json

@@ -94,8 +94,8 @@ Mover e so mover a pasta e atualizar o `path` no manifesto. Mover para
 publicado. Se a intencao for tirar do ar, isso e um passo separado e precisa
 ser pedido explicitamente.
 
-`Vigentes/CorsSync/` tem 89 pastas, mas so uma delas esta no
-`vercel-projects.json`: as outras 88 ainda nao foram publicadas na Vercel. Ao
+`Vigentes/CorsSync/` tem 89 pastas, mas so duas delas estao no
+`vercel-projects.json`: as outras 87 ainda nao foram publicadas na Vercel. Ao
 procurar o site de um cliente, olhe nas tres arvores — `Vigentes/ADS/`,
 `Vigentes/CorsSync/` e `Não vigentes/` —, nao so nas duas do manifesto.
 

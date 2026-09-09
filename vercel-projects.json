@@ -2261,6 +2261,12 @@
     "projectId": "prj_PtaVXJ6zASkDUycfD6J4T2Y28xG6",
     "projectName": "portal-das-tintas"
   },
+  "PostoMolas": {
+    "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "path": "Vigentes/CorsSync/PostoMolas",
+    "projectId": "prj_ey3413QX6TC5HgNPecYOKqvwsH8e",
+    "projectName": "posto-de-molas-do-anderson"
+  },
   "PR ENGENHARIA": {
     "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
     "path": "Vigentes/ADS/PR ENGENHARIA",
