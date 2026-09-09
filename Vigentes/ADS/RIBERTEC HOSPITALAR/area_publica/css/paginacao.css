@@ -1,0 +1,107 @@
+
+#paginacaoExibindo
+{
+	float:left;
+	font-family: Tahoma;
+	font-size: 11px;
+	font-style: normal;
+	line-height: 15px;
+	text-transform: none;
+	color: #000;
+}
+#paginacaoExibindo b
+{
+	padding: 0 2px 0 2px;
+	font-family: Tahoma, Arial, Helvetica, sans-serif;
+}
+.paginacaoContainer
+{
+	margin-left: auto;
+	margin-right: auto;
+	line-height: 1.5em;
+	z-index: 1;
+	font-weight:normal;
+	
+}
+.paginacaoContainer ol
+{
+	list-style-type: none;
+	text-align: right;
+	line-height: 1.2em;
+	margin: 0px 0px 0px 0px;
+	padding: 0px 0px 0px 0px;
+	position: relative;
+	z-index: 2;
+	
+}
+
+.paginacaoContainer li
+{
+	display: inline;
+	text-align: center;
+	padding: 0px 0px 0px 5px;
+	font-family: Tahoma, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	padding-left:0px !important;
+	margin-left:5px !important;
+	border: none !important;
+}
+
+.paginacaoTitulo, .paginacaoTitulo strong
+{
+	display: inline;
+	text-align: center;
+	padding: 0px 0px 0px 5px;
+	font-family: Tahoma, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	font-weight:bold;
+	color: #000;
+}
+
+.paginacaoContainer li a
+{
+	color: #000 !important;
+	padding: 1px 7px !important;
+	
+	border: 1px solid #666666 !important;
+	text-decoration: none !important;
+	font-family: Tahoma, Arial, Helvetica, sans-serif !important;
+	font-weight:bold !important;
+	font-size: 11px !important;
+}
+
+.paginacaoContainer li a:hover
+{
+	color: #FFFFFF !important;
+	background-color: #666666 !important;
+	border: 1px solid #666666 !important;
+	cursor:pointer;
+	font-family: Tahoma, Arial, Helvetica, sans-serif !important;
+	text-decoration: none !important;
+}
+
+.paginacaoContainer li span
+{
+	color: #666666;
+	padding: 1px 7px;
+	background-color: #666666;
+	border: 1px solid #666666;
+	font-family: Tahoma, Arial, Helvetica, sans-serif;
+}
+
+.paginacaoContainer li span.current
+{
+	color: #FFFFFF;
+	font-weight:bold;
+	background-color: #666666;
+}
+
+/* TEXTO PÁGINA */
+.paginacaoPublica{
+	font-family: Tahoma;
+	font-size: 11px;
+	font-style: normal;
+	line-height: 15px;
+	text-transform: none;
+	color: #000;
+}

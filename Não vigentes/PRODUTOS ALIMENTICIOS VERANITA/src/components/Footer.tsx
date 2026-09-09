@@ -1,121 +1,128 @@
-import { Instagram, Linkedin, MapPin, Phone, Mail, Clock } from 'lucide-react';
-
-const LOGO =
-  'https://storage.lucasmendes.dev/site-sp/produtos%20alimenticios%20veranita%2Fimg%2FLOGO%20VERANITA%20-%20ALTA.png';
-
-const quickLinks = [
-  { label: 'Início', id: 'inicio' },
-  { label: 'Sobre Nós', id: 'sobre' },
-  { label: 'Produtos', id: 'produtos' },
-  { label: 'Diferenciais', id: 'diferenciais' },
-  { label: 'Contato', id: 'contato' },
-];
-
-const productCategories = [
-  'Especiarias',
-  'Temperos',
-  'Molhos',
-  'Alhos',
-  'Farináceos',
-  'Farofas',
-  'Pipocas',
-];
+import { Link } from 'react-router-dom';
+import { Award, Clock, Mail, MapPin, Phone } from 'lucide-react';
+import { LOGO } from '../data/products';
+import SocialLinks from './SocialLinks';
 
 export default function Footer() {
-  const scrollTo = (id: string) => {
-    document.getElementById(id)?.scrollIntoView({ behavior: 'smooth' });
-  };
+  const year = new Date().getFullYear();
 
   return (
-    <footer className="bg-gradient-to-br from-[rgb(46,49,146)] to-[rgb(0,173,239)] text-white">
-      <div className="container mx-auto px-4 py-12 lg:py-16">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-12">
+    <footer className="bg-brand-brown text-brand-beige">
+      <div className="h-2 bg-gradient-to-r from-brand-gold via-brand-red to-brand-gold" />
+      <div className="max-w-7xl mx-auto px-5 md:px-8 pt-20 pb-10">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 lg:gap-10">
           <div>
-            <img src={LOGO} alt="Veranita" className="h-16 w-auto mb-6" />
-            <p className="text-white/80 leading-relaxed mb-6">
-              Desde 1976 levando mais sabor, qualidade e praticidade à mesa das famílias brasileiras.
+            <Link to="/" className="inline-block mb-6">
+              <img src={LOGO} alt="Veranita" className="h-16 w-auto" />
+            </Link>
+            <p className="font-book text-sm leading-relaxed text-brand-beige/80 max-w-xs">
+              Desde 1976 levando mais sabor, qualidade e praticidade à mesa das famílias
+              brasileiras.
             </p>
-            <div className="flex gap-4">
-              <a
-                href="https://www.instagram.com/veranitaprodutos/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="bg-white/10 hover:bg-white/20 p-3 rounded-full transition-all duration-300 transform hover:scale-110"
-              >
-                <Instagram className="lucide lucide-instagram w-5 h-5" />
-              </a>
-              <a
-                href="https://br.linkedin.com/company/veranita"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="bg-white/10 hover:bg-white/20 p-3 rounded-full transition-all duration-300 transform hover:scale-110"
-              >
-                <Linkedin className="lucide lucide-linkedin w-5 h-5" />
-              </a>
+            <div className="inline-flex items-center gap-2 mt-6 px-3 py-2 rounded-full bg-brand-gold/15 border border-brand-gold/30">
+              <Award className="w-4 h-4 text-brand-gold" />
+              <span className="text-xs font-bold tracking-widest uppercase text-brand-gold">
+                Quase 50 anos de tradição
+              </span>
             </div>
           </div>
+
           <div>
-            <h3 className="text-xl font-bold mb-6">Links Rápidos</h3>
-            <ul className="space-y-3">
-              {quickLinks.map((link) => (
-                <li key={link.id}>
-                  <button
-                    onClick={() => scrollTo(link.id)}
-                    className="text-white/80 hover:text-white transition-colors"
+            <h4 className="text-brand-gold text-xs font-bold tracking-[0.25em] uppercase mb-5">
+              Navegação
+            </h4>
+            <ul className="space-y-3 text-sm font-book">
+              {[
+                { to: '/', label: 'Início' },
+                { to: '/nossa-historia', label: 'Nossa História' },
+                { to: '/produtos', label: 'Produtos' },
+                { to: '/receitas', label: 'Receitas' },
+                { to: '/contato', label: 'Contato' },
+              ].map((link) => (
+                <li key={link.to}>
+                  <Link
+                    to={link.to}
+                    className="text-brand-beige/80 hover:text-brand-gold transition-colors"
                   >
                     {link.label}
-                  </button>
+                  </Link>
                 </li>
               ))}
             </ul>
           </div>
+
           <div>
-            <h3 className="text-xl font-bold mb-6">Nossos Produtos</h3>
-            <ul className="space-y-3">
-              {productCategories.map((cat) => (
-                <li key={cat} className="text-white/80">
-                  {cat}
-                </li>
-              ))}
+            <h4 className="text-brand-gold text-xs font-bold tracking-[0.25em] uppercase mb-5">
+              Categorias
+            </h4>
+            <ul className="space-y-3 text-sm font-book text-brand-beige/80">
+              <li>Especiarias</li>
+              <li>Temperos</li>
+              <li>Molhos</li>
+              <li>Farofas</li>
+              <li>Pipocas</li>
             </ul>
           </div>
+
           <div>
-            <h3 className="text-xl font-bold mb-6">Contato</h3>
-            <ul className="space-y-4">
+            <h4 className="text-brand-gold text-xs font-bold tracking-[0.25em] uppercase mb-5">
+              Contato
+            </h4>
+            <ul className="space-y-4 text-sm font-book text-brand-beige/85">
               <li className="flex items-start gap-3">
-                <MapPin className="lucide lucide-map-pin w-5 h-5 flex-shrink-0 mt-1" />
-                <span className="text-white/80">
-                  Av. Jorge Abraão, 926<br />Jardim Liberdade<br />Sertãozinho - SP, 14160-020
+                <MapPin className="w-4 h-4 mt-1 text-brand-gold shrink-0" />
+                <span>
+                  Av. Jorge Abraão, 926
+                  <br />
+                  Jardim Liberdade
+                  <br />
+                  Sertãozinho - SP, 14160-020
                 </span>
               </li>
               <li className="flex items-center gap-3">
-                <Phone className="lucide lucide-phone w-5 h-5 flex-shrink-0" />
-                <a href="tel:+5516997516375" className="text-white/80 hover:text-white transition-colors">
+                <Phone className="w-4 h-4 text-brand-gold" />
+                <a href="tel:+5516997516375" className="hover:text-brand-gold transition-colors">
                   (16) 99751-6375
                 </a>
               </li>
               <li className="flex items-center gap-3">
-                <Mail className="lucide lucide-mail w-5 h-5 flex-shrink-0" />
+                <Mail className="w-4 h-4 text-brand-gold" />
                 <a
                   href="mailto:contato@veranita.com.br"
-                  className="text-white/80 hover:text-white transition-colors"
+                  className="hover:text-brand-gold transition-colors"
                 >
                   contato@veranita.com.br
                 </a>
               </li>
               <li className="flex items-start gap-3">
-                <Clock className="lucide lucide-clock w-5 h-5 flex-shrink-0 mt-1" />
-                <span className="text-white/80">
-                  Seg a Sex<br />07h30 às 11h30<br />13h00 às 17h30
+                <Clock className="w-4 h-4 mt-1 text-brand-gold shrink-0" />
+                <span>
+                  Seg a Sex
+                  <br />
+                  07h30 às 11h30 / 13h00 às 17h30
                 </span>
               </li>
             </ul>
+
+            <div className="mt-6">
+              <p className="text-xs font-bold tracking-[0.2em] uppercase text-brand-gold mb-3">
+                Siga-nos
+              </p>
+              <SocialLinks
+                bg="bg-brand-brown-dark"
+                hoverBg="hover:bg-brand-gold"
+                color="text-brand-gold"
+                hoverColor="hover:text-brand-brown"
+              />
+            </div>
           </div>
         </div>
-        <div className="border-t border-white/20 mt-12 pt-8 text-center">
-          <p className="text-white/80">
-            2026 Veranita Produtos Alimentícios. Todos os direitos reservados.
+
+        <div className="mt-16 pt-8 border-t border-brand-beige/10 flex flex-col md:flex-row items-center justify-between gap-4">
+          <p className="text-xs text-brand-beige/60 font-book">
+            © {year} Veranita Produtos Alimentícios. Todos os direitos reservados.
           </p>
+          <p className="text-xs text-brand-beige/60 font-book">Tradição e sabor desde 1976.</p>
         </div>
       </div>
     </footer>

@@ -989,6 +989,12 @@
     "projectId": "prj_cSb8fXTBickhRxwSGBiPMFUYLV9I",
     "projectName": "dryka-kids"
   },
+  "DuarteColchoes": {
+    "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "path": "Vigentes/CorsSync/DuarteColchoes",
+    "projectId": "prj_WrUrQjRupT2gJeOgdiAUadno9tEM",
+    "projectName": "duarte-colchoes"
+  },
   "DUQUESA JOIAS": {
     "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
     "path": "Vigentes/ADS/DUQUESA JOIAS",
@@ -1505,6 +1511,12 @@
     "projectId": "prj_fihegmAZpeKoeaS7QApu7a2lbf82",
     "projectName": "ortobom-afonso-pena"
   },
+  "IMPERIAL GAS": {
+    "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "path": "Vigentes/ADS/IMPERIAL GAS",
+    "projectId": "prj_lnrRlQknzLtlki0M7qRoXW10U1KX",
+    "projectName": "imperial-gas"
+  },
   "IMPERIO DAS BOMBAS BOMBASEFERRAMENTAS": {
     "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
     "path": "Vigentes/ADS/IMPERIO DAS BOMBAS BOMBASEFERRAMENTAS",
@@ -1514,7 +1526,7 @@
   "Imperio Gás Ltda": {
     "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
     "path": "Vigentes/ADS/Imperio Gás Ltda",
-    "projectId": "prj_lnrRlQknzLtlki0M7qRoXW10U1KX",
+    "projectId": "prj_BgscHQ1lVOyNhAJWcU2HHV5ahj5K",
     "projectName": "imperio-gas-ltda"
   },
   "IN BRASA CHOPP E GRILL": {
@@ -1931,6 +1943,12 @@
     "projectId": "prj_2hoTRitMlSHeSEYkOPo6jLmtjbAk",
     "projectName": "mega-eventos"
   },
+  "MegaCompressores": {
+    "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "path": "Vigentes/CorsSync/MegaCompressores",
+    "projectId": "prj_nnrGKs9Zo2J6aDSV2q0texYzoB7o",
+    "projectName": "mega-compressores"
+  },
   "MEGGA AUTO PECAS": {
     "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
     "path": "Vigentes/ADS/MEGGA AUTO PECAS",
@@ -1954,6 +1972,12 @@
     "path": "Não vigentes/Meta Contabilidade",
     "projectId": "prj_JlBpsKyQCFC2TvCdhvi57huZcikb",
     "projectName": "meta-contabilidade"
+  },
+  "MinasBahiaSeguros": {
+    "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "path": "Vigentes/CorsSync/MinasBahiaSeguros",
+    "projectId": "prj_aSQK9EAAujKGqfDyfiz2nTPGgdvc",
+    "projectName": "minas-bahia-seguros"
   },
   "MN ENXOVAIS": {
     "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
@@ -2050,6 +2074,12 @@
     "path": "Vigentes/ADS/NOSSO CARRO CENTRO AUTOMOTIVO",
     "projectId": "prj_tMhFC3iEKZO9tpNzjvcgbISGrmYA",
     "projectName": "nosso-carro-centro-automotivo"
+  },
+  "NOVA OPCAO PERSIANAS": {
+    "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "path": "Vigentes/ADS/NOVA OPCAO PERSIANAS",
+    "projectId": "prj_7qS6W83aCEe7NsR96jme6DrQD7kD",
+    "projectName": "nova-opcao-persianas"
   },
   "NOVO CAMPO PECAS E IMPLEMENTOS AGRICOLAS": {
     "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
@@ -2243,6 +2273,12 @@
     "projectId": "prj_PtaVXJ6zASkDUycfD6J4T2Y28xG6",
     "projectName": "portal-das-tintas"
   },
+  "PostoMolas": {
+    "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "path": "Vigentes/CorsSync/PostoMolas",
+    "projectId": "prj_ey3413QX6TC5HgNPecYOKqvwsH8e",
+    "projectName": "posto-de-molas-do-anderson"
+  },
   "PR ENGENHARIA": {
     "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
     "path": "Vigentes/ADS/PR ENGENHARIA",
@@ -2277,7 +2313,7 @@
     "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
     "path": "Não vigentes/PRODUTOS ALIMENTICIOS VERANITA",
     "projectId": "prj_wuXWmIGbe2VovP9JWmt4wQkaocVR",
-    "projectName": "veranita"
+    "projectName": "produtos-alimenticios-veranita"
   },
   "PROTONS CONSULTORIA": {
     "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
@@ -2416,6 +2452,12 @@
     "path": "Vigentes/ADS/RG EVENTOS",
     "projectId": "prj_nAW2WC2T4wRYATaoA6A1P7X4459G",
     "projectName": "rg-eventos"
+  },
+  "RIBERTEC HOSPITALAR": {
+    "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "path": "Vigentes/ADS/RIBERTEC HOSPITALAR",
+    "projectId": "prj_vfgnHIz20egy7uhES5LoZVVRuZXS",
+    "projectName": "ribertec-hospitalar"
   },
   "Ricardo Rodrigues sociedade individual de advocacia": {
     "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",

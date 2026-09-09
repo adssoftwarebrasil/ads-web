@@ -21,7 +21,7 @@ const services: Service[] = [
   {
     title: 'Mechas, Reflexos & Morena Iluminada',
     desc: 'Técnicas exclusivas de coloração que trazem luminosidade e dimensão aos fios, valorizando sua cor natural com resultados deslumbrantes.',
-    img: 'https://storage.lucasmendes.dev/site-sp/emilia%20hair%20e%20care/galeria/cabelo-loiro-comprido-ondulado-cadeira-salao-beleza_1440x1920.webp',
+    img: '/img/mechas-reflexos.jpg',
     Icon: Sparkles,
     iconName: 'sparkles',
     badge: 'Destaque',
