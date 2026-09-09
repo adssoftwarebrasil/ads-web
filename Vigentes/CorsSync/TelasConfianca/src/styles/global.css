@@ -1,0 +1,279 @@
+:root {
+  font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  color: #102440;
+  background: #ffffff;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  --navy-950: #06152f;
+  --navy-900: #071b3b;
+  --navy-800: #0b2b57;
+  --blue-500: #55aee2;
+  --blue-300: #98d6f6;
+  --blue-100: #e8f6fd;
+  --slate-700: #3c5068;
+  --slate-500: #66788c;
+  --slate-200: #dbe4ec;
+  --slate-100: #f3f7fa;
+  --white: #ffffff;
+  --green: #16a665;
+  --container: 1180px;
+  --shadow: 0 24px 60px rgba(7, 27, 59, 0.14);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 104px;
+  overflow-x: hidden;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  overflow-x: hidden;
+  background: #fff;
+}
+
+body.menu-open {
+  overflow: hidden;
+}
+
+button,
+a {
+  -webkit-tap-highlight-color: transparent;
+}
+
+button,
+input,
+textarea,
+select {
+  font: inherit;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin-top: 0;
+}
+
+h1,
+h2,
+h3 {
+  color: var(--navy-900);
+  letter-spacing: -0.045em;
+}
+
+p {
+  line-height: 1.72;
+}
+
+button,
+a,
+summary {
+  outline-offset: 4px;
+}
+
+:focus-visible {
+  outline: 3px solid var(--blue-500);
+}
+
+.container {
+  width: min(calc(100% - 40px), var(--container));
+  margin-inline: auto;
+}
+
+.section {
+  padding: clamp(80px, 8vw, 126px) 0;
+}
+
+.skip-link {
+  position: fixed;
+  top: 8px;
+  left: 8px;
+  z-index: 999;
+  padding: 10px 16px;
+  color: var(--white);
+  background: var(--navy-900);
+  border-radius: 8px;
+  transform: translateY(-150%);
+}
+
+.skip-link:focus {
+  transform: translateY(0);
+}
+
+.button {
+  min-height: 52px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 0 22px;
+  border: 1px solid transparent;
+  border-radius: 7px;
+  font-weight: 800;
+  font-size: 0.92rem;
+  transition: transform 180ms ease, box-shadow 180ms ease, color 180ms ease, background 180ms ease;
+}
+
+.button:hover {
+  transform: translateY(-2px);
+}
+
+.button--primary {
+  color: var(--white);
+  background: var(--navy-900);
+  box-shadow: 0 10px 30px rgba(7, 27, 59, 0.22);
+}
+
+.button--primary:hover {
+  background: var(--navy-800);
+}
+
+.button--small {
+  min-height: 42px;
+  padding-inline: 18px;
+  font-size: 0.84rem;
+}
+
+.button--ghost {
+  color: var(--navy-900);
+  border-color: #b5c5d4;
+  background: rgba(255, 255, 255, 0.7);
+}
+
+.button--ghost:hover {
+  border-color: var(--navy-900);
+}
+
+.button--white {
+  color: var(--navy-900);
+  background: var(--white);
+  box-shadow: 0 14px 34px rgba(3, 14, 32, 0.22);
+}
+
+.eyebrow {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 18px;
+  color: var(--navy-800);
+  font-size: 0.76rem;
+  line-height: 1.2;
+  font-weight: 900;
+  letter-spacing: 0.13em;
+  text-transform: uppercase;
+}
+
+.eyebrow > span {
+  width: 28px;
+  height: 3px;
+  background: var(--blue-500);
+}
+
+.eyebrow--blue {
+  color: #247eae;
+}
+
+.eyebrow--light {
+  color: var(--blue-300);
+}
+
+.section-heading {
+  margin-bottom: 52px;
+}
+
+.section-heading h2,
+.company__content h2,
+.faq__intro h2,
+.contact-cta h2 {
+  margin-bottom: 0;
+  max-width: 760px;
+  font-size: clamp(2rem, 4vw, 4rem);
+  line-height: 1.02;
+}
+
+.section-heading--split {
+  display: grid;
+  grid-template-columns: minmax(0, 1.25fr) minmax(280px, 0.65fr);
+  gap: clamp(40px, 8vw, 112px);
+  align-items: end;
+}
+
+.section-heading--split > p {
+  max-width: 520px;
+  margin-bottom: 2px;
+  color: var(--slate-700);
+}
+
+.icon-box {
+  width: 48px;
+  height: 48px;
+  display: inline-grid;
+  flex: 0 0 auto;
+  place-items: center;
+  color: var(--navy-900);
+  background: var(--blue-100);
+  border-radius: 7px;
+}
+
+.icon-box svg {
+  width: 23px;
+  height: 23px;
+}
+
+.reveal {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 600ms ease var(--reveal-delay), transform 600ms ease var(--reveal-delay);
+}
+
+.reveal--visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after {
+    scroll-behavior: auto !important;
+    transition-duration: 0.01ms !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+  }
+  .reveal { opacity: 1; transform: none; }
+}
+
+@media (max-width: 700px) {
+  .container {
+    width: min(calc(100% - 28px), var(--container));
+  }
+
+  .section {
+    padding: 76px 0;
+  }
+
+  .section-heading {
+    margin-bottom: 36px;
+  }
+
+  .section-heading--split {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+}
+
