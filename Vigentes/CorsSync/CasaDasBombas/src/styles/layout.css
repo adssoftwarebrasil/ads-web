@@ -1,0 +1,250 @@
+.site-header {
+  position: sticky;
+  z-index: 1000;
+  top: 0;
+  height: 78px;
+  background: rgba(255, 255, 255, 0.95);
+  border-bottom: 1px solid rgba(19, 20, 24, 0.1);
+  backdrop-filter: blur(14px);
+}
+
+.header-inner {
+  display: flex;
+  height: 100%;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.8rem;
+  flex: 0 0 auto;
+}
+
+.brand-symbol {
+  position: relative;
+  display: grid;
+  width: 2.7rem;
+  height: 2.7rem;
+  place-items: center;
+  overflow: hidden;
+  color: var(--white);
+  background: var(--red);
+  border-radius: 0.55rem;
+}
+
+.brand-symbol::after {
+  position: absolute;
+  width: 1.1rem;
+  height: 4rem;
+  content: '';
+  background: rgba(255, 255, 255, 0.14);
+  transform: rotate(35deg) translateX(1.35rem);
+}
+
+.brand-copy {
+  display: grid;
+  gap: 0.05rem;
+  color: var(--ink);
+  font-family: "Arial Narrow", "Aptos Display", "Segoe UI", sans-serif;
+  line-height: 1;
+  text-transform: uppercase;
+}
+
+.brand-copy strong {
+  font-size: 0.95rem;
+  font-weight: 900;
+  letter-spacing: -0.025em;
+}
+
+.brand-copy span {
+  color: var(--red);
+  font-size: 0.7rem;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+}
+
+.main-navigation ul {
+  display: flex;
+  align-items: center;
+  gap: clamp(1.1rem, 2vw, 2rem);
+  margin-bottom: 0;
+}
+
+.main-navigation li a {
+  position: relative;
+  display: block;
+  padding: 0.5rem 0;
+  color: #34353a;
+  font-size: 0.84rem;
+  font-weight: 700;
+}
+
+.main-navigation li a::after {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  height: 2px;
+  content: '';
+  background: var(--red);
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 180ms ease;
+}
+
+.main-navigation li a:hover::after,
+.main-navigation li a:focus-visible::after {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
+.header-actions {
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+}
+
+.header-whatsapp {
+  display: inline-flex;
+  min-height: 2.7rem;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.65rem 0.95rem;
+  color: var(--white);
+  background: var(--ink);
+  border-radius: 0.55rem;
+  font-size: 0.78rem;
+  font-weight: 800;
+  transition: background 180ms ease, transform 180ms ease;
+}
+
+.header-whatsapp:hover {
+  background: var(--red);
+  transform: translateY(-1px);
+}
+
+.icon-button {
+  display: inline-grid;
+  width: 2.75rem;
+  height: 2.75rem;
+  padding: 0;
+  place-items: center;
+  background: transparent;
+  border: 1px solid rgba(19, 20, 24, 0.18);
+  border-radius: 0.55rem;
+  cursor: pointer;
+}
+
+.menu-button,
+.mobile-nav-head,
+.mobile-nav-cta,
+.menu-backdrop {
+  display: none;
+}
+
+.whatsapp-float {
+  position: fixed;
+  z-index: 950;
+  right: 1.35rem;
+  bottom: 1.35rem;
+  display: inline-flex;
+  min-height: 3.7rem;
+  align-items: center;
+  gap: 0.7rem;
+  padding: 0.75rem 1rem;
+  color: var(--white);
+  background: #178c4d;
+  border: 4px solid rgba(255, 255, 255, 0.9);
+  border-radius: 999px;
+  box-shadow: 0 16px 35px rgba(10, 55, 31, 0.25);
+  font-size: 0.82rem;
+  font-weight: 800;
+  transition: background 180ms ease, transform 180ms ease;
+}
+
+.whatsapp-float:hover {
+  background: #107940;
+  transform: translateY(-3px);
+}
+
+.site-footer {
+  padding-top: clamp(4rem, 7vw, 6rem);
+  color: #d3d4d7;
+  background: #101115;
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.6fr) minmax(10rem, 0.75fr) minmax(15rem, 1fr);
+  gap: clamp(2rem, 5vw, 5rem);
+  padding-bottom: 3.5rem;
+}
+
+.brand-footer .brand-copy {
+  color: var(--white);
+}
+
+.footer-brand > p {
+  max-width: 25rem;
+  margin: 1.3rem 0 0;
+  color: #9ea0a6;
+  font-size: 0.94rem;
+  line-height: 1.7;
+}
+
+.footer-column {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.footer-column h2 {
+  margin-bottom: 0.65rem;
+  color: var(--white);
+  font-size: 0.86rem;
+  letter-spacing: 0.11em;
+  text-transform: uppercase;
+}
+
+.footer-column a {
+  color: #b8bac0;
+  font-size: 0.87rem;
+  line-height: 1.55;
+  transition: color 180ms ease;
+}
+
+.footer-column a:hover {
+  color: var(--white);
+}
+
+.footer-contact a {
+  display: inline-flex;
+  align-items: flex-start;
+  gap: 0.55rem;
+  overflow-wrap: anywhere;
+}
+
+.footer-contact svg {
+  margin-top: 0.15rem;
+  flex: 0 0 auto;
+  color: var(--red);
+}
+
+.footer-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding-block: 1.3rem;
+  border-top: 1px solid #2c2d33;
+}
+
+.footer-bottom p {
+  margin-bottom: 0;
+  color: #777980;
+  font-size: 0.76rem;
+}
