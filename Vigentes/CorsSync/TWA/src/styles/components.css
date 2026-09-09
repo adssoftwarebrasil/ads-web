@@ -1,0 +1,253 @@
+.site-header {
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+  right: 0;
+  left: 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  background: rgba(4, 16, 32, 0.84);
+  box-shadow: 0 12px 30px rgba(1, 9, 21, 0.12);
+  backdrop-filter: blur(18px);
+}
+
+.header-inner {
+  display: flex;
+  min-height: 82px;
+  align-items: center;
+  gap: 24px;
+}
+
+.brand {
+  flex: 0 0 auto;
+}
+
+.brand img {
+  width: 126px;
+  height: 66px;
+  object-fit: contain;
+}
+
+.main-navigation {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  justify-content: center;
+  gap: clamp(14px, 1.6vw, 26px);
+}
+
+.main-navigation > a:not(.button) {
+  position: relative;
+  padding-block: 10px;
+  color: #d7e1f2;
+  font-size: 0.84rem;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.main-navigation > a:not(.button)::after {
+  position: absolute;
+  right: 0;
+  bottom: 4px;
+  left: 0;
+  height: 2px;
+  content: "";
+  transform: scaleX(0);
+  transform-origin: left;
+  background: var(--lime-400);
+  transition: transform 180ms ease;
+}
+
+.main-navigation > a:not(.button):hover {
+  color: #fff;
+}
+
+.main-navigation > a:not(.button):hover::after {
+  transform: scaleX(1);
+}
+
+.header-cta {
+  flex: 0 0 auto;
+  min-height: 44px;
+  padding-inline: 18px;
+  font-size: 0.82rem;
+}
+
+.menu-toggle,
+.mobile-menu-cta {
+  display: none;
+}
+
+.menu-toggle {
+  width: 46px;
+  height: 46px;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgba(255, 255, 255, 0.22);
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.06);
+  color: #fff;
+}
+
+.whatsapp-float {
+  position: fixed;
+  z-index: 900;
+  right: 22px;
+  bottom: 22px;
+  display: flex;
+  min-height: 56px;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 18px;
+  border: 2px solid rgba(255, 255, 255, 0.78);
+  border-radius: 999px;
+  background: #1ca85a;
+  box-shadow: 0 15px 38px rgba(4, 40, 24, 0.3);
+  color: #fff;
+  font-size: 0.86rem;
+  font-weight: 850;
+  transition:
+    transform 180ms ease,
+    box-shadow 180ms ease;
+}
+
+.whatsapp-float:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 19px 48px rgba(4, 40, 24, 0.38);
+}
+
+.whatsapp-float > svg {
+  width: 23px;
+  height: 23px;
+}
+
+.whatsapp-pulse {
+  position: absolute;
+  inset: -5px;
+  z-index: -1;
+  border: 1px solid rgba(28, 168, 90, 0.5);
+  border-radius: inherit;
+  animation: whatsapp-pulse 2.4s ease-out infinite;
+}
+
+@keyframes whatsapp-pulse {
+  0% {
+    opacity: 0.65;
+    transform: scale(0.96);
+  }
+  70%,
+  100% {
+    opacity: 0;
+    transform: scale(1.18);
+  }
+}
+
+.site-footer {
+  padding-top: 66px;
+  background: #030c18;
+  color: #fff;
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: 1.35fr 0.65fr 1fr;
+  gap: 72px;
+  padding-bottom: 52px;
+}
+
+.footer-brand p {
+  max-width: 390px;
+  margin: 20px 0 24px;
+  color: #9aaac1;
+  font-size: 0.94rem;
+}
+
+.footer-logo {
+  width: 148px;
+}
+
+.footer-partner {
+  width: 92px;
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  border-radius: 10px;
+}
+
+.footer-column {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 11px;
+}
+
+.footer-column h2 {
+  margin-bottom: 12px;
+  color: #fff;
+  font-size: 0.95rem;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+}
+
+.footer-column > a {
+  color: #aab8cb;
+  font-size: 0.9rem;
+  transition: color 180ms ease;
+}
+
+.footer-column > a:hover {
+  color: var(--lime-400);
+}
+
+.footer-contact > a {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.footer-contact svg {
+  flex: 0 0 auto;
+  margin-top: 3px;
+}
+
+.footer-socials {
+  display: flex;
+  gap: 10px;
+  margin-top: 12px;
+}
+
+.footer-socials a {
+  display: grid;
+  width: 40px;
+  height: 40px;
+  place-items: center;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  border-radius: 50%;
+  color: #d9e4f5;
+  transition:
+    color 180ms ease,
+    background-color 180ms ease,
+    border-color 180ms ease;
+}
+
+.footer-socials a:hover {
+  border-color: var(--lime-400);
+  background: var(--lime-400);
+  color: var(--navy-950);
+}
+
+.footer-socials svg {
+  width: 18px;
+}
+
+.footer-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding-block: 21px;
+  border-top: 1px solid rgba(255, 255, 255, 0.11);
+}
+
+.footer-bottom p {
+  margin: 0;
+  color: #718096;
+  font-size: 0.8rem;
+}
