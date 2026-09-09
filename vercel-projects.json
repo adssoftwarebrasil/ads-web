@@ -989,6 +989,12 @@
     "projectId": "prj_cSb8fXTBickhRxwSGBiPMFUYLV9I",
     "projectName": "dryka-kids"
   },
+  "DuarteColchoes": {
+    "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "path": "Vigentes/CorsSync/DuarteColchoes",
+    "projectId": "prj_WrUrQjRupT2gJeOgdiAUadno9tEM",
+    "projectName": "duarte-colchoes"
+  },
   "DUQUESA JOIAS": {
     "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
     "path": "Vigentes/ADS/DUQUESA JOIAS",
@@ -1966,6 +1972,12 @@
     "path": "Não vigentes/Meta Contabilidade",
     "projectId": "prj_JlBpsKyQCFC2TvCdhvi57huZcikb",
     "projectName": "meta-contabilidade"
+  },
+  "MinasBahiaSeguros": {
+    "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
+    "path": "Vigentes/CorsSync/MinasBahiaSeguros",
+    "projectId": "prj_aSQK9EAAujKGqfDyfiz2nTPGgdvc",
+    "projectName": "minas-bahia-seguros"
   },
   "MN ENXOVAIS": {
     "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
