@@ -22,8 +22,9 @@ Não vigentes/    sites que sairam do ar ou foram encerrados
 
 Os 117 sites com contrato vencido ja foram separados em `Não vigentes/`. Os
 vigentes estao em `Vigentes/ADS/` (383 pastas) e `Vigentes/CorsSync/`
-(89 pastas). A separacao entre ADS e CorsSync ja comecou, mas ainda ha sites
-da CorsSync sem projeto na Vercel.
+(148 pastas). Em 10/09/2026 os sites da CorsSync que ainda nao tinham projeto
+na Vercel foram publicados: **132 entraram no ar de uma vez**, e hoje toda
+pasta da CorsSync que e site esta publicada.
 
 ## vercel-projects.json
 
@@ -34,27 +35,72 @@ versionada desse vinculo. Para relinkar um site, recrie
 `<path>/.vercel/project.json` a partir da entrada correspondente.
 
 O campo `path` da o diretorio completo, ja que as pastas vivem sob
-`Vigentes/ADS/`, `Vigentes/CorsSync/` ou `Não vigentes/`. Cobre 493 das 589
-pastas. Das 96 restantes, 87 sao da `Vigentes/CorsSync/`, que ainda nao foram
-publicadas; oito nao tem projeto correspondente na Vercel
-(`Alba's Cleaning Services`, `EXCLUSIVE CONSTRUTORA E reformadora`,
-`GERENCIAL CONTABIL 1`, `Premium Cleaning Services`,
-`Proposta de Parceria Digital`, `RETOCARS AUTO SERVICE LTDA`, `Royall`,
-`Veacci`) e uma nao e site (`_material`).
+`Vigentes/ADS/`, `Vigentes/CorsSync/` ou `Não vigentes/`. Cobre 627 das 648
+pastas.
 
 ## Balanco com a Vercel
 
-493 projetos na Vercel e 493 pastas vinculadas: **todo projeto tem pasta**.
-As 35 duplicatas — projetos antigos ou builds superados que serviam o mesmo
-site de uma pasta ja mapeada — foram removidas.
+627 pastas vinculadas a um projeto na Vercel. Faltam 21, e nenhuma delas por
+esquecimento:
 
-Faltam vincular 96 pastas. Oitenta e sete estao em `Vigentes/CorsSync/` e
-nunca foram publicadas. Das outras nove, oito tambem nunca chegaram ao ar:
-`Alba's Cleaning Services`, `EXCLUSIVE CONSTRUTORA E reformadora`,
-`GERENCIAL CONTABIL 1`, `Premium Cleaning Services`,
-`Proposta de Parceria Digital`, `RETOCARS AUTO SERVICE LTDA`, `Royall` e
-`Veacci`. A nona, `_material`, nao e site — e a pasta de assets
-compartilhados.
+- **oito nunca chegaram ao ar** — `Alba's Cleaning Services`,
+  `EXCLUSIVE CONSTRUTORA E reformadora`, `GERENCIAL CONTABIL 1`,
+  `Premium Cleaning Services`, `Proposta de Parceria Digital`,
+  `RETOCARS AUTO SERVICE LTDA`, `Royall` e `Veacci`;
+- **dez sao pastas da CorsSync de clientes que ja tem site no ar** por um
+  projeto da ADS — ver a secao abaixo;
+- **tres nao sao site**: `_material` (assets compartilhados),
+  `Vigentes/CorsSync/tmp` (uns PDFs) e `Vigentes/CorsSync/DPServicos`
+  (pasta vazia).
+
+### O endereco publico nem sempre e o nome do projeto
+
+O subdominio `.vercel.app` e **global**, nao e so da nossa conta: se o nome
+curto ja pertence a outra empresa na Vercel, o nosso projeto nao o recebe e a
+Vercel entrega um endereco com sufixo. `<nome-do-projeto>.vercel.app` pode
+existir, responder 200 e mostrar **o site de outra empresa**.
+
+Aconteceu em 13 dos 132 sites publicados em 10/09/2026. O endereco bom de cada
+um:
+
+| Pasta | Endereco a divulgar |
+|---|---|
+| Agrocampo | `agrocampo-mu.vercel.app` |
+| DGL | `dgl-gamma.vercel.app` |
+| DrogariaSaoPaulo | `drogaria-sao-paulo-zeta.vercel.app` |
+| MaisVida | `mais-vida-sooty.vercel.app` |
+| MartelinhoDeOuro | `martelinho-de-ouro-alpha.vercel.app` |
+| Monark | `monark-liart.vercel.app` |
+| PizzaDoPaulista | `pizza-do-paulista-five.vercel.app` |
+| RenovaClinica | `renova-clinica-eight.vercel.app` |
+| Rovet | `rovet-six.vercel.app` |
+| SaborDaCasa | `sabor-da-casa-silk.vercel.app` |
+| SaoBenedito | `sao-benedito-zeta.vercel.app` |
+| Stitch (Kadima) | `kadima-swart.vercel.app` |
+| TWA | `twa-eta-one.vercel.app` |
+
+Nunca monte a URL de um site a partir do nome do projeto. Pegue o alias real
+em `GET /v13/deployments/<id>` e confirme que o HTML servido e mesmo do
+cliente, comparando o `<title>` com o do `index.html` local.
+
+### Pastas da CorsSync que repetem cliente ja publicado
+
+Estas dez pastas sao de clientes que ja tem site no ar por um projeto da ADS,
+e por isso ficaram sem publicar — publicar daria ao mesmo cliente dois
+enderecos concorrentes. Em cinco delas o arquivo local e **igual byte a byte**
+ao que ja esta no ar.
+
+`CasaDasBombas`, `ColegioSinapse`, `GoldenHouse`, `KalyAgon`, `Mecanica277`,
+`NovaOpcao`, `PortalDaPaz`, `SupercasaImoveis`, `TorreEngenharia` e
+`ZeDaBateria`.
+
+Dois cuidados antes de mexer nelas:
+
+- **TorreEngenharia**: a copia da CorsSync nao tem o pixel do Facebook que o
+  site no ar tem. Publicar essa copia por cima faz o cliente parar de medir
+  os anuncios.
+- **NovaOpcao**: o projeto no ar atende o dominio proprio
+  `novaopcaopersianasgo.com.br`. Nao e um `.vercel.app` descartavel.
 
 `TANCERVA CONVENIENCIA` e `GLOBO TRANSPORTES` foram recuperadas do proprio
 deploy na Vercel, via `/v6/deployments/<id>/files`, por nao haver copia local.

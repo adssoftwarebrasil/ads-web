@@ -4,9 +4,11 @@ Leia antes de mexer neste repositorio ou na conta da Vercel da ADS.
 
 ## 1. Escala: nunca opere no repositorio inteiro
 
-Sao **487 pastas de site**, cada uma um projeto independente, somando 13.905
-arquivos versionados e um `.git` de 611 MB. Nao existe build, lint, teste ou
-`install` na raiz — nao ha `package.json` raiz, e nao deve haver.
+Sao **645 pastas de site** (648 pastas ao todo, tirando `_material`,
+`Vigentes/CorsSync/tmp` e `Vigentes/CorsSync/DPServicos`, que nao sao site),
+cada uma um projeto independente, num `.git` de centenas de MB. Nao existe
+build, lint, teste ou `install` na raiz — nao ha `package.json` raiz, e nao
+deve haver.
 
 Um pedido como "atualize as dependencias" ou "rode o lint" significa **em uma
 pasta de site especifica**. Se o pedido nao disser qual, pergunte. Rodar
@@ -39,11 +41,12 @@ Regra pratica: `pnpm-lock.yaml` -> use pnpm; `bun.lockb` -> use bun;
 `package-lock.json` ou nenhum -> npm. Nunca troque de gerenciador num site que
 ja tem lockfile de outro.
 
-## 3. Lockfiles: so 188 dos 486 tem
+## 3. Lockfiles: so 245 dos 645 tem
 
-Cerca de 300 sites nao tem lockfile nenhum. Neles, `npm install` resolve
-versoes diferentes a cada execucao, entao um site que funcionava pode quebrar
-sem ninguem ter mudado uma linha de codigo.
+Dos 645 sites, 116 sao HTML estatico e nao usam dependencia nenhuma. Sobram
+529 com `package.json`, e **284 desses nao tem lockfile**. Neles,
+`npm install` resolve versoes diferentes a cada execucao, entao um site que
+funcionava pode quebrar sem ninguem ter mudado uma linha de codigo.
 
 **Se voce rodar install num site sem lockfile, commite o lockfile gerado.** E
 o unico jeito de o proximo build ser igual ao seu. Se o build quebrar num site
@@ -94,10 +97,19 @@ Mover e so mover a pasta e atualizar o `path` no manifesto. Mover para
 publicado. Se a intencao for tirar do ar, isso e um passo separado e precisa
 ser pedido explicitamente.
 
-`Vigentes/CorsSync/` tem 89 pastas, mas so duas delas estao no
-`vercel-projects.json`: as outras 87 ainda nao foram publicadas na Vercel. Ao
-procurar o site de um cliente, olhe nas tres arvores — `Vigentes/ADS/`,
-`Vigentes/CorsSync/` e `Não vigentes/` —, nao so nas duas do manifesto.
+`Vigentes/CorsSync/` tem 148 pastas e desde 10/09/2026 praticamente todas
+estao no `vercel-projects.json` — 132 foram publicadas de uma vez. As dez que
+ficaram de fora sao de clientes que ja tem site no ar por um projeto da ADS;
+o README explica cada uma, e duas delas tem armadilha (`TorreEngenharia`
+perde o pixel do Facebook, `NovaOpcao` mexe com dominio proprio).
+
+Ao procurar o site de um cliente, olhe nas tres arvores — `Vigentes/ADS/`,
+`Vigentes/CorsSync/` e `Não vigentes/`. **O mesmo cliente aparece nas duas
+arvores de vigentes com frequencia**, com nome grafado de outro jeito
+(`ZeDaBateria` e `ZE DA BATERIA`, `Mecanica277` e `Mecânica 277`), entao
+antes de publicar pasta da CorsSync confira se o cliente ja nao esta no ar.
+O jeito rapido e comparar o `<title>` do `index.html` com o das outras
+arvores.
 
 ## 7. Segredos
 
