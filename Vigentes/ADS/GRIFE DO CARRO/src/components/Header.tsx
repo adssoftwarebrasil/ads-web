@@ -13,7 +13,7 @@ export default function Header() {
             <img src={IMG.logo} alt="Grife do Carro" className="h-12 w-auto" />
           </a>
 
-          <nav className="hidden lg:flex items-center gap-8">
+          <nav className="hidden lg:flex items-center gap-5 xl:gap-8">
             {NAV_LINKS.map((link) => (
               <a
                 key={link.href}
@@ -25,10 +25,10 @@ export default function Header() {
             ))}
           </nav>
 
-          <div className="hidden lg:flex items-center gap-5">
+          <div className="hidden lg:flex items-center gap-4 xl:gap-5">
             <a
               href={PHONE_TEL}
-              className="flex items-center gap-2 text-sm font-semibold text-white/90 hover:text-gold transition-colors"
+              className="hidden xl:flex items-center gap-2 text-sm font-semibold text-white/90 hover:text-gold transition-colors"
             >
               <Phone className="w-4 h-4 text-gold" />
               {PHONE_DISPLAY}

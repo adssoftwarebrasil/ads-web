@@ -23,7 +23,7 @@ export default function Footer() {
           <div>
             <img src={IMG.logo} alt="Grife do Carro" className="h-12 w-auto" />
             <p className="mt-5 max-w-xs text-sm leading-relaxed text-white/60">
-              Há mais de 10 anos transformando a forma como Sinop compra, vende e
+              Há mais de 8 anos transformando a forma como Sinop compra, vende e
               troca veículos.
             </p>
             <div className="mt-5 flex gap-3">

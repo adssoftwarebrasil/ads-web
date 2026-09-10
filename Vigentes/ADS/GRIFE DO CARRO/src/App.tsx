@@ -1,5 +1,6 @@
 import Header from './components/Header';
 import Hero from './components/Hero';
+import Highlights from './components/Highlights';
 import About from './components/About';
 import Services from './components/Services';
 import CtaBanner from './components/CtaBanner';
@@ -16,6 +17,7 @@ export default function App() {
       <Header />
       <main>
         <Hero />
+        <Highlights />
         <About />
         <Services />
         <CtaBanner />

@@ -18,7 +18,7 @@ const ADVANTAGES: Advantage[] = [
   {
     icon: Award,
     title: 'Experiência Comprovada',
-    description: '+10 anos no mercado automotivo de Sinop.',
+    description: '+8 anos no mercado automotivo de Sinop.',
   },
   {
     icon: Users,

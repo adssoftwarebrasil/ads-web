@@ -2,7 +2,7 @@ import { CheckCircle2 } from 'lucide-react';
 import { IMG, WHATSAPP_URL } from '../data';
 
 const BENEFITS = [
-  'Mais de 10 anos de experiência no mercado automotivo',
+  'Mais de 8 anos de experiência no mercado automotivo',
   'Avaliação justa e transparente do seu veículo',
   'Financiamento facilitado para todos os perfis',
   'Veículos rigorosamente inspecionados',
@@ -15,13 +15,13 @@ export default function About() {
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
           <div className="relative">
             <img
-              src={IMG.showroom}
-              alt="Showroom Grife do Carro"
-              className="w-full rounded-2xl object-cover"
+              src={IMG.loja}
+              alt="Loja da Grife do Carro, na Avenida das Itaúbas, em Sinop/MT"
+              className="aspect-[4/5] w-full rounded-2xl object-cover"
             />
             <div className="absolute -bottom-6 left-6 rounded-2xl bg-gold px-6 py-4 shadow-xl max-w-[15rem]">
               <div className="font-heading text-3xl font-extrabold text-black">
-                10+
+                8+
               </div>
               <div className="mt-1 text-xs font-semibold text-black/80">
                 Anos transformando a forma como Sinop compra e vende veículos
@@ -38,7 +38,7 @@ export default function About() {
               em Sinop
             </h2>
             <p className="mt-6 text-base leading-relaxed text-white/70">
-              Fundada há mais de 10 anos, somos especialistas na compra, venda e
+              Fundada há mais de 8 anos, somos especialistas na compra, venda e
               troca de automóveis usados e seminovos. Com portfólio diversificado
               e revisões rigorosas em cada veículo, garantimos qualidade e
               segurança. Nossa reputação é consolidada pela transparência em cada

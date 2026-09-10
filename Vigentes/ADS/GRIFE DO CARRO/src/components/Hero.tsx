@@ -1,10 +1,10 @@
 import { IMG, WHATSAPP_URL } from '../data';
 
 const STATS = [
-  { value: '+10', label: 'ANOS DE MERCADO' },
-  { value: '+83', label: 'VEÍCULOS VENDIDOS' },
-  { value: '+208', label: 'CLIENTES FELIZES' },
-  { value: '+41', label: 'FINANCIAMENTOS' },
+  { value: '+8', label: 'ANOS DE MERCADO' },
+  { value: '+1.500', label: 'CARROS VENDIDOS' },
+  { value: '+600', label: 'CLIENTES FELIZES' },
+  { value: 'FINANCIAMENTO', label: 'FACILITADO NA LOJA', small: true },
 ];
 
 export default function Hero() {
@@ -23,7 +23,7 @@ export default function Hero() {
       <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="max-w-2xl py-20 lg:py-28">
           <p className="mb-5 inline-flex items-center rounded-full border border-gold/30 bg-gold/10 px-4 py-1.5 text-xs font-semibold tracking-wider text-gold">
-            Mais de 10 anos de tradição em Sinop
+            Mais de 8 anos de tradição em Sinop
           </p>
           <h1 className="font-heading text-4xl sm:text-5xl lg:text-6xl font-extrabold uppercase leading-[1.05] text-white">
             Compra, venda e troca de{' '}
@@ -57,8 +57,17 @@ export default function Hero() {
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6 py-8">
             {STATS.map((stat) => (
-              <div key={stat.label} className="text-center md:text-left">
-                <div className="font-heading text-3xl sm:text-4xl font-extrabold text-gold">
+              <div
+                key={stat.label}
+                className="flex h-full flex-col justify-end text-center md:text-left"
+              >
+                <div
+                  className={`font-heading font-extrabold leading-tight text-gold ${
+                    stat.small
+                      ? 'text-lg sm:text-xl'
+                      : 'text-3xl sm:text-4xl'
+                  }`}
+                >
                   {stat.value}
                 </div>
                 <div className="mt-1 text-[11px] font-semibold tracking-wider text-white/60">
