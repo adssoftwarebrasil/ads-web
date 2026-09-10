@@ -1,38 +1,36 @@
+import { Instagram } from 'lucide-react';
+
 interface GalleryItem {
   image: string;
-  alt: string;
-  wrapperClass: string;
-  minHeight: number;
+  color: string;
+  caption: string;
 }
 
 const items: GalleryItem[] = [
   {
-    image:
-      'https://images.pexels.com/photos/1643383/pexels-photo-1643383.jpeg?auto=compress&cs=tinysrgb&w=800',
-    alt: 'Porta WPC em ambiente sofisticado',
-    wrapperClass: 'sm:row-span-2',
-    minHeight: 400,
+    image: '/galeria/branca-frisada.webp',
+    color: 'Branca Frisada',
+    caption: 'Frisos horizontais que deixam o ambiente leve e atual',
   },
   {
-    image:
-      'https://images.pexels.com/photos/271816/pexels-photo-271816.jpeg?auto=compress&cs=tinysrgb&w=800',
-    alt: 'Porta de alto padrão residencial',
-    wrapperClass: '',
-    minHeight: 220,
+    image: '/galeria/fendi.webp',
+    color: 'Fendi',
+    caption: 'Tom terroso que aquece paredes claras',
   },
   {
-    image:
-      'https://images.pexels.com/photos/1090638/pexels-photo-1090638.jpeg?auto=compress&cs=tinysrgb&w=800',
-    alt: 'Interior elegante com porta premium',
-    wrapperClass: '',
-    minHeight: 220,
+    image: '/galeria/capuccino.webp',
+    color: 'Capuccino',
+    caption: 'Marrom acinzentado para ambientes aconchegantes',
   },
   {
-    image:
-      'https://images.pexels.com/photos/276583/pexels-photo-276583.jpeg?auto=compress&cs=tinysrgb&w=800',
-    alt: 'Ambiente moderno com porta WPC',
-    wrapperClass: '',
-    minHeight: 220,
+    image: '/galeria/cinza-claro.webp',
+    color: 'Cinza Claro',
+    caption: 'Neutro e discreto, perfeito para interiores minimalistas',
+  },
+  {
+    image: '/galeria/cinza-escuro.webp',
+    color: 'Cinza Escuro',
+    caption: 'Grafite marcante, a porta como destaque do ambiente',
   },
 ];
 
@@ -48,39 +46,47 @@ export default function Gallery() {
             Veja a Beleza em Cada Ambiente
           </h2>
           <p className="text-gray-600 max-w-xl mx-auto text-lg">
-            Portas que transformam espaços em experiências visuais únicas.
+            As cinco cores da linha WPC Premium instaladas, para você comparar os tons antes de
+            escolher.
           </p>
         </div>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
           {items.map((item) => (
-            <div
-              key={item.alt}
-              className={`relative overflow-hidden rounded-2xl group cursor-pointer ${item.wrapperClass}`}
-              style={{ minHeight: `${item.minHeight}px` }}
+            <figure
+              key={item.color}
+              className="relative overflow-hidden rounded-2xl group aspect-[16/9] bg-white"
             >
               <img
                 src={item.image}
-                alt={item.alt}
-                className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
-                style={{ height: '100%', minHeight: `${item.minHeight}px` }}
+                alt={`Porta WPC Premium na cor ${item.color}`}
+                width={1400}
+                height={788}
+                loading="lazy"
+                className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
               />
-              <div className="absolute inset-0 bg-[#005143]/0 group-hover:bg-[#005143]/40 transition-all duration-300 flex items-end">
-                <p className="text-white font-medium text-sm px-5 py-4 translate-y-4 group-hover:translate-y-0 opacity-0 group-hover:opacity-100 transition-all duration-300">
-                  {item.alt}
-                </p>
-              </div>
-            </div>
+              <figcaption className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-[#005143]/90 via-[#005143]/60 to-transparent px-5 pt-10 pb-4">
+                <p className="text-white font-bold text-sm">{item.color}</p>
+                <p className="text-[#ECC4A4] text-xs mt-0.5 leading-snug">{item.caption}</p>
+              </figcaption>
+            </figure>
           ))}
-        </div>
-        <div className="text-center mt-10">
-          <a
-            href="https://www.instagram.com/turenportas/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 border-2 border-[#005143] text-[#005143] hover:bg-[#005143] hover:text-white px-8 py-3.5 rounded-full font-semibold text-sm transition-all duration-300"
-          >
-            Ver mais no Instagram
-          </a>
+          <div className="rounded-2xl aspect-[16/9] bg-[#005143] flex flex-col items-center justify-center text-center px-6">
+            <p className="text-white font-bold text-lg leading-snug">
+              Quer ver as cores de perto?
+            </p>
+            <p className="text-[#ECC4A4]/80 text-sm mt-2 mb-4 leading-snug">
+              Acompanhe as instalações no nosso Instagram.
+            </p>
+            <a
+              href="https://www.instagram.com/turenportas/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 bg-[#DE8F52] hover:bg-[#c47a40] text-white px-6 py-3 rounded-full font-semibold text-sm transition-all duration-300 hover:shadow-lg hover:-translate-y-0.5"
+            >
+              <Instagram width={16} height={16} />
+              Ver mais no Instagram
+            </a>
+          </div>
         </div>
       </div>
     </section>

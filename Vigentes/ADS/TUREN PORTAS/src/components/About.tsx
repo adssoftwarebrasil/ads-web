@@ -19,8 +19,10 @@ export default function About() {
             <div className="absolute -bottom-6 -right-6 w-24 h-24 rounded-full bg-[#ECC4A4]/15 -z-0"></div>
             <div className="relative rounded-2xl overflow-hidden shadow-2xl">
               <img
-                src="https://images.pexels.com/photos/276583/pexels-photo-276583.jpeg?auto=compress&cs=tinysrgb&w=800"
-                alt="Showroom Turen Portas"
+                src="/sobre-turen.webp"
+                alt="Porta WPC Premium Turen na cor Branca Frisada instalada"
+                width={1080}
+                height={940}
                 className="w-full h-[480px] object-cover"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-[#005143]/40 to-transparent"></div>

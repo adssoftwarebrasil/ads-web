@@ -5,6 +5,7 @@ const navItems = [
   { label: 'Início', target: 'hero' },
   { label: 'Produtos', target: 'produtos' },
   { label: 'Sobre', target: 'sobre' },
+  { label: 'Atacado', target: 'atacado' },
   { label: 'Galeria', target: 'galeria' },
   { label: 'Contato', target: 'contato' },
 ];

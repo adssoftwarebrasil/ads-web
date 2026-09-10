@@ -1,7 +1,7 @@
 import { Instagram, Facebook, MapPin, Phone, Mail, Clock } from 'lucide-react';
 
-const navLinks = ['Início', 'Produtos', 'Sobre Nós', 'Galeria', 'Contato'];
-const navTargets = ['hero', 'produtos', 'sobre', 'galeria', 'contato'];
+const navLinks = ['Início', 'Produtos', 'Sobre Nós', 'Atacado', 'Galeria', 'Contato'];
+const navTargets = ['hero', 'produtos', 'sobre', 'atacado', 'galeria', 'contato'];
 const productLinks = [
   'Branca Frisada',
   'Capuccino',

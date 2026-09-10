@@ -4,6 +4,7 @@ import StatsBar from './components/StatsBar';
 import Benefits from './components/Benefits';
 import Products from './components/Products';
 import About from './components/About';
+import Wholesale from './components/Wholesale';
 import Gallery from './components/Gallery';
 import Testimonials from './components/Testimonials';
 import Contact from './components/Contact';
@@ -20,6 +21,7 @@ export default function App() {
         <Benefits />
         <Products />
         <About />
+        <Wholesale />
         <Gallery />
         <Testimonials />
         <Contact />
