@@ -1,5 +1,5 @@
 import { ArrowRight, CheckCircle2, Clock3, MapPin, Sparkles } from 'lucide-react'
-import heroImage from '../assets/images/atendimento-ludico.jpg'
+import heroImage from '../assets/images/hero-wanessa.png'
 import { mapsUrl, whatsappUrl } from '../data/contact.js'
 
 function Hero() {
@@ -54,7 +54,7 @@ function Hero() {
           <div className="hero-image-wrap">
             <img
               src={heroImage}
-              alt="Wanessa em uma sessão de fonoterapia infantil com recursos lúdicos"
+              alt="Fonoaudióloga Wanessa segurando um aparelho usado nos atendimentos"
             />
           </div>
           <div className="hero-card hero-card--top">
