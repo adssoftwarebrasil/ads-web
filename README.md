@@ -26,19 +26,22 @@ Detalhes e a valvula de escape: secao 11 do [AGENTS.md](AGENTS.md).
 ## Estrutura
 
 ```
-Vigentes/
-  CorsSync/      sites vigentes sob a CorsSync
-  ADS/           sites vigentes sob a ADS
-Não vigentes/    sites que sairam do ar ou foram encerrados
+sites/
+  ads/         sites feitos pela ADS
+  corssync/    sites feitos pela CorsSync
+material/      fotos e material bruto de trabalho, por cliente; nao e site
 ```
 
 ## Estado atual
 
-Os 117 sites com contrato vencido ja foram separados em `Não vigentes/`. Os
-vigentes estao em `Vigentes/ADS/` (383 pastas) e `Vigentes/CorsSync/`
-(148 pastas). Em 10/09/2026 os sites da CorsSync que ainda nao tinham projeto
-na Vercel foram publicados: **132 entraram no ar de uma vez**, e hoje toda
-pasta da CorsSync que e site esta publicada.
+Sao 499 pastas em `sites/ads/` e 149 em `sites/corssync/`. A divisao e por
+**quem fez o site**, nao por situacao de contrato: em 11/09/2026 a separacao
+entre vigentes e nao vigentes deixou de existir no repositorio, porque
+contrato e assunto do sistema de vendas e nao do lugar do arquivo.
+
+Em 10/09/2026 os sites da CorsSync que ainda nao tinham projeto na Vercel
+foram publicados: **132 entraram no ar de uma vez**, e hoje toda pasta da
+CorsSync que e site esta publicada.
 
 ## vercel-projects.json
 
@@ -49,12 +52,11 @@ versionada desse vinculo. Para relinkar um site, recrie
 `<path>/.vercel/project.json` a partir da entrada correspondente.
 
 O campo `path` da o diretorio completo, ja que as pastas vivem sob
-`Vigentes/ADS/`, `Vigentes/CorsSync/` ou `Não vigentes/`. Cobre 627 das 648
-pastas.
+`sites/ads/` ou `sites/corssync/`. Cobre 628 das 648 pastas.
 
 ## Balanco com a Vercel
 
-627 pastas vinculadas a um projeto na Vercel. Faltam 21, e nenhuma delas por
+628 pastas vinculadas a um projeto na Vercel. Faltam 20, e nenhuma delas por
 esquecimento:
 
 - **oito nunca chegaram ao ar** — `Alba's Cleaning Services`,
@@ -63,9 +65,14 @@ esquecimento:
   `RETOCARS AUTO SERVICE LTDA`, `Royall` e `Veacci`;
 - **dez sao pastas da CorsSync de clientes que ja tem site no ar** por um
   projeto da ADS — ver a secao abaixo;
-- **tres nao sao site**: `_material` (assets compartilhados),
-  `Vigentes/CorsSync/tmp` (uns PDFs) e `Vigentes/CorsSync/DPServicos`
-  (pasta vazia).
+- **duas nao sao site**: `sites/corssync/tmp` (capturas de tela de
+  referencia) e `sites/corssync/DPServicos`, que esta gravada como submodulo
+  sem `.gitmodules` e e uma **pasta vazia**: os arquivos desse site nunca
+  chegaram ao repositorio e so existem na maquina de quem enviou.
+
+O material bruto de trabalho, que antes ficava em `Vigentes/ADS/_material` e
+contava como se fosse um cliente, agora esta em `material/`, fora da arvore de
+sites.
 
 ### O endereco publico nem sempre e o nome do projeto
 

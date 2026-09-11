@@ -4,8 +4,8 @@ Leia antes de mexer neste repositorio ou na conta da Vercel da ADS.
 
 ## 1. Escala: nunca opere no repositorio inteiro
 
-Sao **645 pastas de site** (648 pastas ao todo, tirando `_material`,
-`Vigentes/CorsSync/tmp` e `Vigentes/CorsSync/DPServicos`, que nao sao site),
+Sao **646 pastas de site** (648 ao todo, tirando `sites/corssync/tmp` e
+`sites/corssync/DPServicos`, que nao sao site),
 cada uma um projeto independente, num `.git` de centenas de MB. Nao existe
 build, lint, teste ou `install` na raiz — nao ha `package.json` raiz, e nao
 deve haver.
@@ -17,7 +17,7 @@ qualquer coisa em todas as pastas trava a maquina e nao e o que se quer.
 Trabalhe sempre de dentro da pasta do site:
 
 ```bash
-cd "Vigentes/ADS/NOME DA PASTA"
+cd "sites/ads/NOME DA PASTA"
 npm install && npm run build
 ```
 
@@ -58,7 +58,7 @@ versao sozinha, e nao o codigo.
 O repositorio vive em `C:\dev\ads-web` e os nomes de pasta tem espaco, acento,
 `&`, `!` e parenteses. Isso quebra comando mal escrito.
 
-- **Sempre cite os caminhos**: `cd "Vigentes/ADS/A PRIORI, CAFE!"`.
+- **Sempre cite os caminhos**: `cd "sites/ads/A PRIORI, CAFE!"`.
 - **Nome de pasta nao pode** conter `/ \ : * ? " < > |`, nem terminar em ponto
   ou espaco. Ao criar pasta a partir de um nome de cliente, troque a barra por
   hifen e remova o ponto final.
@@ -86,30 +86,32 @@ frequentemente nao casa. Isso e proposital: o `vercel-projects.json` existe
 para absorver a divergencia. Nao renomeie projeto so para "alinhar" — ver
 secao 8.
 
-## 6. Vigentes e Não vigentes
+## 6. Uma arvore por equipe: sites/ads e sites/corssync
 
-`Vigentes/ADS/` sao os sites com contrato ativo. `Não vigentes/` sao os
-encerrados. O criterio e comercial, nao tecnico, entao **so mova pasta quando
-o responsavel disser que o contrato mudou**.
+`sites/ads/` sao os sites feitos pela ADS e `sites/corssync/` os feitos pela
+CorsSync. A divisao e por **quem fez**, nao por situacao de contrato.
 
-Mover e so mover a pasta e atualizar o `path` no manifesto. Mover para
-`Não vigentes` **nao** tira o site do ar: o projeto na Vercel continua
-publicado. Se a intencao for tirar do ar, isso e um passo separado e precisa
-ser pedido explicitamente.
+Ate 11/09/2026 existia uma terceira arvore, `Não vigentes/`, para contrato
+encerrado. Ela acabou: situacao de contrato e informacao comercial que muda, e
+guarda-la no caminho fazia um evento de vendas virar movimentacao em massa de
+arquivos — a operacao mais perigosa num repositorio onde duas equipes escrevem
+na mesma `main`. Quem responde "este contrato esta ativo?" e o sistema de
+vendas, nao a pasta. **Nao recrie essa separacao.**
 
-`Vigentes/CorsSync/` tem 148 pastas e desde 10/09/2026 praticamente todas
-estao no `vercel-projects.json` — 132 foram publicadas de uma vez. As dez que
+Fora das duas arvores fica `material/`: fotos e material bruto de trabalho,
+organizado por cliente. Nao e site e nao vai para o ar.
+
+`sites/corssync/` tem 149 pastas e desde 10/09/2026 praticamente todas estao
+no `vercel-projects.json` — 132 foram publicadas de uma vez. As dez que
 ficaram de fora sao de clientes que ja tem site no ar por um projeto da ADS;
 o README explica cada uma, e duas delas tem armadilha (`TorreEngenharia`
 perde o pixel do Facebook, `NovaOpcao` mexe com dominio proprio).
 
-Ao procurar o site de um cliente, olhe nas tres arvores — `Vigentes/ADS/`,
-`Vigentes/CorsSync/` e `Não vigentes/`. **O mesmo cliente aparece nas duas
-arvores de vigentes com frequencia**, com nome grafado de outro jeito
+Ao procurar o site de um cliente, olhe nas duas arvores. **O mesmo cliente
+aparece nas duas com frequencia**, com nome grafado de outro jeito
 (`ZeDaBateria` e `ZE DA BATERIA`, `Mecanica277` e `Mecânica 277`), entao
 antes de publicar pasta da CorsSync confira se o cliente ja nao esta no ar.
-O jeito rapido e comparar o `<title>` do `index.html` com o das outras
-arvores.
+O jeito rapido e comparar o `<title>` do `index.html` com o da outra arvore.
 
 ## 7. Segredos
 
@@ -170,7 +172,7 @@ desatualizado o vinculo se perde.
 | Renomear projeto na Vercel | atualizar `projectName` |
 | Criar pasta de site | adicionar entrada assim que houver projeto |
 | Renomear pasta | atualizar a chave e o `path` |
-| Mover entre `Vigentes/` e `Não vigentes/` | atualizar o `path` |
+| Mover pasta de uma arvore para a outra | atualizar o `path` |
 | Apagar pasta | remover a entrada |
 
 ### Formato
@@ -181,7 +183,7 @@ estavel. Indentacao de 2 espacos, UTF-8, quebra de linha LF.
 ```json
 "2TJ Telas e Telhas": {
   "orgId": "team_8CpVlkQfLGC3Fu3T7KO5baee",
-  "path": "Vigentes/ADS/2TJ Telas e Telhas",
+  "path": "sites/ads/2TJ Telas e Telhas",
   "projectId": "prj_...",
   "projectName": "2tj-telas-e-telhas"
 }
@@ -319,8 +321,8 @@ Sigla so entra se vier explicada na primeira aparicao.
   e avise que links antigos, anuncios e QR codes deixam de funcionar.
 - Mudanca em `vercel-projects.json` (secao 9): diga em uma linha o que mudou
   no vinculo pasta-projeto.
-- Movimentacao entre `Vigentes` e `Não vigentes` (secao 6): lembre que isso
-  **nao** tira o site do ar.
+- Movimentacao de pasta entre as arvores das equipes (secao 6): lembre que
+  isso **nao** tira o site do ar nem muda o endereco.
 - Site sem fonte, recuperado do deploy (secao 10): avise que da para
   republicar, nao para editar.
 
