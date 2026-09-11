@@ -399,7 +399,8 @@ em { font-style: italic; color: var(--wine); font-weight: 600; }
 /* carrossel de fotos dentro do card de servico */
 .card-slider {
   position: relative;
-  height: 260px;
+  /* a maioria das fotos e em pe; caixa 4/5 mostra a foto quase inteira */
+  aspect-ratio: 4 / 5;
   overflow: hidden;
   background: var(--ink);
 }
@@ -996,7 +997,7 @@ em { font-style: italic; color: var(--wine); font-weight: 600; }
 
   .servicos-header { margin-bottom: 40px; gap: 16px; }
   .servicos-grid { grid-template-columns: 1fr; gap: 20px; }
-  .card-slider { height: 230px; }
+  .card-slider { aspect-ratio: 4 / 5; }
   .card-body { padding: 24px 22px 26px; }
 
   .processo-header { margin-bottom: 50px; }

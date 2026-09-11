@@ -34,21 +34,21 @@ const servicos = [
   {
     title: 'Cortinas em Tecido',
     galeria: 'cortinas',
-    fotos: 20,
+    fotos: 23,
     img: 'assets/servicos/cortinas.png?v=2',
     desc: 'Do clássico ao contemporâneo: tecidos leves, blackout, translúcidos e texturizados que conferem conforto térmico, controle de luminosidade e sofisticação ao ambiente.'
   },
   {
     title: 'Persianas',
     galeria: 'persianas',
-    fotos: 13,
+    fotos: 19,
     img: 'assets/servicos/persianas.png?v=2',
     desc: 'Variedade completa de estilos, trabalhamos com modelos de persianas verticais, horizontais de alumínio, rolô e romana, além de uma ampla linha de tecidos blackout, translúcidos e tela solar (1, 3 e 5%), ideais para controle de luminosidade, conforto térmico e sofisticação em qualquer ambiente.'
   },
   {
     title: 'Papel de Parede',
     galeria: 'papel-parede',
-    fotos: 10,
+    fotos: 16,
     img: 'assets/servicos/papel-parede.png?v=3',
     desc: 'Disponibilizamos uma ampla variedade de texturas, estampas e cores, incluindo florais, listrados, infantis, botânicos, efeitos linho e geométricos, perfeitos para transformar salas, quartos, escritórios e espaços comerciais.'
   },
@@ -62,14 +62,21 @@ const servicos = [
   {
     title: 'Vidraçaria',
     galeria: 'vidracaria',
-    fotos: 28,
+    fotos: 21,
     img: 'assets/servicos/vidracaria.png?v=2',
     desc: 'Soluções em vidro com segurança, design e acabamento de alto padrão, oferecendo projetos sob medida com vidro temperado certificado, garantindo durabilidade, sofisticação e máxima segurança.'
   },
   {
+    title: 'Espelhos',
+    galeria: 'espelhos',
+    fotos: 13,
+    img: 'assets/servicos/espelhos.jpg?v=1',
+    desc: 'Espelhos sob medida que ampliam, iluminam e valorizam qualquer ambiente. Trabalhamos com modelos orgânicos, redondos, retangulares e com led embutido, com lapidação caprichada e instalação feita pela nossa equipe, para lavabos, banheiros, quartos, salas, closets e espaços comerciais.'
+  },
+  {
     title: 'Toldos',
     galeria: 'toldos',
-    fotos: 10,
+    fotos: 14,
     img: 'assets/servicos/toldos.png?v=3',
     desc: 'Proteção, conforto e estética para áreas externas. Oferecemos toldos modernos e resistentes, desenvolvidos para garantir proteção solar, conforto térmico e valorização estética de varandas, fachadas, janelas, áreas gourmet e espaços comerciais. Trabalhamos com materiais de alta qualidade, instalação profissional e acabamento impecável.'
   },
@@ -104,7 +111,7 @@ if (grid) {
     // capa + fotos reais da categoria, tudo num carrossel dentro do proprio card
     const shots = [s.img];
     for (let i = 1; i <= (s.fotos || 0); i++) {
-      shots.push(`assets/servicos/galeria/${s.galeria}/${String(i).padStart(2, '0')}.jpg`);
+      shots.push(`assets/servicos/galeria/${s.galeria}/${String(i).padStart(2, '0')}.jpg?v=2`);
     }
     const slides = shots.map((src, i) => `
           <div class="cs-slide${i === 0 ? ' active' : ''}" data-src="${src}">
