@@ -17,7 +17,7 @@ const differentials = [
   {
     icon: Package,
     title: "Variedade de Opcoes",
-    description: "Cestas Basicas de R$ 49,99 a R$ 499,00 para todas as necessidades",
+    description: "Cestas Basicas de R$ 49,99 a R$ 550,00 para todas as necessidades",
     color: "bg-primary-50 text-primary",
   },
   {

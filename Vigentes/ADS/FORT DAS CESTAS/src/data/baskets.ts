@@ -358,10 +358,10 @@ export const basicBaskets: BasketItem[] = [
   },
 
   {
-    name: "CESTA BÁSICA R$ 450,00",
-    price: 450.00,
+    name: "CESTA BÁSICA R$ 499,00",
+    price: 499.00,
     totalItems: 27,
-    image: "https://storage.lucasmendes.dev/site-sp/fort-das-cestas%2Fcestas%2F450%2C00.jpeg",
+    image: "/cestas/499.png",
     items: [
       "3 Arroz tipo 1 Cristal 5kg (Total 15kg)",
       "5 Açucar Cristal Super Branco 1kg",
@@ -393,11 +393,11 @@ export const basicBaskets: BasketItem[] = [
     ]
   },
   {
-    name: "CESTA BÁSICA R$ 499,00",
-    price: 499.00,
+    name: "CESTA BÁSICA R$ 550,00",
+    price: 550.00,
     totalItems: 27,
     highlighted: true,
-    image: "https://storage.lucasmendes.dev/site-sp/fort-das-cestas%2Fcestas%2F499%2C00.jpeg",
+    image: "/cestas/550.png",
     items: [
       "4 Arroz tipo 1 Cristal 5kg (Total 20kg)",
       "5 Açucar Cristal Super Branco 1kg",

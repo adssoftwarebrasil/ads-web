@@ -32,7 +32,7 @@ export default function Hero() {
             Cestas
             <span className="block text-accent">Basicas</span>
             <span className="block text-2xl sm:text-3xl md:text-4xl font-semibold text-accent mt-2">
-              De R$ 49,99 a R$ 499,00
+              De R$ 49,99 a R$ 550,00
             </span>
           </h1>
 
