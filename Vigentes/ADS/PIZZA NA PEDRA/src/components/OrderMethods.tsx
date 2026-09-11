@@ -23,7 +23,7 @@ const methods: Method[] = [
     title: 'Rodízio no Salão',
     text: 'Venha com família e amigos para nosso rodízio especial. Pizzas saindo do forno direto para a sua mesa, com variedade de sabores e recheios generosos.',
     cta: 'Reservar Mesa',
-    href: 'http://wa.me/556292358068?text=Olá!%20Gostaria%20de%20reservar%20uma%20mesa%20para%20o%20rodízio',
+    href: 'http://wa.me/556292358068?text=Ol%C3%A1%2C%20vim%20do%20Google%2C%20quero%20fazer%20meu%20pedido.',
     delay: 0,
   },
   {
@@ -35,7 +35,7 @@ const methods: Method[] = [
     title: 'Delivery',
     text: 'Peça pelo WhatsApp e receba a melhor pizza de Goiânia quentinha na sua porta. Atendemos em até 12 km de raio do restaurante.',
     cta: 'Pedir Delivery',
-    href: 'http://wa.me/556292358068?text=Olá!%20Gostaria%20de%20fazer%20um%20pedido%20para%20delivery',
+    href: 'http://wa.me/556292358068?text=Ol%C3%A1%2C%20vim%20do%20Google%2C%20quero%20fazer%20meu%20pedido.',
     delay: 150,
   },
   {

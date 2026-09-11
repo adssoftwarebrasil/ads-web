@@ -9,7 +9,8 @@ export default function Contact() {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     const lines = [
-      `Olá! Meu nome é ${name}.`,
+      'Olá, vim do Google, quero fazer meu pedido.',
+      `Meu nome é ${name}.`,
       phone ? `Telefone: ${phone}` : '',
       message ? `Mensagem: ${message}` : '',
     ].filter(Boolean);

@@ -113,7 +113,7 @@ export default function Gallery() {
         <div className="text-center mt-12 transition-all duration-700 delay-500 opacity-100 translate-y-0">
           <p className="text-gray-500 mb-4">Quer ver mais? Confira nosso cardápio completo!</p>
           <a
-            href="http://wa.me/556292358068?text=Olá!%20Gostaria%20de%20ver%20o%20cardápio%20completo"
+            href="http://wa.me/556292358068?text=Ol%C3%A1%2C%20vim%20do%20Google%2C%20quero%20fazer%20meu%20pedido."
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 bg-brand-red hover:bg-brand-red-light text-white font-bold px-8 py-3.5 rounded-full transition-all duration-300 hover:shadow-lg hover:shadow-red-900/30 hover:-translate-y-0.5"

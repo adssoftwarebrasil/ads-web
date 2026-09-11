@@ -124,7 +124,7 @@ export default function Footer() {
               </div>
             </div>
             <a
-              href="http://wa.me/556292358068"
+              href="http://wa.me/556292358068?text=Ol%C3%A1%2C%20vim%20do%20Google%2C%20quero%20fazer%20meu%20pedido."
               target="_blank"
               rel="noopener noreferrer"
               className="mt-6 flex items-center justify-center gap-2 bg-brand-red hover:bg-brand-red-light text-white text-sm font-semibold px-5 py-3 rounded-full transition-all duration-300 hover:shadow-lg hover:shadow-red-900/40"

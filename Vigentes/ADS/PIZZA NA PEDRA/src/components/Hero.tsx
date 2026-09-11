@@ -41,7 +41,7 @@ export default function Hero() {
         </div>
         <div className="transition-all duration-1000 delay-600 flex flex-col sm:flex-row gap-4 justify-center mt-10 opacity-100 translate-y-0">
           <a
-            href="http://wa.me/556292358068"
+            href="http://wa.me/556292358068?text=Ol%C3%A1%2C%20vim%20do%20Google%2C%20quero%20fazer%20meu%20pedido."
             target="_blank"
             rel="noopener noreferrer"
             className="group flex items-center justify-center gap-2 bg-brand-red hover:bg-brand-red-light text-white font-bold text-lg px-8 py-4 rounded-full transition-all duration-300 hover:shadow-2xl hover:shadow-red-900/50 hover:-translate-y-1"

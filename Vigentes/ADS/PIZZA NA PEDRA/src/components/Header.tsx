@@ -56,7 +56,7 @@ export default function Header() {
               (62) 3278-5151
             </a>
             <a
-              href="http://wa.me/556292358068"
+              href="http://wa.me/556292358068?text=Ol%C3%A1%2C%20vim%20do%20Google%2C%20quero%20fazer%20meu%20pedido."
               target="_blank"
               rel="noopener noreferrer"
               className="bg-brand-red hover:bg-brand-red-light text-white text-sm font-semibold px-5 py-2.5 rounded-full transition-all duration-300 hover:shadow-lg hover:shadow-red-900/40 hover:-translate-y-0.5"
@@ -94,7 +94,7 @@ export default function Header() {
             </a>
           ))}
           <a
-            href="http://wa.me/556292358068"
+            href="http://wa.me/556292358068?text=Ol%C3%A1%2C%20vim%20do%20Google%2C%20quero%20fazer%20meu%20pedido."
             target="_blank"
             rel="noopener noreferrer"
             className="bg-brand-red text-white text-center font-semibold px-5 py-3 rounded-full mt-2 hover:bg-brand-red-light transition-colors"
