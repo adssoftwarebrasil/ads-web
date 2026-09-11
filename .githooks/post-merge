@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+# Roda depois de todo merge/pull e avisa se veio exclusao da pasta da outra
+# equipe. Nao bloqueia nada: a essa altura o merge ja aconteceu, mas ainda
+# nao foi enviado, entao da tempo de desfazer.
+raiz=$(git rev-parse --show-toplevel)
+[[ -x "$raiz/scripts/conferir-exclusoes.sh" ]] || exit 0
+"$raiz/scripts/conferir-exclusoes.sh" ORIG_HEAD HEAD || true
+exit 0

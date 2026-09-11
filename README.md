@@ -9,6 +9,20 @@ As regras de quem mexe neste repositorio estao em [AGENTS.md](AGENTS.md), que
 o `CLAUDE.md` tambem aponta. A principal: manter o `vercel-projects.json`
 atualizado a cada mudanca de pasta ou de projeto na Vercel.
 
+## Duas equipes na mesma main
+
+A ADS e a CorsSync trabalham no mesmo repositorio, cada uma na sua arvore de
+sites. Para que ninguem apague por engano arquivo do site da outra,
+`scripts/conferir-exclusoes.sh` confere isso a cada envio para a `main`
+(GitHub Actions) e a cada `pull` na maquina de quem trabalha (hook
+`post-merge`). Ligue o hook uma vez por clone:
+
+```bash
+git config core.hooksPath .githooks
+```
+
+Detalhes e a valvula de escape: secao 11 do [AGENTS.md](AGENTS.md).
+
 ## Estrutura
 
 ```

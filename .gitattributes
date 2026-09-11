@@ -1,0 +1,4 @@
+# Os scripts de apoio precisam de quebra de linha LF: com CRLF o Git Bash no
+# Windows recusa o arquivo com "bad interpreter" e o hook local nao roda.
+*.sh text eol=lf
+.githooks/** text eol=lf

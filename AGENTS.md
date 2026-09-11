@@ -235,6 +235,34 @@ pasta, como foi feito em `GLOBO TRANSPORTES`.
 - Ao renomear muitas pastas, renomeie no sistema de arquivos e depois
   `git add -A`: o git detecta os renames sozinho e preserva o historico.
 
+### Duas equipes na mesma main: a guarda contra exclusao acidental
+
+A ADS e a CorsSync (`coresync-web <coresyncweb@gmail.com>`) empurram para a
+mesma `main`. Cada uma cuida da sua arvore de sites. **Alterar** arquivo do
+outro lado e permitido e acontece de verdade; **apagar** nunca foi trabalho
+normal — em todo o historico isso aconteceu uma vez so, no commit `5c90b9f`,
+que levou junto duas imagens do site do Ecodescarte sem ninguem notar.
+
+`scripts/conferir-exclusoes.sh` confere isso, e roda em dois lugares:
+
+| Onde | Quando | O que faz |
+|---|---|---|
+| GitHub Actions | a cada envio para a `main` | falha a verificacao e lista os arquivos |
+| Hook `post-merge` | a cada `pull`/`merge` na sua maquina | avisa na hora, antes de voce enviar |
+
+O hook e versionado em `.githooks/`, mas cada clone precisa liga-lo uma vez:
+
+```bash
+git config core.hooksPath .githooks
+```
+
+Para apagar de proposito uma pasta do outro lado, escreva
+`[remove-autorizado]` no titulo do commit.
+
+**Por que isso importa mais do que parece:** o git aceita exclusao sem avisar
+e commitar nao poe o site no ar, entao o estrago so apareceria na proxima
+republicacao daquele site — semanas depois, longe da causa.
+
 ### Quem le o historico e consultor comercial, nao programador
 
 O historico deste repositorio nao e lido so por quem programa. Os consultores

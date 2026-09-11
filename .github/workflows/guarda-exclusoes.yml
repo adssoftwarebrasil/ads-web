@@ -1,0 +1,28 @@
+# Confere, a cada envio para a main, se algum commit apagou arquivo da pasta
+# da outra equipe. Ver scripts/conferir-exclusoes.sh para a regra.
+name: Guarda de exclusoes
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+
+jobs:
+  conferir:
+    name: Conferir exclusoes entre ADS e CorsSync
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - name: Baixar o repositorio com o historico
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Conferir os commits enviados
+        env:
+          BASE: ${{ github.event_name == 'pull_request' && github.event.pull_request.base.sha || github.event.before }}
+          TOPO: ${{ github.event_name == 'pull_request' && github.event.pull_request.head.sha || github.sha }}
+        run: bash scripts/conferir-exclusoes.sh "$BASE" "$TOPO"
